@@ -108,7 +108,7 @@ nonterminal YieldStmt;
 nonterminal ActParsDetail, ActPars, ActParsExprList;
 
 /* Designator */
-nonterminal Designator, DesigantorList, DesignatorActPars;
+nonterminal DesigantorList, DesignatorActPars;
 
 /* Condition */
 nonterminal Condition, CondTerm, CondFact, ConditionStmt;
@@ -137,6 +137,7 @@ nonterminal BrackArrayList;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodHeader, MethodDecl;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 
 precedence left ELSE;
@@ -324,7 +325,7 @@ AssignOpExpr ::= (AssignOpeeratorExpresion) Assignop Expr
 				{: parser.report_error("Izvrsen oporavak za AssignOp do ; u liniji "+ lleft, null ); :}
 				;
 
-Designator ::= (Designator) IDENT DesigantorList;
+Designator ::= (Designator) IDENT:desigantorName DesigantorList;
 
 DesigantorList ::= (DsgnList) LBRACKET Expr RBRACKET
 				| (NoDsgnList) /*epsilon*/

@@ -1,0 +1,198 @@
+INFO  19:57:32,460 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  19:57:32,516 - #2 program
+INFO  19:57:32,516 - #47 test302
+INFO  19:57:32,516 - #20 const
+INFO  19:57:32,517 - #47 int
+INFO  19:57:32,517 - #47 i
+INFO  19:57:32,518 - #36 =
+INFO  19:57:32,518 - #49 1
+INFO  19:57:32,519 - #37 ;
+INFO  19:57:32,520 - #20 const
+INFO  19:57:32,521 - #47 char
+INFO  19:57:32,521 - #47 y
+INFO  19:57:32,521 - #36 =
+INFO  19:57:32,522 - #48 1
+INFO  19:57:32,522 - #37 ;
+INFO  19:57:32,522 - #47 char
+INFO  19:57:32,523 - #47 zna
+INFO  19:57:32,523 - #39 ,
+INFO  19:57:32,524 - #47 beta
+INFO  19:57:32,524 - #44 [
+INFO  19:57:32,524 - #45 ]
+INFO  19:57:32,524 - #39 ,
+INFO  19:57:32,525 - #47 a
+INFO  19:57:32,525 - #37 ;
+INFO  19:57:32,525 - #42 {
+INFO  19:57:32,525 - #47 int
+INFO  19:57:32,526 - #47 aa
+INFO  19:57:32,526 - #40 (
+INFO  19:57:32,527 - #47 int
+INFO  19:57:32,527 - #47 a
+INFO  19:57:32,527 - #41 )
+INFO  19:57:32,528 - #47 int
+INFO  19:57:32,529 - #47 a
+INFO  19:57:32,529 - #37 ;
+INFO  19:57:32,529 - #42 {
+INFO  19:57:32,529 - #43 }
+INFO  19:57:32,530 - #5 void
+INFO  19:57:32,530 - #47 main
+INFO  19:57:32,531 - #40 (
+INFO  19:57:32,531 - #41 )
+INFO  19:57:32,531 - #42 {
+INFO  19:57:32,531 - #43 }
+INFO  19:57:32,531 - #43 }
+INFO  19:57:32,545 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      MultiProgramDeclarationList(
+        NoDecl(
+        ) [NoDecl]
+        ConstProgramDeclaration(
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleConstDeclaration(
+              ConstValue(
+               i
+                ConstOptionNumber(
+                  NumberConstant(
+                   1
+                  ) [NumberConstant]
+                ) [ConstOptionNumber]
+              ) [ConstValue]
+            ) [SingleConstDeclaration]
+          ) [ConstDeclaration]
+        ) [ConstProgramDeclaration]
+      ) [MultiProgramDeclarationList]
+      ConstProgramDeclaration(
+        ConstDeclaration(
+          Type(
+           char
+          ) [Type]
+          SingleConstDeclaration(
+            ConstValue(
+             y
+              ConstOptionChar(
+                CharConstant(
+                 1
+                ) [CharConstant]
+              ) [ConstOptionChar]
+            ) [ConstValue]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclaration]
+      ) [ConstProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+        VarDeclarationList(
+          VarDeclarationList(
+            SingleVarDeclaration(
+              VarValue(
+               zna
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+            VarValue(
+             beta
+              BrackArrayLst(
+              ) [BrackArrayLst]
+            ) [VarValue]
+          ) [VarDeclarationList]
+          VarValue(
+           a
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValue]
+        ) [VarDeclarationList]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  RepeatMethodDeclaration(
+    RepeatMethodDeclaration(
+      NoRepeatMethodDeclaration(
+      ) [NoRepeatMethodDeclaration]
+      MethodDeclaration(
+        MethodHeader(
+          CustomMethodDeclType(
+            Type(
+             int
+            ) [Type]
+          ) [CustomMethodDeclType]
+         aa
+        ) [MethodHeader]
+        FormParamsBegin(
+        ) [FormParamsBegin]
+        FromParameters(
+          SingleFormParams(
+            FromParamsValue(
+              Type(
+               int
+              ) [Type]
+              VarValue(
+               a
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [FromParamsValue]
+          ) [SingleFormParams]
+        ) [FromParameters]
+        FormParamsEnd(
+        ) [FormParamsEnd]
+        MultiMethodDelVarList(
+          NoMethodDelVarList(
+          ) [NoMethodDelVarList]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleVarDeclaration(
+              VarValue(
+               a
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+          ) [VarDeclaration]
+        ) [MultiMethodDelVarList]
+        NoStatementListOpt(
+        ) [NoStatementListOpt]
+      ) [MethodDeclaration]
+    ) [RepeatMethodDeclaration]
+    MethodDeclaration(
+      MethodHeader(
+        VoidMethodDeclType(
+        ) [VoidMethodDeclType]
+       main
+      ) [MethodHeader]
+      FormParamsBegin(
+      ) [FormParamsBegin]
+      NoFromParameters(
+      ) [NoFromParameters]
+      FormParamsEnd(
+      ) [FormParamsEnd]
+      NoMethodDelVarList(
+      ) [NoMethodDelVarList]
+      NoStatementListOpt(
+      ) [NoStatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  19:57:32,546 - ===================================
+INFO  19:57:32,549 - Deklarisana CONST promenljiva i tip:int Vredosti: 1 na liniji 3
+INFO  19:57:32,549 - Deklarisana CONST promenljiva y tip:char Vredosti: 49 na liniji 4
+INFO  19:57:32,549 - Deklarisana promenljiva zna tip:char - GLOBAL VAR na liniji 5
+INFO  19:57:32,549 - Deklarisana promenljiva beta tip:char - GLOBAL VAR na liniji 5
+INFO  19:57:32,549 - Deklarisana promenljiva a tip:char - GLOBAL VAR na liniji 5
+INFO  19:57:32,550 - Obradjuje se metoda: aa na liniji 7
+INFO  19:57:32,550 - Deklarisana promenljiva a tip:int - FUNKCIJA na liniji 7
+ERROR 19:57:32,550 - Greska! Polje sa zadatim imenom vec postoji! - FUNKCIJA 1 na liniji 7
+INFO  19:57:32,550 - Obradjuje se metoda: main na liniji 9
+INFO  19:57:32,550 - ===================================

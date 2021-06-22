@@ -22,6 +22,21 @@ public class SemanticPass extends VisitorAdaptor {
 	
 	Logger log = Logger.getLogger(getClass());
 
+	
+	/* UTIL */
+	public static boolean isValueableObj(Obj currObj) {
+		//Class: currObj.getKind() == Obj.Elem
+		if(currObj == null) return false;
+		if(currObj.getKind() == Obj.Var || currObj.getKind() == Obj.Fld)
+			return true;
+		else
+			return false;
+    }
+	public static boolean isIntType(Obj currObj) {
+		return currObj.getType().getKind() == Struct.Int;
+	}
+	//******************************************************************//
+	
 	public void report_error(String message, SyntaxNode info) {
 		StringBuilder msg = new StringBuilder(message);
 		int line = (info == null) ? 0: info.getLine();
@@ -205,4 +220,35 @@ public class SemanticPass extends VisitorAdaptor {
     		return;
     	}
     }
+    
+   public void visit(Designator designator) {
+	   Obj des = NewSymbolTable.find(designator.getDesigantorName());
+	   if(des == NewSymbolTable.noObj) {
+		   report_error("Greska! Designator "+ designator.getDesigantorName()+" nije deklarisan!", designator);
+		   return;
+	   }
+	   designator.obj = des;
+	   report_error("Designator "+ designator.getDesigantorName()+" pronadjen!", designator);
+   }
+    
+   public void visit(DesignatorStatementInc desInc) {
+	   if(!isValueableObj(desInc.getDesignator().obj)){
+		   report_error("Greska! Desigantor za Inkrement mora biti vrednostan!", desInc);
+		   return;
+	   }
+	   if(!isIntType(desInc.getDesignator().obj)) {
+		   report_error("Greska! Desigantor za Inkrement mora biti vrtipa INT!", desInc);
+		   return;
+	   }
+   }
+   public void visit(DesignatorStatementDec desDec) {
+	   if(!isValueableObj(desDec.getDesignator().obj)){
+		   report_error("Greska! Desigantor za Dekrement mora biti vrednostan!", desDec);
+		   return;
+	   }
+	   if(!isIntType(desDec.getDesignator().obj)) {
+		   report_error("Greska! Desigantor za Dekrement mora biti vrtipa INT!", desDec);
+		   return;
+	   }
+   }
 }

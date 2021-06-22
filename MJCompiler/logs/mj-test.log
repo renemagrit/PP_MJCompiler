@@ -1,47 +1,50 @@
-INFO  19:57:32,460 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
-INFO  19:57:32,516 - #2 program
-INFO  19:57:32,516 - #47 test302
-INFO  19:57:32,516 - #20 const
-INFO  19:57:32,517 - #47 int
-INFO  19:57:32,517 - #47 i
-INFO  19:57:32,518 - #36 =
-INFO  19:57:32,518 - #49 1
-INFO  19:57:32,519 - #37 ;
-INFO  19:57:32,520 - #20 const
-INFO  19:57:32,521 - #47 char
-INFO  19:57:32,521 - #47 y
-INFO  19:57:32,521 - #36 =
-INFO  19:57:32,522 - #48 1
-INFO  19:57:32,522 - #37 ;
-INFO  19:57:32,522 - #47 char
-INFO  19:57:32,523 - #47 zna
-INFO  19:57:32,523 - #39 ,
-INFO  19:57:32,524 - #47 beta
-INFO  19:57:32,524 - #44 [
-INFO  19:57:32,524 - #45 ]
-INFO  19:57:32,524 - #39 ,
-INFO  19:57:32,525 - #47 a
-INFO  19:57:32,525 - #37 ;
-INFO  19:57:32,525 - #42 {
-INFO  19:57:32,525 - #47 int
-INFO  19:57:32,526 - #47 aa
-INFO  19:57:32,526 - #40 (
-INFO  19:57:32,527 - #47 int
-INFO  19:57:32,527 - #47 a
-INFO  19:57:32,527 - #41 )
-INFO  19:57:32,528 - #47 int
-INFO  19:57:32,529 - #47 a
-INFO  19:57:32,529 - #37 ;
-INFO  19:57:32,529 - #42 {
-INFO  19:57:32,529 - #43 }
-INFO  19:57:32,530 - #5 void
-INFO  19:57:32,530 - #47 main
-INFO  19:57:32,531 - #40 (
-INFO  19:57:32,531 - #41 )
-INFO  19:57:32,531 - #42 {
-INFO  19:57:32,531 - #43 }
-INFO  19:57:32,531 - #43 }
-INFO  19:57:32,545 - Program(
+INFO  00:02:35,347 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  00:02:35,412 - #2 program
+INFO  00:02:35,412 - #47 test302
+INFO  00:02:35,412 - #20 const
+INFO  00:02:35,414 - #47 int
+INFO  00:02:35,414 - #47 i
+INFO  00:02:35,415 - #36 =
+INFO  00:02:35,415 - #49 1
+INFO  00:02:35,415 - #37 ;
+INFO  00:02:35,416 - #20 const
+INFO  00:02:35,417 - #47 char
+INFO  00:02:35,417 - #47 y
+INFO  00:02:35,417 - #36 =
+INFO  00:02:35,418 - #48 1
+INFO  00:02:35,418 - #37 ;
+INFO  00:02:35,419 - #47 char
+INFO  00:02:35,419 - #47 zna
+INFO  00:02:35,419 - #39 ,
+INFO  00:02:35,421 - #47 beta
+INFO  00:02:35,421 - #44 [
+INFO  00:02:35,421 - #45 ]
+INFO  00:02:35,421 - #39 ,
+INFO  00:02:35,422 - #47 a
+INFO  00:02:35,422 - #37 ;
+INFO  00:02:35,422 - #42 {
+INFO  00:02:35,423 - #47 int
+INFO  00:02:35,424 - #47 aa
+INFO  00:02:35,424 - #40 (
+INFO  00:02:35,425 - #47 int
+INFO  00:02:35,426 - #47 a
+INFO  00:02:35,427 - #41 )
+INFO  00:02:35,427 - #47 char
+INFO  00:02:35,430 - #47 b
+INFO  00:02:35,430 - #37 ;
+INFO  00:02:35,431 - #42 {
+INFO  00:02:35,431 - #47 b
+INFO  00:02:35,432 - #21 ++
+INFO  00:02:35,434 - #37 ;
+INFO  00:02:35,434 - #43 }
+INFO  00:02:35,435 - #5 void
+INFO  00:02:35,435 - #47 main
+INFO  00:02:35,436 - #40 (
+INFO  00:02:35,437 - #41 )
+INFO  00:02:35,437 - #42 {
+INFO  00:02:35,437 - #43 }
+INFO  00:02:35,438 - #43 }
+INFO  00:02:35,455 - Program(
   ProgName(
    test302
   ) [ProgName]
@@ -151,19 +154,30 @@ INFO  19:57:32,545 - Program(
           ) [NoMethodDelVarList]
           VarDeclaration(
             Type(
-             int
+             char
             ) [Type]
             SingleVarDeclaration(
               VarValue(
-               a
+               b
                 NoBrackArrayList(
                 ) [NoBrackArrayList]
               ) [VarValue]
             ) [SingleVarDeclaration]
           ) [VarDeclaration]
         ) [MultiMethodDelVarList]
-        NoStatementListOpt(
-        ) [NoStatementListOpt]
+        StatementListOpt(
+          NoStatementListOpt(
+          ) [NoStatementListOpt]
+          DesStatement(
+            DesignatorStatementInc(
+              Designator(
+               b
+                NoDsgnList(
+                ) [NoDsgnList]
+              ) [Designator]
+            ) [DesignatorStatementInc]
+          ) [DesStatement]
+        ) [StatementListOpt]
       ) [MethodDeclaration]
     ) [RepeatMethodDeclaration]
     MethodDeclaration(
@@ -185,14 +199,16 @@ INFO  19:57:32,545 - Program(
     ) [MethodDeclaration]
   ) [RepeatMethodDeclaration]
 ) [Program]
-INFO  19:57:32,546 - ===================================
-INFO  19:57:32,549 - Deklarisana CONST promenljiva i tip:int Vredosti: 1 na liniji 3
-INFO  19:57:32,549 - Deklarisana CONST promenljiva y tip:char Vredosti: 49 na liniji 4
-INFO  19:57:32,549 - Deklarisana promenljiva zna tip:char - GLOBAL VAR na liniji 5
-INFO  19:57:32,549 - Deklarisana promenljiva beta tip:char - GLOBAL VAR na liniji 5
-INFO  19:57:32,549 - Deklarisana promenljiva a tip:char - GLOBAL VAR na liniji 5
-INFO  19:57:32,550 - Obradjuje se metoda: aa na liniji 7
-INFO  19:57:32,550 - Deklarisana promenljiva a tip:int - FUNKCIJA na liniji 7
-ERROR 19:57:32,550 - Greska! Polje sa zadatim imenom vec postoji! - FUNKCIJA 1 na liniji 7
-INFO  19:57:32,550 - Obradjuje se metoda: main na liniji 9
-INFO  19:57:32,550 - ===================================
+INFO  00:02:35,456 - ===================================
+INFO  00:02:35,461 - Deklarisana CONST promenljiva i tip:int Vredosti: 1 na liniji 3
+INFO  00:02:35,461 - Deklarisana CONST promenljiva y tip:char Vredosti: 49 na liniji 4
+INFO  00:02:35,461 - Deklarisana promenljiva zna tip:char - GLOBAL VAR na liniji 5
+INFO  00:02:35,461 - Deklarisana promenljiva beta tip:char - GLOBAL VAR na liniji 5
+INFO  00:02:35,461 - Deklarisana promenljiva a tip:char - GLOBAL VAR na liniji 5
+INFO  00:02:35,462 - Obradjuje se metoda: aa na liniji 9
+INFO  00:02:35,462 - Deklarisana promenljiva a tip:int - FUNKCIJA na liniji 9
+INFO  00:02:35,462 - Deklarisana promenljiva b tip:char - FUNKCIJA na liniji 9
+ERROR 00:02:35,462 - Designator b pronadjen! na liniji 10
+ERROR 00:02:35,462 - Greska! Desigantor za Inkrement mora biti vrtipa INT! na liniji 10
+INFO  00:02:35,463 - Obradjuje se metoda: main na liniji 12
+INFO  00:02:35,463 - ===================================

@@ -4,8 +4,12 @@ const int i = 1;
 const char y = '1';
 char zna, beta[], a;
 {
-	int aa(int a) int a;{}
 	
+	
+	int aa(int a) char b;{
+		b++;
+	}
 	void main(){}
+	
 }
 

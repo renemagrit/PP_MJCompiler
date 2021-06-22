@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 22/5/2021 19:58:41
+// 23/5/2021 0:3:27
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,21 +9,23 @@ public class Designator implements SyntaxNode {
 
     private SyntaxNode parent;
     private int line;
-    private String I1;
+    public rs.etf.pp1.symboltable.concepts.Obj obj = null;
+
+    private String desigantorName;
     private DesigantorList DesigantorList;
 
-    public Designator (String I1, DesigantorList DesigantorList) {
-        this.I1=I1;
+    public Designator (String desigantorName, DesigantorList DesigantorList) {
+        this.desigantorName=desigantorName;
         this.DesigantorList=DesigantorList;
         if(DesigantorList!=null) DesigantorList.setParent(this);
     }
 
-    public String getI1() {
-        return I1;
+    public String getDesigantorName() {
+        return desigantorName;
     }
 
-    public void setI1(String I1) {
-        this.I1=I1;
+    public void setDesigantorName(String desigantorName) {
+        this.desigantorName=desigantorName;
     }
 
     public DesigantorList getDesigantorList() {
@@ -73,7 +75,7 @@ public class Designator implements SyntaxNode {
         buffer.append(tab);
         buffer.append("Designator(\n");
 
-        buffer.append(" "+tab+I1);
+        buffer.append(" "+tab+desigantorName);
         buffer.append("\n");
 
         if(DesigantorList!=null)
