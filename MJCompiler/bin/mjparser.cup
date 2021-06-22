@@ -78,7 +78,7 @@ nonterminal GlobalVarDecl, VarDeclList, VarVal;
 nonterminal RepeatMethodDecl, MethodDeclType, MethodDelVarList;
 
 /*Formal Parameters Non Terminals*/
-nonterminal FromParams, FromParamsList, FromParamsVal, FormParamsBegin;
+nonterminal FromParams, FromParamsList, FromParamsVal, FormParamsBegin, FormParamsEnd;
 
 /* Statements*/
 nonterminal Statement, ListStatementOpt, DesignatorStatement;
@@ -199,7 +199,7 @@ RepeatMethodDecl ::= (RepeatMethodDeclaration) RepeatMethodDecl MethodDecl
 				| (NoRepeatMethodDeclaration) /*epsilon*/
 				;
 
-MethodDecl ::= (MethodDeclaration) MethodHeader FormParamsBegin FromParams RPAREN  MethodDelVarList LBRACE ListStatementOpt RBRACE;
+MethodDecl ::= (MethodDeclaration) MethodHeader FormParamsBegin FromParams FormParamsEnd  MethodDelVarList LBRACE ListStatementOpt RBRACE;
 
 MethodHeader ::= (MethodHeader) MethodDeclType IDENT:methName;
 
@@ -214,6 +214,8 @@ MethodDelVarList ::= (MultiMethodDelVarList) MethodDelVarList VarDecl
 /* FORM PARAMETERS */
 
 FormParamsBegin ::= (FormParamsBegin) LPAREN;
+
+FormParamsEnd ::= (FormParamsEnd) RPAREN;
 
 FromParams ::= (FromParameters) FromParamsList
 				| (NoFromParameters) /*epsilon*/

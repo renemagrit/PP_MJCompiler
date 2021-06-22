@@ -15,8 +15,10 @@ public class SemanticPass extends VisitorAdaptor {
 	
     private static Struct currentType = NewSymbolTable.noType;
     private static Obj currentMethod = null;
-    
     private static String currentTypeName = "noType";
+    
+    private static boolean isFormalParam = false;
+    private static int argCount;
 	
 	Logger log = Logger.getLogger(getClass());
 
@@ -37,22 +39,35 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 	
 	
+	 public boolean checkForMultipleDeclarations(String symbolName, SyntaxNode info, String messageStart) {
+	        Obj objNode = NewSymbolTable.find(symbolName);
+	        if (objNode != NewSymbolTable.noObj) {
+	            if (objNode.getKind() == Obj.Var && currentMethod != null)
+	                return false;
+	            report_error(messageStart + " '" + symbolName + "' already declared", info);
+	            return true;
+	        }
+	        return false;
+	    }
+	
 	public void visit(VarValue vardecl){
 		
 		//Multiple declaration check in scope
 		
 		//Check Multi Declaration in same scope
-		Obj temp = NewSymbolTable.find(vardecl.getVarName());
-		if(temp != NewSymbolTable.noObj) {
-			if(temp.getKind() == Obj.Fld && currentMethod != null) {
-				report_error("Polje sa zadatim imenom vec postoji! - FUNKCIJA "+ temp.getLevel(), vardecl);
-				return;
-			}
-			if(temp.getKind() == Obj.Var && currentMethod == null) {
-				report_error("Polje sa zadatim imenom vec postoji! - GLOBAL VAR "+ temp.getLevel(), vardecl);
-				return;
-			}
+		if(checkForMultipleDeclarations(vardecl.getVarName(), vardecl, "SRANJE")) {
+			return;
 		}
+		
+//		Obj temp = NewSymbolTable.find(vardecl.getVarName());
+//		if(temp != NewSymbolTable.noObj && currentMethod==null) {
+//			report_error("Greska! Polje sa zadatim imenom vec postoji! - GLOBAL VAR "+ temp.getLevel(), vardecl);
+//			return;
+//		}
+//		if(temp != NewSymbolTable.noObj && currentMethod != null) {
+//			report_error("Greska! Polje sa zadatim imenom vec postoji! - FUNKCIJA "+ temp.getLevel(), vardecl);
+//			return;	
+//		}
 		
 		//Proveri da li je promenljiva niz
 		Struct varType = currentType;
@@ -69,10 +84,10 @@ public class SemanticPass extends VisitorAdaptor {
 			report_info("Deklarisana VAR promenljiva "+ vardecl.getVarName()+" tip:" + currentTypeName +" - FUNKCIJA", vardecl);
 		}else {
 			//globalna promenljiva
-			NewSymbolTable.insert(Obj.Var, vardecl.getVarName(), varType);
+			NewSymbolTable.insert(Obj.Fld, vardecl.getVarName(), varType);
 			report_info("Deklarisana VAR promenljiva "+ vardecl.getVarName()+" tip:" + currentTypeName+" - GLOBAL VAR", vardecl);
 		}	
-		
+		if(isFormalParam) argCount++;
 		
 	}
 	
@@ -179,8 +194,7 @@ public class SemanticPass extends VisitorAdaptor {
     		report_error("Greska! Metoda main mora biti tipa void! ", methHeader);
     		return;
     	}
-    	//TO DO: provera broja arguemanata za main
-    	
+    		
     	currentMethod = NewSymbolTable.insert(Obj.Meth,methHeader.getMethName(), currentType);
     	methHeader.obj = currentMethod;
     	NewSymbolTable.currentScope();
@@ -190,11 +204,20 @@ public class SemanticPass extends VisitorAdaptor {
     public void visit(MethodDecl methDecl) {
     	NewSymbolTable.chainLocalSymbols(currentMethod);
     	NewSymbolTable.closeScope();
-    	report_info("PKRAJ PARAM", null);
     	currentMethod = null;
     }
     
     public void visit(FormParamsBegin formalBeg) {
-    	report_info("POCETAK PARAM", null);
+    	isFormalParam = true;
+    	argCount = 0;
+    }
+    
+    public void visit(FormParamsEnd formalEnd) {
+    	isFormalParam = false;
+    	//Da li main ima parameter
+    	if(currentMethod.getName().equals("main") && argCount != 0) {
+    		report_error("Greska! Metoda main ne sme imati argumente! ", formalEnd);
+    		return;
+    	}
     }
 }

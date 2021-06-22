@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 22/5/2021 17:43:36
+// 22/5/2021 18:56:42
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -168,6 +168,7 @@ public interface Visitor {
     public void visit(MultiFormParams MultiFormParams);
     public void visit(NoFromParameters NoFromParameters);
     public void visit(FromParameters FromParameters);
+    public void visit(FormParamsEnd FormParamsEnd);
     public void visit(FormParamsBegin FormParamsBegin);
     public void visit(NoMethodDelVarList NoMethodDelVarList);
     public void visit(MultiMethodDelVarList MultiMethodDelVarList);

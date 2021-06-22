@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 22/5/2021 17:43:35
+// 22/5/2021 18:56:41
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -10,16 +10,19 @@ public class MethodDeclaration extends MethodDecl {
     private MethodHeader MethodHeader;
     private FormParamsBegin FormParamsBegin;
     private FromParams FromParams;
+    private FormParamsEnd FormParamsEnd;
     private MethodDelVarList MethodDelVarList;
     private ListStatementOpt ListStatementOpt;
 
-    public MethodDeclaration (MethodHeader MethodHeader, FormParamsBegin FormParamsBegin, FromParams FromParams, MethodDelVarList MethodDelVarList, ListStatementOpt ListStatementOpt) {
+    public MethodDeclaration (MethodHeader MethodHeader, FormParamsBegin FormParamsBegin, FromParams FromParams, FormParamsEnd FormParamsEnd, MethodDelVarList MethodDelVarList, ListStatementOpt ListStatementOpt) {
         this.MethodHeader=MethodHeader;
         if(MethodHeader!=null) MethodHeader.setParent(this);
         this.FormParamsBegin=FormParamsBegin;
         if(FormParamsBegin!=null) FormParamsBegin.setParent(this);
         this.FromParams=FromParams;
         if(FromParams!=null) FromParams.setParent(this);
+        this.FormParamsEnd=FormParamsEnd;
+        if(FormParamsEnd!=null) FormParamsEnd.setParent(this);
         this.MethodDelVarList=MethodDelVarList;
         if(MethodDelVarList!=null) MethodDelVarList.setParent(this);
         this.ListStatementOpt=ListStatementOpt;
@@ -50,6 +53,14 @@ public class MethodDeclaration extends MethodDecl {
         this.FromParams=FromParams;
     }
 
+    public FormParamsEnd getFormParamsEnd() {
+        return FormParamsEnd;
+    }
+
+    public void setFormParamsEnd(FormParamsEnd FormParamsEnd) {
+        this.FormParamsEnd=FormParamsEnd;
+    }
+
     public MethodDelVarList getMethodDelVarList() {
         return MethodDelVarList;
     }
@@ -74,6 +85,7 @@ public class MethodDeclaration extends MethodDecl {
         if(MethodHeader!=null) MethodHeader.accept(visitor);
         if(FormParamsBegin!=null) FormParamsBegin.accept(visitor);
         if(FromParams!=null) FromParams.accept(visitor);
+        if(FormParamsEnd!=null) FormParamsEnd.accept(visitor);
         if(MethodDelVarList!=null) MethodDelVarList.accept(visitor);
         if(ListStatementOpt!=null) ListStatementOpt.accept(visitor);
     }
@@ -83,6 +95,7 @@ public class MethodDeclaration extends MethodDecl {
         if(MethodHeader!=null) MethodHeader.traverseTopDown(visitor);
         if(FormParamsBegin!=null) FormParamsBegin.traverseTopDown(visitor);
         if(FromParams!=null) FromParams.traverseTopDown(visitor);
+        if(FormParamsEnd!=null) FormParamsEnd.traverseTopDown(visitor);
         if(MethodDelVarList!=null) MethodDelVarList.traverseTopDown(visitor);
         if(ListStatementOpt!=null) ListStatementOpt.traverseTopDown(visitor);
     }
@@ -91,6 +104,7 @@ public class MethodDeclaration extends MethodDecl {
         if(MethodHeader!=null) MethodHeader.traverseBottomUp(visitor);
         if(FormParamsBegin!=null) FormParamsBegin.traverseBottomUp(visitor);
         if(FromParams!=null) FromParams.traverseBottomUp(visitor);
+        if(FormParamsEnd!=null) FormParamsEnd.traverseBottomUp(visitor);
         if(MethodDelVarList!=null) MethodDelVarList.traverseBottomUp(visitor);
         if(ListStatementOpt!=null) ListStatementOpt.traverseBottomUp(visitor);
         accept(visitor);
@@ -115,6 +129,12 @@ public class MethodDeclaration extends MethodDecl {
 
         if(FromParams!=null)
             buffer.append(FromParams.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(FormParamsEnd!=null)
+            buffer.append(FormParamsEnd.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

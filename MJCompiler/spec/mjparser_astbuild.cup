@@ -91,6 +91,7 @@ nonterminal FromParams FromParams;
 nonterminal FromParamsList FromParamsList;
 nonterminal FromParamsVal FromParamsVal;
 nonterminal FormParamsBegin FormParamsBegin;
+nonterminal FormParamsEnd FormParamsEnd;
 
 /* Statements*/
 nonterminal Statement Statement;
@@ -237,7 +238,7 @@ RepeatMethodDecl ::= (RepeatMethodDeclaration) RepeatMethodDecl:R1 MethodDecl:M2
 				| (NoRepeatMethodDeclaration) {: RESULT=new NoRepeatMethodDeclaration(); :} /*epsilon*/
 				;
 
-MethodDecl ::= (MethodDeclaration) MethodHeader:M1 FormParamsBegin:F2 FromParams:F3 RPAREN  MethodDelVarList:M4 LBRACE ListStatementOpt:L5 RBRACE {: RESULT=new MethodDeclaration(M1, F2, F3, M4, L5); RESULT.setLine(M1left); :};
+MethodDecl ::= (MethodDeclaration) MethodHeader:M1 FormParamsBegin:F2 FromParams:F3 FormParamsEnd:F4  MethodDelVarList:M5 LBRACE ListStatementOpt:L6 RBRACE {: RESULT=new MethodDeclaration(M1, F2, F3, F4, M5, L6); RESULT.setLine(M1left); :};
 
 MethodHeader ::= (MethodHeader) MethodDeclType:M1 IDENT:methName {: RESULT=new MethodHeader(M1, methName); RESULT.setLine(M1left); :};
 
@@ -252,6 +253,8 @@ MethodDelVarList ::= (MultiMethodDelVarList) MethodDelVarList:M1 VarDecl:V2 {: R
 /* FORM PARAMETERS */
 
 FormParamsBegin ::= (FormParamsBegin) LPAREN {: RESULT=new FormParamsBegin(); :};
+
+FormParamsEnd ::= (FormParamsEnd) RPAREN {: RESULT=new FormParamsEnd(); :};
 
 FromParams ::= (FromParameters) FromParamsList:F1 {: RESULT=new FromParameters(F1); RESULT.setLine(F1left); :}
 				| (NoFromParameters) {: RESULT=new NoFromParameters(); :} /*epsilon*/

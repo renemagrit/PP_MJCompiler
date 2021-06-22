@@ -1,45 +1,47 @@
-INFO  17:44:09,537 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
-INFO  17:44:09,608 - #2 program
-INFO  17:44:09,609 - #47 test302
-INFO  17:44:09,609 - #20 const
-INFO  17:44:09,610 - #47 int
-INFO  17:44:09,610 - #47 i
-INFO  17:44:09,610 - #36 =
-INFO  17:44:09,611 - #49 1
-INFO  17:44:09,611 - #37 ;
-INFO  17:44:09,611 - #20 const
-INFO  17:44:09,612 - #47 char
-INFO  17:44:09,612 - #47 y
-INFO  17:44:09,612 - #36 =
-INFO  17:44:09,613 - #48 1
-INFO  17:44:09,613 - #37 ;
-INFO  17:44:09,613 - #47 char
-INFO  17:44:09,613 - #47 zna
-INFO  17:44:09,614 - #39 ,
-INFO  17:44:09,615 - #47 beta
-INFO  17:44:09,615 - #44 [
-INFO  17:44:09,615 - #45 ]
-INFO  17:44:09,615 - #39 ,
-INFO  17:44:09,616 - #47 a
-INFO  17:44:09,616 - #37 ;
-INFO  17:44:09,616 - #42 {
-INFO  17:44:09,617 - #47 int
-INFO  17:44:09,617 - #47 aa
-INFO  17:44:09,617 - #40 (
-INFO  17:44:09,618 - #41 )
-INFO  17:44:09,621 - #42 {
-INFO  17:44:09,638 - #43 }
-INFO  17:44:09,639 - #5 void
-INFO  17:44:09,640 - #47 main
-INFO  17:44:09,641 - #40 (
-INFO  17:44:09,641 - #41 )
-INFO  17:44:09,641 - #47 int
-INFO  17:44:09,641 - #47 b
-INFO  17:44:09,641 - #37 ;
-INFO  17:44:09,641 - #42 {
-INFO  17:44:09,642 - #43 }
-INFO  17:44:09,642 - #43 }
-INFO  17:44:09,657 - Program(
+INFO  18:57:20,728 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  18:57:20,781 - #2 program
+INFO  18:57:20,782 - #47 test302
+INFO  18:57:20,782 - #20 const
+INFO  18:57:20,783 - #47 int
+INFO  18:57:20,783 - #47 i
+INFO  18:57:20,783 - #36 =
+INFO  18:57:20,784 - #49 1
+INFO  18:57:20,784 - #37 ;
+INFO  18:57:20,784 - #20 const
+INFO  18:57:20,785 - #47 char
+INFO  18:57:20,785 - #47 y
+INFO  18:57:20,785 - #36 =
+INFO  18:57:20,786 - #48 1
+INFO  18:57:20,787 - #37 ;
+INFO  18:57:20,787 - #47 char
+INFO  18:57:20,787 - #47 zna
+INFO  18:57:20,787 - #39 ,
+INFO  18:57:20,789 - #47 beta
+INFO  18:57:20,789 - #44 [
+INFO  18:57:20,789 - #45 ]
+INFO  18:57:20,789 - #39 ,
+INFO  18:57:20,790 - #47 a
+INFO  18:57:20,790 - #37 ;
+INFO  18:57:20,790 - #42 {
+INFO  18:57:20,790 - #47 int
+INFO  18:57:20,790 - #47 aa
+INFO  18:57:20,791 - #40 (
+INFO  18:57:20,791 - #47 int
+INFO  18:57:20,791 - #47 z
+INFO  18:57:20,792 - #41 )
+INFO  18:57:20,792 - #42 {
+INFO  18:57:20,794 - #43 }
+INFO  18:57:20,794 - #5 void
+INFO  18:57:20,795 - #47 main
+INFO  18:57:20,796 - #40 (
+INFO  18:57:20,796 - #41 )
+INFO  18:57:20,796 - #47 int
+INFO  18:57:20,796 - #47 znak
+INFO  18:57:20,797 - #37 ;
+INFO  18:57:20,797 - #42 {
+INFO  18:57:20,797 - #43 }
+INFO  18:57:20,797 - #43 }
+INFO  18:57:20,808 - Program(
   ProgName(
    test302
   ) [ProgName]
@@ -128,8 +130,22 @@ INFO  17:44:09,657 - Program(
         ) [MethodHeader]
         FormParamsBegin(
         ) [FormParamsBegin]
-        NoFromParameters(
-        ) [NoFromParameters]
+        FromParameters(
+          SingleFormParams(
+            FromParamsValue(
+              Type(
+               int
+              ) [Type]
+              VarValue(
+               z
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [FromParamsValue]
+          ) [SingleFormParams]
+        ) [FromParameters]
+        FormParamsEnd(
+        ) [FormParamsEnd]
         NoMethodDelVarList(
         ) [NoMethodDelVarList]
         NoStatementListOpt(
@@ -146,6 +162,8 @@ INFO  17:44:09,657 - Program(
       ) [FormParamsBegin]
       NoFromParameters(
       ) [NoFromParameters]
+      FormParamsEnd(
+      ) [FormParamsEnd]
       MultiMethodDelVarList(
         NoMethodDelVarList(
         ) [NoMethodDelVarList]
@@ -155,7 +173,7 @@ INFO  17:44:09,657 - Program(
           ) [Type]
           SingleVarDeclaration(
             VarValue(
-             b
+             znak
               NoBrackArrayList(
               ) [NoBrackArrayList]
             ) [VarValue]
@@ -167,15 +185,14 @@ INFO  17:44:09,657 - Program(
     ) [MethodDeclaration]
   ) [RepeatMethodDeclaration]
 ) [Program]
-INFO  17:44:09,658 - ===================================
-INFO  17:44:09,663 - Deklarisana CONST promenljiva i tip:int Vredosti: 1 na liniji 3
-INFO  17:44:09,663 - Deklarisana CONST promenljiva y tip:char Vredosti: 49 na liniji 4
-INFO  17:44:09,663 - Deklarisana VAR promenljiva zna tip:char - GLOBAL VAR na liniji 5
-INFO  17:44:09,664 - Deklarisana VAR promenljiva beta tip:char - GLOBAL VAR na liniji 5
-INFO  17:44:09,664 - Deklarisana VAR promenljiva a tip:char - GLOBAL VAR na liniji 5
-INFO  17:44:09,664 - Obradjuje se metoda: aa na liniji 7
-INFO  17:44:09,664 - POCETAK PARAM
-INFO  17:44:09,664 - Obradjuje se metoda: main na liniji 9
-INFO  17:44:09,664 - POCETAK PARAM
-INFO  17:44:09,664 - Deklarisana VAR promenljiva b tip:int - FUNKCIJA na liniji 9
-INFO  17:44:09,665 - ===================================
+INFO  18:57:20,808 - ===================================
+INFO  18:57:20,811 - Deklarisana CONST promenljiva i tip:int Vredosti: 1 na liniji 3
+INFO  18:57:20,811 - Deklarisana CONST promenljiva y tip:char Vredosti: 49 na liniji 4
+INFO  18:57:20,811 - Deklarisana VAR promenljiva zna tip:char - GLOBAL VAR na liniji 5
+INFO  18:57:20,811 - Deklarisana VAR promenljiva beta tip:char - GLOBAL VAR na liniji 5
+INFO  18:57:20,812 - Deklarisana VAR promenljiva a tip:char - GLOBAL VAR na liniji 5
+INFO  18:57:20,812 - Obradjuje se metoda: aa na liniji 7
+INFO  18:57:20,812 - Deklarisana VAR promenljiva z tip:int - FUNKCIJA na liniji 7
+INFO  18:57:20,812 - Obradjuje se metoda: main na liniji 9
+INFO  18:57:20,812 - Deklarisana VAR promenljiva znak tip:int - FUNKCIJA na liniji 9
+INFO  18:57:20,812 - ===================================
