@@ -1,0 +1,193 @@
+INFO  19:56:47,617 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  19:56:47,680 - #2 program
+INFO  19:56:47,680 - #47 test302
+INFO  19:56:47,680 - #20 const
+INFO  19:56:47,682 - #47 int
+INFO  19:56:47,682 - #47 i
+INFO  19:56:47,683 - #36 =
+INFO  19:56:47,683 - #49 1
+INFO  19:56:47,683 - #37 ;
+INFO  19:56:47,684 - #20 const
+INFO  19:56:47,685 - #47 char
+INFO  19:56:47,685 - #47 y
+INFO  19:56:47,685 - #36 =
+INFO  19:56:47,685 - #48 1
+INFO  19:56:47,686 - #37 ;
+INFO  19:56:47,686 - #47 char
+INFO  19:56:47,686 - #47 zna
+INFO  19:56:47,686 - #39 ,
+INFO  19:56:47,687 - #47 beta
+INFO  19:56:47,688 - #44 [
+INFO  19:56:47,688 - #45 ]
+INFO  19:56:47,688 - #39 ,
+INFO  19:56:47,689 - #47 zna
+INFO  19:56:47,689 - #37 ;
+INFO  19:56:47,689 - #42 {
+INFO  19:56:47,689 - #47 int
+INFO  19:56:47,690 - #47 aa
+INFO  19:56:47,690 - #40 (
+INFO  19:56:47,690 - #47 int
+INFO  19:56:47,691 - #47 a
+INFO  19:56:47,691 - #37 ;
+ERROR 19:56:47,691 - 
+Sintaksna greska na liniji 7
+INFO  19:56:47,691 - #41 )
+INFO  19:56:47,692 - #47 int
+INFO  19:56:47,692 - #47 a
+INFO  19:56:47,693 - #37 ;
+ERROR 19:56:47,693 - Izvrsen oporavak za FormParams do , ili ) u liniji 7
+INFO  19:56:47,696 - #42 {
+INFO  19:56:47,696 - #43 }
+INFO  19:56:47,697 - #5 void
+INFO  19:56:47,698 - #47 main
+INFO  19:56:47,699 - #40 (
+INFO  19:56:47,699 - #41 )
+INFO  19:56:47,703 - #42 {
+INFO  19:56:47,704 - #43 }
+INFO  19:56:47,704 - #43 }
+INFO  19:56:47,720 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      MultiProgramDeclarationList(
+        NoDecl(
+        ) [NoDecl]
+        ConstProgramDeclaration(
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleConstDeclaration(
+              ConstValue(
+               i
+                ConstOptionNumber(
+                  NumberConstant(
+                   1
+                  ) [NumberConstant]
+                ) [ConstOptionNumber]
+              ) [ConstValue]
+            ) [SingleConstDeclaration]
+          ) [ConstDeclaration]
+        ) [ConstProgramDeclaration]
+      ) [MultiProgramDeclarationList]
+      ConstProgramDeclaration(
+        ConstDeclaration(
+          Type(
+           char
+          ) [Type]
+          SingleConstDeclaration(
+            ConstValue(
+             y
+              ConstOptionChar(
+                CharConstant(
+                 1
+                ) [CharConstant]
+              ) [ConstOptionChar]
+            ) [ConstValue]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclaration]
+      ) [ConstProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+        VarDeclarationList(
+          VarDeclarationList(
+            SingleVarDeclaration(
+              VarValue(
+               zna
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+            VarValue(
+             beta
+              BrackArrayLst(
+              ) [BrackArrayLst]
+            ) [VarValue]
+          ) [VarDeclarationList]
+          VarValue(
+           zna
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValue]
+        ) [VarDeclarationList]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  RepeatMethodDeclaration(
+    RepeatMethodDeclaration(
+      NoRepeatMethodDeclaration(
+      ) [NoRepeatMethodDeclaration]
+      MethodDeclaration(
+        MethodHeader(
+          CustomMethodDeclType(
+            Type(
+             int
+            ) [Type]
+          ) [CustomMethodDeclType]
+         aa
+        ) [MethodHeader]
+        FormParamsBegin(
+        ) [FormParamsBegin]
+        FromParameters(
+          SingleFormParams(
+            ErrorFormalParamesComma(
+            ) [ErrorFormalParamesComma]
+          ) [SingleFormParams]
+        ) [FromParameters]
+        FormParamsEnd(
+        ) [FormParamsEnd]
+        MultiMethodDelVarList(
+          NoMethodDelVarList(
+          ) [NoMethodDelVarList]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleVarDeclaration(
+              VarValue(
+               a
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+          ) [VarDeclaration]
+        ) [MultiMethodDelVarList]
+        NoStatementListOpt(
+        ) [NoStatementListOpt]
+      ) [MethodDeclaration]
+    ) [RepeatMethodDeclaration]
+    MethodDeclaration(
+      MethodHeader(
+        VoidMethodDeclType(
+        ) [VoidMethodDeclType]
+       main
+      ) [MethodHeader]
+      FormParamsBegin(
+      ) [FormParamsBegin]
+      NoFromParameters(
+      ) [NoFromParameters]
+      FormParamsEnd(
+      ) [FormParamsEnd]
+      NoMethodDelVarList(
+      ) [NoMethodDelVarList]
+      NoStatementListOpt(
+      ) [NoStatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  19:56:47,721 - ===================================
+INFO  19:56:47,726 - Deklarisana CONST promenljiva i tip:int Vredosti: 1 na liniji 3
+INFO  19:56:47,726 - Deklarisana CONST promenljiva y tip:char Vredosti: 49 na liniji 4
+INFO  19:56:47,727 - Deklarisana promenljiva zna tip:char - GLOBAL VAR na liniji 5
+INFO  19:56:47,727 - Deklarisana promenljiva beta tip:char - GLOBAL VAR na liniji 5
+ERROR 19:56:47,727 - Greska! Polje sa zadatim imenom vec postoji! - GLOBAL VAR 0 na liniji 5
+INFO  19:56:47,727 - Obradjuje se metoda: aa na liniji 7
+INFO  19:56:47,728 - Deklarisana promenljiva a tip:int - FUNKCIJA na liniji 7
+INFO  19:56:47,728 - Obradjuje se metoda: main na liniji 9
+INFO  19:56:47,728 - ===================================

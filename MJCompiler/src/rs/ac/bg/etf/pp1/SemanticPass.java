@@ -39,36 +39,21 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 	
 	
-	 public boolean checkForMultipleDeclarations(String symbolName, SyntaxNode info, String messageStart) {
-	        Obj objNode = NewSymbolTable.find(symbolName);
-	        if (objNode != NewSymbolTable.noObj) {
-	            if (objNode.getKind() == Obj.Var && currentMethod != null)
-	                return false;
-	            report_error(messageStart + " '" + symbolName + "' already declared", info);
-	            return true;
-	        }
-	        return false;
-	    }
-	
 	public void visit(VarValue vardecl){
 		
 		//Multiple declaration check in scope
-		
-		//Check Multi Declaration in same scope
-		if(checkForMultipleDeclarations(vardecl.getVarName(), vardecl, "SRANJE")) {
+		Obj temp = NewSymbolTable.find(vardecl.getVarName());
+		if(temp != NewSymbolTable.noObj ) {
+			if(temp.getKind()==Obj.Fld && currentMethod != null) {
+			report_error("Greska! Polje sa zadatim imenom vec postoji! - FUNKCIJA "+ temp.getLevel(), vardecl);
 			return;
-		}
-		
-//		Obj temp = NewSymbolTable.find(vardecl.getVarName());
-//		if(temp != NewSymbolTable.noObj && currentMethod==null) {
-//			report_error("Greska! Polje sa zadatim imenom vec postoji! - GLOBAL VAR "+ temp.getLevel(), vardecl);
-//			return;
-//		}
-//		if(temp != NewSymbolTable.noObj && currentMethod != null) {
-//			report_error("Greska! Polje sa zadatim imenom vec postoji! - FUNKCIJA "+ temp.getLevel(), vardecl);
-//			return;	
-//		}
-		
+			}
+			if(temp.getKind()==Obj.Var && currentMethod == null) {
+				report_error("Greska! Polje sa zadatim imenom vec postoji! - GLOBAL VAR "+ temp.getLevel(), vardecl);
+				return;
+			}
+		}			
+
 		//Proveri da li je promenljiva niz
 		Struct varType = currentType;
 		
@@ -81,11 +66,11 @@ public class SemanticPass extends VisitorAdaptor {
 		if(currentMethod != null) {
 			//polje u metodi
 			NewSymbolTable.insert(Obj.Fld, vardecl.getVarName(), varType);
-			report_info("Deklarisana VAR promenljiva "+ vardecl.getVarName()+" tip:" + currentTypeName +" - FUNKCIJA", vardecl);
+			report_info("Deklarisana promenljiva "+ vardecl.getVarName()+" tip:" + currentTypeName +" - FUNKCIJA", vardecl);
 		}else {
-			//globalna promenljiva
-			NewSymbolTable.insert(Obj.Fld, vardecl.getVarName(), varType);
-			report_info("Deklarisana VAR promenljiva "+ vardecl.getVarName()+" tip:" + currentTypeName+" - GLOBAL VAR", vardecl);
+			//globalna promenljiva			
+			NewSymbolTable.insert(Obj.Var, vardecl.getVarName(), varType);
+			report_info("Deklarisana promenljiva "+ vardecl.getVarName()+" tip:" + currentTypeName+" - GLOBAL VAR", vardecl);
 		}	
 		if(isFormalParam) argCount++;
 		
@@ -197,7 +182,7 @@ public class SemanticPass extends VisitorAdaptor {
     		
     	currentMethod = NewSymbolTable.insert(Obj.Meth,methHeader.getMethName(), currentType);
     	methHeader.obj = currentMethod;
-    	NewSymbolTable.currentScope();
+    	NewSymbolTable.openScope();
     	report_info("Obradjuje se metoda: "+ methHeader.getMethName(), methHeader);
     }
     

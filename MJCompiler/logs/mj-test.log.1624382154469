@@ -1,0 +1,198 @@
+INFO  19:15:44,624 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  19:15:44,692 - #2 program
+INFO  19:15:44,692 - #47 test302
+INFO  19:15:44,693 - #20 const
+INFO  19:15:44,694 - #47 int
+INFO  19:15:44,694 - #47 i
+INFO  19:15:44,695 - #36 =
+INFO  19:15:44,695 - #49 1
+INFO  19:15:44,695 - #37 ;
+INFO  19:15:44,696 - #20 const
+INFO  19:15:44,697 - #47 char
+INFO  19:15:44,697 - #47 y
+INFO  19:15:44,697 - #36 =
+INFO  19:15:44,698 - #48 1
+INFO  19:15:44,698 - #37 ;
+INFO  19:15:44,698 - #47 char
+INFO  19:15:44,699 - #47 zna
+INFO  19:15:44,699 - #39 ,
+INFO  19:15:44,700 - #47 beta
+INFO  19:15:44,701 - #44 [
+INFO  19:15:44,701 - #45 ]
+INFO  19:15:44,701 - #39 ,
+INFO  19:15:44,702 - #47 a
+INFO  19:15:44,702 - #37 ;
+INFO  19:15:44,702 - #42 {
+INFO  19:15:44,703 - #47 int
+INFO  19:15:44,703 - #47 aa
+INFO  19:15:44,703 - #40 (
+INFO  19:15:44,704 - #47 int
+INFO  19:15:44,705 - #47 a
+INFO  19:15:44,705 - #41 )
+INFO  19:15:44,706 - #47 int
+INFO  19:15:44,707 - #47 a
+INFO  19:15:44,708 - #37 ;
+INFO  19:15:44,708 - #42 {
+INFO  19:15:44,708 - #43 }
+INFO  19:15:44,709 - #5 void
+INFO  19:15:44,710 - #47 main
+INFO  19:15:44,711 - #40 (
+INFO  19:15:44,711 - #41 )
+INFO  19:15:44,712 - #42 {
+INFO  19:15:44,712 - #43 }
+INFO  19:15:44,712 - #43 }
+INFO  19:15:44,727 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      MultiProgramDeclarationList(
+        NoDecl(
+        ) [NoDecl]
+        ConstProgramDeclaration(
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleConstDeclaration(
+              ConstValue(
+               i
+                ConstOptionNumber(
+                  NumberConstant(
+                   1
+                  ) [NumberConstant]
+                ) [ConstOptionNumber]
+              ) [ConstValue]
+            ) [SingleConstDeclaration]
+          ) [ConstDeclaration]
+        ) [ConstProgramDeclaration]
+      ) [MultiProgramDeclarationList]
+      ConstProgramDeclaration(
+        ConstDeclaration(
+          Type(
+           char
+          ) [Type]
+          SingleConstDeclaration(
+            ConstValue(
+             y
+              ConstOptionChar(
+                CharConstant(
+                 1
+                ) [CharConstant]
+              ) [ConstOptionChar]
+            ) [ConstValue]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclaration]
+      ) [ConstProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+        VarDeclarationList(
+          VarDeclarationList(
+            SingleVarDeclaration(
+              VarValue(
+               zna
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+            VarValue(
+             beta
+              BrackArrayLst(
+              ) [BrackArrayLst]
+            ) [VarValue]
+          ) [VarDeclarationList]
+          VarValue(
+           a
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValue]
+        ) [VarDeclarationList]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  RepeatMethodDeclaration(
+    RepeatMethodDeclaration(
+      NoRepeatMethodDeclaration(
+      ) [NoRepeatMethodDeclaration]
+      MethodDeclaration(
+        MethodHeader(
+          CustomMethodDeclType(
+            Type(
+             int
+            ) [Type]
+          ) [CustomMethodDeclType]
+         aa
+        ) [MethodHeader]
+        FormParamsBegin(
+        ) [FormParamsBegin]
+        FromParameters(
+          SingleFormParams(
+            FromParamsValue(
+              Type(
+               int
+              ) [Type]
+              VarValue(
+               a
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [FromParamsValue]
+          ) [SingleFormParams]
+        ) [FromParameters]
+        FormParamsEnd(
+        ) [FormParamsEnd]
+        MultiMethodDelVarList(
+          NoMethodDelVarList(
+          ) [NoMethodDelVarList]
+          VarDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleVarDeclaration(
+              VarValue(
+               a
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+          ) [VarDeclaration]
+        ) [MultiMethodDelVarList]
+        NoStatementListOpt(
+        ) [NoStatementListOpt]
+      ) [MethodDeclaration]
+    ) [RepeatMethodDeclaration]
+    MethodDeclaration(
+      MethodHeader(
+        VoidMethodDeclType(
+        ) [VoidMethodDeclType]
+       main
+      ) [MethodHeader]
+      FormParamsBegin(
+      ) [FormParamsBegin]
+      NoFromParameters(
+      ) [NoFromParameters]
+      FormParamsEnd(
+      ) [FormParamsEnd]
+      NoMethodDelVarList(
+      ) [NoMethodDelVarList]
+      NoStatementListOpt(
+      ) [NoStatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  19:15:44,728 - ===================================
+INFO  19:15:44,732 - Deklarisana CONST promenljiva i tip:int Vredosti: 1 na liniji 3
+INFO  19:15:44,732 - Deklarisana CONST promenljiva y tip:char Vredosti: 49 na liniji 4
+INFO  19:15:44,732 - Deklarisana promenljiva zna tip:char - GLOBAL VAR na liniji 5
+INFO  19:15:44,733 - Deklarisana promenljiva beta tip:char - GLOBAL VAR na liniji 5
+INFO  19:15:44,733 - Deklarisana promenljiva a tip:char - GLOBAL VAR na liniji 5
+INFO  19:15:44,733 - Obradjuje se metoda: aa na liniji 7
+INFO  19:15:44,733 - Deklarisana promenljiva a tip:int - FUNKCIJA na liniji 7
+INFO  19:15:44,733 - Deklarisana promenljiva a tip:int - FUNKCIJA na liniji 7
+INFO  19:15:44,734 - Obradjuje se metoda: main na liniji 9
+INFO  19:15:44,734 - ===================================
