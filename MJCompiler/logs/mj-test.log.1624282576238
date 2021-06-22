@@ -1,0 +1,72 @@
+INFO  15:35:42,682 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  15:35:42,744 - #2 program
+INFO  15:35:42,744 - #47 test302
+INFO  15:35:42,744 - #20 const
+INFO  15:35:42,746 - #47 int
+INFO  15:35:42,746 - #47 k
+INFO  15:35:42,747 - #47 maki
+ERROR 15:35:42,747 - 
+Sintaksna greska na liniji 3
+INFO  15:35:42,747 - #39 ,
+INFO  15:35:42,747 - #47 l
+INFO  15:35:42,747 - #37 ;
+INFO  15:35:42,749 - #47 char
+INFO  15:35:42,749 - #47 znak
+INFO  15:35:42,749 - #39 ,
+ERROR 15:35:42,749 - Izvrsen oporavak za CONST do ; u liniji 3
+INFO  15:35:42,752 - #47 beta
+INFO  15:35:42,752 - #39 ,
+INFO  15:35:42,752 - #47 iva
+INFO  15:35:42,752 - #37 ;
+INFO  15:35:42,752 - #42 {
+INFO  15:35:42,753 - #43 }
+INFO  15:35:42,766 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      NoDecl(
+      ) [NoDecl]
+      ConstProgramDeclaration(
+        ErrorConstGlobalDeclarationSemi(
+        ) [ErrorConstGlobalDeclarationSemi]
+      ) [ConstProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+        VarDeclarationList(
+          VarDeclarationList(
+            SingleVarDeclaration(
+              VarValue(
+               znak
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+            VarValue(
+             beta
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [VarValue]
+          ) [VarDeclarationList]
+          VarValue(
+           iva
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValue]
+        ) [VarDeclarationList]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  NoRepeatMethodDeclaration(
+  ) [NoRepeatMethodDeclaration]
+) [Program]
+INFO  15:35:42,766 - ===================================
+INFO  15:35:42,769 - Deklarisana promenljiva znak tip:2 na liniji 4
+INFO  15:35:42,769 - Deklarisana promenljiva beta tip:2 na liniji 4
+INFO  15:35:42,769 - Deklarisana promenljiva iva tip:2 na liniji 4
+INFO  15:35:42,769 - ===================================

@@ -1,0 +1,114 @@
+INFO  10:22:14,484 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  10:22:14,538 - #2 program
+INFO  10:22:14,538 - #47 test302
+INFO  10:22:14,538 - #20 const
+INFO  10:22:14,539 - #47 int
+INFO  10:22:14,539 - #47 i
+INFO  10:22:14,540 - #36 =
+INFO  10:22:14,540 - #49 1
+INFO  10:22:14,540 - #37 ;
+INFO  10:22:14,541 - #20 const
+INFO  10:22:14,541 - #47 int
+INFO  10:22:14,541 - #47 y
+INFO  10:22:14,542 - #36 =
+INFO  10:22:14,542 - #49 1
+INFO  10:22:14,542 - #37 ;
+INFO  10:22:14,542 - #47 char
+INFO  10:22:14,542 - #47 zna
+INFO  10:22:14,542 - #39 ,
+INFO  10:22:14,543 - #47 beta
+INFO  10:22:14,543 - #39 ,
+INFO  10:22:14,544 - #47 iva
+INFO  10:22:14,544 - #37 ;
+INFO  10:22:14,544 - #42 {
+INFO  10:22:14,544 - #43 }
+INFO  10:22:14,554 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      MultiProgramDeclarationList(
+        NoDecl(
+        ) [NoDecl]
+        ConstProgramDeclaration(
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleConstDeclaration(
+              ConstValue(
+               i
+                ConstOptionNumber(
+                  NumberConstant(
+                   1
+                  ) [NumberConstant]
+                ) [ConstOptionNumber]
+              ) [ConstValue]
+            ) [SingleConstDeclaration]
+          ) [ConstDeclaration]
+        ) [ConstProgramDeclaration]
+      ) [MultiProgramDeclarationList]
+      ConstProgramDeclaration(
+        ConstDeclaration(
+          Type(
+           int
+          ) [Type]
+          SingleConstDeclaration(
+            ConstValue(
+             y
+              ConstOptionNumber(
+                NumberConstant(
+                 1
+                ) [NumberConstant]
+              ) [ConstOptionNumber]
+            ) [ConstValue]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclaration]
+      ) [ConstProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+        VarDeclarationList(
+          VarDeclarationList(
+            SingleVarDeclaration(
+              VarValue(
+               zna
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+            VarValue(
+             beta
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [VarValue]
+          ) [VarDeclarationList]
+          VarValue(
+           iva
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValue]
+        ) [VarDeclarationList]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  NoRepeatMethodDeclaration(
+  ) [NoRepeatMethodDeclaration]
+) [Program]
+INFO  10:22:14,555 - ===================================
+INFO  10:22:14,559 - Deklarisana CONST promenljiva i tip:int Vredosti: 1 na liniji 3
+INFO  10:22:14,559 - Deklarisana CONST promenljiva y tip:int Vredosti: 1 na liniji 4
+INFO  10:22:14,559 - 1 *** 
+INFO  10:22:14,560 - 2 **
+INFO  10:22:14,560 - Deklarisana VAR promenljiva zna tip:char na liniji 5
+INFO  10:22:14,560 - 1 *** 
+INFO  10:22:14,560 - 2 **
+INFO  10:22:14,560 - Deklarisana VAR promenljiva beta tip:char na liniji 5
+INFO  10:22:14,560 - 1 *** 
+INFO  10:22:14,560 - 2 **
+INFO  10:22:14,560 - Deklarisana VAR promenljiva iva tip:char na liniji 5
+INFO  10:22:14,560 - ===================================

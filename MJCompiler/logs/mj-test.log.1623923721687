@@ -1,0 +1,8 @@
+INFO  11:55:03,128 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  11:55:03,175 - #2 program
+INFO  11:55:03,175 - #21 MJProgram
+INFO  11:55:03,175 - #48 {
+INFO  11:55:03,176 - #20 const
+ERROR 11:55:03,176 - 
+Sintaksna greska na liniji 3
+ERROR 11:55:03,176 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 3

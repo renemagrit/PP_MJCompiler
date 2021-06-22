@@ -1,0 +1,141 @@
+INFO  11:55:31,402 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  11:55:31,442 - #2 program
+INFO  11:55:31,442 - #21 MJProgram
+INFO  11:55:31,442 - #20 const
+INFO  11:55:31,443 - #21 int
+INFO  11:55:31,443 - #21 a
+INFO  11:55:31,444 - #39 =
+INFO  11:55:31,444 - #22 1
+INFO  11:55:31,444 - #43 ;
+INFO  11:55:31,445 - #48 {
+INFO  11:55:31,446 - #5 void
+INFO  11:55:31,446 - #21 f
+INFO  11:55:31,447 - #46 (
+INFO  11:55:31,447 - #21 char
+INFO  11:55:31,447 - #21 ch
+INFO  11:55:31,447 - #45 ,
+INFO  11:55:31,449 - #21 int
+INFO  11:55:31,449 - #21 a
+INFO  11:55:31,449 - #45 ,
+INFO  11:55:31,449 - #21 int
+INFO  11:55:31,449 - #21 arg
+INFO  11:55:31,449 - #47 )
+INFO  11:55:31,450 - #21 int
+INFO  11:55:31,451 - #21 x
+INFO  11:55:31,451 - #43 ;
+INFO  11:55:31,451 - #48 {
+INFO  11:55:31,451 - #3 print
+INFO  11:55:31,451 - #46 (
+INFO  11:55:31,451 - #29 -
+INFO  11:55:31,452 - #21 a
+INFO  11:55:31,452 - #28 +
+INFO  11:55:31,454 - #21 b
+INFO  11:55:31,455 - #26 *
+INFO  11:55:31,455 - #21 l
+INFO  11:55:31,457 - #45 ,
+INFO  11:55:31,458 - #22 0
+INFO  11:55:31,458 - #47 )
+INFO  11:55:31,458 - #43 ;
+INFO  11:55:31,458 - #49 }
+INFO  11:55:31,458 - #49 }
+INFO  11:55:31,461 - Program(
+  MultiProgramDeclarationList(
+    NoDecl(
+    ) [NoDecl]
+    ConstProgramDeclaration(
+      ConstDeclaration(
+        Type(
+        ) [Type]
+        SingleConstDeclaration(
+          ConstValue(
+            ConstOptionNumber(
+              NumberConstatnt(
+              ) [NumberConstatnt]
+            ) [ConstOptionNumber]
+          ) [ConstValue]
+        ) [SingleConstDeclaration]
+      ) [ConstDeclaration]
+    ) [ConstProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  MethodDeclaration(
+    VoidMethodDeclType(
+    ) [VoidMethodDeclType]
+    FromParameters(
+      MultiFormParams(
+        MultiFormParams(
+          SingleFormParams(
+            FromParamsValDerived1(
+              Type(
+              ) [Type]
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [FromParamsValDerived1]
+          ) [SingleFormParams]
+          FromParamsValDerived1(
+            Type(
+            ) [Type]
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [FromParamsValDerived1]
+        ) [MultiFormParams]
+        FromParamsValDerived1(
+          Type(
+          ) [Type]
+          NoBrackArrayList(
+          ) [NoBrackArrayList]
+        ) [FromParamsValDerived1]
+      ) [MultiFormParams]
+    ) [FromParameters]
+    MultiMethodDelVarList(
+      NoMethodDelVarList(
+      ) [NoMethodDelVarList]
+      VarDeclaration(
+        Type(
+        ) [Type]
+        SingleVarDeclaration(
+          VarValDerived1(
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValDerived1]
+        ) [SingleVarDeclaration]
+      ) [VarDeclaration]
+    ) [MultiMethodDelVarList]
+    PrintStatement(
+      PrintStatemtDetail(
+        Expression(
+          NegativePrefix(
+          ) [NegativePrefix]
+          BasicTerm(
+            FactorDesignator(
+            ) [FactorDesignator]
+            NoMulOptTerm(
+            ) [NoMulOptTerm]
+          ) [BasicTerm]
+          ExpressionList(
+            NoExpressionList(
+            ) [NoExpressionList]
+            ExpressionListValue(
+              PlusOp(
+              ) [PlusOp]
+              BasicTerm(
+                FactorDesignator(
+                ) [FactorDesignator]
+                MulOptTerm(
+                  MulOption(
+                  ) [MulOption]
+                  FactorDesignator(
+                  ) [FactorDesignator]
+                ) [MulOptTerm]
+              ) [BasicTerm]
+            ) [ExpressionListValue]
+          ) [ExpressionList]
+        ) [Expression]
+        PrintStatementOption(
+          NumberConstatnt(
+          ) [NumberConstatnt]
+        ) [PrintStatementOption]
+      ) [PrintStatemtDetail]
+    ) [PrintStatement]
+  ) [MethodDeclaration]
+) [Program]
+INFO  11:55:31,462 - ===================================

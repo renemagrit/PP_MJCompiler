@@ -1,0 +1,70 @@
+INFO  15:31:11,114 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  15:31:11,178 - #2 program
+INFO  15:31:11,178 - #47 test302
+INFO  15:31:11,178 - #47 int
+INFO  15:31:11,180 - #47 k
+INFO  15:31:11,181 - #39 ,
+INFO  15:31:11,182 - #47 l
+INFO  15:31:11,183 - #37 ;
+INFO  15:31:11,183 - #47 char
+INFO  15:31:11,184 - #47 znak
+INFO  15:31:11,184 - #39 ,
+INFO  15:31:11,184 - #47 beta
+INFO  15:31:11,184 - #47 ll
+ERROR 15:31:11,184 - 
+Sintaksna greska na liniji 4
+INFO  15:31:11,184 - #39 ,
+INFO  15:31:11,184 - #47 iva
+INFO  15:31:11,185 - #37 ;
+INFO  15:31:11,185 - #42 {
+INFO  15:31:11,186 - #43 }
+INFO  15:31:11,198 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      NoDecl(
+      ) [NoDecl]
+      VarProgramDeclaration(
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationList(
+            SingleVarDeclaration(
+              VarValue(
+               k
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+            VarValue(
+             l
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [VarValue]
+          ) [VarDeclarationList]
+        ) [VarDeclaration]
+      ) [VarProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      ErrorVarGlobalDeclarationComma(
+        SingleVarDeclaration(
+          VarValue(
+           iva
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValue]
+        ) [SingleVarDeclaration]
+      ) [ErrorVarGlobalDeclarationComma]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  NoRepeatMethodDeclaration(
+  ) [NoRepeatMethodDeclaration]
+) [Program]
+INFO  15:31:11,198 - ===================================
+INFO  15:31:11,201 - Deklarisana promenljiva k tip:1 na liniji 3
+INFO  15:31:11,201 - Deklarisana promenljiva l tip:1 na liniji 3
+INFO  15:31:11,201 - Deklarisana promenljiva iva tip:1 na liniji 4
+INFO  15:31:11,201 - ===================================

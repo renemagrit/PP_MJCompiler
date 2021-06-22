@@ -1,0 +1,124 @@
+INFO  16:48:46,027 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  16:48:46,052 - #2 program
+INFO  16:48:46,053 - #21 MJProgram
+INFO  16:48:46,053 - #47 {
+INFO  16:48:46,053 - #21 int
+INFO  16:48:46,053 - #21 maki
+INFO  16:48:46,054 - #45 (
+INFO  16:48:46,054 - #46 )
+INFO  16:48:46,055 - #47 {
+INFO  16:48:46,056 - #8 if
+INFO  16:48:46,056 - #45 (
+INFO  16:48:46,056 - #21 a
+INFO  16:48:46,056 - #30 &&
+INFO  16:48:46,057 - #21 b
+INFO  16:48:46,058 - #46 )
+INFO  16:48:46,058 - #47 {
+INFO  16:48:46,058 - #8 if
+INFO  16:48:46,058 - #45 (
+INFO  16:48:46,058 - #21 g
+INFO  16:48:46,059 - #31 ||
+INFO  16:48:46,059 - #21 j
+INFO  16:48:46,059 - #46 )
+INFO  16:48:46,059 - #21 a
+INFO  16:48:46,059 - #42 ;
+INFO  16:48:46,060 - #9 else
+INFO  16:48:46,060 - #47 {
+INFO  16:48:46,060 - #8 if
+INFO  16:48:46,060 - #45 (
+INFO  16:48:46,060 - #21 a
+INFO  16:48:46,060 - #31 ||
+INFO  16:48:46,060 - #21 k
+INFO  16:48:46,060 - #46 )
+INFO  16:48:46,061 - #21 b
+INFO  16:48:46,061 - #42 ;
+INFO  16:48:46,061 - #9 else
+INFO  16:48:46,061 - #21 l
+INFO  16:48:46,061 - #42 ;
+INFO  16:48:46,061 - #48 }
+INFO  16:48:46,062 - #48 }
+INFO  16:48:46,062 - #48 }
+INFO  16:48:46,063 - #48 }
+INFO  16:48:46,065 - Program(
+  NoDecl(
+  ) [NoDecl]
+  MethodDeclaration(
+    CustomMethodDeclType(
+      Type(
+      ) [Type]
+    ) [CustomMethodDeclType]
+    NoFromParameters(
+    ) [NoFromParameters]
+    NoMethodDelVarList(
+    ) [NoMethodDelVarList]
+    IfDetalStatement(
+      IfStatement(
+        SingleCondition(
+          MultiCondTerm(
+            SingleCondTerm(
+              CondFact(
+              ) [CondFact]
+            ) [SingleCondTerm]
+            CondFact(
+            ) [CondFact]
+          ) [MultiCondTerm]
+        ) [SingleCondition]
+        DetailStatement(
+          IfDetalStatement(
+            IfStatement(
+              MultiCondition(
+                SingleCondition(
+                  SingleCondTerm(
+                    CondFact(
+                    ) [CondFact]
+                  ) [SingleCondTerm]
+                ) [SingleCondition]
+                SingleCondTerm(
+                  CondFact(
+                  ) [CondFact]
+                ) [SingleCondTerm]
+              ) [MultiCondition]
+              DesStatement(
+                DesignatorStatement(
+                ) [DesignatorStatement]
+              ) [DesStatement]
+              ElseStatements(
+                DetailStatement(
+                  IfDetalStatement(
+                    IfStatement(
+                      MultiCondition(
+                        SingleCondition(
+                          SingleCondTerm(
+                            CondFact(
+                            ) [CondFact]
+                          ) [SingleCondTerm]
+                        ) [SingleCondition]
+                        SingleCondTerm(
+                          CondFact(
+                          ) [CondFact]
+                        ) [SingleCondTerm]
+                      ) [MultiCondition]
+                      DesStatement(
+                        DesignatorStatement(
+                        ) [DesignatorStatement]
+                      ) [DesStatement]
+                      ElseStatements(
+                        DesStatement(
+                          DesignatorStatement(
+                          ) [DesignatorStatement]
+                        ) [DesStatement]
+                      ) [ElseStatements]
+                    ) [IfStatement]
+                  ) [IfDetalStatement]
+                ) [DetailStatement]
+              ) [ElseStatements]
+            ) [IfStatement]
+          ) [IfDetalStatement]
+        ) [DetailStatement]
+        NoElseStatement(
+        ) [NoElseStatement]
+      ) [IfStatement]
+    ) [IfDetalStatement]
+  ) [MethodDeclaration]
+) [Program]
+INFO  16:48:46,065 - ===================================

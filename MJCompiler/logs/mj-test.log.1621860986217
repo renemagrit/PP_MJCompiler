@@ -1,0 +1,13 @@
+INFO  14:53:06,359 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  14:53:06,365 - #2 program
+INFO  14:53:06,365 - #21 MJProgram
+INFO  14:53:06,365 - #20 const
+INFO  14:53:06,365 - #21 aaa
+INFO  14:53:06,365 - #38 =
+INFO  14:53:06,365 - #47 {
+INFO  14:53:06,366 - #48 }
+INFO  14:53:06,367 - Program(
+  ConstDeclaration(
+  ) [ConstDeclaration]
+) [Program]
+INFO  14:53:06,367 - ===================================

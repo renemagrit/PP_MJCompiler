@@ -1,0 +1,9 @@
+INFO  17:14:59,489 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  17:14:59,498 - #2 program
+INFO  17:14:59,498 - #21 MJProgram
+INFO  17:14:59,498 - #21 maki
+INFO  17:14:59,498 - #44 ,
+INFO  17:14:59,499 - #21 saki
+ERROR 17:14:59,499 - 
+Sintaksna greska na liniji 2
+ERROR 17:14:59,499 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 2

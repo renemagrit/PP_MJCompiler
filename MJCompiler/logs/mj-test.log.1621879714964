@@ -1,0 +1,32 @@
+INFO  20:08:02,002 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  20:08:02,016 - #2 program
+INFO  20:08:02,016 - #21 MJProgram
+INFO  20:08:02,016 - #20 const
+INFO  20:08:02,016 - #21 int
+INFO  20:08:02,016 - #21 a
+INFO  20:08:02,016 - #38 =
+INFO  20:08:02,017 - #22 1
+INFO  20:08:02,017 - #44 ,
+INFO  20:08:02,018 - #21 b
+INFO  20:08:02,018 - #38 =
+INFO  20:08:02,018 - #22 3
+INFO  20:08:02,018 - #42 ;
+INFO  20:08:02,018 - #47 {
+INFO  20:08:02,018 - #48 }
+INFO  20:08:02,019 - Program(
+  ConstProgramDeclaration(
+    ConstDeclaration(
+      Type(
+      ) [Type]
+      ConstDeckarationList(
+        SingleConstDeclaration(
+          ConstValue(
+          ) [ConstValue]
+        ) [SingleConstDeclaration]
+        ConstValue(
+        ) [ConstValue]
+      ) [ConstDeckarationList]
+    ) [ConstDeclaration]
+  ) [ConstProgramDeclaration]
+) [Program]
+INFO  20:08:02,019 - ===================================

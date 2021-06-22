@@ -1,0 +1,26 @@
+INFO  20:04:50,352 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  20:04:50,369 - #2 program
+INFO  20:04:50,370 - #21 MJProgram
+INFO  20:04:50,370 - #47 {
+INFO  20:04:50,370 - #21 int
+INFO  20:04:50,370 - #21 maki
+INFO  20:04:50,371 - #45 (
+INFO  20:04:50,371 - #21 iny
+INFO  20:04:50,371 - #21 ksi
+INFO  20:04:50,371 - #44 ,
+INFO  20:04:50,373 - #21 int
+INFO  20:04:50,373 - #21 h
+INFO  20:04:50,373 - #49 [
+INFO  20:04:50,374 - #50 ]
+INFO  20:04:50,374 - #44 ,
+INFO  20:04:50,374 - #21 int
+INFO  20:04:50,374 - #21 k
+INFO  20:04:50,374 - #46 )
+INFO  20:04:50,375 - #47 {
+INFO  20:04:50,375 - #21 int
+INFO  20:04:50,375 - #21 k
+INFO  20:04:50,375 - #42 ;
+INFO  20:04:50,376 - #21 float
+ERROR 20:04:50,376 - 
+Sintaksna greska na liniji 5
+ERROR 20:04:50,376 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 5

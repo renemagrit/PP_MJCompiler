@@ -1,0 +1,122 @@
+INFO  00:55:14,942 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  00:55:14,991 - #2 program
+INFO  00:55:14,992 - #21 MJProgram
+INFO  00:55:14,992 - #20 const
+INFO  00:55:14,992 - #21 int
+INFO  00:55:14,992 - #21 a
+INFO  00:55:14,993 - #40 =
+INFO  00:55:14,993 - #23 false
+INFO  00:55:14,993 - #43 ,
+INFO  00:55:14,994 - #21 k
+INFO  00:55:14,994 - #40 =
+INFO  00:55:14,994 - #22 1
+INFO  00:55:14,995 - #41 ;
+INFO  00:55:14,996 - #46 {
+INFO  00:55:14,996 - #5 void
+INFO  00:55:14,997 - #21 f
+INFO  00:55:14,997 - #44 (
+INFO  00:55:14,997 - #21 char
+INFO  00:55:14,997 - #21 ch
+INFO  00:55:14,998 - #43 ,
+INFO  00:55:14,999 - #21 int
+INFO  00:55:14,999 - #21 a
+INFO  00:55:14,999 - #43 ,
+INFO  00:55:14,999 - #21 int
+INFO  00:55:14,999 - #21 arg
+INFO  00:55:14,999 - #45 )
+INFO  00:55:15,000 - #21 int
+INFO  00:55:15,000 - #21 x
+INFO  00:55:15,000 - #41 ;
+INFO  00:55:15,001 - #46 {
+INFO  00:55:15,001 - #4 return
+INFO  00:55:15,002 - #21 sum
+INFO  00:55:15,003 - #45 )
+ERROR 00:55:15,005 - 
+Sintaksna greska na liniji 9
+INFO  00:55:15,005 - #41 ;
+INFO  00:55:15,005 - #47 }
+INFO  00:55:15,005 - #47 }
+ERROR 00:55:15,006 - Izvrsen oporavak do ; u liniji 9
+INFO  00:55:15,008 - Program(
+  MultiProgramDeclarationList(
+    NoDecl(
+    ) [NoDecl]
+    ConstProgramDeclaration(
+      ConstDeclaration(
+        Type(
+        ) [Type]
+        ConstDeckarationList(
+          SingleConstDeclaration(
+            ConstValue(
+              ConstOptionBool(
+                BoolConstant(
+                ) [BoolConstant]
+              ) [ConstOptionBool]
+            ) [ConstValue]
+          ) [SingleConstDeclaration]
+          ConstValue(
+            ConstOptionNumber(
+              NumberConstant(
+              ) [NumberConstant]
+            ) [ConstOptionNumber]
+          ) [ConstValue]
+        ) [ConstDeckarationList]
+      ) [ConstDeclaration]
+    ) [ConstProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  RepeatMethodDeclaration(
+    NoRepeatMethodDeclaration(
+    ) [NoRepeatMethodDeclaration]
+    MethodDeclaration(
+      VoidMethodDeclType(
+      ) [VoidMethodDeclType]
+      FromParameters(
+        MultiFormParams(
+          MultiFormParams(
+            SingleFormParams(
+              FromParamsValDerived1(
+                Type(
+                ) [Type]
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [FromParamsValDerived1]
+            ) [SingleFormParams]
+            FromParamsValDerived1(
+              Type(
+              ) [Type]
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [FromParamsValDerived1]
+          ) [MultiFormParams]
+          FromParamsValDerived1(
+            Type(
+            ) [Type]
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [FromParamsValDerived1]
+        ) [MultiFormParams]
+      ) [FromParameters]
+      MultiMethodDelVarList(
+        NoMethodDelVarList(
+        ) [NoMethodDelVarList]
+        VarDeclaration(
+          Type(
+          ) [Type]
+          SingleVarDeclaration(
+            VarValDerived1(
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [VarValDerived1]
+          ) [SingleVarDeclaration]
+        ) [VarDeclaration]
+      ) [MultiMethodDelVarList]
+      StatementListOpt(
+        NoStatementListOpt(
+        ) [NoStatementListOpt]
+        StatementDerived1(
+        ) [StatementDerived1]
+      ) [StatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  00:55:15,009 - ===================================

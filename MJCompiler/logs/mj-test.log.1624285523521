@@ -1,0 +1,80 @@
+INFO  16:25:05,302 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  16:25:05,370 - #2 program
+INFO  16:25:05,370 - #47 test302
+INFO  16:25:05,370 - #20 const
+INFO  16:25:05,372 - #47 int
+INFO  16:25:05,372 - #47 i
+INFO  16:25:05,372 - #36 =
+INFO  16:25:05,373 - #49 1
+INFO  16:25:05,373 - #39 ,
+INFO  16:25:05,374 - #47 k
+INFO  16:25:05,374 - #36 =
+INFO  16:25:05,374 - #47 a
+ERROR 16:25:05,374 - 
+Sintaksna greska na liniji 3
+INFO  16:25:05,374 - #39 ,
+INFO  16:25:05,374 - #47 p
+INFO  16:25:05,374 - #36 =
+INFO  16:25:05,375 - #49 0
+INFO  16:25:05,375 - #49 1
+INFO  16:25:05,376 - #37 ;
+INFO  16:25:05,376 - #47 char
+INFO  16:25:05,376 - #47 znak
+INFO  16:25:05,376 - #39 ,
+ERROR 16:25:05,376 - Izvrsen oporavak za CONST do ; u liniji 3
+INFO  16:25:05,379 - #47 beta
+INFO  16:25:05,379 - #39 ,
+INFO  16:25:05,379 - #47 iva
+INFO  16:25:05,379 - #37 ;
+INFO  16:25:05,379 - #42 {
+INFO  16:25:05,380 - #43 }
+INFO  16:25:05,392 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      NoDecl(
+      ) [NoDecl]
+      ConstProgramDeclaration(
+        ErrorConstGlobalDeclarationSemi(
+        ) [ErrorConstGlobalDeclarationSemi]
+      ) [ConstProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+        VarDeclarationList(
+          VarDeclarationList(
+            SingleVarDeclaration(
+              VarValue(
+               znak
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+            VarValue(
+             beta
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [VarValue]
+          ) [VarDeclarationList]
+          VarValue(
+           iva
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValue]
+        ) [VarDeclarationList]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  NoRepeatMethodDeclaration(
+  ) [NoRepeatMethodDeclaration]
+) [Program]
+INFO  16:25:05,392 - ===================================
+INFO  16:25:05,396 - Deklarisana VAR promenljiva znak tip:2 na liniji 4
+INFO  16:25:05,396 - Deklarisana VAR promenljiva beta tip:2 na liniji 4
+INFO  16:25:05,397 - Deklarisana VAR promenljiva iva tip:2 na liniji 4
+INFO  16:25:05,397 - ===================================

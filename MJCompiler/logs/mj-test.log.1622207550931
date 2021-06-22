@@ -1,0 +1,72 @@
+INFO  23:50:06,709 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  23:50:06,733 - #2 program
+INFO  23:50:06,733 - #21 MJProgram
+INFO  23:50:06,733 - #47 {
+INFO  23:50:06,734 - #21 int
+INFO  23:50:06,735 - #21 maki
+INFO  23:50:06,736 - #45 (
+INFO  23:50:06,736 - #46 )
+INFO  23:50:06,736 - #47 {
+INFO  23:50:06,737 - #8 if
+INFO  23:50:06,737 - #45 (
+INFO  23:50:06,737 - #21 a
+INFO  23:50:06,737 - #30 &&
+INFO  23:50:06,738 - #21 b
+INFO  23:50:06,738 - #31 ||
+INFO  23:50:06,738 - #21 c
+INFO  23:50:06,738 - #31 ||
+INFO  23:50:06,739 - #21 h
+INFO  23:50:06,739 - #30 &&
+INFO  23:50:06,739 - #21 j
+INFO  23:50:06,739 - #46 )
+INFO  23:50:06,739 - #9 else
+INFO  23:50:06,739 - #21 b
+INFO  23:50:06,739 - #48 }
+INFO  23:50:06,740 - #48 }
+INFO  23:50:06,742 - Program(
+  NoDecl(
+  ) [NoDecl]
+  MethodDeclaration(
+    CustomMethodDeclType(
+      Type(
+      ) [Type]
+    ) [CustomMethodDeclType]
+    NoFromParameters(
+    ) [NoFromParameters]
+    NoMethodDelVarList(
+    ) [NoMethodDelVarList]
+    IfDetalStatement(
+      IfStatement(
+        MultiCondition(
+          MultiCondition(
+            SingleCondition(
+              MultiCondTerm(
+                SingleCondTerm(
+                  CondFact(
+                  ) [CondFact]
+                ) [SingleCondTerm]
+                CondFact(
+                ) [CondFact]
+              ) [MultiCondTerm]
+            ) [SingleCondition]
+            SingleCondTerm(
+              CondFact(
+              ) [CondFact]
+            ) [SingleCondTerm]
+          ) [MultiCondition]
+          MultiCondTerm(
+            SingleCondTerm(
+              CondFact(
+              ) [CondFact]
+            ) [SingleCondTerm]
+            CondFact(
+            ) [CondFact]
+          ) [MultiCondTerm]
+        ) [MultiCondition]
+        ElseStatement(
+        ) [ElseStatement]
+      ) [IfStatement]
+    ) [IfDetalStatement]
+  ) [MethodDeclaration]
+) [Program]
+INFO  23:50:06,742 - ===================================

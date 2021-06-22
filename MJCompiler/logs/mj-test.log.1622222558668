@@ -1,0 +1,113 @@
+INFO  18:56:39,224 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  18:56:39,248 - #2 program
+INFO  18:56:39,248 - #21 MJProgram
+INFO  18:56:39,248 - #47 {
+INFO  18:56:39,249 - #21 int
+INFO  18:56:39,249 - #21 maki
+INFO  18:56:39,250 - #45 (
+INFO  18:56:39,250 - #46 )
+INFO  18:56:39,251 - #47 {
+INFO  18:56:39,251 - #8 if
+INFO  18:56:39,251 - #45 (
+INFO  18:56:39,251 - #21 a
+INFO  18:56:39,252 - #27 +
+INFO  18:56:39,253 - #21 b
+INFO  18:56:39,254 - #32 ==
+INFO  18:56:39,254 - #28 -
+INFO  18:56:39,255 - #21 l
+INFO  18:56:39,255 - #28 -
+INFO  18:56:39,256 - #21 p
+INFO  18:56:39,256 - #31 ||
+INFO  18:56:39,257 - #21 k
+INFO  18:56:39,257 - #33 !=
+INFO  18:56:39,257 - #21 l
+INFO  18:56:39,258 - #46 )
+INFO  18:56:39,258 - #47 {
+INFO  18:56:39,258 - #21 a
+INFO  18:56:39,258 - #42 ;
+INFO  18:56:39,259 - #48 }
+INFO  18:56:39,259 - #48 }
+INFO  18:56:39,260 - #48 }
+INFO  18:56:39,262 - Program(
+  NoDecl(
+  ) [NoDecl]
+  MethodDeclaration(
+    CustomMethodDeclType(
+      Type(
+      ) [Type]
+    ) [CustomMethodDeclType]
+    NoFromParameters(
+    ) [NoFromParameters]
+    NoMethodDelVarList(
+    ) [NoMethodDelVarList]
+    IfDetalStatement(
+      IfStatement(
+        MultiCondition(
+          SingleCondition(
+            SingleCondTerm(
+              CondFact(
+                Expression(
+                  NoNegativePrefix(
+                  ) [NoNegativePrefix]
+                  ExpressionList(
+                    NoExpressionList(
+                    ) [NoExpressionList]
+                    ExpressionListValue(
+                      PlusOp(
+                      ) [PlusOp]
+                    ) [ExpressionListValue]
+                  ) [ExpressionList]
+                ) [Expression]
+                RelationOpExpr(
+                  IsEqualRelOp(
+                  ) [IsEqualRelOp]
+                  Expression(
+                    NegativePrefix(
+                    ) [NegativePrefix]
+                    ExpressionList(
+                      NoExpressionList(
+                      ) [NoExpressionList]
+                      ExpressionListValue(
+                        MinusOp(
+                        ) [MinusOp]
+                      ) [ExpressionListValue]
+                    ) [ExpressionList]
+                  ) [Expression]
+                ) [RelationOpExpr]
+              ) [CondFact]
+            ) [SingleCondTerm]
+          ) [SingleCondition]
+          SingleCondTerm(
+            CondFact(
+              Expression(
+                NoNegativePrefix(
+                ) [NoNegativePrefix]
+                NoExpressionList(
+                ) [NoExpressionList]
+              ) [Expression]
+              RelationOpExpr(
+                NotEqualRelOp(
+                ) [NotEqualRelOp]
+                Expression(
+                  NoNegativePrefix(
+                  ) [NoNegativePrefix]
+                  NoExpressionList(
+                  ) [NoExpressionList]
+                ) [Expression]
+              ) [RelationOpExpr]
+            ) [CondFact]
+          ) [SingleCondTerm]
+        ) [MultiCondition]
+        DetailStatement(
+          DesStatement(
+            DesignatorStatement(
+            ) [DesignatorStatement]
+          ) [DesStatement]
+        ) [DetailStatement]
+        NoElseStatement(
+        ) [NoElseStatement]
+      ) [IfStatement]
+    ) [IfDetalStatement]
+  ) [MethodDeclaration]
+) [Program]
+INFO  18:56:39,262 - ===================================

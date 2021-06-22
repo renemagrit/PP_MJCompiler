@@ -1,0 +1,50 @@
+INFO  15:19:36,670 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  15:19:36,704 - #2 program
+INFO  15:19:36,705 - #21 MJProgram
+INFO  15:19:36,705 - #47 {
+INFO  15:19:36,706 - #21 int
+INFO  15:19:36,707 - #21 maki
+INFO  15:19:36,708 - #45 (
+INFO  15:19:36,709 - #46 )
+INFO  15:19:36,709 - #47 {
+INFO  15:19:36,710 - #8 if
+INFO  15:19:36,711 - #45 (
+INFO  15:19:36,711 - #21 a
+INFO  15:19:36,711 - #30 &&
+INFO  15:19:36,712 - #21 b
+INFO  15:19:36,712 - #46 )
+INFO  15:19:36,713 - #9 else
+INFO  15:19:36,713 - #21 b
+INFO  15:19:36,713 - #48 }
+INFO  15:19:36,715 - #48 }
+INFO  15:19:36,717 - Program(
+  NoDecl(
+  ) [NoDecl]
+  MethodDeclaration(
+    CustomMethodDeclType(
+      Type(
+      ) [Type]
+    ) [CustomMethodDeclType]
+    NoFromParameters(
+    ) [NoFromParameters]
+    NoMethodDelVarList(
+    ) [NoMethodDelVarList]
+    IfDetalStatement(
+      IfStatement(
+        SingleCondition(
+          MultiCondTerm(
+            SingleCondTerm(
+              CondFact(
+              ) [CondFact]
+            ) [SingleCondTerm]
+            CondFact(
+            ) [CondFact]
+          ) [MultiCondTerm]
+        ) [SingleCondition]
+        ElseStatement(
+        ) [ElseStatement]
+      ) [IfStatement]
+    ) [IfDetalStatement]
+  ) [MethodDeclaration]
+) [Program]
+INFO  15:19:36,718 - ===================================

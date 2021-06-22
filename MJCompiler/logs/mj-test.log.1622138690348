@@ -1,0 +1,57 @@
+INFO  20:01:48,075 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  20:01:48,094 - #2 program
+INFO  20:01:48,095 - #21 MJProgram
+INFO  20:01:48,095 - #47 {
+INFO  20:01:48,096 - #21 int
+INFO  20:01:48,096 - #21 maki
+INFO  20:01:48,097 - #45 (
+INFO  20:01:48,097 - #21 iny
+INFO  20:01:48,097 - #21 ksi
+INFO  20:01:48,097 - #44 ,
+INFO  20:01:48,099 - #21 int
+INFO  20:01:48,099 - #21 h
+INFO  20:01:48,099 - #49 [
+INFO  20:01:48,099 - #50 ]
+INFO  20:01:48,099 - #44 ,
+INFO  20:01:48,100 - #21 int
+INFO  20:01:48,100 - #21 k
+INFO  20:01:48,100 - #46 )
+INFO  20:01:48,100 - #42 ;
+INFO  20:01:48,100 - #48 }
+INFO  20:01:48,102 - Program(
+  NoDecl(
+  ) [NoDecl]
+  MethodDeclaration(
+    CustomMethodDeclType(
+      Type(
+      ) [Type]
+    ) [CustomMethodDeclType]
+    FromParameters(
+      MultiFormParams(
+        MultiFormParams(
+          SingleFormParams(
+            FromParamsValDerived1(
+              Type(
+              ) [Type]
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [FromParamsValDerived1]
+          ) [SingleFormParams]
+          FromParamsValDerived1(
+            Type(
+            ) [Type]
+            BrackArrayList(
+            ) [BrackArrayList]
+          ) [FromParamsValDerived1]
+        ) [MultiFormParams]
+        FromParamsValDerived1(
+          Type(
+          ) [Type]
+          NoBrackArrayList(
+          ) [NoBrackArrayList]
+        ) [FromParamsValDerived1]
+      ) [MultiFormParams]
+    ) [FromParameters]
+  ) [MethodDeclaration]
+) [Program]
+INFO  20:01:48,103 - ===================================

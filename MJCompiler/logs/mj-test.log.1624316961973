@@ -1,0 +1,83 @@
+INFO  01:09:10,138 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  01:09:10,204 - #2 program
+INFO  01:09:10,205 - #47 test302
+INFO  01:09:10,205 - #20 const
+INFO  01:09:10,206 - #47 Bool
+INFO  01:09:10,206 - #47 i
+INFO  01:09:10,207 - #36 =
+INFO  01:09:10,207 - #50 1
+INFO  01:09:10,207 - #37 ;
+INFO  01:09:10,208 - #47 char
+INFO  01:09:10,209 - #47 znak
+INFO  01:09:10,209 - #39 ,
+INFO  01:09:10,211 - #47 beta
+INFO  01:09:10,211 - #39 ,
+INFO  01:09:10,211 - #47 iva
+INFO  01:09:10,211 - #37 ;
+INFO  01:09:10,212 - #42 {
+INFO  01:09:10,212 - #43 }
+INFO  01:09:10,226 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      NoDecl(
+      ) [NoDecl]
+      ConstProgramDeclaration(
+        ConstDeclaration(
+          Type(
+           Bool
+          ) [Type]
+          SingleConstDeclaration(
+            ConstValue(
+             i
+              ConstOptionBool(
+                BoolConstant(
+                 1
+                ) [BoolConstant]
+              ) [ConstOptionBool]
+            ) [ConstValue]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclaration]
+      ) [ConstProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+        VarDeclarationList(
+          VarDeclarationList(
+            SingleVarDeclaration(
+              VarValue(
+               znak
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+            VarValue(
+             beta
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [VarValue]
+          ) [VarDeclarationList]
+          VarValue(
+           iva
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValue]
+        ) [VarDeclarationList]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  NoRepeatMethodDeclaration(
+  ) [NoRepeatMethodDeclaration]
+) [Program]
+INFO  01:09:10,226 - ===================================
+ERROR 01:09:10,229 - Nije pronadjen tip Bool u tabeli simbola! 
+ERROR 01:09:10,230 - Nevalidan tip: noType na liniji 3
+INFO  01:09:10,230 - Deklarisana VAR promenljiva znak tip:2 na liniji 4
+INFO  01:09:10,230 - Deklarisana VAR promenljiva beta tip:2 na liniji 4
+INFO  01:09:10,230 - Deklarisana VAR promenljiva iva tip:2 na liniji 4
+INFO  01:09:10,230 - ===================================

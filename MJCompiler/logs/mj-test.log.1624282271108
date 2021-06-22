@@ -1,0 +1,86 @@
+INFO  15:20:47,745 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  15:20:47,853 - #2 program
+INFO  15:20:47,854 - #47 test302
+INFO  15:20:47,854 - #47 int
+INFO  15:20:47,856 - #47 k
+INFO  15:20:47,857 - #39 ,
+INFO  15:20:47,860 - #47 l
+INFO  15:20:47,860 - #37 ;
+INFO  15:20:47,860 - #47 char
+INFO  15:20:47,861 - #47 znak
+INFO  15:20:47,862 - #39 ,
+INFO  15:20:47,862 - #47 beta
+INFO  15:20:47,862 - #39 ,
+INFO  15:20:47,862 - #47 iva
+INFO  15:20:47,862 - #37 ;
+INFO  15:20:47,863 - #42 {
+INFO  15:20:47,863 - #43 }
+INFO  15:20:47,881 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      NoDecl(
+      ) [NoDecl]
+      VarProgramDeclaration(
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationList(
+            SingleVarDeclaration(
+              VarValue(
+               k
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+            VarValue(
+             l
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [VarValue]
+          ) [VarDeclarationList]
+        ) [VarDeclaration]
+      ) [VarProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+        VarDeclarationList(
+          VarDeclarationList(
+            SingleVarDeclaration(
+              VarValue(
+               znak
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+            VarValue(
+             beta
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [VarValue]
+          ) [VarDeclarationList]
+          VarValue(
+           iva
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValue]
+        ) [VarDeclarationList]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  NoRepeatMethodDeclaration(
+  ) [NoRepeatMethodDeclaration]
+) [Program]
+INFO  15:20:47,881 - ===================================
+INFO  15:20:47,884 - Deklarisana promenljiva k tip:1 na liniji 3
+INFO  15:20:47,885 - Deklarisana promenljiva l tip:1 na liniji 3
+INFO  15:20:47,885 - Deklarisana promenljiva znak tip:2 na liniji 4
+INFO  15:20:47,885 - Deklarisana promenljiva beta tip:2 na liniji 4
+INFO  15:20:47,885 - Deklarisana promenljiva iva tip:2 na liniji 4
+INFO  15:20:47,885 - ===================================

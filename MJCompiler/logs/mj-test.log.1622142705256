@@ -1,0 +1,35 @@
+INFO  21:11:28,841 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  21:11:28,858 - #2 program
+INFO  21:11:28,859 - #21 MJProgram
+INFO  21:11:28,859 - #47 {
+INFO  21:11:28,859 - #21 int
+INFO  21:11:28,859 - #21 maki
+INFO  21:11:28,860 - #45 (
+INFO  21:11:28,860 - #46 )
+INFO  21:11:28,861 - #21 int
+INFO  21:11:28,862 - #21 k
+INFO  21:11:28,862 - #44 ,
+INFO  21:11:28,863 - #21 k
+INFO  21:11:28,863 - #49 [
+INFO  21:11:28,863 - #50 ]
+INFO  21:11:28,863 - #42 ;
+INFO  21:11:28,863 - #21 int
+INFO  21:11:28,863 - #21 k
+INFO  21:11:28,864 - #44 ,
+INFO  21:11:28,864 - #21 k
+INFO  21:11:28,864 - #49 [
+INFO  21:11:28,864 - #50 ]
+INFO  21:11:28,864 - #42 ;
+INFO  21:11:28,864 - #21 int
+INFO  21:11:28,864 - #21 k
+INFO  21:11:28,864 - #44 ,
+INFO  21:11:28,864 - #21 k
+INFO  21:11:28,864 - #49 [
+INFO  21:11:28,864 - #50 ]
+INFO  21:11:28,864 - #42 ;
+INFO  21:11:28,864 - #47 {
+INFO  21:11:28,865 - #48 }
+INFO  21:11:28,865 - #42 ;
+ERROR 21:11:28,865 - 
+Sintaksna greska na liniji 7
+ERROR 21:11:28,865 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 7

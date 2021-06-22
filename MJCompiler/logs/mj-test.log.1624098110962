@@ -1,0 +1,159 @@
+INFO  12:08:39,055 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  12:08:39,109 - #2 program
+INFO  12:08:39,110 - #21 test302
+INFO  12:08:39,110 - #20 const
+INFO  12:08:39,110 - #21 int
+INFO  12:08:39,110 - #21 jedan
+INFO  12:08:39,111 - #40 =
+INFO  12:08:39,111 - #22 1
+INFO  12:08:39,111 - #41 ;
+INFO  12:08:39,112 - #21 int
+INFO  12:08:39,113 - #21 i
+INFO  12:08:39,113 - #43 ,
+INFO  12:08:39,114 - #21 j
+INFO  12:08:39,114 - #41 ;
+INFO  12:08:39,114 - #21 bool
+INFO  12:08:39,115 - #21 ibool
+INFO  12:08:39,115 - #41 ;
+INFO  12:08:39,116 - #21 int
+INFO  12:08:39,116 - #21 niz
+INFO  12:08:39,116 - #48 [
+INFO  12:08:39,117 - #49 ]
+INFO  12:08:39,117 - #41 ;
+INFO  12:08:39,117 - #46 {
+INFO  12:08:39,117 - #21 int
+INFO  12:08:39,118 - #21 sum
+INFO  12:08:39,118 - #44 (
+INFO  12:08:39,118 - #21 int
+INFO  12:08:39,118 - #21 z
+INFO  12:08:39,118 - #43 ,
+INFO  12:08:39,118 - #21 int
+INFO  12:08:39,119 - #21 d
+INFO  12:08:39,119 - #45 )
+INFO  12:08:39,119 - #46 {
+INFO  12:08:39,120 - #21 i
+INFO  12:08:39,120 - #40 =
+INFO  12:08:39,121 - #21 inkrement
+INFO  12:08:39,123 - #21 i
+ERROR 12:08:39,123 - 
+Sintaksna greska na liniji 16
+INFO  12:08:39,123 - #43 ,
+INFO  12:08:39,123 - #22 1
+INFO  12:08:39,123 - #45 )
+INFO  12:08:39,124 - #41 ;
+INFO  12:08:39,124 - #47 }
+INFO  12:08:39,124 - #47 }
+ERROR 12:08:39,124 - Izvrsen oporavak za AssignOp do ; u liniji 16
+INFO  12:08:39,127 - Program(
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      MultiProgramDeclarationList(
+        MultiProgramDeclarationList(
+          NoDecl(
+          ) [NoDecl]
+          ConstProgramDeclaration(
+            ConstDeclaration(
+              Type(
+              ) [Type]
+              SingleConstDeclaration(
+                ConstValue(
+                  ConstOptionNumber(
+                    NumberConstant(
+                    ) [NumberConstant]
+                  ) [ConstOptionNumber]
+                ) [ConstValue]
+              ) [SingleConstDeclaration]
+            ) [ConstDeclaration]
+          ) [ConstProgramDeclaration]
+        ) [MultiProgramDeclarationList]
+        VarProgramDeclaration(
+          VarDeclaration(
+            Type(
+            ) [Type]
+            VarDeclarationList(
+              SingleVarDeclaration(
+                VarValDerived1(
+                  NoBrackArrayList(
+                  ) [NoBrackArrayList]
+                ) [VarValDerived1]
+              ) [SingleVarDeclaration]
+              VarValDerived1(
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValDerived1]
+            ) [VarDeclarationList]
+          ) [VarDeclaration]
+        ) [VarProgramDeclaration]
+      ) [MultiProgramDeclarationList]
+      VarProgramDeclaration(
+        VarDeclaration(
+          Type(
+          ) [Type]
+          SingleVarDeclaration(
+            VarValDerived1(
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [VarValDerived1]
+          ) [SingleVarDeclaration]
+        ) [VarDeclaration]
+      ) [VarProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+        ) [Type]
+        SingleVarDeclaration(
+          VarValDerived1(
+            BrackArrayList(
+            ) [BrackArrayList]
+          ) [VarValDerived1]
+        ) [SingleVarDeclaration]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  RepeatMethodDeclaration(
+    NoRepeatMethodDeclaration(
+    ) [NoRepeatMethodDeclaration]
+    MethodDeclaration(
+      CustomMethodDeclType(
+        Type(
+        ) [Type]
+      ) [CustomMethodDeclType]
+      FromParameters(
+        MultiFormParams(
+          SingleFormParams(
+            FromParamsValDerived1(
+              Type(
+              ) [Type]
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [FromParamsValDerived1]
+          ) [SingleFormParams]
+          FromParamsValDerived1(
+            Type(
+            ) [Type]
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [FromParamsValDerived1]
+        ) [MultiFormParams]
+      ) [FromParameters]
+      NoMethodDelVarList(
+      ) [NoMethodDelVarList]
+      StatementListOpt(
+        NoStatementListOpt(
+        ) [NoStatementListOpt]
+        DesStatement(
+          DesignatorStatementAssign(
+            Designator(
+              NoDsgnList(
+              ) [NoDsgnList]
+            ) [Designator]
+            ErrorAssignExpression(
+            ) [ErrorAssignExpression]
+          ) [DesignatorStatementAssign]
+        ) [DesStatement]
+      ) [StatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  12:08:39,128 - ===================================

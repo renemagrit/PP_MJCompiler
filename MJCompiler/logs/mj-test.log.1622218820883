@@ -1,0 +1,142 @@
+INFO  18:19:59,522 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  18:19:59,547 - #2 program
+INFO  18:19:59,547 - #21 MJProgram
+INFO  18:19:59,547 - #47 {
+INFO  18:19:59,548 - #21 int
+INFO  18:19:59,548 - #21 maki
+INFO  18:19:59,549 - #45 (
+INFO  18:19:59,549 - #46 )
+INFO  18:19:59,549 - #47 {
+INFO  18:19:59,550 - #8 if
+INFO  18:19:59,550 - #45 (
+INFO  18:19:59,550 - #21 a
+INFO  18:19:59,550 - #44 ,
+INFO  18:19:59,551 - #21 b
+INFO  18:19:59,551 - #46 )
+INFO  18:19:59,552 - #47 {
+INFO  18:19:59,552 - #8 if
+INFO  18:19:59,552 - #45 (
+INFO  18:19:59,552 - #21 g
+INFO  18:19:59,552 - #31 ||
+INFO  18:19:59,553 - #21 j
+INFO  18:19:59,553 - #46 )
+INFO  18:19:59,553 - #21 a
+INFO  18:19:59,553 - #42 ;
+INFO  18:19:59,554 - #9 else
+INFO  18:19:59,554 - #47 {
+INFO  18:19:59,554 - #8 if
+INFO  18:19:59,554 - #45 (
+INFO  18:19:59,554 - #21 a
+INFO  18:19:59,554 - #31 ||
+INFO  18:19:59,554 - #21 k
+INFO  18:19:59,554 - #46 )
+INFO  18:19:59,554 - #21 b
+INFO  18:19:59,555 - #42 ;
+INFO  18:19:59,555 - #9 else
+INFO  18:19:59,555 - #21 l
+INFO  18:19:59,555 - #42 ;
+INFO  18:19:59,555 - #48 }
+INFO  18:19:59,556 - #48 }
+INFO  18:19:59,556 - #48 }
+INFO  18:19:59,556 - #48 }
+INFO  18:19:59,558 - Program(
+  NoDecl(
+  ) [NoDecl]
+  MethodDeclaration(
+    CustomMethodDeclType(
+      Type(
+      ) [Type]
+    ) [CustomMethodDeclType]
+    NoFromParameters(
+    ) [NoFromParameters]
+    NoMethodDelVarList(
+    ) [NoMethodDelVarList]
+    IfDetalStatement(
+      IfStatement(
+        SingleCondition(
+          SingleCondTerm(
+            CondFact(
+              Expression(
+              ) [Expression]
+              RelationOpExpr(
+                Expression(
+                ) [Expression]
+              ) [RelationOpExpr]
+            ) [CondFact]
+          ) [SingleCondTerm]
+        ) [SingleCondition]
+        DetailStatement(
+          IfDetalStatement(
+            IfStatement(
+              MultiCondition(
+                SingleCondition(
+                  SingleCondTerm(
+                    CondFact(
+                      Expression(
+                      ) [Expression]
+                      NoRelationOpExpr(
+                      ) [NoRelationOpExpr]
+                    ) [CondFact]
+                  ) [SingleCondTerm]
+                ) [SingleCondition]
+                SingleCondTerm(
+                  CondFact(
+                    Expression(
+                    ) [Expression]
+                    NoRelationOpExpr(
+                    ) [NoRelationOpExpr]
+                  ) [CondFact]
+                ) [SingleCondTerm]
+              ) [MultiCondition]
+              DesStatement(
+                DesignatorStatement(
+                ) [DesignatorStatement]
+              ) [DesStatement]
+              ElseStatements(
+                DetailStatement(
+                  IfDetalStatement(
+                    IfStatement(
+                      MultiCondition(
+                        SingleCondition(
+                          SingleCondTerm(
+                            CondFact(
+                              Expression(
+                              ) [Expression]
+                              NoRelationOpExpr(
+                              ) [NoRelationOpExpr]
+                            ) [CondFact]
+                          ) [SingleCondTerm]
+                        ) [SingleCondition]
+                        SingleCondTerm(
+                          CondFact(
+                            Expression(
+                            ) [Expression]
+                            NoRelationOpExpr(
+                            ) [NoRelationOpExpr]
+                          ) [CondFact]
+                        ) [SingleCondTerm]
+                      ) [MultiCondition]
+                      DesStatement(
+                        DesignatorStatement(
+                        ) [DesignatorStatement]
+                      ) [DesStatement]
+                      ElseStatements(
+                        DesStatement(
+                          DesignatorStatement(
+                          ) [DesignatorStatement]
+                        ) [DesStatement]
+                      ) [ElseStatements]
+                    ) [IfStatement]
+                  ) [IfDetalStatement]
+                ) [DetailStatement]
+              ) [ElseStatements]
+            ) [IfStatement]
+          ) [IfDetalStatement]
+        ) [DetailStatement]
+        NoElseStatement(
+        ) [NoElseStatement]
+      ) [IfStatement]
+    ) [IfDetalStatement]
+  ) [MethodDeclaration]
+) [Program]
+INFO  18:19:59,559 - ===================================

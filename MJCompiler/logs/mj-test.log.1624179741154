@@ -1,0 +1,65 @@
+INFO  11:01:46,249 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  11:01:46,301 - #2 program
+INFO  11:01:46,301 - #21 test302
+INFO  11:01:46,301 - #20 const
+INFO  11:01:46,301 - #21 int
+INFO  11:01:46,302 - #21 k
+INFO  11:01:46,302 - #22 1
+ERROR 11:01:46,302 - 
+Sintaksna greska na liniji 3
+INFO  11:01:46,302 - #41 ;
+INFO  11:01:46,302 - #46 {
+INFO  11:01:46,302 - #21 int
+INFO  11:01:46,303 - #21 inkrement
+ERROR 11:01:46,303 - Izvrsen oporavak za VarDecl do , ili ) u liniji 8
+INFO  11:01:46,304 - #44 (
+INFO  11:01:46,305 - #21 int
+INFO  11:01:46,305 - #21 a
+INFO  11:01:46,305 - #43 ,
+INFO  11:01:46,306 - #21 int
+INFO  11:01:46,306 - #21 y
+INFO  11:01:46,307 - #45 )
+INFO  11:01:46,307 - #46 {
+INFO  11:01:46,308 - #47 }
+INFO  11:01:46,308 - #47 }
+INFO  11:01:46,309 - Program(
+  MultiProgramDeclarationList(
+    NoDecl(
+    ) [NoDecl]
+    ErrorConstDeclaration(
+    ) [ErrorConstDeclaration]
+  ) [MultiProgramDeclarationList]
+  RepeatMethodDeclaration(
+    NoRepeatMethodDeclaration(
+    ) [NoRepeatMethodDeclaration]
+    MethodDeclaration(
+      CustomMethodDeclType(
+        Type(
+        ) [Type]
+      ) [CustomMethodDeclType]
+      FromParameters(
+        MultiFormParams(
+          SingleFormParams(
+            FromParamsValue(
+              Type(
+              ) [Type]
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [FromParamsValue]
+          ) [SingleFormParams]
+          FromParamsValue(
+            Type(
+            ) [Type]
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [FromParamsValue]
+        ) [MultiFormParams]
+      ) [FromParameters]
+      NoMethodDelVarList(
+      ) [NoMethodDelVarList]
+      NoStatementListOpt(
+      ) [NoStatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  11:01:46,310 - ===================================

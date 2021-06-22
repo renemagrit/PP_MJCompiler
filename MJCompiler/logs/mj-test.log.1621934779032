@@ -1,0 +1,151 @@
+INFO  11:25:51,400 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  11:25:51,416 - #2 program
+INFO  11:25:51,416 - #21 MJProgram
+INFO  11:25:51,416 - #20 const
+INFO  11:25:51,417 - #21 int
+INFO  11:25:51,417 - #21 a
+INFO  11:25:51,417 - #38 =
+INFO  11:25:51,417 - #22 1
+INFO  11:25:51,418 - #44 ,
+INFO  11:25:51,419 - #21 b
+INFO  11:25:51,419 - #38 =
+INFO  11:25:51,419 - #22 3
+INFO  11:25:51,419 - #42 ;
+INFO  11:25:51,419 - #21 int
+INFO  11:25:51,420 - #21 g
+INFO  11:25:51,420 - #44 ,
+INFO  11:25:51,422 - #21 h
+INFO  11:25:51,423 - #49 [
+INFO  11:25:51,423 - #50 ]
+INFO  11:25:51,423 - #42 ;
+INFO  11:25:51,423 - #20 const
+INFO  11:25:51,424 - #21 int
+INFO  11:25:51,424 - #21 a
+INFO  11:25:51,424 - #38 =
+INFO  11:25:51,424 - #22 1
+INFO  11:25:51,424 - #44 ,
+INFO  11:25:51,424 - #21 b
+INFO  11:25:51,424 - #38 =
+INFO  11:25:51,425 - #22 3
+INFO  11:25:51,425 - #42 ;
+INFO  11:25:51,425 - #20 const
+INFO  11:25:51,425 - #21 int
+INFO  11:25:51,425 - #21 g
+INFO  11:25:51,425 - #38 =
+INFO  11:25:51,425 - #22 1
+INFO  11:25:51,425 - #44 ,
+INFO  11:25:51,425 - #21 h
+INFO  11:25:51,426 - #38 =
+INFO  11:25:51,426 - #22 3
+INFO  11:25:51,426 - #42 ;
+INFO  11:25:51,426 - #20 const
+INFO  11:25:51,426 - #21 int
+INFO  11:25:51,426 - #21 a
+INFO  11:25:51,426 - #38 =
+INFO  11:25:51,426 - #22 1
+INFO  11:25:51,426 - #42 ;
+INFO  11:25:51,426 - #20 const
+INFO  11:25:51,427 - #21 int
+INFO  11:25:51,427 - #21 g
+INFO  11:25:51,427 - #38 =
+INFO  11:25:51,427 - #22 1
+INFO  11:25:51,427 - #42 ;
+INFO  11:25:51,427 - #47 {
+INFO  11:25:51,427 - #48 }
+INFO  11:25:51,429 - Program(
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      MultiProgramDeclarationList(
+        MultiProgramDeclarationList(
+          MultiProgramDeclarationList(
+            MultiProgramDeclarationList(
+              NoDecl(
+              ) [NoDecl]
+              ConstProgramDeclaration(
+                ConstDeclaration(
+                  Type(
+                  ) [Type]
+                  ConstDeckarationList(
+                    SingleConstDeclaration(
+                      ConstValue(
+                      ) [ConstValue]
+                    ) [SingleConstDeclaration]
+                    ConstValue(
+                    ) [ConstValue]
+                  ) [ConstDeckarationList]
+                ) [ConstDeclaration]
+              ) [ConstProgramDeclaration]
+            ) [MultiProgramDeclarationList]
+            VarProgramDeclaration(
+              VarDeclaration(
+                Type(
+                ) [Type]
+                VarDeclarationList(
+                  SingleVarDeclaration(
+                    VarValDerived1(
+                      NoBrackArrayList(
+                      ) [NoBrackArrayList]
+                    ) [VarValDerived1]
+                  ) [SingleVarDeclaration]
+                  VarValDerived1(
+                    BrackArrayList(
+                    ) [BrackArrayList]
+                  ) [VarValDerived1]
+                ) [VarDeclarationList]
+              ) [VarDeclaration]
+            ) [VarProgramDeclaration]
+          ) [MultiProgramDeclarationList]
+          ConstProgramDeclaration(
+            ConstDeclaration(
+              Type(
+              ) [Type]
+              ConstDeckarationList(
+                SingleConstDeclaration(
+                  ConstValue(
+                  ) [ConstValue]
+                ) [SingleConstDeclaration]
+                ConstValue(
+                ) [ConstValue]
+              ) [ConstDeckarationList]
+            ) [ConstDeclaration]
+          ) [ConstProgramDeclaration]
+        ) [MultiProgramDeclarationList]
+        ConstProgramDeclaration(
+          ConstDeclaration(
+            Type(
+            ) [Type]
+            ConstDeckarationList(
+              SingleConstDeclaration(
+                ConstValue(
+                ) [ConstValue]
+              ) [SingleConstDeclaration]
+              ConstValue(
+              ) [ConstValue]
+            ) [ConstDeckarationList]
+          ) [ConstDeclaration]
+        ) [ConstProgramDeclaration]
+      ) [MultiProgramDeclarationList]
+      ConstProgramDeclaration(
+        ConstDeclaration(
+          Type(
+          ) [Type]
+          SingleConstDeclaration(
+            ConstValue(
+            ) [ConstValue]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclaration]
+      ) [ConstProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    ConstProgramDeclaration(
+      ConstDeclaration(
+        Type(
+        ) [Type]
+        SingleConstDeclaration(
+          ConstValue(
+          ) [ConstValue]
+        ) [SingleConstDeclaration]
+      ) [ConstDeclaration]
+    ) [ConstProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+) [Program]
+INFO  11:25:51,430 - ===================================

@@ -1,0 +1,14 @@
+INFO  19:45:51,841 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  19:45:51,869 - #2 program
+INFO  19:45:51,869 - #21 MJProgram
+INFO  19:45:51,869 - #47 {
+INFO  19:45:51,870 - #21 int
+INFO  19:45:51,870 - #21 maki
+INFO  19:45:51,871 - #45 (
+INFO  19:45:51,871 - #46 )
+INFO  19:45:51,871 - #47 {
+INFO  19:45:51,872 - #21 DO
+INFO  19:45:51,872 - #47 {
+ERROR 19:45:51,872 - 
+Sintaksna greska na liniji 5
+ERROR 19:45:51,872 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 5

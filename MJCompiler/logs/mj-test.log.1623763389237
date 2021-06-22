@@ -1,0 +1,106 @@
+INFO  15:22:46,810 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  15:22:46,848 - #2 program
+INFO  15:22:46,848 - #21 MJProgram
+INFO  15:22:46,848 - #47 {
+INFO  15:22:46,849 - #5 void
+INFO  15:22:46,849 - #21 f
+INFO  15:22:46,850 - #45 (
+INFO  15:22:46,850 - #21 char
+INFO  15:22:46,850 - #21 ch
+INFO  15:22:46,851 - #44 ,
+INFO  15:22:46,852 - #21 int
+INFO  15:22:46,852 - #21 a
+INFO  15:22:46,852 - #44 ,
+INFO  15:22:46,853 - #21 int
+INFO  15:22:46,853 - #21 arg
+INFO  15:22:46,853 - #46 )
+INFO  15:22:46,853 - #21 int
+INFO  15:22:46,854 - #21 x
+INFO  15:22:46,854 - #42 ;
+INFO  15:22:46,855 - #47 {
+INFO  15:22:46,855 - #3 print
+INFO  15:22:46,855 - #45 (
+INFO  15:22:46,855 - #21 a
+INFO  15:22:46,856 - #27 +
+INFO  15:22:46,858 - #21 b
+INFO  15:22:46,860 - #46 )
+INFO  15:22:46,860 - #42 ;
+INFO  15:22:46,860 - #48 }
+INFO  15:22:46,861 - #48 }
+INFO  15:22:46,863 - Program(
+  NoDecl(
+  ) [NoDecl]
+  MethodDeclaration(
+    VoidMethodDeclType(
+    ) [VoidMethodDeclType]
+    FromParameters(
+      MultiFormParams(
+        MultiFormParams(
+          SingleFormParams(
+            FromParamsValDerived1(
+              Type(
+              ) [Type]
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [FromParamsValDerived1]
+          ) [SingleFormParams]
+          FromParamsValDerived1(
+            Type(
+            ) [Type]
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [FromParamsValDerived1]
+        ) [MultiFormParams]
+        FromParamsValDerived1(
+          Type(
+          ) [Type]
+          NoBrackArrayList(
+          ) [NoBrackArrayList]
+        ) [FromParamsValDerived1]
+      ) [MultiFormParams]
+    ) [FromParameters]
+    MultiMethodDelVarList(
+      NoMethodDelVarList(
+      ) [NoMethodDelVarList]
+      VarDeclaration(
+        Type(
+        ) [Type]
+        SingleVarDeclaration(
+          VarValDerived1(
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValDerived1]
+        ) [SingleVarDeclaration]
+      ) [VarDeclaration]
+    ) [MultiMethodDelVarList]
+    PrintStatement(
+      PrintStatemtDetail(
+        Expression(
+          NoNegativePrefix(
+          ) [NoNegativePrefix]
+          BasicTerm(
+            Factor(
+            ) [Factor]
+            NoMulOptTerm(
+            ) [NoMulOptTerm]
+          ) [BasicTerm]
+          ExpressionList(
+            NoExpressionList(
+            ) [NoExpressionList]
+            ExpressionListValue(
+              PlusOp(
+              ) [PlusOp]
+              BasicTerm(
+                Factor(
+                ) [Factor]
+                NoMulOptTerm(
+                ) [NoMulOptTerm]
+              ) [BasicTerm]
+            ) [ExpressionListValue]
+          ) [ExpressionList]
+        ) [Expression]
+      ) [PrintStatemtDetail]
+    ) [PrintStatement]
+  ) [MethodDeclaration]
+) [Program]
+INFO  15:22:46,864 - ===================================

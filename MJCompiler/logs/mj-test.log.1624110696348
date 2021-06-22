@@ -1,0 +1,53 @@
+INFO  15:50:27,614 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  15:50:27,727 - #2 program
+INFO  15:50:27,728 - #21 test302
+INFO  15:50:27,728 - #46 {
+INFO  15:50:27,729 - #21 int
+INFO  15:50:27,730 - #21 inkrement
+INFO  15:50:27,731 - #44 (
+INFO  15:50:27,731 - #21 int
+INFO  15:50:27,731 - #21 a
+INFO  15:50:27,731 - #21 x
+ERROR 15:50:27,731 - 
+Sintaksna greska na liniji 6
+INFO  15:50:27,732 - #43 ,
+INFO  15:50:27,732 - #21 int
+INFO  15:50:27,732 - #21 y
+INFO  15:50:27,733 - #45 )
+ERROR 15:50:27,733 - Izvrsen oporavak za FormParams do , ili ) u liniji 6
+INFO  15:50:27,736 - #46 {
+INFO  15:50:27,738 - #47 }
+INFO  15:50:27,739 - #47 }
+INFO  15:50:27,744 - Program(
+  NoDecl(
+  ) [NoDecl]
+  RepeatMethodDeclaration(
+    NoRepeatMethodDeclaration(
+    ) [NoRepeatMethodDeclaration]
+    MethodDeclaration(
+      CustomMethodDeclType(
+        Type(
+        ) [Type]
+      ) [CustomMethodDeclType]
+      FromParameters(
+        MultiFormParams(
+          SingleFormParams(
+            ErrorFormalParamesComma(
+            ) [ErrorFormalParamesComma]
+          ) [SingleFormParams]
+          FromParamsValue(
+            Type(
+            ) [Type]
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [FromParamsValue]
+        ) [MultiFormParams]
+      ) [FromParameters]
+      NoMethodDelVarList(
+      ) [NoMethodDelVarList]
+      NoStatementListOpt(
+      ) [NoStatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  15:50:27,744 - ===================================

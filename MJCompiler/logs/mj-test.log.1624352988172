@@ -1,0 +1,141 @@
+INFO  11:09:06,832 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  11:09:06,935 - #2 program
+INFO  11:09:06,935 - #47 test302
+INFO  11:09:06,935 - #20 const
+INFO  11:09:06,937 - #47 int
+INFO  11:09:06,937 - #47 i
+INFO  11:09:06,938 - #36 =
+INFO  11:09:06,938 - #49 1
+INFO  11:09:06,938 - #37 ;
+INFO  11:09:06,939 - #20 const
+INFO  11:09:06,940 - #47 int
+INFO  11:09:06,940 - #47 y
+INFO  11:09:06,940 - #36 =
+INFO  11:09:06,940 - #49 1
+INFO  11:09:06,941 - #37 ;
+INFO  11:09:06,941 - #47 char
+INFO  11:09:06,941 - #47 zna
+INFO  11:09:06,941 - #39 ,
+INFO  11:09:06,944 - #47 beta
+INFO  11:09:06,944 - #44 [
+INFO  11:09:06,945 - #45 ]
+INFO  11:09:06,945 - #39 ,
+INFO  11:09:06,945 - #47 iva
+INFO  11:09:06,945 - #37 ;
+INFO  11:09:06,945 - #42 {
+INFO  11:09:06,946 - #47 int
+INFO  11:09:06,947 - #47 a
+INFO  11:09:06,947 - #40 (
+INFO  11:09:06,948 - #41 )
+INFO  11:09:06,949 - #42 {
+INFO  11:09:06,951 - #43 }
+INFO  11:09:06,953 - #43 }
+INFO  11:09:06,978 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      MultiProgramDeclarationList(
+        NoDecl(
+        ) [NoDecl]
+        ConstProgramDeclaration(
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleConstDeclaration(
+              ConstValue(
+               i
+                ConstOptionNumber(
+                  NumberConstant(
+                   1
+                  ) [NumberConstant]
+                ) [ConstOptionNumber]
+              ) [ConstValue]
+            ) [SingleConstDeclaration]
+          ) [ConstDeclaration]
+        ) [ConstProgramDeclaration]
+      ) [MultiProgramDeclarationList]
+      ConstProgramDeclaration(
+        ConstDeclaration(
+          Type(
+           int
+          ) [Type]
+          SingleConstDeclaration(
+            ConstValue(
+             y
+              ConstOptionNumber(
+                NumberConstant(
+                 1
+                ) [NumberConstant]
+              ) [ConstOptionNumber]
+            ) [ConstValue]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclaration]
+      ) [ConstProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+        VarDeclarationList(
+          VarDeclarationList(
+            SingleVarDeclaration(
+              VarValue(
+               zna
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+            VarValue(
+             beta
+              BrackArrayList(
+              ) [BrackArrayList]
+            ) [VarValue]
+          ) [VarDeclarationList]
+          VarValue(
+           iva
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValue]
+        ) [VarDeclarationList]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  RepeatMethodDeclaration(
+    NoRepeatMethodDeclaration(
+    ) [NoRepeatMethodDeclaration]
+    MethodDeclaration(
+      MethodHeader(
+        CustomMethodDeclType(
+          Type(
+           int
+          ) [Type]
+        ) [CustomMethodDeclType]
+       a
+      ) [MethodHeader]
+      NoFromParameters(
+      ) [NoFromParameters]
+      NoMethodDelVarList(
+      ) [NoMethodDelVarList]
+      NoStatementListOpt(
+      ) [NoStatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  11:09:06,978 - ===================================
+INFO  11:09:06,983 - Deklarisana CONST promenljiva i tip:int Vredosti: 1 na liniji 3
+INFO  11:09:06,983 - Deklarisana CONST promenljiva y tip:int Vredosti: 1 na liniji 4
+INFO  11:09:06,983 - 1 *** 
+INFO  11:09:06,983 - 2 ***
+INFO  11:09:06,984 - Deklarisana VAR promenljiva zna tip:char na liniji 5
+INFO  11:09:06,984 - 2 ***
+INFO  11:09:06,984 - Deklarisana VAR promenljiva beta tip:char na liniji 5
+INFO  11:09:06,984 - 1 *** 
+INFO  11:09:06,984 - 2 ***
+INFO  11:09:06,985 - Deklarisana VAR promenljiva iva tip:char na liniji 5
+INFO  11:09:06,985 - JA NISAM VOID!  na liniji 7
+INFO  11:09:06,985 - Obradjuje se metoda: a na liniji 7
+INFO  11:09:06,985 - ===================================

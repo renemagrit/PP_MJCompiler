@@ -1,0 +1,426 @@
+INFO  16:12:19,740 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  16:12:19,786 - #2 program
+INFO  16:12:19,786 - #21 MJProgram
+INFO  16:12:19,787 - #20 const
+INFO  16:12:19,787 - #21 int
+INFO  16:12:19,787 - #21 a
+INFO  16:12:19,788 - #40 =
+INFO  16:12:19,788 - #23 false
+INFO  16:12:19,788 - #43 ,
+INFO  16:12:19,789 - #21 k
+INFO  16:12:19,789 - #40 =
+INFO  16:12:19,790 - #22 1
+INFO  16:12:19,790 - #41 ;
+INFO  16:12:19,791 - #46 {
+INFO  16:12:19,791 - #5 void
+INFO  16:12:19,791 - #21 f
+INFO  16:12:19,792 - #44 (
+INFO  16:12:19,792 - #21 char
+INFO  16:12:19,792 - #21 ch
+INFO  16:12:19,792 - #43 ,
+INFO  16:12:19,793 - #21 int
+INFO  16:12:19,793 - #21 a
+INFO  16:12:19,794 - #43 ,
+INFO  16:12:19,794 - #21 int
+INFO  16:12:19,794 - #21 arg
+INFO  16:12:19,794 - #45 )
+INFO  16:12:19,794 - #21 int
+INFO  16:12:19,795 - #21 x
+INFO  16:12:19,795 - #41 ;
+INFO  16:12:19,796 - #46 {
+INFO  16:12:19,796 - #3 print
+INFO  16:12:19,797 - #44 (
+INFO  16:12:19,797 - #30 -
+INFO  16:12:19,798 - #21 a
+INFO  16:12:19,799 - #29 +
+INFO  16:12:19,801 - #21 b
+INFO  16:12:19,802 - #27 *
+INFO  16:12:19,802 - #21 l
+INFO  16:12:19,803 - #43 ,
+INFO  16:12:19,804 - #22 0
+INFO  16:12:19,804 - #45 )
+INFO  16:12:19,804 - #41 ;
+INFO  16:12:19,804 - #12 break
+INFO  16:12:19,805 - #41 ;
+INFO  16:12:19,805 - #13 continue
+INFO  16:12:19,806 - #41 ;
+INFO  16:12:19,806 - #8 if
+INFO  16:12:19,806 - #44 (
+INFO  16:12:19,806 - #21 a
+INFO  16:12:19,807 - #36 <
+INFO  16:12:19,807 - #21 b
+INFO  16:12:19,808 - #45 )
+INFO  16:12:19,810 - #46 {
+INFO  16:12:19,810 - #14 switch
+INFO  16:12:19,810 - #44 (
+INFO  16:12:19,810 - #21 a
+INFO  16:12:19,810 - #45 )
+INFO  16:12:19,810 - #46 {
+INFO  16:12:19,810 - #15 case
+INFO  16:12:19,810 - #22 1
+INFO  16:12:19,810 - #42 :
+INFO  16:12:19,810 - #12 break
+INFO  16:12:19,811 - #41 ;
+INFO  16:12:19,811 - #15 case
+INFO  16:12:19,811 - #22 2
+INFO  16:12:19,811 - #42 :
+INFO  16:12:19,812 - #12 break
+INFO  16:12:19,812 - #41 ;
+INFO  16:12:19,812 - #47 }
+INFO  16:12:19,812 - #21 a
+INFO  16:12:19,812 - #40 =
+INFO  16:12:19,814 - #21 a
+INFO  16:12:19,816 - #29 +
+INFO  16:12:19,816 - #21 b
+INFO  16:12:19,816 - #41 ;
+INFO  16:12:19,816 - #12 break
+INFO  16:12:19,817 - #41 ;
+INFO  16:12:19,817 - #47 }
+INFO  16:12:19,817 - #9 else
+INFO  16:12:19,817 - #46 {
+INFO  16:12:19,817 - #21 a
+INFO  16:12:19,817 - #26 --
+INFO  16:12:19,817 - #41 ;
+INFO  16:12:19,817 - #4 return
+INFO  16:12:19,817 - #21 a
+INFO  16:12:19,818 - #29 +
+INFO  16:12:19,818 - #21 b
+INFO  16:12:19,818 - #41 ;
+INFO  16:12:19,818 - #47 }
+INFO  16:12:19,818 - #47 }
+INFO  16:12:19,819 - #47 }
+INFO  16:12:19,822 - Program(
+  MultiProgramDeclarationList(
+    NoDecl(
+    ) [NoDecl]
+    ConstProgramDeclaration(
+      ConstDeclaration(
+        Type(
+        ) [Type]
+        ConstDeckarationList(
+          SingleConstDeclaration(
+            ConstValue(
+              ConstOptionBool(
+                BoolConstant(
+                ) [BoolConstant]
+              ) [ConstOptionBool]
+            ) [ConstValue]
+          ) [SingleConstDeclaration]
+          ConstValue(
+            ConstOptionNumber(
+              NumberConstant(
+              ) [NumberConstant]
+            ) [ConstOptionNumber]
+          ) [ConstValue]
+        ) [ConstDeckarationList]
+      ) [ConstDeclaration]
+    ) [ConstProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  MethodDeclaration(
+    VoidMethodDeclType(
+    ) [VoidMethodDeclType]
+    FromParameters(
+      MultiFormParams(
+        MultiFormParams(
+          SingleFormParams(
+            FromParamsValDerived1(
+              Type(
+              ) [Type]
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [FromParamsValDerived1]
+          ) [SingleFormParams]
+          FromParamsValDerived1(
+            Type(
+            ) [Type]
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [FromParamsValDerived1]
+        ) [MultiFormParams]
+        FromParamsValDerived1(
+          Type(
+          ) [Type]
+          NoBrackArrayList(
+          ) [NoBrackArrayList]
+        ) [FromParamsValDerived1]
+      ) [MultiFormParams]
+    ) [FromParameters]
+    MultiMethodDelVarList(
+      NoMethodDelVarList(
+      ) [NoMethodDelVarList]
+      VarDeclaration(
+        Type(
+        ) [Type]
+        SingleVarDeclaration(
+          VarValDerived1(
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValDerived1]
+        ) [SingleVarDeclaration]
+      ) [VarDeclaration]
+    ) [MultiMethodDelVarList]
+    StatementListOpt(
+      StatementListOpt(
+        StatementListOpt(
+          StatementListOpt(
+            NoStatementListOpt(
+            ) [NoStatementListOpt]
+            PrintStatement(
+              PrintStatemtDetail(
+                Expression(
+                  NegativePrefix(
+                  ) [NegativePrefix]
+                  BasicTerm(
+                    FactorDesignator(
+                      Designator(
+                        NoDsgnList(
+                        ) [NoDsgnList]
+                      ) [Designator]
+                    ) [FactorDesignator]
+                    NoMulOptTerm(
+                    ) [NoMulOptTerm]
+                  ) [BasicTerm]
+                  ExpressionList(
+                    NoExpressionList(
+                    ) [NoExpressionList]
+                    ExpressionListValue(
+                      PlusOp(
+                      ) [PlusOp]
+                      BasicTerm(
+                        FactorDesignator(
+                          Designator(
+                            NoDsgnList(
+                            ) [NoDsgnList]
+                          ) [Designator]
+                        ) [FactorDesignator]
+                        MulOptTerm(
+                          MulOption(
+                          ) [MulOption]
+                          FactorDesignator(
+                            Designator(
+                              NoDsgnList(
+                              ) [NoDsgnList]
+                            ) [Designator]
+                          ) [FactorDesignator]
+                        ) [MulOptTerm]
+                      ) [BasicTerm]
+                    ) [ExpressionListValue]
+                  ) [ExpressionList]
+                ) [Expression]
+                PrintStatementOption(
+                  NumberConstant(
+                  ) [NumberConstant]
+                ) [PrintStatementOption]
+              ) [PrintStatemtDetail]
+            ) [PrintStatement]
+          ) [StatementListOpt]
+          BreakStatement(
+          ) [BreakStatement]
+        ) [StatementListOpt]
+        ContinueStatement(
+        ) [ContinueStatement]
+      ) [StatementListOpt]
+      IfDetalStatement(
+        IfStatement(
+          SingleCondition(
+            SingleCondTerm(
+              CondFact(
+                Expression(
+                  NoNegativePrefix(
+                  ) [NoNegativePrefix]
+                  BasicTerm(
+                    FactorDesignator(
+                      Designator(
+                        NoDsgnList(
+                        ) [NoDsgnList]
+                      ) [Designator]
+                    ) [FactorDesignator]
+                    NoMulOptTerm(
+                    ) [NoMulOptTerm]
+                  ) [BasicTerm]
+                  NoExpressionList(
+                  ) [NoExpressionList]
+                ) [Expression]
+                RelationOpExpr(
+                  LessRelOp(
+                  ) [LessRelOp]
+                  Expression(
+                    NoNegativePrefix(
+                    ) [NoNegativePrefix]
+                    BasicTerm(
+                      FactorDesignator(
+                        Designator(
+                          NoDsgnList(
+                          ) [NoDsgnList]
+                        ) [Designator]
+                      ) [FactorDesignator]
+                      NoMulOptTerm(
+                      ) [NoMulOptTerm]
+                    ) [BasicTerm]
+                    NoExpressionList(
+                    ) [NoExpressionList]
+                  ) [Expression]
+                ) [RelationOpExpr]
+              ) [CondFact]
+            ) [SingleCondTerm]
+          ) [SingleCondition]
+          DetailStatement(
+            StatementListOpt(
+              StatementListOpt(
+                StatementListOpt(
+                  NoStatementListOpt(
+                  ) [NoStatementListOpt]
+                  SwitchStatement(
+                    SwitchStatementDetail(
+                      Expression(
+                        NoNegativePrefix(
+                        ) [NoNegativePrefix]
+                        BasicTerm(
+                          FactorDesignator(
+                            Designator(
+                              NoDsgnList(
+                              ) [NoDsgnList]
+                            ) [Designator]
+                          ) [FactorDesignator]
+                          NoMulOptTerm(
+                          ) [NoMulOptTerm]
+                        ) [BasicTerm]
+                        NoExpressionList(
+                        ) [NoExpressionList]
+                      ) [Expression]
+                      SwitchStatementList(
+                        SingleSwitchStatement(
+                          SwitchStatementValue(
+                            NumberConstant(
+                            ) [NumberConstant]
+                            StatementListOpt(
+                              NoStatementListOpt(
+                              ) [NoStatementListOpt]
+                              BreakStatement(
+                              ) [BreakStatement]
+                            ) [StatementListOpt]
+                          ) [SwitchStatementValue]
+                        ) [SingleSwitchStatement]
+                        SwitchStatementValue(
+                          NumberConstant(
+                          ) [NumberConstant]
+                          StatementListOpt(
+                            NoStatementListOpt(
+                            ) [NoStatementListOpt]
+                            BreakStatement(
+                            ) [BreakStatement]
+                          ) [StatementListOpt]
+                        ) [SwitchStatementValue]
+                      ) [SwitchStatementList]
+                    ) [SwitchStatementDetail]
+                  ) [SwitchStatement]
+                ) [StatementListOpt]
+                DesStatement(
+                  DesignatorStatementAssign(
+                    Designator(
+                      NoDsgnList(
+                      ) [NoDsgnList]
+                    ) [Designator]
+                    AssignOperator(
+                    ) [AssignOperator]
+                    Expression(
+                      NoNegativePrefix(
+                      ) [NoNegativePrefix]
+                      BasicTerm(
+                        FactorDesignator(
+                          Designator(
+                            NoDsgnList(
+                            ) [NoDsgnList]
+                          ) [Designator]
+                        ) [FactorDesignator]
+                        NoMulOptTerm(
+                        ) [NoMulOptTerm]
+                      ) [BasicTerm]
+                      ExpressionList(
+                        NoExpressionList(
+                        ) [NoExpressionList]
+                        ExpressionListValue(
+                          PlusOp(
+                          ) [PlusOp]
+                          BasicTerm(
+                            FactorDesignator(
+                              Designator(
+                                NoDsgnList(
+                                ) [NoDsgnList]
+                              ) [Designator]
+                            ) [FactorDesignator]
+                            NoMulOptTerm(
+                            ) [NoMulOptTerm]
+                          ) [BasicTerm]
+                        ) [ExpressionListValue]
+                      ) [ExpressionList]
+                    ) [Expression]
+                  ) [DesignatorStatementAssign]
+                ) [DesStatement]
+              ) [StatementListOpt]
+              BreakStatement(
+              ) [BreakStatement]
+            ) [StatementListOpt]
+          ) [DetailStatement]
+          ElseStatements(
+            DetailStatement(
+              StatementListOpt(
+                StatementListOpt(
+                  NoStatementListOpt(
+                  ) [NoStatementListOpt]
+                  DesStatement(
+                    DesignatorStatementDec(
+                      Designator(
+                        NoDsgnList(
+                        ) [NoDsgnList]
+                      ) [Designator]
+                    ) [DesignatorStatementDec]
+                  ) [DesStatement]
+                ) [StatementListOpt]
+                ReturnStatement(
+                  ReturnStatementDetail(
+                    ReturnExpression(
+                      Expression(
+                        NoNegativePrefix(
+                        ) [NoNegativePrefix]
+                        BasicTerm(
+                          FactorDesignator(
+                            Designator(
+                              NoDsgnList(
+                              ) [NoDsgnList]
+                            ) [Designator]
+                          ) [FactorDesignator]
+                          NoMulOptTerm(
+                          ) [NoMulOptTerm]
+                        ) [BasicTerm]
+                        ExpressionList(
+                          NoExpressionList(
+                          ) [NoExpressionList]
+                          ExpressionListValue(
+                            PlusOp(
+                            ) [PlusOp]
+                            BasicTerm(
+                              FactorDesignator(
+                                Designator(
+                                  NoDsgnList(
+                                  ) [NoDsgnList]
+                                ) [Designator]
+                              ) [FactorDesignator]
+                              NoMulOptTerm(
+                              ) [NoMulOptTerm]
+                            ) [BasicTerm]
+                          ) [ExpressionListValue]
+                        ) [ExpressionList]
+                      ) [Expression]
+                    ) [ReturnExpression]
+                  ) [ReturnStatementDetail]
+                ) [ReturnStatement]
+              ) [StatementListOpt]
+            ) [DetailStatement]
+          ) [ElseStatements]
+        ) [IfStatement]
+      ) [IfDetalStatement]
+    ) [StatementListOpt]
+  ) [MethodDeclaration]
+) [Program]
+INFO  16:12:19,823 - ===================================

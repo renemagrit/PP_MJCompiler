@@ -1,0 +1,34 @@
+INFO  12:14:20,467 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  12:14:20,523 - #2 program
+INFO  12:14:20,523 - #48 test302
+INFO  12:14:20,524 - #48 int
+INFO  12:14:20,524 - #48 k
+INFO  12:14:20,525 - #38 ;
+INFO  12:14:20,526 - #43 {
+INFO  12:14:20,527 - #44 }
+INFO  12:14:20,528 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    NoDecl(
+    ) [NoDecl]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+        SingleVarDeclaration(
+          VarValue(
+           k
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValue]
+        ) [SingleVarDeclaration]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  NoRepeatMethodDeclaration(
+  ) [NoRepeatMethodDeclaration]
+) [Program]
+INFO  12:14:20,529 - ===================================

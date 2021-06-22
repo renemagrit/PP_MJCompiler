@@ -1,0 +1,74 @@
+INFO  15:36:16,243 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  15:36:16,296 - #2 program
+INFO  15:36:16,297 - #47 test302
+INFO  15:36:16,297 - #20 const
+INFO  15:36:16,298 - #47 int
+INFO  15:36:16,298 - #47 k
+INFO  15:36:16,299 - #39 ,
+ERROR 15:36:16,299 - 
+Sintaksna greska na liniji 3
+INFO  15:36:16,299 - #47 l
+INFO  15:36:16,299 - #47 p
+INFO  15:36:16,299 - #39 ,
+INFO  15:36:16,300 - #47 myConst
+INFO  15:36:16,300 - #37 ;
+INFO  15:36:16,300 - #47 char
+INFO  15:36:16,301 - #47 znak
+INFO  15:36:16,301 - #39 ,
+ERROR 15:36:16,301 - Izvrsen oporavak za CONST do ; u liniji 3
+INFO  15:36:16,303 - #47 beta
+INFO  15:36:16,303 - #39 ,
+INFO  15:36:16,303 - #47 iva
+INFO  15:36:16,303 - #37 ;
+INFO  15:36:16,304 - #42 {
+INFO  15:36:16,304 - #43 }
+INFO  15:36:16,313 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      NoDecl(
+      ) [NoDecl]
+      ConstProgramDeclaration(
+        ErrorConstGlobalDeclarationSemi(
+        ) [ErrorConstGlobalDeclarationSemi]
+      ) [ConstProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+        VarDeclarationList(
+          VarDeclarationList(
+            SingleVarDeclaration(
+              VarValue(
+               znak
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+            VarValue(
+             beta
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [VarValue]
+          ) [VarDeclarationList]
+          VarValue(
+           iva
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValue]
+        ) [VarDeclarationList]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  NoRepeatMethodDeclaration(
+  ) [NoRepeatMethodDeclaration]
+) [Program]
+INFO  15:36:16,313 - ===================================
+INFO  15:36:16,317 - Deklarisana promenljiva znak tip:2 na liniji 4
+INFO  15:36:16,317 - Deklarisana promenljiva beta tip:2 na liniji 4
+INFO  15:36:16,317 - Deklarisana promenljiva iva tip:2 na liniji 4
+INFO  15:36:16,317 - ===================================

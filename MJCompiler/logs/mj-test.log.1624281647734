@@ -1,0 +1,62 @@
+INFO  15:20:32,497 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  15:20:32,641 - #2 program
+INFO  15:20:32,641 - #47 test302
+INFO  15:20:32,642 - #47 int
+INFO  15:20:32,643 - #47 k
+INFO  15:20:32,644 - #39 ,
+INFO  15:20:32,649 - #47 l
+INFO  15:20:32,649 - #37 ;
+INFO  15:20:32,650 - #47 char
+INFO  15:20:32,651 - #47 znak
+INFO  15:20:32,651 - #39 ,
+INFO  15:20:32,651 - #47 beta
+INFO  15:20:32,651 - #39 ,
+INFO  15:20:32,651 - #47 iva
+INFO  15:20:32,652 - #47 jhjhjh
+ERROR 15:20:32,652 - 
+Sintaksna greska na liniji 4
+INFO  15:20:32,652 - #37 ;
+INFO  15:20:32,652 - #42 {
+INFO  15:20:32,652 - #43 }
+INFO  15:20:32,675 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      NoDecl(
+      ) [NoDecl]
+      VarProgramDeclaration(
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationList(
+            SingleVarDeclaration(
+              VarValue(
+               k
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+            VarValue(
+             l
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [VarValue]
+          ) [VarDeclarationList]
+        ) [VarDeclaration]
+      ) [VarProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      ErrorVarGlobalDeclarationSemi(
+      ) [ErrorVarGlobalDeclarationSemi]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  NoRepeatMethodDeclaration(
+  ) [NoRepeatMethodDeclaration]
+) [Program]
+INFO  15:20:32,676 - ===================================
+INFO  15:20:32,683 - Deklarisana promenljiva k tip:1 na liniji 3
+INFO  15:20:32,684 - Deklarisana promenljiva l tip:1 na liniji 3
+INFO  15:20:32,684 - ===================================

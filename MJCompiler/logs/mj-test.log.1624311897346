@@ -1,0 +1,20 @@
+INFO  23:44:32,035 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  23:44:32,103 - #2 program
+INFO  23:44:32,103 - #47 test302
+INFO  23:44:32,104 - #47 Struct
+INFO  23:44:32,105 - #47 int
+INFO  23:44:32,106 - #47 i
+ERROR 23:44:32,106 - 
+Sintaksna greska na liniji 3
+INFO  23:44:32,106 - #36 =
+INFO  23:44:32,107 - #49 1
+INFO  23:44:32,107 - #39 ,
+INFO  23:44:32,108 - #47 j
+INFO  23:44:32,108 - #36 =
+INFO  23:44:32,108 - #49 2
+INFO  23:44:32,108 - #39 ,
+INFO  23:44:32,109 - #47 k
+INFO  23:44:32,109 - #36 =
+INFO  23:44:32,110 - #49 2
+INFO  23:44:32,110 - #37 ;
+INFO  23:44:32,110 - #47 char

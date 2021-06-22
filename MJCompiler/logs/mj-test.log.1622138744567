@@ -1,0 +1,72 @@
+INFO  20:05:12,196 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  20:05:12,215 - #2 program
+INFO  20:05:12,215 - #21 MJProgram
+INFO  20:05:12,215 - #47 {
+INFO  20:05:12,216 - #21 int
+INFO  20:05:12,216 - #21 maki
+INFO  20:05:12,217 - #45 (
+INFO  20:05:12,217 - #21 iny
+INFO  20:05:12,217 - #21 ksi
+INFO  20:05:12,218 - #44 ,
+INFO  20:05:12,219 - #21 int
+INFO  20:05:12,219 - #21 h
+INFO  20:05:12,220 - #49 [
+INFO  20:05:12,220 - #50 ]
+INFO  20:05:12,220 - #44 ,
+INFO  20:05:12,220 - #21 int
+INFO  20:05:12,220 - #21 k
+INFO  20:05:12,220 - #46 )
+INFO  20:05:12,221 - #47 {
+INFO  20:05:12,221 - #21 int
+INFO  20:05:12,221 - #21 k
+INFO  20:05:12,221 - #42 ;
+INFO  20:05:12,222 - #48 }
+INFO  20:05:12,222 - #42 ;
+INFO  20:05:12,222 - #48 }
+INFO  20:05:12,224 - Program(
+  NoDecl(
+  ) [NoDecl]
+  MethodDeclaration(
+    CustomMethodDeclType(
+      Type(
+      ) [Type]
+    ) [CustomMethodDeclType]
+    FromParameters(
+      MultiFormParams(
+        MultiFormParams(
+          SingleFormParams(
+            FromParamsValDerived1(
+              Type(
+              ) [Type]
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [FromParamsValDerived1]
+          ) [SingleFormParams]
+          FromParamsValDerived1(
+            Type(
+            ) [Type]
+            BrackArrayList(
+            ) [BrackArrayList]
+          ) [FromParamsValDerived1]
+        ) [MultiFormParams]
+        FromParamsValDerived1(
+          Type(
+          ) [Type]
+          NoBrackArrayList(
+          ) [NoBrackArrayList]
+        ) [FromParamsValDerived1]
+      ) [MultiFormParams]
+    ) [FromParameters]
+    VarDeclaration(
+      Type(
+      ) [Type]
+      SingleVarDeclaration(
+        VarValDerived1(
+          NoBrackArrayList(
+          ) [NoBrackArrayList]
+        ) [VarValDerived1]
+      ) [SingleVarDeclaration]
+    ) [VarDeclaration]
+  ) [MethodDeclaration]
+) [Program]
+INFO  20:05:12,224 - ===================================

@@ -1,0 +1,34 @@
+INFO  22:20:07,695 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  22:20:07,727 - #2 program
+INFO  22:20:07,727 - #21 MJProgram
+INFO  22:20:07,727 - #47 {
+INFO  22:20:07,728 - #21 int
+INFO  22:20:07,728 - #21 maki
+INFO  22:20:07,728 - #45 (
+INFO  22:20:07,729 - #46 )
+INFO  22:20:07,729 - #47 {
+INFO  22:20:07,729 - #4 return
+INFO  22:20:07,730 - #42 ;
+INFO  22:20:07,730 - #48 }
+INFO  22:20:07,730 - #48 }
+INFO  22:20:07,731 - Program(
+  NoDecl(
+  ) [NoDecl]
+  MethodDeclaration(
+    CustomMethodDeclType(
+      Type(
+      ) [Type]
+    ) [CustomMethodDeclType]
+    NoFromParameters(
+    ) [NoFromParameters]
+    NoMethodDelVarList(
+    ) [NoMethodDelVarList]
+    ReturnStatement(
+      ReturnStatementDetail(
+        NoReturnExpression(
+        ) [NoReturnExpression]
+      ) [ReturnStatementDetail]
+    ) [ReturnStatement]
+  ) [MethodDeclaration]
+) [Program]
+INFO  22:20:07,732 - ===================================

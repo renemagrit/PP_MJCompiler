@@ -1,0 +1,40 @@
+INFO  18:16:54,168 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  18:16:54,194 - #2 program
+INFO  18:16:54,195 - #21 MJProgram
+INFO  18:16:54,195 - #47 {
+INFO  18:16:54,196 - #21 int
+INFO  18:16:54,196 - #21 maki
+INFO  18:16:54,197 - #45 (
+INFO  18:16:54,197 - #46 )
+INFO  18:16:54,197 - #47 {
+INFO  18:16:54,198 - #8 if
+INFO  18:16:54,198 - #45 (
+INFO  18:16:54,198 - #21 a
+INFO  18:16:54,198 - #30 &&
+INFO  18:16:54,200 - #21 b
+INFO  18:16:54,200 - #46 )
+INFO  18:16:54,200 - #47 {
+INFO  18:16:54,201 - #8 if
+INFO  18:16:54,201 - #45 (
+INFO  18:16:54,201 - #21 g
+INFO  18:16:54,201 - #31 ||
+INFO  18:16:54,201 - #21 j
+INFO  18:16:54,201 - #46 )
+INFO  18:16:54,201 - #21 a
+INFO  18:16:54,201 - #42 ;
+INFO  18:16:54,202 - #9 else
+INFO  18:16:54,202 - #47 {
+INFO  18:16:54,202 - #8 if
+INFO  18:16:54,202 - #45 (
+INFO  18:16:54,202 - #21 a
+INFO  18:16:54,202 - #31 ||
+INFO  18:16:54,202 - #21 k
+INFO  18:16:54,202 - #46 )
+INFO  18:16:54,203 - #21 b
+INFO  18:16:54,203 - #42 ;
+INFO  18:16:54,203 - #9 else
+INFO  18:16:54,203 - #21 l
+INFO  18:16:54,203 - #44 ,
+ERROR 18:16:54,203 - 
+Sintaksna greska na liniji 10
+ERROR 18:16:54,203 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 10

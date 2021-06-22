@@ -1,0 +1,82 @@
+INFO  22:37:57,059 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
+INFO  22:37:57,093 - #2 program
+INFO  22:37:57,093 - #21 MJProgram
+INFO  22:37:57,093 - #47 {
+INFO  22:37:57,094 - #5 void
+INFO  22:37:57,094 - #21 f
+INFO  22:37:57,094 - #45 (
+INFO  22:37:57,094 - #21 char
+INFO  22:37:57,094 - #21 ch
+INFO  22:37:57,095 - #44 ,
+INFO  22:37:57,096 - #21 int
+INFO  22:37:57,096 - #21 a
+INFO  22:37:57,097 - #44 ,
+INFO  22:37:57,097 - #21 int
+INFO  22:37:57,097 - #21 arg
+INFO  22:37:57,097 - #46 )
+INFO  22:37:57,097 - #21 int
+INFO  22:37:57,098 - #21 x
+INFO  22:37:57,098 - #42 ;
+INFO  22:37:57,098 - #47 {
+INFO  22:37:57,099 - #6 read
+INFO  22:37:57,099 - #45 (
+INFO  22:37:57,099 - #21 a
+INFO  22:37:57,099 - #46 )
+INFO  22:37:57,100 - #42 ;
+INFO  22:37:57,100 - #48 }
+INFO  22:37:57,101 - #48 }
+INFO  22:37:57,102 - Program(
+  NoDecl(
+  ) [NoDecl]
+  MethodDeclaration(
+    VoidMethodDeclType(
+    ) [VoidMethodDeclType]
+    FromParameters(
+      MultiFormParams(
+        MultiFormParams(
+          SingleFormParams(
+            FromParamsValDerived1(
+              Type(
+              ) [Type]
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [FromParamsValDerived1]
+          ) [SingleFormParams]
+          FromParamsValDerived1(
+            Type(
+            ) [Type]
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [FromParamsValDerived1]
+        ) [MultiFormParams]
+        FromParamsValDerived1(
+          Type(
+          ) [Type]
+          NoBrackArrayList(
+          ) [NoBrackArrayList]
+        ) [FromParamsValDerived1]
+      ) [MultiFormParams]
+    ) [FromParameters]
+    MultiMethodDelVarList(
+      NoMethodDelVarList(
+      ) [NoMethodDelVarList]
+      VarDeclaration(
+        Type(
+        ) [Type]
+        SingleVarDeclaration(
+          VarValDerived1(
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValDerived1]
+        ) [SingleVarDeclaration]
+      ) [VarDeclaration]
+    ) [MultiMethodDelVarList]
+    ReadStatement(
+      ReadStatementDetail(
+        Desigantor(
+        ) [Desigantor]
+      ) [ReadStatementDetail]
+    ) [ReadStatement]
+  ) [MethodDeclaration]
+) [Program]
+INFO  22:37:57,102 - ===================================
