@@ -3,7 +3,7 @@ program test302
 const int i = 1;
 const char y = '1';
 bool b;
-int zna, beta[], a;
+int zna, beta[], a[];
 {
 	
 
@@ -11,8 +11,7 @@ int zna, beta[], a;
 	int aa(int a) char b; int k;{
 		b = '1';
 		a = 2;
-		b = 2;
-		a = b;
+		k = bb;
 	}
 
 	void main(){}

@@ -266,11 +266,32 @@ public class SemanticPass extends VisitorAdaptor {
 	   }
    }
    public void visit(AssignOpeeratorExpresion assignOp) {
+	   
+	   
 	   if(!isValueableObj(assignOp.getDesignator().obj)){
 		   report_error("Greska! Desigantor za Dodelu vrednosti mora biti vrednostan!", assignOp);
 		   return;
 	   }
-	   report_info("EXPR TYPE:"+assignOp.getExpr().obj.getName(), null);
+	   
+	   Obj op1 = assignOp.getDesignator().obj;
+	   Obj op2 = assignOp.getExpr().obj;
+	   
+	   if(op1 == NewSymbolTable.noObj) {
+		   report_error("Greska! Nepostojeci operand!", assignOp);
+		   return;
+	   }
+	   
+	   if(op2 == NewSymbolTable.noObj) {
+		   report_error("Greska! Nepostojeci operand!", assignOp);
+		   return;
+	   }
+	   
+	   //Check type compatibility
+	   if(!op1.getType().equals(op2.getType())) {
+		   report_error("Greska! Nekompatabilni tipovi! op1:"+ op1.getType().getKind(), assignOp);
+		   return;
+	   }
+	   
    }
    //********************************** Expr AddOp***********************************************
    public void visit(Expression expr) {
@@ -278,9 +299,10 @@ public class SemanticPass extends VisitorAdaptor {
 	   
 	   if(expr.obj == NewSymbolTable.noObj) {
 		   report_error("Greska! Nepostojeci operand!", expr);
+		   expr.obj = NewSymbolTable.noObj;
 		   return;
 	   }
-	   
+
 	   //provera negativne vrednosti
 	   if(expr.getNegPrefix() instanceof NegativePrefix) {
 		   if(!isIntType(expr.getTerm().obj)) {
@@ -380,12 +402,12 @@ public class SemanticPass extends VisitorAdaptor {
    public void visit(FactorDesignator factor) {
 	   if(factor.obj == NewSymbolTable.noObj) {
 		   report_error("Greska! Designator nepostojeci!", factor);
-		   return;
+		  
 	   }
 	   if(((Designator)factor.getDesignator()).getDesigantorList() instanceof DsgnList) {
 		   if(!isIntType(((DsgnList)((Designator)factor.getDesignator()).getDesigantorList()).getExpr().obj)) {
 			   report_error("Greska!Expression mora biti tipa INT!", factor);
-			   return;
+			   
 		   }
 	   }	   
 	  
