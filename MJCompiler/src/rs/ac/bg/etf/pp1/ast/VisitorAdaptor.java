@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 23/5/2021 0:3:27
+// 25/5/2021 19:20:10
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -95,6 +95,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(FactorBoolConst FactorBoolConst) { visit(); }
     public void visit(FactorCharConst FactorCharConst) { visit(); }
     public void visit(FactorNumConst FactorNumConst) { visit(); }
+    public void visit(FactorFuncCall FactorFuncCall) { visit(); }
     public void visit(FactorDesignator FactorDesignator) { visit(); }
     public void visit(NoMulOptTerm NoMulOptTerm) { visit(); }
     public void visit(MulOptTerm MulOptTerm) { visit(); }
@@ -115,16 +116,15 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(MultiCondition MultiCondition) { visit(); }
     public void visit(ErrorCondition ErrorCondition) { visit(); }
     public void visit(ConditionStatemnt ConditionStatemnt) { visit(); }
-    public void visit(NoDesignatorActualParams NoDesignatorActualParams) { visit(); }
-    public void visit(DesignatorActualParams DesignatorActualParams) { visit(); }
     public void visit(NoDsgnList NoDsgnList) { visit(); }
     public void visit(DsgnList DsgnList) { visit(); }
     public void visit(Designator Designator) { visit(); }
     public void visit(ErrorAssignExpression ErrorAssignExpression) { visit(); }
     public void visit(AssignOpeeratorExpresion AssignOpeeratorExpresion) { visit(); }
+    public void visit(FunctionCall FunctionCall) { visit(); }
     public void visit(DesignatorStatementDec DesignatorStatementDec) { visit(); }
     public void visit(DesignatorStatementInc DesignatorStatementInc) { visit(); }
-    public void visit(DesignatorStatementActPart DesignatorStatementActPart) { visit(); }
+    public void visit(DesignatorStatementFuncCall DesignatorStatementFuncCall) { visit(); }
     public void visit(DesignatorStatementAssign DesignatorStatementAssign) { visit(); }
     public void visit(SingleActParsExprList SingleActParsExprList) { visit(); }
     public void visit(ActParsExprListList ActParsExprListList) { visit(); }

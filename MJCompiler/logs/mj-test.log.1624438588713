@@ -1,0 +1,214 @@
+INFO  00:06:48,449 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  00:06:48,525 - #2 program
+INFO  00:06:48,525 - #47 test302
+INFO  00:06:48,525 - #20 const
+INFO  00:06:48,527 - #47 int
+INFO  00:06:48,527 - #47 i
+INFO  00:06:48,528 - #36 =
+INFO  00:06:48,528 - #49 1
+INFO  00:06:48,528 - #37 ;
+INFO  00:06:48,529 - #20 const
+INFO  00:06:48,530 - #47 char
+INFO  00:06:48,530 - #47 y
+INFO  00:06:48,530 - #36 =
+INFO  00:06:48,531 - #48 1
+INFO  00:06:48,531 - #37 ;
+INFO  00:06:48,532 - #47 int
+INFO  00:06:48,532 - #47 zna
+INFO  00:06:48,532 - #39 ,
+INFO  00:06:48,534 - #47 beta
+INFO  00:06:48,534 - #44 [
+INFO  00:06:48,534 - #45 ]
+INFO  00:06:48,535 - #39 ,
+INFO  00:06:48,535 - #47 a
+INFO  00:06:48,535 - #37 ;
+INFO  00:06:48,536 - #42 {
+INFO  00:06:48,536 - #47 int
+INFO  00:06:48,536 - #47 aa
+INFO  00:06:48,537 - #40 (
+INFO  00:06:48,537 - #47 char
+INFO  00:06:48,538 - #47 a
+INFO  00:06:48,538 - #41 )
+INFO  00:06:48,540 - #47 char
+INFO  00:06:48,542 - #47 b
+INFO  00:06:48,542 - #37 ;
+INFO  00:06:48,543 - #42 {
+INFO  00:06:48,543 - #47 a
+INFO  00:06:48,544 - #21 ++
+INFO  00:06:48,545 - #37 ;
+INFO  00:06:48,546 - #43 }
+INFO  00:06:48,546 - #5 void
+INFO  00:06:48,547 - #47 main
+INFO  00:06:48,547 - #40 (
+INFO  00:06:48,548 - #41 )
+INFO  00:06:48,548 - #42 {
+INFO  00:06:48,548 - #43 }
+INFO  00:06:48,549 - #43 }
+INFO  00:06:48,564 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      MultiProgramDeclarationList(
+        NoDecl(
+        ) [NoDecl]
+        ConstProgramDeclaration(
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleConstDeclaration(
+              ConstValue(
+               i
+                ConstOptionNumber(
+                  NumberConstant(
+                   1
+                  ) [NumberConstant]
+                ) [ConstOptionNumber]
+              ) [ConstValue]
+            ) [SingleConstDeclaration]
+          ) [ConstDeclaration]
+        ) [ConstProgramDeclaration]
+      ) [MultiProgramDeclarationList]
+      ConstProgramDeclaration(
+        ConstDeclaration(
+          Type(
+           char
+          ) [Type]
+          SingleConstDeclaration(
+            ConstValue(
+             y
+              ConstOptionChar(
+                CharConstant(
+                 1
+                ) [CharConstant]
+              ) [ConstOptionChar]
+            ) [ConstValue]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclaration]
+      ) [ConstProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+        VarDeclarationList(
+          VarDeclarationList(
+            SingleVarDeclaration(
+              VarValue(
+               zna
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+            VarValue(
+             beta
+              BrackArrayLst(
+              ) [BrackArrayLst]
+            ) [VarValue]
+          ) [VarDeclarationList]
+          VarValue(
+           a
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValue]
+        ) [VarDeclarationList]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  RepeatMethodDeclaration(
+    RepeatMethodDeclaration(
+      NoRepeatMethodDeclaration(
+      ) [NoRepeatMethodDeclaration]
+      MethodDeclaration(
+        MethodHeader(
+          CustomMethodDeclType(
+            Type(
+             int
+            ) [Type]
+          ) [CustomMethodDeclType]
+         aa
+        ) [MethodHeader]
+        FormParamsBegin(
+        ) [FormParamsBegin]
+        FromParameters(
+          SingleFormParams(
+            FromParamsValue(
+              Type(
+               char
+              ) [Type]
+              VarValue(
+               a
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [FromParamsValue]
+          ) [SingleFormParams]
+        ) [FromParameters]
+        FormParamsEnd(
+        ) [FormParamsEnd]
+        MultiMethodDelVarList(
+          NoMethodDelVarList(
+          ) [NoMethodDelVarList]
+          VarDeclaration(
+            Type(
+             char
+            ) [Type]
+            SingleVarDeclaration(
+              VarValue(
+               b
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+          ) [VarDeclaration]
+        ) [MultiMethodDelVarList]
+        StatementListOpt(
+          NoStatementListOpt(
+          ) [NoStatementListOpt]
+          DesStatement(
+            DesignatorStatementInc(
+              Designator(
+               a
+                NoDsgnList(
+                ) [NoDsgnList]
+              ) [Designator]
+            ) [DesignatorStatementInc]
+          ) [DesStatement]
+        ) [StatementListOpt]
+      ) [MethodDeclaration]
+    ) [RepeatMethodDeclaration]
+    MethodDeclaration(
+      MethodHeader(
+        VoidMethodDeclType(
+        ) [VoidMethodDeclType]
+       main
+      ) [MethodHeader]
+      FormParamsBegin(
+      ) [FormParamsBegin]
+      NoFromParameters(
+      ) [NoFromParameters]
+      FormParamsEnd(
+      ) [FormParamsEnd]
+      NoMethodDelVarList(
+      ) [NoMethodDelVarList]
+      NoStatementListOpt(
+      ) [NoStatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  00:06:48,565 - ===================================
+INFO  00:06:48,569 - Deklarisana CONST promenljiva i tip:int Vredosti: 1 na liniji 3
+INFO  00:06:48,569 - Deklarisana CONST promenljiva y tip:char Vredosti: 49 na liniji 4
+INFO  00:06:48,569 - Deklarisana promenljiva zna tip:int - GLOBAL VAR na liniji 5
+INFO  00:06:48,569 - Deklarisana promenljiva beta tip:int - GLOBAL VAR na liniji 5
+INFO  00:06:48,569 - Deklarisana promenljiva a tip:int - GLOBAL VAR na liniji 5
+INFO  00:06:48,570 - Obradjuje se metoda: aa na liniji 9
+INFO  00:06:48,571 - Deklarisana promenljiva a tip:char - FUNKCIJA na liniji 9
+INFO  00:06:48,571 - Deklarisana promenljiva b tip:char - FUNKCIJA na liniji 9
+ERROR 00:06:48,571 - Designator a pronadjen! na liniji 10
+ERROR 00:06:48,571 - Greska! Desigantor za Inkrement mora biti vrtipa INT! na liniji 10
+INFO  00:06:48,571 - Obradjuje se metoda: main na liniji 12
+INFO  00:06:48,571 - ===================================

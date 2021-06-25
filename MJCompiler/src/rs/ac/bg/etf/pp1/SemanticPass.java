@@ -19,6 +19,7 @@ public class SemanticPass extends VisitorAdaptor {
     
     private static boolean isFormalParam = false;
     private static int argCount;
+
 	
 	Logger log = Logger.getLogger(getClass());
 
@@ -34,6 +35,10 @@ public class SemanticPass extends VisitorAdaptor {
     }
 	public static boolean isIntType(Obj currObj) {
 		return currObj.getType().getKind() == Struct.Int;
+	}
+	
+	public static boolean isMethValue(Obj currObj) {
+		return currObj.getKind() == Obj.Meth;
 	}
 	//******************************************************************//
 	
@@ -228,9 +233,18 @@ public class SemanticPass extends VisitorAdaptor {
 		   return;
 	   }
 	   designator.obj = des;
-	   report_error("Designator "+ designator.getDesigantorName()+" pronadjen!", designator);
+	   report_info("Designator "+ designator.getDesigantorName()+" pronadjen!", designator);
+
    }
     
+   public void visit(FunctionCall funcCall) {
+	   Obj currFuncCall = funcCall.getDesignator().obj;
+	   if(isMethValue(currFuncCall)) {
+		   report_error("Greska! "+ funcCall.getDesignator()+" nije m!", funcCall);
+		   return;
+	   }
+	   report_info("FUNC: "+currFuncCall.getName(), null);
+   }
    public void visit(DesignatorStatementInc desInc) {
 	   if(!isValueableObj(desInc.getDesignator().obj)){
 		   report_error("Greska! Desigantor za Inkrement mora biti vrednostan!", desInc);
@@ -250,5 +264,112 @@ public class SemanticPass extends VisitorAdaptor {
 		   report_error("Greska! Desigantor za Dekrement mora biti vrtipa INT!", desDec);
 		   return;
 	   }
+   }
+   public void visit(AssignOpeeratorExpresion assignOp) {
+	   if(!isValueableObj(assignOp.getDesignator().obj)){
+		   report_error("Greska! Desigantor za Dodelu vrednosti mora biti vrednostan!", assignOp);
+		   return;
+	   }
+	   report_info("EXPR TYPE:"+assignOp.getExpr().obj.getName(), null);
+   }
+   public void visit(Expression expr) {
+	   expr.obj = expr.getTerm().obj;
+   }
+   //********************************** TERM *****************************************************
+   public void visit(BasicTerm term) {
+	   term.obj = term.getFactor().obj;
+	   
+	   // Mul : /, *, %
+	   if(term.getTermRepeat() instanceof MulOptTerm) {
+		   //Treba proveriti da li su oba operanda tipa INT
+		   
+		   //operand 1
+		   if(!isIntType(term.obj)) {
+			   report_error("Greska! Operand1 mora biti tipa INT!", term);
+			   return;
+		   }
+		   
+		   //operand 2
+		   if(!isIntType(((MulOptTerm)term.getTermRepeat()).getFactor().obj)) {
+			   report_error("Greska! Operand2 mora biti tipa INT!", term);
+			   return;
+		   }
+	   }	   
+   }
+   
+   //*********************************** FACTOR **************************************************
+   public void visit(FactorNumConst factor) {
+	   if(factor.obj == NewSymbolTable.noObj) {
+		   report_error("Greska! Konstanta nepostojeca!", factor);
+		   return;
+	   }
+	   factor.obj = factor.getNumConst().obj;
+   }
+   
+   public void visit(FactorCharConst factor) {
+	   if(factor.obj == NewSymbolTable.noObj) {
+		   report_error("Greska! Konstanta nepostojeca!", factor);
+		   return;
+	   }
+	   factor.obj = factor.getCharConst().obj;
+   }
+   public void visit(FactorBoolConst factor) {
+	   if(factor.obj == NewSymbolTable.noObj) {
+		   report_error("Greska! Konstanta nepostojeca!", factor);
+		   return;
+	   }
+	   factor.obj = factor.getBoolConst().obj;
+   }
+   public void visit(FacorExpression factor) {
+	   if(factor.obj == NewSymbolTable.noObj) {
+		   report_error("Greska! Izraz nepostojeci!", factor);
+		   return;
+	   }
+	   factor.obj = factor.getExpr().obj;
+   }
+   public void visit(FactorNewType factor) {
+	   
+	   
+	   if(factor.getExprFactorOpt() instanceof ExpressionFactorOption) {
+		   if(!isIntType(((ExpressionFactorOption)factor.getExprFactorOpt()).getExpr().obj)) {
+			   report_error("Greska!Expression mora biti tipa INT!", factor);
+			   return;
+		   }
+		   factor.obj = new Obj(Obj.Var,"newVarArray", currentType);
+	   }else {
+		   factor.obj = new Obj(Obj.Var,"newVar", currentType);
+	   }
+   }
+   public void visit(FactorDesignator factor) {
+	   if(factor.obj == NewSymbolTable.noObj) {
+		   report_error("Greska! Designator nepostojeci!", factor);
+		   return;
+	   }
+	   if(((Designator)factor.getDesignator()).getDesigantorList() instanceof DsgnList) {
+		   if(!isIntType(((DsgnList)((Designator)factor.getDesignator()).getDesigantorList()).getExpr().obj)) {
+			   report_error("Greska!Expression mora biti tipa INT!", factor);
+			   return;
+		   }
+	   }	   
+	  
+	   factor.obj = factor.getDesignator().obj; 
+   }
+  
+   public void visit(NumberConstant numConst) {
+	   
+	   int constValue = numConst.getN1();
+	   numConst.obj = new Obj(Obj.Con,"NumConst", NewSymbolTable.intType);
+	   numConst.setN1(constValue);   
+
+   }
+   public void visit(CharConstant charConst) {
+	   char constValue = charConst.getC1();
+	   charConst.obj = new Obj(Obj.Con,"CharConst", NewSymbolTable.charType);
+	   charConst.setC1(constValue);
+   }
+   public void visit(BoolConstant boolConst) {
+	   int constValue = boolConst.getB1();
+	   boolConst.obj = new Obj(Obj.Con,"BoolConst", NewSymbolTable.booleanType);
+	   boolConst.setB1(constValue);
    }
 }

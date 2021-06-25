@@ -2,13 +2,19 @@
 program test302
 const int i = 1;
 const char y = '1';
-char zna, beta[], a;
+bool b;
+int zna, beta[], a;
 {
 	
-	
-	int aa(int a) char b;{
-		b++;
+
+	int fja(){}
+	int aa(int a) char b; int k;{
+		b = '1';
+		a = 2;
+		b = 2;
+		a = k /b;
 	}
+
 	void main(){}
 	
 }

@@ -1,16 +1,20 @@
 // generated with ast extension for cup
 // version 0.8
-// 23/5/2021 0:3:27
+// 25/5/2021 19:20:10
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class DesignatorStatementActPart extends DesignatorStatement {
+public class FunctionCall implements SyntaxNode {
+
+    private SyntaxNode parent;
+    private int line;
+    public rs.etf.pp1.symboltable.concepts.Obj obj = null;
 
     private Designator Designator;
     private ActParsDetail ActParsDetail;
 
-    public DesignatorStatementActPart (Designator Designator, ActParsDetail ActParsDetail) {
+    public FunctionCall (Designator Designator, ActParsDetail ActParsDetail) {
         this.Designator=Designator;
         if(Designator!=null) Designator.setParent(this);
         this.ActParsDetail=ActParsDetail;
@@ -31,6 +35,22 @@ public class DesignatorStatementActPart extends DesignatorStatement {
 
     public void setActParsDetail(ActParsDetail ActParsDetail) {
         this.ActParsDetail=ActParsDetail;
+    }
+
+    public SyntaxNode getParent() {
+        return parent;
+    }
+
+    public void setParent(SyntaxNode parent) {
+        this.parent=parent;
+    }
+
+    public int getLine() {
+        return line;
+    }
+
+    public void setLine(int line) {
+        this.line=line;
     }
 
     public void accept(Visitor visitor) {
@@ -57,7 +77,7 @@ public class DesignatorStatementActPart extends DesignatorStatement {
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("DesignatorStatementActPart(\n");
+        buffer.append("FunctionCall(\n");
 
         if(Designator!=null)
             buffer.append(Designator.toString("  "+tab));
@@ -72,7 +92,7 @@ public class DesignatorStatementActPart extends DesignatorStatement {
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [DesignatorStatementActPart]");
+        buffer.append(") [FunctionCall]");
         return buffer.toString();
     }
 }

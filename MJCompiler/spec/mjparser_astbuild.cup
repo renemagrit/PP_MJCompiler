@@ -96,7 +96,6 @@ nonterminal FormParamsEnd FormParamsEnd;
 /* Statements*/
 nonterminal Statement Statement;
 nonterminal ListStatementOpt ListStatementOpt;
-nonterminal DesignatorStatement DesignatorStatement;
 
 /* If Statement */
 nonterminal IfStatement IfStatement;
@@ -134,6 +133,7 @@ nonterminal ActParsExprList ActParsExprList;
 /* Designator */
 nonterminal DesigantorList DesigantorList;
 nonterminal DesignatorActPars DesignatorActPars;
+nonterminal DesignatorStatement DesignatorStatement;
 
 /* Condition */
 nonterminal Condition Condition;
@@ -142,8 +142,7 @@ nonterminal CondFact CondFact;
 nonterminal ConditionStmt ConditionStmt;
 
 /*Expression*/
-nonterminal  Expr Expr;
-nonterminal ExprRepeat ExprRepeat;
+nonterminal  ExprRepeat ExprRepeat;
 nonterminal ExprList ExprList;
 nonterminal ExprListVal ExprListVal;
 nonterminal ExprFactorOpt ExprFactorOpt;
@@ -156,18 +155,13 @@ nonterminal Assignop Assignop;
 nonterminal AssignOpExpr AssignOpExpr;
 
 /* Terms */
-nonterminal Term Term;
 nonterminal TermRepeat TermRepeat;
-nonterminal Factor Factor;
 
 /* Arithmetic Operators*/
 nonterminal Addop Addop;
 nonterminal Mulop Mulop;
 
 /* Constants */
-nonterminal NumConst numConst;
-nonterminal BoolConst boolConst;
-nonterminal CharConst charConst;
 nonterminal ConstOption ConstOption;
 
 nonterminal NegPrefix NegPrefix;
@@ -176,6 +170,10 @@ nonterminal BrackArrayList BrackArrayList;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodHeader, MethodDecl;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj FunctionCall;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Expr,Factor, Term;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj numConst, charConst, boolConst;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 
 precedence left ELSE;
@@ -352,13 +350,15 @@ ActParsExprList ::= (ActParsExprListList) ActParsExprList:A1 COMMA Expr:E2 {: RE
 
 /* DESIGNATOR*/
 
-DesignatorStatement ::= (DesignatorStatementAssign) Designator:D1 AssignOpExpr:A2 {: RESULT=new DesignatorStatementAssign(D1, A2); RESULT.setLine(D1left); :}
-					| (DesignatorStatementActPart) Designator:D1 LPAREN ActParsDetail:A2 RPAREN {: RESULT=new DesignatorStatementActPart(D1, A2); RESULT.setLine(D1left); :}
+DesignatorStatement ::= (DesignatorStatementAssign) AssignOpExpr:A1 {: RESULT=new DesignatorStatementAssign(A1); RESULT.setLine(A1left); :}
+					| (DesignatorStatementFuncCall) FunctionCall:F1 {: RESULT=new DesignatorStatementFuncCall(F1); RESULT.setLine(F1left); :}
 					| (DesignatorStatementInc)  Designator:D1 INC {: RESULT=new DesignatorStatementInc(D1); RESULT.setLine(D1left); :}
 					| (DesignatorStatementDec) Designator:D1 DEC {: RESULT=new DesignatorStatementDec(D1); RESULT.setLine(D1left); :}
 					;
-					
-AssignOpExpr ::= (AssignOpeeratorExpresion) Assignop:A1 Expr:E2 {: RESULT=new AssignOpeeratorExpresion(A1, E2); RESULT.setLine(A1left); :}
+
+FunctionCall ::= (FunctionCall) Designator:D1 LPAREN ActParsDetail:A2 RPAREN {: RESULT=new FunctionCall(D1, A2); RESULT.setLine(D1left); :};
+
+AssignOpExpr ::= (AssignOpeeratorExpresion) Designator:desName Assignop:A1 Expr:E2 {: RESULT=new AssignOpeeratorExpresion(desName, A1, E2); RESULT.setLine(desNameleft); :}
 				| (ErrorAssignExpression) error:l
 				{: parser.report_error("Izvrsen oporavak za AssignOp do ; u liniji "+ lleft, null ); :} {: RESULT=new ErrorAssignExpression(); :}
 				;
@@ -368,10 +368,6 @@ Designator ::= (Designator) IDENT:desigantorName DesigantorList:D1 {: RESULT=new
 DesigantorList ::= (DsgnList) LBRACKET Expr:E1 RBRACKET {: RESULT=new DsgnList(E1); RESULT.setLine(E1left); :}
 				| (NoDsgnList) {: RESULT=new NoDsgnList(); :} /*epsilon*/
 				;
-/*Ovo je definisano kod faktora!*/
-DesignatorActPars ::= (DesignatorActualParams) LPAREN ActParsDetail:A1 RPAREN {: RESULT=new DesignatorActualParams(A1); RESULT.setLine(A1left); :}
-					| (NoDesignatorActualParams) {: RESULT=new NoDesignatorActualParams(); :}/*epsilon*/
-					;
 
 /* Condition */
 
@@ -416,7 +412,8 @@ TermRepeat ::= (MulOptTerm) Mulop:M1 Factor:F2 {: RESULT=new MulOptTerm(M1, F2);
 			| (NoMulOptTerm) {: RESULT=new NoMulOptTerm(); :} /*epsilon*/
 			;
 			
-Factor ::= (FactorDesignator) Designator:D1 DesignatorActPars:D2 {: RESULT=new FactorDesignator(D1, D2); RESULT.setLine(D1left); :}
+Factor ::= (FactorDesignator) Designator:D1 {: RESULT=new FactorDesignator(D1); RESULT.setLine(D1left); :}
+			| (FactorFuncCall) FunctionCall:F1 {: RESULT=new FactorFuncCall(F1); RESULT.setLine(F1left); :}
 			| (FactorNumConst) numConst:n1 {: RESULT=new FactorNumConst(n1); RESULT.setLine(n1left); :}
 			| (FactorCharConst) charConst:c1 {: RESULT=new FactorCharConst(c1); RESULT.setLine(c1left); :}
 			| (FactorBoolConst) boolConst:b1 {: RESULT=new FactorBoolConst(b1); RESULT.setLine(b1left); :}

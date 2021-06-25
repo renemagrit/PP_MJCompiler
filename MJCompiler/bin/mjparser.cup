@@ -81,7 +81,7 @@ nonterminal RepeatMethodDecl, MethodDeclType, MethodDelVarList;
 nonterminal FromParams, FromParamsList, FromParamsVal, FormParamsBegin, FormParamsEnd;
 
 /* Statements*/
-nonterminal Statement, ListStatementOpt, DesignatorStatement;
+nonterminal Statement, ListStatementOpt;
 
 /* If Statement */
 nonterminal IfStatement, ElseStatement;
@@ -108,13 +108,13 @@ nonterminal YieldStmt;
 nonterminal ActParsDetail, ActPars, ActParsExprList;
 
 /* Designator */
-nonterminal DesigantorList, DesignatorActPars;
+nonterminal DesigantorList, DesignatorActPars, DesignatorStatement;
 
 /* Condition */
 nonterminal Condition, CondTerm, CondFact, ConditionStmt;
 
 /*Expression*/
-nonterminal  Expr, ExprRepeat, ExprList, ExprListVal, ExprFactorOpt;
+nonterminal  ExprRepeat, ExprList, ExprListVal, ExprFactorOpt;
 
 /* Relation Operators */
 nonterminal Relop;
@@ -123,13 +123,12 @@ nonterminal Relop;
 nonterminal Assignop, AssignOpExpr;
 
 /* Terms */
-nonterminal Term, TermRepeat, Factor;
+nonterminal TermRepeat;
 
 /* Arithmetic Operators*/
 nonterminal Addop, Mulop;
 
 /* Constants */
-nonterminal numConst, boolConst, charConst;
 nonterminal ConstOption;
 
 nonterminal NegPrefix;
@@ -138,6 +137,10 @@ nonterminal BrackArrayList;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodHeader, MethodDecl;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj FunctionCall;
+
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Expr,Factor, Term;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj numConst, charConst, boolConst;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 
 precedence left ELSE;
@@ -314,13 +317,15 @@ ActParsExprList ::= (ActParsExprListList) ActParsExprList COMMA Expr
 
 /* DESIGNATOR*/
 
-DesignatorStatement ::= (DesignatorStatementAssign) Designator AssignOpExpr
-					| (DesignatorStatementActPart) Designator LPAREN ActParsDetail RPAREN
+DesignatorStatement ::= (DesignatorStatementAssign) AssignOpExpr
+					| (DesignatorStatementFuncCall) FunctionCall
 					| (DesignatorStatementInc)  Designator INC
 					| (DesignatorStatementDec) Designator DEC
 					;
-					
-AssignOpExpr ::= (AssignOpeeratorExpresion) Assignop Expr
+
+FunctionCall ::= (FunctionCall) Designator LPAREN ActParsDetail RPAREN;
+
+AssignOpExpr ::= (AssignOpeeratorExpresion) Designator:desName Assignop Expr
 				| (ErrorAssignExpression) error:l
 				{: parser.report_error("Izvrsen oporavak za AssignOp do ; u liniji "+ lleft, null ); :}
 				;
@@ -330,10 +335,6 @@ Designator ::= (Designator) IDENT:desigantorName DesigantorList;
 DesigantorList ::= (DsgnList) LBRACKET Expr RBRACKET
 				| (NoDsgnList) /*epsilon*/
 				;
-/*Ovo je definisano kod faktora!*/
-DesignatorActPars ::= (DesignatorActualParams) LPAREN ActParsDetail RPAREN
-					| (NoDesignatorActualParams)/*epsilon*/
-					;
 
 /* Condition */
 
@@ -378,7 +379,8 @@ TermRepeat ::= (MulOptTerm) Mulop Factor
 			| (NoMulOptTerm) /*epsilon*/
 			;
 			
-Factor ::= (FactorDesignator) Designator DesignatorActPars
+Factor ::= (FactorDesignator) Designator
+			| (FactorFuncCall) FunctionCall
 			| (FactorNumConst) numConst
 			| (FactorCharConst) charConst
 			| (FactorBoolConst) boolConst

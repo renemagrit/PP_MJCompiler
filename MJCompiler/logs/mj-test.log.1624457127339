@@ -1,0 +1,264 @@
+INFO  15:04:07,029 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  15:04:07,092 - #2 program
+INFO  15:04:07,092 - #47 test302
+INFO  15:04:07,092 - #20 const
+INFO  15:04:07,093 - #47 int
+INFO  15:04:07,093 - #47 i
+INFO  15:04:07,094 - #36 =
+INFO  15:04:07,094 - #49 1
+INFO  15:04:07,094 - #37 ;
+INFO  15:04:07,095 - #20 const
+INFO  15:04:07,096 - #47 char
+INFO  15:04:07,096 - #47 y
+INFO  15:04:07,096 - #36 =
+INFO  15:04:07,097 - #48 1
+INFO  15:04:07,097 - #37 ;
+INFO  15:04:07,097 - #47 int
+INFO  15:04:07,097 - #47 zna
+INFO  15:04:07,097 - #39 ,
+INFO  15:04:07,099 - #47 beta
+INFO  15:04:07,099 - #44 [
+INFO  15:04:07,099 - #45 ]
+INFO  15:04:07,099 - #39 ,
+INFO  15:04:07,101 - #47 a
+INFO  15:04:07,101 - #37 ;
+INFO  15:04:07,101 - #42 {
+INFO  15:04:07,101 - #47 int
+INFO  15:04:07,102 - #47 fja
+INFO  15:04:07,102 - #40 (
+INFO  15:04:07,102 - #41 )
+INFO  15:04:07,103 - #42 {
+INFO  15:04:07,104 - #43 }
+INFO  15:04:07,105 - #47 int
+INFO  15:04:07,105 - #47 aa
+INFO  15:04:07,105 - #40 (
+INFO  15:04:07,106 - #47 int
+INFO  15:04:07,106 - #47 a
+INFO  15:04:07,106 - #41 )
+INFO  15:04:07,106 - #47 char
+INFO  15:04:07,106 - #47 b
+INFO  15:04:07,106 - #37 ;
+INFO  15:04:07,106 - #42 {
+INFO  15:04:07,107 - #47 a
+INFO  15:04:07,107 - #36 =
+INFO  15:04:07,108 - #49 1
+INFO  15:04:07,111 - #37 ;
+INFO  15:04:07,112 - #43 }
+INFO  15:04:07,113 - #5 void
+INFO  15:04:07,113 - #47 main
+INFO  15:04:07,113 - #40 (
+INFO  15:04:07,113 - #41 )
+INFO  15:04:07,114 - #42 {
+INFO  15:04:07,114 - #43 }
+INFO  15:04:07,114 - #43 }
+INFO  15:04:07,125 - Program(
+  ProgName(
+   test302
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      MultiProgramDeclarationList(
+        NoDecl(
+        ) [NoDecl]
+        ConstProgramDeclaration(
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleConstDeclaration(
+              ConstValue(
+               i
+                ConstOptionNumber(
+                  NumberConstant(
+                   1
+                  ) [NumberConstant]
+                ) [ConstOptionNumber]
+              ) [ConstValue]
+            ) [SingleConstDeclaration]
+          ) [ConstDeclaration]
+        ) [ConstProgramDeclaration]
+      ) [MultiProgramDeclarationList]
+      ConstProgramDeclaration(
+        ConstDeclaration(
+          Type(
+           char
+          ) [Type]
+          SingleConstDeclaration(
+            ConstValue(
+             y
+              ConstOptionChar(
+                CharConstant(
+                 1
+                ) [CharConstant]
+              ) [ConstOptionChar]
+            ) [ConstValue]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclaration]
+      ) [ConstProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+        VarDeclarationList(
+          VarDeclarationList(
+            SingleVarDeclaration(
+              VarValue(
+               zna
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+            VarValue(
+             beta
+              BrackArrayLst(
+              ) [BrackArrayLst]
+            ) [VarValue]
+          ) [VarDeclarationList]
+          VarValue(
+           a
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValue]
+        ) [VarDeclarationList]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  RepeatMethodDeclaration(
+    RepeatMethodDeclaration(
+      RepeatMethodDeclaration(
+        NoRepeatMethodDeclaration(
+        ) [NoRepeatMethodDeclaration]
+        MethodDeclaration(
+          MethodHeader(
+            CustomMethodDeclType(
+              Type(
+               int
+              ) [Type]
+            ) [CustomMethodDeclType]
+           fja
+          ) [MethodHeader]
+          FormParamsBegin(
+          ) [FormParamsBegin]
+          NoFromParameters(
+          ) [NoFromParameters]
+          FormParamsEnd(
+          ) [FormParamsEnd]
+          NoMethodDelVarList(
+          ) [NoMethodDelVarList]
+          NoStatementListOpt(
+          ) [NoStatementListOpt]
+        ) [MethodDeclaration]
+      ) [RepeatMethodDeclaration]
+      MethodDeclaration(
+        MethodHeader(
+          CustomMethodDeclType(
+            Type(
+             int
+            ) [Type]
+          ) [CustomMethodDeclType]
+         aa
+        ) [MethodHeader]
+        FormParamsBegin(
+        ) [FormParamsBegin]
+        FromParameters(
+          SingleFormParams(
+            FromParamsValue(
+              Type(
+               int
+              ) [Type]
+              VarValue(
+               a
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [FromParamsValue]
+          ) [SingleFormParams]
+        ) [FromParameters]
+        FormParamsEnd(
+        ) [FormParamsEnd]
+        MultiMethodDelVarList(
+          NoMethodDelVarList(
+          ) [NoMethodDelVarList]
+          VarDeclaration(
+            Type(
+             char
+            ) [Type]
+            SingleVarDeclaration(
+              VarValue(
+               b
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+          ) [VarDeclaration]
+        ) [MultiMethodDelVarList]
+        StatementListOpt(
+          NoStatementListOpt(
+          ) [NoStatementListOpt]
+          DesStatement(
+            DesignatorStatementAssign(
+              Designator(
+               a
+                NoDsgnList(
+                ) [NoDsgnList]
+              ) [Designator]
+              AssignOpeeratorExpresion(
+                AssignOperator(
+                ) [AssignOperator]
+                Expression(
+                  NoNegativePrefix(
+                  ) [NoNegativePrefix]
+                  BasicTerm(
+                    FactorNumConst(
+                      NumberConstant(
+                       1
+                      ) [NumberConstant]
+                    ) [FactorNumConst]
+                    NoMulOptTerm(
+                    ) [NoMulOptTerm]
+                  ) [BasicTerm]
+                  NoExpressionList(
+                  ) [NoExpressionList]
+                ) [Expression]
+              ) [AssignOpeeratorExpresion]
+            ) [DesignatorStatementAssign]
+          ) [DesStatement]
+        ) [StatementListOpt]
+      ) [MethodDeclaration]
+    ) [RepeatMethodDeclaration]
+    MethodDeclaration(
+      MethodHeader(
+        VoidMethodDeclType(
+        ) [VoidMethodDeclType]
+       main
+      ) [MethodHeader]
+      FormParamsBegin(
+      ) [FormParamsBegin]
+      NoFromParameters(
+      ) [NoFromParameters]
+      FormParamsEnd(
+      ) [FormParamsEnd]
+      NoMethodDelVarList(
+      ) [NoMethodDelVarList]
+      NoStatementListOpt(
+      ) [NoStatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  15:04:07,126 - ===================================
+INFO  15:04:07,129 - SRANJEvol 2
+INFO  15:04:07,130 - Deklarisana CONST promenljiva i tip:int Vredosti: 1 na liniji 3
+INFO  15:04:07,130 - Deklarisana CONST promenljiva y tip:char Vredosti: 49 na liniji 4
+INFO  15:04:07,130 - Deklarisana promenljiva zna tip:int - GLOBAL VAR na liniji 5
+INFO  15:04:07,130 - Deklarisana promenljiva beta tip:int - GLOBAL VAR na liniji 5
+INFO  15:04:07,130 - Deklarisana promenljiva a tip:int - GLOBAL VAR na liniji 5
+INFO  15:04:07,131 - Obradjuje se metoda: fja na liniji 9
+INFO  15:04:07,131 - Obradjuje se metoda: aa na liniji 10
+INFO  15:04:07,131 - Deklarisana promenljiva a tip:int - FUNKCIJA na liniji 10
+INFO  15:04:07,131 - Deklarisana promenljiva b tip:char - FUNKCIJA na liniji 10
+INFO  15:04:07,131 - Designator a pronadjen! na liniji 11
+INFO  15:04:07,132 - SRANJEvol 2
+INFO  15:04:07,132 - Obradjuje se metoda: main na liniji 14
+INFO  15:04:07,132 - ===================================
