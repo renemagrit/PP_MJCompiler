@@ -1,77 +1,75 @@
-INFO  19:20:33,342 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
-INFO  19:20:33,410 - #2 program
-INFO  19:20:33,410 - #47 test302
-INFO  19:20:33,410 - #20 const
-INFO  19:20:33,412 - #47 int
-INFO  19:20:33,412 - #47 i
-INFO  19:20:33,413 - #36 =
-INFO  19:20:33,413 - #49 1
-INFO  19:20:33,413 - #37 ;
-INFO  19:20:33,414 - #20 const
-INFO  19:20:33,415 - #47 char
-INFO  19:20:33,415 - #47 y
-INFO  19:20:33,415 - #36 =
-INFO  19:20:33,416 - #48 1
-INFO  19:20:33,416 - #37 ;
-INFO  19:20:33,437 - #47 bool
-INFO  19:20:33,437 - #47 b
-INFO  19:20:33,437 - #37 ;
-INFO  19:20:33,441 - #47 int
-INFO  19:20:33,442 - #47 zna
-INFO  19:20:33,442 - #39 ,
-INFO  19:20:33,442 - #47 beta
-INFO  19:20:33,442 - #44 [
-INFO  19:20:33,443 - #45 ]
-INFO  19:20:33,443 - #39 ,
-INFO  19:20:33,444 - #47 a
-INFO  19:20:33,444 - #37 ;
-INFO  19:20:33,444 - #42 {
-INFO  19:20:33,444 - #47 int
-INFO  19:20:33,445 - #47 fja
-INFO  19:20:33,445 - #40 (
-INFO  19:20:33,446 - #41 )
-INFO  19:20:33,447 - #42 {
-INFO  19:20:33,448 - #43 }
-INFO  19:20:33,449 - #47 int
-INFO  19:20:33,450 - #47 aa
-INFO  19:20:33,450 - #40 (
-INFO  19:20:33,450 - #47 int
-INFO  19:20:33,450 - #47 a
-INFO  19:20:33,450 - #41 )
-INFO  19:20:33,451 - #47 char
-INFO  19:20:33,451 - #47 b
-INFO  19:20:33,451 - #37 ;
-INFO  19:20:33,451 - #47 int
-INFO  19:20:33,452 - #47 k
-INFO  19:20:33,452 - #37 ;
-INFO  19:20:33,452 - #42 {
-INFO  19:20:33,452 - #47 b
-INFO  19:20:33,452 - #36 =
-INFO  19:20:33,454 - #48 1
-INFO  19:20:33,460 - #37 ;
-INFO  19:20:33,463 - #47 a
-INFO  19:20:33,463 - #36 =
-INFO  19:20:33,463 - #49 2
-INFO  19:20:33,463 - #37 ;
-INFO  19:20:33,464 - #47 b
-INFO  19:20:33,464 - #36 =
-INFO  19:20:33,464 - #49 2
-INFO  19:20:33,464 - #37 ;
-INFO  19:20:33,464 - #47 a
-INFO  19:20:33,464 - #36 =
-INFO  19:20:33,464 - #47 k
-INFO  19:20:33,464 - #24 /
-INFO  19:20:33,464 - #47 b
-INFO  19:20:33,466 - #37 ;
-INFO  19:20:33,466 - #43 }
-INFO  19:20:33,466 - #5 void
-INFO  19:20:33,466 - #47 main
-INFO  19:20:33,467 - #40 (
-INFO  19:20:33,467 - #41 )
-INFO  19:20:33,469 - #42 {
-INFO  19:20:33,469 - #43 }
-INFO  19:20:33,469 - #43 }
-INFO  19:20:33,480 - Program(
+INFO  20:43:48,310 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  20:43:48,386 - #2 program
+INFO  20:43:48,386 - #47 test302
+INFO  20:43:48,386 - #20 const
+INFO  20:43:48,387 - #47 int
+INFO  20:43:48,388 - #47 i
+INFO  20:43:48,390 - #36 =
+INFO  20:43:48,390 - #49 1
+INFO  20:43:48,391 - #37 ;
+INFO  20:43:48,391 - #20 const
+INFO  20:43:48,392 - #47 char
+INFO  20:43:48,392 - #47 y
+INFO  20:43:48,392 - #36 =
+INFO  20:43:48,393 - #48 1
+INFO  20:43:48,393 - #37 ;
+INFO  20:43:48,394 - #47 bool
+INFO  20:43:48,395 - #47 b
+INFO  20:43:48,395 - #37 ;
+INFO  20:43:48,397 - #47 int
+INFO  20:43:48,397 - #47 zna
+INFO  20:43:48,397 - #39 ,
+INFO  20:43:48,398 - #47 beta
+INFO  20:43:48,398 - #44 [
+INFO  20:43:48,398 - #45 ]
+INFO  20:43:48,398 - #39 ,
+INFO  20:43:48,399 - #47 a
+INFO  20:43:48,399 - #37 ;
+INFO  20:43:48,399 - #42 {
+INFO  20:43:48,399 - #47 int
+INFO  20:43:48,400 - #47 fja
+INFO  20:43:48,401 - #40 (
+INFO  20:43:48,401 - #41 )
+INFO  20:43:48,403 - #42 {
+INFO  20:43:48,404 - #43 }
+INFO  20:43:48,405 - #47 int
+INFO  20:43:48,406 - #47 aa
+INFO  20:43:48,406 - #40 (
+INFO  20:43:48,406 - #47 int
+INFO  20:43:48,406 - #47 a
+INFO  20:43:48,406 - #41 )
+INFO  20:43:48,406 - #47 char
+INFO  20:43:48,406 - #47 b
+INFO  20:43:48,407 - #37 ;
+INFO  20:43:48,407 - #47 int
+INFO  20:43:48,407 - #47 k
+INFO  20:43:48,407 - #37 ;
+INFO  20:43:48,407 - #42 {
+INFO  20:43:48,407 - #47 b
+INFO  20:43:48,407 - #36 =
+INFO  20:43:48,409 - #48 1
+INFO  20:43:48,411 - #37 ;
+INFO  20:43:48,414 - #47 a
+INFO  20:43:48,414 - #36 =
+INFO  20:43:48,415 - #49 2
+INFO  20:43:48,415 - #37 ;
+INFO  20:43:48,415 - #47 b
+INFO  20:43:48,415 - #36 =
+INFO  20:43:48,415 - #49 2
+INFO  20:43:48,415 - #37 ;
+INFO  20:43:48,415 - #47 a
+INFO  20:43:48,416 - #36 =
+INFO  20:43:48,416 - #47 b
+INFO  20:43:48,416 - #37 ;
+INFO  20:43:48,416 - #43 }
+INFO  20:43:48,416 - #5 void
+INFO  20:43:48,417 - #47 main
+INFO  20:43:48,417 - #40 (
+INFO  20:43:48,417 - #41 )
+INFO  20:43:48,417 - #42 {
+INFO  20:43:48,417 - #43 }
+INFO  20:43:48,419 - #43 }
+INFO  20:43:48,431 - Program(
   ProgName(
    test302
   ) [ProgName]
@@ -353,22 +351,13 @@ INFO  19:20:33,480 - Program(
                   BasicTerm(
                     FactorDesignator(
                       Designator(
-                       k
+                       b
                         NoDsgnList(
                         ) [NoDsgnList]
                       ) [Designator]
                     ) [FactorDesignator]
-                    MulOptTerm(
-                      DivOption(
-                      ) [DivOption]
-                      FactorDesignator(
-                        Designator(
-                         b
-                          NoDsgnList(
-                          ) [NoDsgnList]
-                        ) [Designator]
-                      ) [FactorDesignator]
-                    ) [MulOptTerm]
+                    NoMulOptTerm(
+                    ) [NoMulOptTerm]
                   ) [BasicTerm]
                   NoExpressionList(
                   ) [NoExpressionList]
@@ -398,32 +387,27 @@ INFO  19:20:33,480 - Program(
     ) [MethodDeclaration]
   ) [RepeatMethodDeclaration]
 ) [Program]
-INFO  19:20:33,480 - ===================================
-INFO  19:20:33,483 - Deklarisana CONST promenljiva i tip:int Vredosti: 1 na liniji 3
-INFO  19:20:33,483 - Deklarisana CONST promenljiva y tip:char Vredosti: 49 na liniji 4
-ERROR 19:20:33,484 - Nije pronadjen tip bool u tabeli simbola! 
-INFO  19:20:33,484 - Deklarisana promenljiva b tip:char - GLOBAL VAR na liniji 5
-INFO  19:20:33,484 - Deklarisana promenljiva zna tip:int - GLOBAL VAR na liniji 6
-INFO  19:20:33,484 - Deklarisana promenljiva beta tip:int - GLOBAL VAR na liniji 6
-INFO  19:20:33,484 - Deklarisana promenljiva a tip:int - GLOBAL VAR na liniji 6
-INFO  19:20:33,484 - Obradjuje se metoda: fja na liniji 10
-INFO  19:20:33,484 - Obradjuje se metoda: aa na liniji 11
-INFO  19:20:33,484 - Deklarisana promenljiva a tip:int - FUNKCIJA na liniji 11
-INFO  19:20:33,485 - Deklarisana promenljiva b tip:char - FUNKCIJA na liniji 11
-INFO  19:20:33,485 - Deklarisana promenljiva k tip:int - FUNKCIJA na liniji 11
-INFO  19:20:33,485 - Designator b pronadjen! na liniji 12
-ERROR 19:20:33,485 - JEBEMTIMATR! CharConst
-INFO  19:20:33,485 - EXPR TYPE:CharConst
-INFO  19:20:33,485 - Designator a pronadjen! na liniji 13
-ERROR 19:20:33,485 - JEBEMTIMATR! NumConst
-INFO  19:20:33,486 - EXPR TYPE:NumConst
-INFO  19:20:33,486 - Designator b pronadjen! na liniji 14
-ERROR 19:20:33,486 - JEBEMTIMATR! NumConst
-INFO  19:20:33,486 - EXPR TYPE:NumConst
-INFO  19:20:33,486 - Designator a pronadjen! na liniji 15
-INFO  19:20:33,486 - Designator k pronadjen! na liniji 15
-INFO  19:20:33,486 - Designator b pronadjen! na liniji 15
-ERROR 19:20:33,486 - Greska! Operand2 mora biti tipa INT! na liniji 15
-INFO  19:20:33,486 - EXPR TYPE:k
-INFO  19:20:33,486 - Obradjuje se metoda: main na liniji 18
-INFO  19:20:33,487 - ===================================
+INFO  20:43:48,432 - ===================================
+INFO  20:43:48,435 - Deklarisana CONST promenljiva i tip:int Vredosti: 1 na liniji 3
+INFO  20:43:48,435 - Deklarisana CONST promenljiva y tip:char Vredosti: 49 na liniji 4
+ERROR 20:43:48,435 - Nije pronadjen tip bool u tabeli simbola! 
+INFO  20:43:48,435 - Deklarisana promenljiva b tip:char - GLOBAL VAR na liniji 5
+INFO  20:43:48,436 - Deklarisana promenljiva zna tip:int - GLOBAL VAR na liniji 6
+INFO  20:43:48,436 - Deklarisana promenljiva beta tip:int - GLOBAL VAR na liniji 6
+INFO  20:43:48,436 - Deklarisana promenljiva a tip:int - GLOBAL VAR na liniji 6
+INFO  20:43:48,436 - Obradjuje se metoda: fja na liniji 10
+INFO  20:43:48,436 - Obradjuje se metoda: aa na liniji 11
+INFO  20:43:48,436 - Deklarisana promenljiva a tip:int - FUNKCIJA na liniji 11
+INFO  20:43:48,436 - Deklarisana promenljiva b tip:char - FUNKCIJA na liniji 11
+INFO  20:43:48,436 - Deklarisana promenljiva k tip:int - FUNKCIJA na liniji 11
+INFO  20:43:48,436 - Designator b pronadjen! na liniji 12
+INFO  20:43:48,437 - EXPR TYPE:CharConst
+INFO  20:43:48,437 - Designator a pronadjen! na liniji 13
+INFO  20:43:48,437 - EXPR TYPE:NumConst
+INFO  20:43:48,437 - Designator b pronadjen! na liniji 14
+INFO  20:43:48,437 - EXPR TYPE:NumConst
+INFO  20:43:48,437 - Designator a pronadjen! na liniji 15
+INFO  20:43:48,438 - Designator b pronadjen! na liniji 15
+INFO  20:43:48,438 - EXPR TYPE:b
+INFO  20:43:48,438 - Obradjuje se metoda: main na liniji 18
+INFO  20:43:48,438 - ===================================

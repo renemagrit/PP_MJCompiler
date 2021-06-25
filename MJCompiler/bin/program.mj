@@ -12,7 +12,7 @@ int zna, beta[], a;
 		b = '1';
 		a = 2;
 		b = 2;
-		a = k /b;
+		a = b;
 	}
 
 	void main(){}

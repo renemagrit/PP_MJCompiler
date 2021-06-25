@@ -272,12 +272,50 @@ public class SemanticPass extends VisitorAdaptor {
 	   }
 	   report_info("EXPR TYPE:"+assignOp.getExpr().obj.getName(), null);
    }
+   //********************************** Expr AddOp***********************************************
    public void visit(Expression expr) {
 	   expr.obj = expr.getTerm().obj;
+	   
+	   if(expr.obj == NewSymbolTable.noObj) {
+		   report_error("Greska! Nepostojeci operand!", expr);
+		   return;
+	   }
+	   
+	   //provera negativne vrednosti
+	   if(expr.getNegPrefix() instanceof NegativePrefix) {
+		   if(!isIntType(expr.getTerm().obj)) {
+			   report_error("Greska! Expr: Negativna Vrednost mora biti tipa INT!", expr);
+			   return;
+		   }
+	   }
+	   
+	   //Provera operanada
+	   if(expr.getExprList() instanceof ExpressionList) {
+		   
+		   //operand 1
+		   if(!isIntType(expr.getTerm().obj)) {
+			   report_error("Greska! Expr: Operand1 mora biti tipa INT!", expr);
+			   return;
+		   }
+		   
+		   //operand 2
+		   if(!isIntType(((ExpressionListValue)((ExpressionList)expr.getExprList()).getExprListVal()).getTerm().obj)) {
+			   report_error("Greska! Expr: Operand2 mora biti tipa INT!", expr);
+			   return;
+		   }
+	   }
    }
-   //********************************** TERM *****************************************************
+  
+   
+   //********************************** TERM MulOp***********************************************
+   
    public void visit(BasicTerm term) {
 	   term.obj = term.getFactor().obj;
+	   
+	   if(term.obj == NewSymbolTable.noObj) {
+		   report_error("Greska! Nepostojeci operand!", term);
+		   return;
+	   }
 	   
 	   // Mul : /, *, %
 	   if(term.getTermRepeat() instanceof MulOptTerm) {
@@ -285,13 +323,13 @@ public class SemanticPass extends VisitorAdaptor {
 		   
 		   //operand 1
 		   if(!isIntType(term.obj)) {
-			   report_error("Greska! Operand1 mora biti tipa INT!", term);
+			   report_error("Greska! Term: Operand1 mora biti tipa INT!", term);
 			   return;
 		   }
 		   
 		   //operand 2
 		   if(!isIntType(((MulOptTerm)term.getTermRepeat()).getFactor().obj)) {
-			   report_error("Greska! Operand2 mora biti tipa INT!", term);
+			   report_error("Greska! Term: Operand2 mora biti tipa INT!", term);
 			   return;
 		   }
 	   }	   
@@ -328,7 +366,6 @@ public class SemanticPass extends VisitorAdaptor {
 	   factor.obj = factor.getExpr().obj;
    }
    public void visit(FactorNewType factor) {
-	   
 	   
 	   if(factor.getExprFactorOpt() instanceof ExpressionFactorOption) {
 		   if(!isIntType(((ExpressionFactorOption)factor.getExprFactorOpt()).getExpr().obj)) {
