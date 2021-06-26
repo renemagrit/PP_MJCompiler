@@ -2,14 +2,17 @@
 program test302
 const int i = 1;
 const char y = '1';
-boolean b;
+bool b;
 int zna, beta[], a[];
 {
 	
-	int aa(int a) char b; int k;{
+	int aa(int a) bool b; char k;{
 	
-		beta[4] = beta[3] /zna;
-		read(aa);
+		beta[4] = beta[3] /a[1];
+		if(k == '2')
+		{
+			print(b, 2);
+		}
 	}
 	
 	void main(){}

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 26/5/2021 15:29:5
+// 26/5/2021 19:18:6
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -18,8 +18,8 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Assignop Assignop) { }
     public void visit(CharConst charConst) { }
     public void visit(DoWhileStmt DoWhileStmt) { }
-    public void visit(ActParsDetail ActParsDetail) { }
     public void visit(PrintStmt PrintStmt) { }
+    public void visit(ActParsDetail ActParsDetail) { }
     public void visit(ProgramDeclarationList ProgramDeclarationList) { }
     public void visit(BoolConst boolConst) { }
     public void visit(DesigantorList DesigantorList) { }
@@ -37,7 +37,6 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(MethodDeclType MethodDeclType) { }
     public void visit(ConstDeclList ConstDeclList) { }
     public void visit(FromParamsList FromParamsList) { }
-    public void visit(ExprRepeat ExprRepeat) { }
     public void visit(FromParams FromParams) { }
     public void visit(ElseStatement ElseStatement) { }
     public void visit(PrintStmtOpt PrintStmtOpt) { }
@@ -62,6 +61,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ReturnExpr ReturnExpr) { }
     public void visit(ClassDecl ClassDecl) { }
     public void visit(ConstDecl ConstDecl) { }
+    public void visit(CondFact CondFact) { }
     public void visit(VarVal VarVal) { }
     public void visit(BrackArrayList BrackArrayList) { }
     public void visit(NumConst numConst) { }
@@ -105,11 +105,10 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ExpressionListValue ExpressionListValue) { visit(); }
     public void visit(NoExpressionList NoExpressionList) { visit(); }
     public void visit(ExpressionList ExpressionList) { visit(); }
-    public void visit(NoRelationOpExpr NoRelationOpExpr) { visit(); }
-    public void visit(RelationOpExpr RelationOpExpr) { visit(); }
     public void visit(SwitchStatement SwitchStatement) { visit(); }
     public void visit(Expression Expression) { visit(); }
-    public void visit(CondFact CondFact) { visit(); }
+    public void visit(CondFactorMulti CondFactorMulti) { visit(); }
+    public void visit(CondFactorSingle CondFactorSingle) { visit(); }
     public void visit(SingleCondTerm SingleCondTerm) { visit(); }
     public void visit(MultiCondTerm MultiCondTerm) { visit(); }
     public void visit(SingleCondition SingleCondition) { visit(); }

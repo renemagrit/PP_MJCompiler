@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 26/5/2021 15:29:5
+// 26/5/2021 19:18:6
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -18,8 +18,8 @@ public interface Visitor {
     public void visit(Assignop Assignop);
     public void visit(CharConst charConst);
     public void visit(DoWhileStmt DoWhileStmt);
-    public void visit(ActParsDetail ActParsDetail);
     public void visit(PrintStmt PrintStmt);
+    public void visit(ActParsDetail ActParsDetail);
     public void visit(ProgramDeclarationList ProgramDeclarationList);
     public void visit(BoolConst boolConst);
     public void visit(DesigantorList DesigantorList);
@@ -37,7 +37,6 @@ public interface Visitor {
     public void visit(MethodDeclType MethodDeclType);
     public void visit(ConstDeclList ConstDeclList);
     public void visit(FromParamsList FromParamsList);
-    public void visit(ExprRepeat ExprRepeat);
     public void visit(FromParams FromParams);
     public void visit(ElseStatement ElseStatement);
     public void visit(PrintStmtOpt PrintStmtOpt);
@@ -62,6 +61,7 @@ public interface Visitor {
     public void visit(ReturnExpr ReturnExpr);
     public void visit(ClassDecl ClassDecl);
     public void visit(ConstDecl ConstDecl);
+    public void visit(CondFact CondFact);
     public void visit(VarVal VarVal);
     public void visit(BrackArrayList BrackArrayList);
     public void visit(NumConst numConst);
@@ -105,11 +105,10 @@ public interface Visitor {
     public void visit(ExpressionListValue ExpressionListValue);
     public void visit(NoExpressionList NoExpressionList);
     public void visit(ExpressionList ExpressionList);
-    public void visit(NoRelationOpExpr NoRelationOpExpr);
-    public void visit(RelationOpExpr RelationOpExpr);
     public void visit(SwitchStatement SwitchStatement);
     public void visit(Expression Expression);
-    public void visit(CondFact CondFact);
+    public void visit(CondFactorMulti CondFactorMulti);
+    public void visit(CondFactorSingle CondFactorSingle);
     public void visit(SingleCondTerm SingleCondTerm);
     public void visit(MultiCondTerm MultiCondTerm);
     public void visit(SingleCondition SingleCondition);

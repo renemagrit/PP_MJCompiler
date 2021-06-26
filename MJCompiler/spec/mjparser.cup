@@ -96,7 +96,7 @@ nonterminal SwitchStmt, SwitchStmtBody, SwitchStmtList, SwitchStmtVal, DefaulStm
 nonterminal ReturnStmt, ReturnExpr;
 
 /* Print Statement */
-nonterminal PrintStmt, PrintStmtOpt;
+nonterminal PrintStmtOpt;
 
 /* Yield Statement */
 nonterminal YieldStmt;
@@ -108,10 +108,10 @@ nonterminal ActParsDetail, ActPars, ActParsExprList;
 nonterminal DesigantorList, DesignatorActPars, DesignatorStatement;
 
 /* Condition */
-nonterminal Condition, CondTerm, CondFact, ConditionStmt;
+nonterminal ConditionStmt;
 
 /*Expression*/
-nonterminal  ExprRepeat, ExprList, ExprListVal, ExprFactorOpt;
+nonterminal ExprList, ExprListVal, ExprFactorOpt;
 
 /* Relation Operators */
 nonterminal Relop;
@@ -133,7 +133,8 @@ nonterminal BrackArrayList;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodHeader, MethodDecl;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator, ReadStmt;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator, ReadStmt, PrintStmt;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj CondFact, CondTerm, Condition;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj FunctionCall;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Expr,Factor, Term;
@@ -347,16 +348,15 @@ CondTerm ::= (MultiCondTerm) CondTerm AND CondFact
 			| (SingleCondTerm) CondFact
 			;
 			
-CondFact ::= (CondFact) Expr ExprRepeat;
+CondFact ::= (CondFactorSingle) Expr
+			| (CondFactorMulti) Expr Relop Expr
+			;		
 
 /* Expression */
 
 Expr ::= (Expression) NegPrefix Term ExprList
 		| (SwitchStatement) SwitchStmt
 		;
-
-ExprRepeat ::= (RelationOpExpr) Relop Expr
-			| (NoRelationOpExpr) /*epsilon*/;
 
 ExprList ::= (ExpressionList) ExprList ExprListVal
 		| (NoExpressionList) /*epsilon*/

@@ -146,8 +146,24 @@ public class SemanticPass extends VisitorAdaptor {
 	}
 	
 	
-    public void visit(PrintStmt print) {
-		printCallCount++;
+    public void visit(PrintStatemtDetail print) {
+		print.obj = print.getExpr().obj;
+		
+		int currtype = Struct.None;
+    	if(print.obj.getType().getElemType() == null) {
+    		currtype = print.obj.getType().getKind();
+    	}else{
+    		currtype = print.obj.getType().getElemType().getKind();
+    	}
+    	
+    	if(!(currtype == Struct.Int
+    			|| currtype == Struct.Char
+    			|| currtype == Struct.Bool)) {
+    		
+    		report_error("Greska! Print operand mora biti int, char ili boolean tipa!", print);
+    		return;
+    	}
+    	report_info("PRINT STATMENR", null);
 	}
     
     public void visit(ReadStatementDetail read) {
@@ -174,6 +190,45 @@ public class SemanticPass extends VisitorAdaptor {
     	}
     }
     
+    public void visit(CondFactorSingle cond) {
+    	cond.obj = cond.getExpr().obj;
+    	if(cond.obj.getType().getKind() != Struct.Bool) {
+    		report_error("Greska! Tip uslovne promenljive mora biti Boolean", cond);
+    		return;
+    	}
+    }
+    public void visit(CondFactorMulti cond) {
+    	Obj op1 = cond.getExpr().obj;
+    	Obj op2 = cond.getExpr1().obj;
+    	
+    	//provera kompatabilnosti tipova
+    	if(!op1.getType().compatibleWith(op2.getType())) {
+    		report_error("Greska! Tipovi uslovnih promenljivih moraju biti kompatabilni!", cond);
+    		return;
+    	}
+    	//provera operatora za nizove
+    	if(op1.getType().isRefType() || op2.getType().isRefType()) {
+    		if(!(cond.getRelop() instanceof IsEqualRelOp || cond.getRelop() instanceof NotEqualRelOp)) {
+    			report_error("Greska! Relacioni operatori nizovskih tipova mogu biti samo == i !=!", cond);
+        		return;
+    		}
+    	}
+    	cond.obj = new Obj(Obj.Var, "BoolConst", NewSymbolTable.booleanType);
+    }
+    public void visit(SingleCondTerm cond) {
+    	cond.obj = cond.getCondFact().obj;
+    }
+    public void visit(MultiCondTerm cond) {
+    	cond.obj = cond.getCondFact().obj;
+    }
+    public void visit(SingleCondition cond) {
+    	cond.obj = cond.getCondTerm().obj;
+    }
+    public void visit(MultiCondition cond) {
+    	cond.obj = cond.getCondTerm().obj;
+    }
+        
+    //****************************************** PROG ************************************
     public void visit(ProgName progName) {
     	progName.obj = NewSymbolTable.insert(Obj.Prog, progName.getProgName(), NewSymbolTable.noType);
     	NewSymbolTable.openScope();
@@ -495,6 +550,10 @@ public class SemanticPass extends VisitorAdaptor {
 		  
 	   }
 	   if(((Designator)factor.getDesignator()).getDesigantorList() instanceof DsgnList) {
+//		   if((Designator)factor.getDesignator()).obj.getType().getKind() == Struct.Array){
+//			   
+//		   }
+		   
 		   if(!isIntType(((DsgnList)((Designator)factor.getDesignator()).getDesigantorList()).getExpr().obj)) {
 			   report_error("Greska!Expression mora biti tipa INT!", factor);
 			   

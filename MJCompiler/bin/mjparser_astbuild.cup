@@ -116,7 +116,6 @@ nonterminal ReturnStmt ReturnStmt;
 nonterminal ReturnExpr ReturnExpr;
 
 /* Print Statement */
-nonterminal PrintStmt PrintStmt;
 nonterminal PrintStmtOpt PrintStmtOpt;
 
 /* Yield Statement */
@@ -133,13 +132,9 @@ nonterminal DesignatorActPars DesignatorActPars;
 nonterminal DesignatorStatement DesignatorStatement;
 
 /* Condition */
-nonterminal Condition Condition;
-nonterminal CondTerm CondTerm;
-nonterminal CondFact CondFact;
 nonterminal ConditionStmt ConditionStmt;
 
 /*Expression*/
-nonterminal  ExprRepeat ExprRepeat;
 nonterminal ExprList ExprList;
 nonterminal ExprListVal ExprListVal;
 nonterminal ExprFactorOpt ExprFactorOpt;
@@ -166,7 +161,8 @@ nonterminal BrackArrayList BrackArrayList;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj ProgName, Program;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodHeader, MethodDecl;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator, ReadStmt;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator, ReadStmt, PrintStmt;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj CondFact, CondTerm, Condition;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj FunctionCall;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Expr,Factor, Term;
@@ -380,16 +376,15 @@ CondTerm ::= (MultiCondTerm) CondTerm:C1 AND CondFact:C2 {: RESULT=new MultiCond
 			| (SingleCondTerm) CondFact:C1 {: RESULT=new SingleCondTerm(C1); RESULT.setLine(C1left); :}
 			;
 			
-CondFact ::= (CondFact) Expr:E1 ExprRepeat:E2 {: RESULT=new CondFact(E1, E2); RESULT.setLine(E1left); :};
+CondFact ::= (CondFactorSingle) Expr:E1 {: RESULT=new CondFactorSingle(E1); RESULT.setLine(E1left); :}
+			| (CondFactorMulti) Expr:E1 Relop:R2 Expr:E3 {: RESULT=new CondFactorMulti(E1, R2, E3); RESULT.setLine(E1left); :}
+			;		
 
 /* Expression */
 
 Expr ::= (Expression) NegPrefix:N1 Term:T2 ExprList:E3 {: RESULT=new Expression(N1, T2, E3); RESULT.setLine(N1left); :}
 		| (SwitchStatement) SwitchStmt:S1 {: RESULT=new SwitchStatement(S1); RESULT.setLine(S1left); :}
 		;
-
-ExprRepeat ::= (RelationOpExpr) Relop:R1 Expr:E2 {: RESULT=new RelationOpExpr(R1, E2); RESULT.setLine(R1left); :}
-			| (NoRelationOpExpr) {: RESULT=new NoRelationOpExpr(); :} /*epsilon*/;
 
 ExprList ::= (ExpressionList) ExprList:E1 ExprListVal:E2 {: RESULT=new ExpressionList(E1, E2); RESULT.setLine(E1left); :}
 		| (NoExpressionList) {: RESULT=new NoExpressionList(); :} /*epsilon*/
