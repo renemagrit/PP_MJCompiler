@@ -550,9 +550,9 @@ public class SemanticPass extends VisitorAdaptor {
 		  
 	   }
 	   if(((Designator)factor.getDesignator()).getDesigantorList() instanceof DsgnList) {
-//		   if((Designator)factor.getDesignator()).obj.getType().getKind() == Struct.Array){
-//			   
-//		   }
+		   if(((Designator)factor.getDesignator()).obj.getType().getKind() != Struct.Array){
+			   report_error("Greska! Indeksiranje moguce samo nad nizovnim promenljivama!", factor);
+		   }
 		   
 		   if(!isIntType(((DsgnList)((Designator)factor.getDesignator()).getDesigantorList()).getExpr().obj)) {
 			   report_error("Greska!Expression mora biti tipa INT!", factor);

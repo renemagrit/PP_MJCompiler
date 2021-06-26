@@ -1,85 +1,85 @@
-INFO  20:36:44,599 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
-INFO  20:36:44,656 - #2 program
-INFO  20:36:44,657 - #47 test302
-INFO  20:36:44,657 - #20 const
-INFO  20:36:44,658 - #47 int
-INFO  20:36:44,658 - #47 i
-INFO  20:36:44,659 - #36 =
-INFO  20:36:44,659 - #49 1
-INFO  20:36:44,660 - #37 ;
-INFO  20:36:44,660 - #20 const
-INFO  20:36:44,661 - #47 char
-INFO  20:36:44,661 - #47 y
-INFO  20:36:44,661 - #36 =
-INFO  20:36:44,662 - #48 1
-INFO  20:36:44,662 - #37 ;
-INFO  20:36:44,663 - #47 bool
-INFO  20:36:44,663 - #47 b
-INFO  20:36:44,663 - #37 ;
-INFO  20:36:44,665 - #47 int
-INFO  20:36:44,666 - #47 zna
-INFO  20:36:44,666 - #39 ,
-INFO  20:36:44,666 - #47 beta
-INFO  20:36:44,667 - #44 [
-INFO  20:36:44,667 - #45 ]
-INFO  20:36:44,667 - #39 ,
-INFO  20:36:44,668 - #47 a
-INFO  20:36:44,668 - #44 [
-INFO  20:36:44,668 - #45 ]
-INFO  20:36:44,668 - #37 ;
-INFO  20:36:44,668 - #42 {
-INFO  20:36:44,668 - #47 int
-INFO  20:36:44,669 - #47 aa
-INFO  20:36:44,669 - #40 (
-INFO  20:36:44,670 - #47 int
-INFO  20:36:44,671 - #47 a
-INFO  20:36:44,671 - #41 )
-INFO  20:36:44,672 - #47 bool
-INFO  20:36:44,673 - #47 b
-INFO  20:36:44,673 - #37 ;
-INFO  20:36:44,673 - #47 char
-INFO  20:36:44,674 - #47 k
-INFO  20:36:44,674 - #37 ;
-INFO  20:36:44,674 - #42 {
-INFO  20:36:44,674 - #47 beta
-INFO  20:36:44,675 - #44 [
-INFO  20:36:44,675 - #49 4
-INFO  20:36:44,676 - #45 ]
-INFO  20:36:44,679 - #36 =
-INFO  20:36:44,680 - #47 beta
-INFO  20:36:44,682 - #44 [
-INFO  20:36:44,682 - #49 3
-INFO  20:36:44,682 - #45 ]
-INFO  20:36:44,682 - #24 /
-INFO  20:36:44,683 - #47 a
-INFO  20:36:44,684 - #44 [
-INFO  20:36:44,684 - #49 1
-INFO  20:36:44,684 - #45 ]
-INFO  20:36:44,684 - #37 ;
-INFO  20:36:44,685 - #8 if
-INFO  20:36:44,685 - #40 (
-INFO  20:36:44,685 - #47 k
-INFO  20:36:44,686 - #30 ==
-INFO  20:36:44,686 - #48 2
-INFO  20:36:44,688 - #41 )
-INFO  20:36:44,689 - #42 {
-INFO  20:36:44,689 - #3 print
-INFO  20:36:44,689 - #40 (
-INFO  20:36:44,689 - #47 b
-INFO  20:36:44,689 - #39 ,
-INFO  20:36:44,690 - #49 2
-INFO  20:36:44,690 - #41 )
-INFO  20:36:44,690 - #37 ;
-INFO  20:36:44,690 - #43 }
-INFO  20:36:44,691 - #43 }
-INFO  20:36:44,692 - #5 void
-INFO  20:36:44,692 - #47 main
-INFO  20:36:44,693 - #40 (
-INFO  20:36:44,693 - #41 )
-INFO  20:36:44,693 - #42 {
-INFO  20:36:44,693 - #43 }
-INFO  20:36:44,693 - #43 }
-INFO  20:36:44,705 - Program(
+INFO  20:34:57,079 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  20:34:57,313 - #2 program
+INFO  20:34:57,314 - #47 test302
+INFO  20:34:57,314 - #20 const
+INFO  20:34:57,316 - #47 int
+INFO  20:34:57,316 - #47 i
+INFO  20:34:57,318 - #36 =
+INFO  20:34:57,318 - #49 1
+INFO  20:34:57,318 - #37 ;
+INFO  20:34:57,319 - #20 const
+INFO  20:34:57,320 - #47 char
+INFO  20:34:57,320 - #47 y
+INFO  20:34:57,320 - #36 =
+INFO  20:34:57,321 - #48 1
+INFO  20:34:57,321 - #37 ;
+INFO  20:34:57,322 - #47 bool
+INFO  20:34:57,322 - #47 b
+INFO  20:34:57,322 - #37 ;
+INFO  20:34:57,324 - #47 int
+INFO  20:34:57,325 - #47 zna
+INFO  20:34:57,325 - #39 ,
+INFO  20:34:57,325 - #47 beta
+INFO  20:34:57,326 - #44 [
+INFO  20:34:57,326 - #45 ]
+INFO  20:34:57,326 - #39 ,
+INFO  20:34:57,327 - #47 a
+INFO  20:34:57,327 - #44 [
+INFO  20:34:57,327 - #45 ]
+INFO  20:34:57,328 - #37 ;
+INFO  20:34:57,328 - #42 {
+INFO  20:34:57,328 - #47 int
+INFO  20:34:57,329 - #47 aa
+INFO  20:34:57,329 - #40 (
+INFO  20:34:57,331 - #47 int
+INFO  20:34:57,332 - #47 a
+INFO  20:34:57,332 - #41 )
+INFO  20:34:57,333 - #47 bool
+INFO  20:34:57,335 - #47 b
+INFO  20:34:57,336 - #37 ;
+INFO  20:34:57,336 - #47 char
+INFO  20:34:57,336 - #47 k
+INFO  20:34:57,336 - #37 ;
+INFO  20:34:57,336 - #42 {
+INFO  20:34:57,336 - #47 beta
+INFO  20:34:57,338 - #44 [
+INFO  20:34:57,338 - #49 4
+INFO  20:34:57,340 - #45 ]
+INFO  20:34:57,343 - #36 =
+INFO  20:34:57,345 - #47 beta
+INFO  20:34:57,349 - #44 [
+INFO  20:34:57,350 - #49 3
+INFO  20:34:57,350 - #45 ]
+INFO  20:34:57,350 - #24 /
+INFO  20:34:57,350 - #47 a
+INFO  20:34:57,352 - #44 [
+INFO  20:34:57,353 - #49 1
+INFO  20:34:57,353 - #45 ]
+INFO  20:34:57,354 - #37 ;
+INFO  20:34:57,355 - #8 if
+INFO  20:34:57,355 - #40 (
+INFO  20:34:57,357 - #47 k
+INFO  20:34:57,357 - #30 ==
+INFO  20:34:57,358 - #48 2
+INFO  20:34:57,363 - #41 )
+INFO  20:34:57,367 - #42 {
+INFO  20:34:57,367 - #3 print
+INFO  20:34:57,367 - #40 (
+INFO  20:34:57,367 - #47 b
+INFO  20:34:57,369 - #39 ,
+INFO  20:34:57,369 - #49 2
+INFO  20:34:57,369 - #41 )
+INFO  20:34:57,370 - #37 ;
+INFO  20:34:57,370 - #43 }
+INFO  20:34:57,370 - #43 }
+INFO  20:34:57,374 - #5 void
+INFO  20:34:57,375 - #47 main
+INFO  20:34:57,376 - #40 (
+INFO  20:34:57,376 - #41 )
+INFO  20:34:57,381 - #42 {
+INFO  20:34:57,381 - #43 }
+INFO  20:34:57,381 - #43 }
+INFO  20:34:57,403 - Program(
   ProgName(
    test302
   ) [ProgName]
@@ -421,23 +421,18 @@ INFO  20:36:44,705 - Program(
     ) [MethodDeclaration]
   ) [RepeatMethodDeclaration]
 ) [Program]
-INFO  20:36:44,705 - ===================================
-INFO  20:36:44,711 - Deklarisana CONST promenljiva i tip:int Vredosti: 1 na liniji 3
-INFO  20:36:44,711 - Deklarisana CONST promenljiva y tip:char Vredosti: 49 na liniji 4
-INFO  20:36:44,711 - Deklarisana promenljiva b tip:bool - GLOBAL VAR na liniji 5
-INFO  20:36:44,711 - Deklarisana promenljiva zna tip:int - GLOBAL VAR na liniji 6
-INFO  20:36:44,711 - Deklarisana promenljiva beta tip:int - GLOBAL VAR na liniji 6
-INFO  20:36:44,713 - Deklarisana promenljiva a tip:int - GLOBAL VAR na liniji 6
-INFO  20:36:44,713 - Obradjuje se metoda: aa na liniji 9
-INFO  20:36:44,713 - Deklarisana promenljiva a tip:int - FUNKCIJA na liniji 9
-INFO  20:36:44,713 - Deklarisana promenljiva b tip:bool - FUNKCIJA na liniji 9
-INFO  20:36:44,714 - Deklarisana promenljiva k tip:char - FUNKCIJA na liniji 9
-INFO  20:36:44,715 - Designator beta pronadjen! na liniji 11
-INFO  20:36:44,715 - Designator beta pronadjen! na liniji 11
-INFO  20:36:44,715 - Designator a pronadjen! na liniji 11
-ERROR 20:36:44,715 - Greska! Indeksiranje moguce samo nad nizovnim promenljivama! na liniji 11
-INFO  20:36:44,715 - Designator k pronadjen! na liniji 12
-INFO  20:36:44,716 - Designator b pronadjen! na liniji 14
-INFO  20:36:44,716 - PRINT STATMENR
-INFO  20:36:44,716 - Obradjuje se metoda: main na liniji 18
-INFO  20:36:44,716 - ===================================
+INFO  20:34:57,405 - ===================================
+INFO  20:34:57,582 - Deklarisana CONST promenljiva i tip:int Vredosti: 1 na liniji 3
+INFO  20:34:57,583 - Deklarisana CONST promenljiva y tip:char Vredosti: 49 na liniji 4
+INFO  20:34:57,583 - Deklarisana promenljiva b tip:bool - GLOBAL VAR na liniji 5
+INFO  20:34:57,583 - Deklarisana promenljiva zna tip:int - GLOBAL VAR na liniji 6
+INFO  20:34:57,583 - Deklarisana promenljiva beta tip:int - GLOBAL VAR na liniji 6
+INFO  20:34:57,583 - Deklarisana promenljiva a tip:int - GLOBAL VAR na liniji 6
+INFO  20:34:57,584 - Obradjuje se metoda: aa na liniji 9
+INFO  20:34:57,584 - Deklarisana promenljiva a tip:int - FUNKCIJA na liniji 9
+INFO  20:34:57,584 - Deklarisana promenljiva b tip:bool - FUNKCIJA na liniji 9
+INFO  20:34:57,584 - Deklarisana promenljiva k tip:char - FUNKCIJA na liniji 9
+INFO  20:34:57,590 - Designator beta pronadjen! na liniji 11
+INFO  20:34:57,591 - Designator beta pronadjen! na liniji 11
+ERROR 20:35:18,071 - Greska! Indeksiranje moguce samo nad nizovnim promenljivama! na liniji 11
+INFO  20:35:21,301 - Designator a pronadjen! na liniji 11

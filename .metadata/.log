@@ -3618,3 +3618,6 @@ Java Model Exception: Java Model Status [visit() [in SemanticPass [in [Working c
 	at org.eclipse.jface.text.TextViewerHoverManager$4.run(TextViewerHoverManager.java:169)
 !SUBENTRY 1 org.eclipse.jdt.core 4 969 2021-06-26 18:45:34.497
 !MESSAGE visit() [in SemanticPass [in [Working copy] SemanticPass.java [in rs.ac.bg.etf.pp1 [in src [in MJCompiler]]]]] does not exist
+
+!ENTRY org.eclipse.jdt.debug 2 0 2021-06-26 20:34:56.287
+!MESSAGE Unable to find location of java.lang.Thread.setName() in debuggee JVM, for type java.lang.Thread
