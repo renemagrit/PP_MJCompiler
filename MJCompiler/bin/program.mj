@@ -9,6 +9,7 @@ int zna, beta[], a[];
 	int aa(int a) char b; int k;{
 	
 		beta[4] = beta[3] /zna;
+		read(aa);
 	}
 	
 	void main(){}

@@ -150,6 +150,30 @@ public class SemanticPass extends VisitorAdaptor {
 		printCallCount++;
 	}
     
+    public void visit(ReadStatementDetail read) {
+    	read.obj = read.getDesignator().obj;
+    	
+    	if(!isValueableObj(read.obj)){
+  		   report_error("Greska! Desigantor za Read mora biti vrednostan!", read);
+  		   return;
+  	  	}
+    	
+    	int currtype = Struct.None;
+    	if(read.obj.getType().getElemType() == null) {
+    		currtype = read.obj.getType().getKind();
+    	}else{
+    		currtype = read.obj.getType().getElemType().getKind();
+    	}
+    	
+    	if(!(currtype == Struct.Int
+    			|| currtype == Struct.Char
+    			|| currtype == Struct.Bool)) {
+    		
+    		report_error("Greska! Read operand mora biti int, char ili boolean tipa!", read);
+    		return;
+    	}
+    }
+    
     public void visit(ProgName progName) {
     	progName.obj = NewSymbolTable.insert(Obj.Prog, progName.getProgName(), NewSymbolTable.noType);
     	NewSymbolTable.openScope();
