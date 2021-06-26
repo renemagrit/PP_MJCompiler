@@ -389,16 +389,36 @@ public class SemanticPass extends VisitorAdaptor {
 	   if(term.getTermRepeat() instanceof MulOptTerm) {
 		   //Treba proveriti da li su oba operanda tipa INT
 		   
+		   
+		   Obj op1 = term.obj;
+		   Obj op2 = ((MulOptTerm)term.getTermRepeat()).getFactor().obj;
+		   
 		   //operand 1
-		   if(!isIntType(term.obj)) {
-			   report_error("Greska! Term: Operand1 mora biti tipa INT!", term);
-			   return;
+		   
+		   if(op1.getType().getElemType() == null) {
+			   if(!isIntType(op1)) {
+				   report_error("Greska! Expr: Operand1 mora biti tipa INT!", term);
+				   return;
+			   }
+		   }else {
+			   if(op1.getType().getElemType().getKind() != Struct.Int) {
+				   report_error("Greska! Expr: Operand1 mora biti tipa INT!" + op1.getType().getElemType().getKind(), term);
+				   return;
+			   }
 		   }
+		 
 		   
 		   //operand 2
-		   if(!isIntType(((MulOptTerm)term.getTermRepeat()).getFactor().obj)) {
-			   report_error("Greska! Term: Operand2 mora biti tipa INT!", term);
-			   return;
+		   if(op2.getType().getElemType() == null) {
+			   if(!isIntType(op2)) {
+				   report_error("Greska! Expr: Operand2 mora biti tipa INT!", term);
+				   return;
+			   }
+		   }else {
+			   if(op2.getType().getElemType().getKind() != Struct.Int) {
+				   report_error("Greska! Expr: Operand2 mora biti tipa INT!", term);
+				   return;
+			   }
 		   }
 	   }	   
    }
