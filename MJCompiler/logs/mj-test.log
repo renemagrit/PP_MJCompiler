@@ -1,73 +1,70 @@
-INFO  01:04:32,088 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
-INFO  01:04:32,155 - #2 program
-INFO  01:04:32,156 - #47 test302
-INFO  01:04:32,156 - #20 const
-INFO  01:04:32,158 - #47 int
-INFO  01:04:32,158 - #47 i
-INFO  01:04:32,159 - #36 =
-INFO  01:04:32,159 - #49 1
-INFO  01:04:32,159 - #37 ;
-INFO  01:04:32,162 - #20 const
-INFO  01:04:32,162 - #47 char
-INFO  01:04:32,163 - #47 y
-INFO  01:04:32,163 - #36 =
-INFO  01:04:32,164 - #48 1
-INFO  01:04:32,164 - #37 ;
-INFO  01:04:32,164 - #47 bool
-INFO  01:04:32,164 - #47 b
-INFO  01:04:32,165 - #37 ;
-INFO  01:04:32,167 - #47 int
-INFO  01:04:32,168 - #47 zna
-INFO  01:04:32,168 - #39 ,
-INFO  01:04:32,168 - #47 beta
-INFO  01:04:32,168 - #44 [
-INFO  01:04:32,169 - #45 ]
-INFO  01:04:32,169 - #39 ,
-INFO  01:04:32,170 - #47 a
-INFO  01:04:32,170 - #44 [
-INFO  01:04:32,170 - #45 ]
-INFO  01:04:32,170 - #37 ;
-INFO  01:04:32,170 - #42 {
-INFO  01:04:32,171 - #47 int
-INFO  01:04:32,172 - #47 fja
-INFO  01:04:32,172 - #40 (
-INFO  01:04:32,173 - #41 )
-INFO  01:04:32,176 - #42 {
-INFO  01:04:32,177 - #43 }
-INFO  01:04:32,178 - #47 int
-INFO  01:04:32,179 - #47 aa
-INFO  01:04:32,179 - #40 (
-INFO  01:04:32,179 - #47 int
-INFO  01:04:32,180 - #47 a
-INFO  01:04:32,180 - #41 )
-INFO  01:04:32,181 - #47 char
-INFO  01:04:32,181 - #47 b
-INFO  01:04:32,181 - #37 ;
-INFO  01:04:32,181 - #47 int
-INFO  01:04:32,181 - #47 k
-INFO  01:04:32,181 - #37 ;
-INFO  01:04:32,182 - #42 {
-INFO  01:04:32,182 - #47 b
-INFO  01:04:32,182 - #36 =
-INFO  01:04:32,184 - #48 1
-INFO  01:04:32,186 - #37 ;
-INFO  01:04:32,192 - #47 a
-INFO  01:04:32,193 - #36 =
-INFO  01:04:32,193 - #49 2
-INFO  01:04:32,193 - #37 ;
-INFO  01:04:32,193 - #47 k
-INFO  01:04:32,194 - #36 =
-INFO  01:04:32,194 - #47 bb
-INFO  01:04:32,194 - #37 ;
-INFO  01:04:32,194 - #43 }
-INFO  01:04:32,194 - #5 void
-INFO  01:04:32,194 - #47 main
-INFO  01:04:32,195 - #40 (
-INFO  01:04:32,195 - #41 )
-INFO  01:04:32,195 - #42 {
-INFO  01:04:32,196 - #43 }
-INFO  01:04:32,196 - #43 }
-INFO  01:04:32,212 - Program(
+INFO  15:10:33,182 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  15:10:33,237 - #2 program
+INFO  15:10:33,237 - #47 test302
+INFO  15:10:33,237 - #20 const
+INFO  15:10:33,238 - #47 int
+INFO  15:10:33,238 - #47 i
+INFO  15:10:33,239 - #36 =
+INFO  15:10:33,239 - #49 1
+INFO  15:10:33,239 - #37 ;
+INFO  15:10:33,240 - #20 const
+INFO  15:10:33,241 - #47 char
+INFO  15:10:33,241 - #47 y
+INFO  15:10:33,241 - #36 =
+INFO  15:10:33,242 - #48 1
+INFO  15:10:33,242 - #37 ;
+INFO  15:10:33,242 - #47 boolean
+INFO  15:10:33,242 - #47 b
+INFO  15:10:33,242 - #37 ;
+INFO  15:10:33,244 - #47 int
+INFO  15:10:33,244 - #47 zna
+INFO  15:10:33,244 - #39 ,
+INFO  15:10:33,244 - #47 beta
+INFO  15:10:33,245 - #44 [
+INFO  15:10:33,245 - #45 ]
+INFO  15:10:33,245 - #39 ,
+INFO  15:10:33,245 - #47 a
+INFO  15:10:33,245 - #44 [
+INFO  15:10:33,245 - #45 ]
+INFO  15:10:33,246 - #37 ;
+INFO  15:10:33,246 - #42 {
+INFO  15:10:33,246 - #47 int
+INFO  15:10:33,246 - #47 aa
+INFO  15:10:33,247 - #40 (
+INFO  15:10:33,247 - #47 int
+INFO  15:10:33,248 - #47 a
+INFO  15:10:33,248 - #41 )
+INFO  15:10:33,248 - #47 char
+INFO  15:10:33,249 - #47 b
+INFO  15:10:33,249 - #37 ;
+INFO  15:10:33,249 - #47 int
+INFO  15:10:33,250 - #47 k
+INFO  15:10:33,250 - #37 ;
+INFO  15:10:33,250 - #42 {
+INFO  15:10:33,250 - #47 beta
+INFO  15:10:33,251 - #44 [
+INFO  15:10:33,251 - #49 4
+INFO  15:10:33,253 - #45 ]
+INFO  15:10:33,255 - #36 =
+INFO  15:10:33,256 - #47 beta
+INFO  15:10:33,256 - #44 [
+INFO  15:10:33,256 - #49 3
+INFO  15:10:33,257 - #45 ]
+INFO  15:10:33,257 - #25 +
+INFO  15:10:33,257 - #47 beta
+INFO  15:10:33,258 - #44 [
+INFO  15:10:33,258 - #49 5
+INFO  15:10:33,258 - #45 ]
+INFO  15:10:33,258 - #37 ;
+INFO  15:10:33,259 - #43 }
+INFO  15:10:33,260 - #5 void
+INFO  15:10:33,260 - #47 main
+INFO  15:10:33,261 - #40 (
+INFO  15:10:33,261 - #41 )
+INFO  15:10:33,261 - #42 {
+INFO  15:10:33,261 - #43 }
+INFO  15:10:33,262 - #43 }
+INFO  15:10:33,272 - Program(
   ProgName(
    test302
   ) [ProgName]
@@ -116,7 +113,7 @@ INFO  01:04:32,212 - Program(
       VarProgramDeclaration(
         VarDeclaration(
           Type(
-           bool
+           boolean
           ) [Type]
           SingleVarDeclaration(
             VarValue(
@@ -159,30 +156,8 @@ INFO  01:04:32,212 - Program(
   ) [MultiProgramDeclarationList]
   RepeatMethodDeclaration(
     RepeatMethodDeclaration(
-      RepeatMethodDeclaration(
-        NoRepeatMethodDeclaration(
-        ) [NoRepeatMethodDeclaration]
-        MethodDeclaration(
-          MethodHeader(
-            CustomMethodDeclType(
-              Type(
-               int
-              ) [Type]
-            ) [CustomMethodDeclType]
-           fja
-          ) [MethodHeader]
-          FormParamsBegin(
-          ) [FormParamsBegin]
-          NoFromParameters(
-          ) [NoFromParameters]
-          FormParamsEnd(
-          ) [FormParamsEnd]
-          NoMethodDelVarList(
-          ) [NoMethodDelVarList]
-          NoStatementListOpt(
-          ) [NoStatementListOpt]
-        ) [MethodDeclaration]
-      ) [RepeatMethodDeclaration]
+      NoRepeatMethodDeclaration(
+      ) [NoRepeatMethodDeclaration]
       MethodDeclaration(
         MethodHeader(
           CustomMethodDeclType(
@@ -241,75 +216,30 @@ INFO  01:04:32,212 - Program(
           ) [VarDeclaration]
         ) [MultiMethodDelVarList]
         StatementListOpt(
-          StatementListOpt(
-            StatementListOpt(
-              NoStatementListOpt(
-              ) [NoStatementListOpt]
-              DesStatement(
-                DesignatorStatementAssign(
-                  AssignOpeeratorExpresion(
-                    Designator(
-                     b
-                      NoDsgnList(
-                      ) [NoDsgnList]
-                    ) [Designator]
-                    AssignOperator(
-                    ) [AssignOperator]
+          NoStatementListOpt(
+          ) [NoStatementListOpt]
+          DesStatement(
+            DesignatorStatementAssign(
+              AssignOpeeratorExpresion(
+                Designator(
+                 beta
+                  DsgnList(
                     Expression(
                       NoNegativePrefix(
                       ) [NoNegativePrefix]
                       BasicTerm(
-                        FactorCharConst(
-                          CharConstant(
-                           1
-                          ) [CharConstant]
-                        ) [FactorCharConst]
+                        FactorNumConst(
+                          NumberConstant(
+                           4
+                          ) [NumberConstant]
+                        ) [FactorNumConst]
                         NoMulOptTerm(
                         ) [NoMulOptTerm]
                       ) [BasicTerm]
                       NoExpressionList(
                       ) [NoExpressionList]
                     ) [Expression]
-                  ) [AssignOpeeratorExpresion]
-                ) [DesignatorStatementAssign]
-              ) [DesStatement]
-            ) [StatementListOpt]
-            DesStatement(
-              DesignatorStatementAssign(
-                AssignOpeeratorExpresion(
-                  Designator(
-                   a
-                    NoDsgnList(
-                    ) [NoDsgnList]
-                  ) [Designator]
-                  AssignOperator(
-                  ) [AssignOperator]
-                  Expression(
-                    NoNegativePrefix(
-                    ) [NoNegativePrefix]
-                    BasicTerm(
-                      FactorNumConst(
-                        NumberConstant(
-                         2
-                        ) [NumberConstant]
-                      ) [FactorNumConst]
-                      NoMulOptTerm(
-                      ) [NoMulOptTerm]
-                    ) [BasicTerm]
-                    NoExpressionList(
-                    ) [NoExpressionList]
-                  ) [Expression]
-                ) [AssignOpeeratorExpresion]
-              ) [DesignatorStatementAssign]
-            ) [DesStatement]
-          ) [StatementListOpt]
-          DesStatement(
-            DesignatorStatementAssign(
-              AssignOpeeratorExpresion(
-                Designator(
-                 k
-                  NoDsgnList(
-                  ) [NoDsgnList]
+                  ) [DsgnList]
                 ) [Designator]
                 AssignOperator(
                 ) [AssignOperator]
@@ -319,16 +249,63 @@ INFO  01:04:32,212 - Program(
                   BasicTerm(
                     FactorDesignator(
                       Designator(
-                       bb
-                        NoDsgnList(
-                        ) [NoDsgnList]
+                       beta
+                        DsgnList(
+                          Expression(
+                            NoNegativePrefix(
+                            ) [NoNegativePrefix]
+                            BasicTerm(
+                              FactorNumConst(
+                                NumberConstant(
+                                 3
+                                ) [NumberConstant]
+                              ) [FactorNumConst]
+                              NoMulOptTerm(
+                              ) [NoMulOptTerm]
+                            ) [BasicTerm]
+                            NoExpressionList(
+                            ) [NoExpressionList]
+                          ) [Expression]
+                        ) [DsgnList]
                       ) [Designator]
                     ) [FactorDesignator]
                     NoMulOptTerm(
                     ) [NoMulOptTerm]
                   ) [BasicTerm]
-                  NoExpressionList(
-                  ) [NoExpressionList]
+                  ExpressionList(
+                    NoExpressionList(
+                    ) [NoExpressionList]
+                    ExpressionListValue(
+                      PlusOp(
+                      ) [PlusOp]
+                      BasicTerm(
+                        FactorDesignator(
+                          Designator(
+                           beta
+                            DsgnList(
+                              Expression(
+                                NoNegativePrefix(
+                                ) [NoNegativePrefix]
+                                BasicTerm(
+                                  FactorNumConst(
+                                    NumberConstant(
+                                     5
+                                    ) [NumberConstant]
+                                  ) [FactorNumConst]
+                                  NoMulOptTerm(
+                                  ) [NoMulOptTerm]
+                                ) [BasicTerm]
+                                NoExpressionList(
+                                ) [NoExpressionList]
+                              ) [Expression]
+                            ) [DsgnList]
+                          ) [Designator]
+                        ) [FactorDesignator]
+                        NoMulOptTerm(
+                        ) [NoMulOptTerm]
+                      ) [BasicTerm]
+                    ) [ExpressionListValue]
+                  ) [ExpressionList]
                 ) [Expression]
               ) [AssignOpeeratorExpresion]
             ) [DesignatorStatementAssign]
@@ -355,20 +332,19 @@ INFO  01:04:32,212 - Program(
     ) [MethodDeclaration]
   ) [RepeatMethodDeclaration]
 ) [Program]
-INFO  01:04:32,216 - ===================================
-INFO  01:04:32,220 - Deklarisana CONST promenljiva i tip:int Vredosti: 1 na liniji 3
-INFO  01:04:32,221 - Deklarisana CONST promenljiva y tip:char Vredosti: 49 na liniji 4
-ERROR 01:04:32,221 - Nije pronadjen tip bool u tabeli simbola! 
-INFO  01:04:32,221 - Deklarisana promenljiva b tip:char - GLOBAL VAR na liniji 5
-INFO  01:04:32,221 - Deklarisana promenljiva zna tip:int - GLOBAL VAR na liniji 6
-INFO  01:04:32,222 - Deklarisana promenljiva beta tip:int - GLOBAL VAR na liniji 6
-INFO  01:04:32,222 - Deklarisana promenljiva a tip:int - GLOBAL VAR na liniji 6
-INFO  01:04:32,222 - Obradjuje se metoda: fja na liniji 10
-INFO  01:04:32,222 - Obradjuje se metoda: aa na liniji 11
-INFO  01:04:32,222 - Deklarisana promenljiva a tip:int - FUNKCIJA na liniji 11
-INFO  01:04:32,222 - Deklarisana promenljiva b tip:char - FUNKCIJA na liniji 11
-INFO  01:04:32,222 - Deklarisana promenljiva k tip:int - FUNKCIJA na liniji 11
-INFO  01:04:32,223 - Designator b pronadjen! na liniji 12
-INFO  01:04:32,224 - Designator a pronadjen! na liniji 13
-INFO  01:04:32,224 - Designator k pronadjen! na liniji 14
-ERROR 01:04:32,224 - Greska! Designator bb nije deklarisan! na liniji 14
+INFO  15:10:33,274 - ===================================
+INFO  15:10:33,277 - Deklarisana CONST promenljiva i tip:int Vredosti: 1 na liniji 3
+INFO  15:10:33,278 - Deklarisana CONST promenljiva y tip:char Vredosti: 49 na liniji 4
+INFO  15:10:33,278 - Deklarisana promenljiva b tip:boolean - GLOBAL VAR na liniji 5
+INFO  15:10:33,279 - Deklarisana promenljiva zna tip:int - GLOBAL VAR na liniji 6
+INFO  15:10:33,279 - Deklarisana promenljiva beta tip:int - GLOBAL VAR na liniji 6
+INFO  15:10:33,279 - Deklarisana promenljiva a tip:int - GLOBAL VAR na liniji 6
+INFO  15:10:33,279 - Obradjuje se metoda: aa na liniji 9
+INFO  15:10:33,279 - Deklarisana promenljiva a tip:int - FUNKCIJA na liniji 9
+INFO  15:10:33,279 - Deklarisana promenljiva b tip:char - FUNKCIJA na liniji 9
+INFO  15:10:33,279 - Deklarisana promenljiva k tip:int - FUNKCIJA na liniji 9
+INFO  15:10:33,280 - Designator beta pronadjen! na liniji 11
+INFO  15:10:33,280 - Designator beta pronadjen! na liniji 11
+INFO  15:10:33,281 - Designator beta pronadjen! na liniji 11
+INFO  15:10:33,281 - Obradjuje se metoda: main na liniji 14
+INFO  15:10:33,281 - ===================================

@@ -228,11 +228,12 @@ public class SemanticPass extends VisitorAdaptor {
     
    public void visit(Designator designator) {
 	   Obj des = NewSymbolTable.find(designator.getDesigantorName());
+	   designator.obj = des;
 	   if(des == NewSymbolTable.noObj) {
 		   report_error("Greska! Designator "+ designator.getDesigantorName()+" nije deklarisan!", designator);
 		   return;
 	   }
-	   designator.obj = des;
+	  
 	   report_info("Designator "+ designator.getDesigantorName()+" pronadjen!", designator);
 
    }
@@ -281,15 +282,42 @@ public class SemanticPass extends VisitorAdaptor {
 		   return;
 	   }
 	   
-	   if(op2 == NewSymbolTable.noObj) {
+	   if(NewSymbolTable.noObj.equals(op2) ) {
 		   report_error("Greska! Nepostojeci operand!", assignOp);
 		   return;
 	   }
 	   
 	   //Check type compatibility
-	   if(!op1.getType().equals(op2.getType())) {
-		   report_error("Greska! Nekompatabilni tipovi! op1:"+ op1.getType().getKind(), assignOp);
-		   return;
+	   
+	   //case 1
+	   if(op1.getType().getElemType() != null && op2.getType().getElemType() == null) {
+		   if(!op1.getType().getElemType().equals(op2.getType())) {
+			   report_error("Greska! Nekompatabilni tipovi! ---:"+ op1.getType().getKind(), assignOp);
+			   return;
+		   }
+	   }
+	   
+	   //case2
+	   if(op2.getType().getElemType() != null && op1.getType().getElemType() == null) {
+		   if(!op2.getType().getElemType().equals(op1.getType())) {
+			   report_error("Greska! Nekompatabilni tipovi! ---:"+ op1.getType().getKind(), assignOp);
+			   return;
+		   }
+	   }
+	   //case 3
+	   if(op2.getType().getElemType() != null && op1.getType().getElemType() != null) {
+		   if(!op2.getType().getElemType().equals(op1.getType().getElemType())) {
+			   report_error("Greska! Nekompatabilni tipovi! ---:"+ op1.getType().getKind(), assignOp);
+			   return;
+		   }
+	   }
+	   	   
+	   //case 4
+	   if(op2.getType().getElemType() == null && op1.getType().getElemType() == null) {
+		   if(!op2.getType().equals(op1.getType())) {
+			   report_error("Greska! Nekompatabilni tipovi! ---:"+ op1.getType().getKind(), assignOp);
+			   return;
+		   }
 	   }
 	   
    }
@@ -313,17 +341,35 @@ public class SemanticPass extends VisitorAdaptor {
 	   
 	   //Provera operanada
 	   if(expr.getExprList() instanceof ExpressionList) {
+		   Obj op1 = expr.getTerm().obj;
+		   Obj op2 = ((ExpressionListValue)((ExpressionList)expr.getExprList()).getExprListVal()).getTerm().obj;
 		   
 		   //operand 1
-		   if(!isIntType(expr.getTerm().obj)) {
-			   report_error("Greska! Expr: Operand1 mora biti tipa INT!", expr);
-			   return;
+		   
+		   if(op1.getType().getElemType() == null) {
+			   if(!isIntType(op1)) {
+				   report_error("Greska! Expr: Operand1 mora biti tipa INT!", expr);
+				   return;
+			   }
+		   }else {
+			   if(op1.getType().getElemType().getKind() != Struct.Int) {
+				   report_error("Greska! Expr: Operand1 mora biti tipa INT!" + op1.getType().getElemType().getKind(), expr);
+				   return;
+			   }
 		   }
+		 
 		   
 		   //operand 2
-		   if(!isIntType(((ExpressionListValue)((ExpressionList)expr.getExprList()).getExprListVal()).getTerm().obj)) {
-			   report_error("Greska! Expr: Operand2 mora biti tipa INT!", expr);
-			   return;
+		   if(op2.getType().getElemType() == null) {
+			   if(!isIntType(op2)) {
+				   report_error("Greska! Expr: Operand2 mora biti tipa INT!", expr);
+				   return;
+			   }
+		   }else {
+			   if(op2.getType().getElemType().getKind() != Struct.Int) {
+				   report_error("Greska! Expr: Operand2 mora biti tipa INT!", expr);
+				   return;
+			   }
 		   }
 	   }
    }

@@ -1,5 +1,0 @@
-INFO  16:37:49,958 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\MJCompiler\test\program.mj
-INFO  16:37:50,013 - #20 const
-ERROR 16:37:50,013 - 
-Sintaksna greska na liniji 2
-ERROR 16:37:50,013 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 2

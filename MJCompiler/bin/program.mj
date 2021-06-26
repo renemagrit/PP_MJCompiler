@@ -2,18 +2,15 @@
 program test302
 const int i = 1;
 const char y = '1';
-bool b;
+boolean b;
 int zna, beta[], a[];
 {
 	
-
-	int fja(){}
 	int aa(int a) char b; int k;{
-		b = '1';
-		a = 2;
-		k = bb;
+	
+		beta[4] = beta[3] + beta[5];
 	}
-
+	
 	void main(){}
 	
 }
