@@ -154,14 +154,17 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	
     public void visit(PrintStatemtDetail print) {
-		print.obj = print.getExpr().obj;
+		//print.obj = print.getExpr().obj;
+		Struct exprStruct = print.getExpr().struct;
 		
 		int currtype = Struct.None;
-    	if(print.obj.getType().getElemType() == null) {
-    		currtype = print.obj.getType().getKind();
+    	
+		if(exprStruct.getElemType() == null) {
+    		currtype = exprStruct.getKind();
     	}else{
-    		currtype = print.obj.getType().getElemType().getKind();
+    		currtype = exprStruct.getElemType().getKind();
     	}
+	
     	
     	if(!(currtype == Struct.Int
     			|| currtype == Struct.Char
@@ -174,18 +177,19 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	}
     
     public void visit(ReadStatementDetail read) {
-    	read.obj = read.getDesignator().obj;
+    	//read.obj = read.getDesignator().obj;
+    	Struct desStrcut =  read.getDesignator().obj.getType();
     	
-    	if(!isValueableObj(read.obj)){
+    	if(!isValueableObj(read.getDesignator().obj)){
   		   report_error("Greska! Desigantor za Read mora biti vrednostan!", read);
   		   return;
   	  	}
     	
     	int currtype = Struct.None;
-    	if(read.obj.getType().getElemType() == null) {
-    		currtype = read.obj.getType().getKind();
+    	if(desStrcut.getElemType() == null) {
+    		currtype = desStrcut.getKind();
     	}else{
-    		currtype = read.obj.getType().getElemType().getKind();
+    		currtype = desStrcut.getElemType().getKind();
     	}
     	
     	if(!(currtype == Struct.Int
@@ -199,41 +203,41 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     
     public void visit(CondFactorSingle cond) {
-    	cond.obj = cond.getExpr().obj;
-    	if(cond.obj.getType().getKind() != Struct.Bool) {
+    	cond.struct = cond.getExpr().struct;
+    	if(cond.struct.getKind() != Struct.Bool) {
     		report_error("Greska! Tip uslovne promenljive mora biti Boolean", cond);
     		return;
     	}
     }
     public void visit(CondFactorMulti cond) {
-    	Obj op1 = cond.getExpr().obj;
-    	Obj op2 = cond.getExpr1().obj;
+    	Struct op1 = cond.getExpr().struct;
+    	Struct op2 = cond.getExpr1().struct;
     	
     	//provera kompatabilnosti tipova
-    	if(!op1.getType().compatibleWith(op2.getType())) {
+    	if(!op1.compatibleWith(op2)) {
     		report_error("Greska! Tipovi uslovnih promenljivih moraju biti kompatabilni!", cond);
     		return;
     	}
     	//provera operatora za nizove
-    	if(op1.getType().isRefType() || op2.getType().isRefType()) {
+    	if(op1.isRefType() || op2.isRefType()) {
     		if(!(cond.getRelop() instanceof IsEqualRelOp || cond.getRelop() instanceof NotEqualRelOp)) {
     			report_error("Greska! Relacioni operatori nizovskih tipova mogu biti samo == i !=!", cond);
         		return;
     		}
     	}
-    	cond.obj = new Obj(Obj.Var, "BoolConst", NewSymbolTable.booleanType);
+    	cond.struct = NewSymbolTable.booleanType;
     }
     public void visit(SingleCondTerm cond) {
-    	cond.obj = cond.getCondFact().obj;
+    	cond.struct = cond.getCondFact().struct;
     }
     public void visit(MultiCondTerm cond) {
-    	cond.obj = cond.getCondFact().obj;
+    	cond.struct = cond.getCondFact().struct;
     }
     public void visit(SingleCondition cond) {
-    	cond.obj = cond.getCondTerm().obj;
+    	cond.struct = cond.getCondTerm().struct;
     }
     public void visit(MultiCondition cond) {
-    	cond.obj = cond.getCondTerm().obj;
+    	cond.struct = cond.getCondTerm().struct;
     }
         
     //****************************************** PROG ************************************
@@ -325,11 +329,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	   if(designator.getDesigantorList() instanceof DsgnList) {
 		   if(designator.obj.getType().getKind() != Struct.Array){
 			   report_error("Greska! Indeksiranje moguce samo nad nizovnim promenljivama!", designator);
+			   return;
 		   }
 		   
 		   DsgnList dsnList = (DsgnList)designator.getDesigantorList();
 		   
-		   if(!isIntType(dsnList.getExpr().obj)) {
+		   if(!isIntType(dsnList.getExpr().struct)) {
 			   report_error("Greska!Expression mora biti tipa INT!00000", designator);
 			   
 		   }
@@ -355,7 +360,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		   desStruct = desigantor.obj.getType().getElemType();   
 	   }
 	   if(!isIntType(desStruct)) {
-		   report_error("Greska! Desigantor za Dekrement mora biti vrtipa INT!", desInc);
+		   report_error("Greska! Desigantor za Inkrement mora biti vrtipa INT!", desInc);
 		   return;
 	   }   
 	   
@@ -385,7 +390,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
    }
    public void visit(AssignOpeeratorExpresion assignOp) {
 	   
-	   
 	   if(!isValueableObj(assignOp.getDesignator().obj)){
 		   report_error("Greska! Desigantor za Dodelu vrednosti mora biti vrednostan!", assignOp);
 		   return;
@@ -396,20 +400,16 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	   if(desigantor.getDesigantorList() instanceof DsgnList) {
 		   desStruct = desigantor.obj.getType().getElemType();   
 	   }
-	   if(!isIntType(desStruct)) {
-		   report_error("Greska! Desigantor za Dekrement mora biti vrtipa INT!", assignOp);
-		   return;
-	   }   
 	   
-	   Obj op1 = desigantor.obj;
-	   Obj op2 = assignOp.getExpr().obj;
+	   Struct op1 = desStruct;
+	   Struct op2 = assignOp.getExpr().struct;
 	   
-	   if(op1 == NewSymbolTable.noObj) {
+	   if(op1 == NewSymbolTable.noType) {
 		   report_error("Greska! Nepostojeci operand!", assignOp);
 		   return;
 	   }
 	   
-	   if(NewSymbolTable.noObj.equals(op2) ) {
+	   if(NewSymbolTable.noType.equals(op2) ) {
 		   report_error("Greska! Nepostojeci operand!", assignOp);
 		   return;
 	   }
@@ -417,32 +417,32 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	   //Check type compatibility
 	   
 	   //case 1
-	   if(op1.getType().getElemType() != null && op2.getType().getElemType() == null) {
-		   if(!op1.getType().getElemType().equals(op2.getType())) {
-			   report_error("Greska! Nekompatabilni tipovi! ---:"+ op1.getType().getKind(), assignOp);
+	   if(op1.getElemType() != null && op2.getElemType() == null) {
+		   if(!op1.getElemType().equals(op2)) {
+			   report_error("Greska! Nekompatabilni tipovi! ---:"+ op1.getKind(), assignOp);
 			   return;
 		   }
 	   }
 	   
 	   //case2
-	   if(op2.getType().getElemType() != null && op1.getType().getElemType() == null) {
-		   if(!op2.getType().getElemType().equals(op1.getType())) {
-			   report_error("Greska! Nekompatabilni tipovi! ---:"+ op1.getType().getKind(), assignOp);
+	   if(op2.getElemType() != null && op1.getElemType() == null) {
+		   if(!op2.getElemType().equals(op1)) {
+			   report_error("Greska! Nekompatabilni tipovi! ---:"+ op1.getKind(), assignOp);
 			   return;
 		   }
 	   }
 	   //case 3
-	   if(op2.getType().getElemType() != null && op1.getType().getElemType() != null) {
-		   if(!op2.getType().getElemType().equals(op1.getType().getElemType())) {
-			   report_error("Greska! Nekompatabilni tipovi! ---:"+ op1.getType().getKind(), assignOp);
+	   if(op2.getElemType() != null && op1.getElemType() != null) {
+		   if(!op2.getElemType().equals(op1.getElemType())) {
+			   report_error("Greska! Nekompatabilni tipovi! ---:"+ op1.getKind(), assignOp);
 			   return;
 		   }
 	   }
 	   	   
 	   //case 4
-	   if(op2.getType().getElemType() == null && op1.getType().getElemType() == null) {
-		   if(!op2.getType().equals(op1.getType())) {
-			   report_error("Greska! Nekompatabilni tipovi! ---:"+ op1.getType().getKind(), assignOp);
+	   if(op2.getElemType() == null && op1.getElemType() == null) {
+		   if(!op2.equals(op1)) {
+			   report_error("Greska! Nekompatabilni tipovi! ---:"+ op1.getKind(), assignOp);
 			   return;
 		   }
 	   }
@@ -450,17 +450,16 @@ public class SemanticAnalyzer extends VisitorAdaptor {
    }
    //********************************** Expr AddOp***********************************************
    public void visit(Expression expr) {
-	   expr.obj = expr.getTerm().obj;
+	   expr.struct = expr.getTerm().struct;
 	   
-	   if(expr.obj == NewSymbolTable.noObj) {
+	   if(expr.struct == NewSymbolTable.noType) {
 		   report_error("Greska! Nepostojeci operand!", expr);
-		   expr.obj = NewSymbolTable.noObj;
 		   return;
 	   }
 
 	   //provera negativne vrednosti
 	   if(expr.getNegPrefix() instanceof NegativePrefix) {
-		   if(!isIntType(expr.getTerm().obj)) {
+		   if(!isIntType(expr.getTerm().struct)) {
 			   report_error("Greska! Expr: Negativna Vrednost mora biti tipa INT!", expr);
 			   return;
 		   }
@@ -468,32 +467,32 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	   
 	   //Provera operanada
 	   if(expr.getExprList() instanceof ExpressionList) {
-		   Obj op1 = expr.getTerm().obj;
-		   Obj op2 = ((ExpressionListValue)((ExpressionList)expr.getExprList()).getExprListVal()).getTerm().obj;
+		   Struct op1 = expr.getTerm().struct;
+		   Struct op2 = ((ExpressionListValue)((ExpressionList)expr.getExprList()).getExprListVal()).getTerm().struct;
 		   
 		   //operand 1
 		   
-		   if(op1.getType().getElemType() == null) {
+		   if(op1.getElemType() == null) {
 			   if(!isIntType(op1)) {
 				   report_error("Greska! Expr: Operand1 mora biti tipa INT!", expr);
 				   return;
 			   }
 		   }else {
-			   if(op1.getType().getElemType().getKind() != Struct.Int) {
-				   report_error("Greska! Expr: Operand1 mora biti tipa INT!" + op1.getType().getElemType().getKind(), expr);
+			   if(op1.getElemType().getKind() != Struct.Int) {
+				   report_error("Greska! Expr: Operand1 mora biti tipa INT!", expr);
 				   return;
 			   }
 		   }
 		 
 		   
 		   //operand 2
-		   if(op2.getType().getElemType() == null) {
+		   if(op2.getElemType() == null) {
 			   if(!isIntType(op2)) {
 				   report_error("Greska! Expr: Operand2 mora biti tipa INT!", expr);
 				   return;
 			   }
 		   }else {
-			   if(op2.getType().getElemType().getKind() != Struct.Int) {
+			   if(op2.getElemType().getKind() != Struct.Int) {
 				   report_error("Greska! Expr: Operand2 mora biti tipa INT!", expr);
 				   return;
 			   }
@@ -505,9 +504,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
    //********************************** TERM MulOp***********************************************
    
    public void visit(BasicTerm term) {
-	   term.obj = term.getFactor().obj;
+	   term.struct = term.getFactor().struct;
 	   
-	   if(term.obj == NewSymbolTable.noObj) {
+	   if(term.struct == NewSymbolTable.noType) {
 		   report_error("Greska! Nepostojeci operand!", term);
 		   return;
 	   }
@@ -517,32 +516,32 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		   //Treba proveriti da li su oba operanda tipa INT
 		   
 		   
-		   Obj op1 = term.obj;
-		   Obj op2 = ((MulOptTerm)term.getTermRepeat()).getFactor().obj;
+		   Struct op1 = term.struct;
+		   Struct op2 = ((MulOptTerm)term.getTermRepeat()).getFactor().struct;
 		   
 		   //operand 1
 		   
-		   if(op1.getType().getElemType() == null) {
+		   if(op1.getElemType() == null) {	//isArray
 			   if(!isIntType(op1)) {
 				   report_error("Greska! Expr: Operand1 mora biti tipa INT!", term);
 				   return;
 			   }
 		   }else {
-			   if(op1.getType().getElemType().getKind() != Struct.Int) {
-				   report_error("Greska! Expr: Operand1 mora biti tipa INT!" + op1.getType().getElemType().getKind(), term);
+			   if(op1.getElemType().getKind() != Struct.Int) {
+				   report_error("Greska! Expr: Operand1 mora biti tipa INT!" , term);
 				   return;
 			   }
 		   }
 		 
 		   
 		   //operand 2
-		   if(op2.getType().getElemType() == null) {
+		   if(op2.getElemType() == null) {	//isArray
 			   if(!isIntType(op2)) {
 				   report_error("Greska! Expr: Operand2 mora biti tipa INT!", term);
 				   return;
 			   }
 		   }else {
-			   if(op2.getType().getElemType().getKind() != Struct.Int) {
+			   if(op2.getElemType().getKind() != Struct.Int) {
 				   report_error("Greska! Expr: Operand2 mora biti tipa INT!", term);
 				   return;
 			   }
@@ -552,82 +551,83 @@ public class SemanticAnalyzer extends VisitorAdaptor {
    
    //*********************************** FACTOR **************************************************
    public void visit(FactorNumConst factor) {
-	   if(factor.obj == NewSymbolTable.noObj) {
+	   if(factor.struct == NewSymbolTable.noType) {
 		   report_error("Greska! Konstanta nepostojeca!", factor);
 		   return;
 	   }
-	   factor.obj = factor.getNumConst().obj;
+	   factor.struct = factor.getNumConst().struct;
 	   
    }
    
    public void visit(FactorCharConst factor) {
-	   if(factor.obj == NewSymbolTable.noObj) {
+	   if(factor.struct == NewSymbolTable.noType) {
 		   report_error("Greska! Konstanta nepostojeca!", factor);
 		   return;
 	   }
-	   factor.obj = factor.getCharConst().obj;
+	   factor.struct = factor.getCharConst().struct;
    }
    public void visit(FactorBoolConst factor) {
-	   if(factor.obj == NewSymbolTable.noObj) {
+	   if(factor.struct == NewSymbolTable.noType) {
 		   report_error("Greska! Konstanta nepostojeca!", factor);
 		   return;
 	   }
-	   factor.obj = factor.getBoolConst().obj;
+	   factor.struct = factor.getBoolConst().struct;
    }
    public void visit(FacorExpression factor) {
-	   if(factor.obj == NewSymbolTable.noObj) {
+	   if(factor.struct == NewSymbolTable.noType) {
 		   report_error("Greska! Izraz nepostojeci!", factor);
 		   return;
 	   }
-	   factor.obj = factor.getExpr().obj;
+	   factor.struct = factor.getExpr().struct;
    }
    public void visit(FactorNewType factor) {
 	   
 	   if(factor.getExprFactorOpt() instanceof ExpressionFactorOption) {
-		   if(!isIntType(((ExpressionFactorOption)factor.getExprFactorOpt()).getExpr().obj)) {
+		   if(!isIntType(((ExpressionFactorOption)factor.getExprFactorOpt()).getExpr().struct)) {
 			   report_error("Greska!Expression mora biti tipa INT!", factor);
 			   return;
 		   }
-		   factor.obj = new Obj(Obj.Var,"newVarArray", currentType);
-	   }else {
-		   factor.obj = new Obj(Obj.Var,"newVar", currentType);
+		   factor.struct = new Struct(Struct.Array, currentType);
 	   }
+//	   else {
+//		   factor.obj = new Obj(Obj.Var,"newVar", currentType);
+//	   }
+	   
    }
    public void visit(FactorDesignator factor) {
-	   if(factor.obj == NewSymbolTable.noObj) {
+	   factor.struct = factor.getDesignator().obj.getType(); 
+	   
+	   if(factor.struct == NewSymbolTable.noType) {
 		   report_error("Greska! Designator nepostojeci!", factor);
-	   }	   
-	  
-	   factor.obj = factor.getDesignator().obj; 
+	   } 
 	   
 	   Designator desigantor = factor.getDesignator();
 	   Struct desStruct = desigantor.obj.getType();
 	   
 	   if(desigantor.getDesigantorList() instanceof DsgnList) {
-		   desStruct = desigantor.obj.getType().getElemType();   
+		   desStruct = desigantor.obj.getType().getElemType(); 
+		   factor.struct = desStruct;
 	   }
-	   if(!isIntType(desStruct)) {
-		   report_error("Greska! Desigantor za Dekrement mora biti vrtipa INT!", factor);
-		   return;
-	   }   
+//	   if(!isIntType(desStruct)) {
+//		   report_error("Greska! Factor designator mora biti vrtipa INT!", factor);
+//		   return;
+//	   }   
 	   
    }
   
    public void visit(NumberConstant numConst) {
-	   
 	   int constValue = numConst.getN1();
-	   numConst.obj = new Obj(Obj.Con,"NumConst", NewSymbolTable.intType);
+	   numConst.struct = NewSymbolTable.intType;
 	   numConst.setN1(constValue);   
-
    }
    public void visit(CharConstant charConst) {
 	   char constValue = charConst.getC1();
-	   charConst.obj = new Obj(Obj.Con,"CharConst", NewSymbolTable.charType);
+	   charConst.struct = NewSymbolTable.charType;
 	   charConst.setC1(constValue);
    }
    public void visit(BoolConstant boolConst) {
 	   int constValue = boolConst.getB1();
-	   boolConst.obj = new Obj(Obj.Con,"BoolConst", NewSymbolTable.booleanType);
+	   boolConst.struct = NewSymbolTable.booleanType;
 	   boolConst.setB1(constValue);
    }
    
