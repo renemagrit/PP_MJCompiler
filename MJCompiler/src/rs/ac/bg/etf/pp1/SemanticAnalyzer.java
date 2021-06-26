@@ -8,7 +8,7 @@ import rs.etf.pp1.symboltable.concepts.Struct;
 
 import org.apache.log4j.Logger;
 
-public class SemanticPass extends VisitorAdaptor {
+public class SemanticAnalyzer extends VisitorAdaptor {
 	
 	int printCallCount = 0;
 	int nVars;
