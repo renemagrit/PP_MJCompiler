@@ -20,6 +20,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     private static boolean isFormalParam = false;
     private static int argCount;
 
+	private static boolean errorDetection = false;
 	
 	Logger log = Logger.getLogger(getClass());
 
@@ -36,9 +37,15 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	public static boolean isIntType(Obj currObj) {
 		return currObj.getType().getKind() == Struct.Int;
 	}
+	public static boolean isIntType(Struct currObj) {
+		return currObj.getKind() == Struct.Int;
+	}
 	
 	public static boolean isMethValue(Obj currObj) {
 		return currObj.getKind() == Obj.Meth;
+	}
+	public static String getKindName(int kind) {
+		return null;
 	}
 	//******************************************************************//
 	
@@ -86,11 +93,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		if(currentMethod != null) {
 			//polje u metodi
 			NewSymbolTable.insert(Obj.Fld, vardecl.getVarName(), varType);
-			report_info("Deklarisana promenljiva "+ vardecl.getVarName()+" tip:" + currentTypeName +" - FUNKCIJA", vardecl);
+			report_info("Deklarisana promenljiva "+ vardecl.getVarName()+" tip:" + varType.getKind() +" - FUNKCIJA", vardecl);
 		}else {
 			//globalna promenljiva			
 			NewSymbolTable.insert(Obj.Var, vardecl.getVarName(), varType);
-			report_info("Deklarisana promenljiva "+ vardecl.getVarName()+" tip:" + currentTypeName+" - GLOBAL VAR", vardecl);
+			report_info("Deklarisana promenljiva "+ vardecl.getVarName()+" tip:" +  varType.getKind()+" - GLOBAL VAR", vardecl);
 		}	
 		if(isFormalParam) argCount++;
 		
@@ -163,7 +170,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     		report_error("Greska! Print operand mora biti int, char ili boolean tipa!", print);
     		return;
     	}
-    	report_info("PRINT STATMENR", null);
+    	report_info("Pronadjen Print Statement ", print);
 	}
     
     public void visit(ReadStatementDetail read) {
@@ -188,6 +195,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     		report_error("Greska! Read operand mora biti int, char ili boolean tipa!", read);
     		return;
     	}
+    	report_info("Pronadjen Read Statement ", read);
     }
     
     public void visit(CondFactorSingle cond) {
@@ -308,10 +316,24 @@ public class SemanticAnalyzer extends VisitorAdaptor {
    public void visit(Designator designator) {
 	   Obj des = NewSymbolTable.find(designator.getDesigantorName());
 	   designator.obj = des;
+	   
 	   if(des == NewSymbolTable.noObj) {
 		   report_error("Greska! Designator "+ designator.getDesigantorName()+" nije deklarisan!", designator);
 		   return;
 	   }
+	   
+	   if(designator.getDesigantorList() instanceof DsgnList) {
+		   if(designator.obj.getType().getKind() != Struct.Array){
+			   report_error("Greska! Indeksiranje moguce samo nad nizovnim promenljivama!", designator);
+		   }
+		   
+		   DsgnList dsnList = (DsgnList)designator.getDesigantorList();
+		   
+		   if(!isIntType(dsnList.getExpr().obj)) {
+			   report_error("Greska!Expression mora biti tipa INT!00000", designator);
+			   
+		   }
+	   }	   
 	  
 	   report_info("Designator "+ designator.getDesigantorName()+" pronadjen!", designator);
 
@@ -326,24 +348,40 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	   report_info("FUNC: "+currFuncCall.getName(), null);
    }
    public void visit(DesignatorStatementInc desInc) {
+	   Designator desigantor = desInc.getDesignator();
+	   Struct desStruct = desigantor.obj.getType();
+	   
+	   if(desigantor.getDesigantorList() instanceof DsgnList) {
+		   desStruct = desigantor.obj.getType().getElemType();   
+	   }
+	   if(!isIntType(desStruct)) {
+		   report_error("Greska! Desigantor za Dekrement mora biti vrtipa INT!", desInc);
+		   return;
+	   }   
+	   
 	   if(!isValueableObj(desInc.getDesignator().obj)){
 		   report_error("Greska! Desigantor za Inkrement mora biti vrednostan!", desInc);
 		   return;
 	   }
-	   if(!isIntType(desInc.getDesignator().obj)) {
-		   report_error("Greska! Desigantor za Inkrement mora biti vrtipa INT!", desInc);
-		   return;
-	   }
+
    }
    public void visit(DesignatorStatementDec desDec) {
-	   if(!isValueableObj(desDec.getDesignator().obj)){
-		   report_error("Greska! Desigantor za Dekrement mora biti vrednostan!", desDec);
-		   return;
+	   Designator desigantor = desDec.getDesignator();
+	   Struct desStruct = desigantor.obj.getType();
+	   
+	   if(desigantor.getDesigantorList() instanceof DsgnList) {
+		   desStruct = desigantor.obj.getType().getElemType();   
 	   }
-	   if(!isIntType(desDec.getDesignator().obj)) {
+	   if(!isIntType(desStruct)) {
 		   report_error("Greska! Desigantor za Dekrement mora biti vrtipa INT!", desDec);
 		   return;
-	   }
+	   }   
+	   
+	   if(!isValueableObj(desigantor.obj)){
+		   report_error("Greska! Desigantor za Dekrement mora biti vrednostan!", desDec);
+		   return;
+	   }	   
+	   
    }
    public void visit(AssignOpeeratorExpresion assignOp) {
 	   
@@ -352,8 +390,18 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		   report_error("Greska! Desigantor za Dodelu vrednosti mora biti vrednostan!", assignOp);
 		   return;
 	   }
+	   Designator desigantor = assignOp.getDesignator();
+	   Struct desStruct = desigantor.obj.getType();
 	   
-	   Obj op1 = assignOp.getDesignator().obj;
+	   if(desigantor.getDesigantorList() instanceof DsgnList) {
+		   desStruct = desigantor.obj.getType().getElemType();   
+	   }
+	   if(!isIntType(desStruct)) {
+		   report_error("Greska! Desigantor za Dekrement mora biti vrtipa INT!", assignOp);
+		   return;
+	   }   
+	   
+	   Obj op1 = desigantor.obj;
 	   Obj op2 = assignOp.getExpr().obj;
 	   
 	   if(op1 == NewSymbolTable.noObj) {
@@ -509,6 +557,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		   return;
 	   }
 	   factor.obj = factor.getNumConst().obj;
+	   
    }
    
    public void visit(FactorCharConst factor) {
@@ -547,20 +596,21 @@ public class SemanticAnalyzer extends VisitorAdaptor {
    public void visit(FactorDesignator factor) {
 	   if(factor.obj == NewSymbolTable.noObj) {
 		   report_error("Greska! Designator nepostojeci!", factor);
-		  
-	   }
-	   if(((Designator)factor.getDesignator()).getDesigantorList() instanceof DsgnList) {
-		   if(((Designator)factor.getDesignator()).obj.getType().getKind() != Struct.Array){
-			   report_error("Greska! Indeksiranje moguce samo nad nizovnim promenljivama!", factor);
-		   }
-		   
-		   if(!isIntType(((DsgnList)((Designator)factor.getDesignator()).getDesigantorList()).getExpr().obj)) {
-			   report_error("Greska!Expression mora biti tipa INT!", factor);
-			   
-		   }
 	   }	   
 	  
 	   factor.obj = factor.getDesignator().obj; 
+	   
+	   Designator desigantor = factor.getDesignator();
+	   Struct desStruct = desigantor.obj.getType();
+	   
+	   if(desigantor.getDesigantorList() instanceof DsgnList) {
+		   desStruct = desigantor.obj.getType().getElemType();   
+	   }
+	   if(!isIntType(desStruct)) {
+		   report_error("Greska! Desigantor za Dekrement mora biti vrtipa INT!", factor);
+		   return;
+	   }   
+	   
    }
   
    public void visit(NumberConstant numConst) {
@@ -579,5 +629,29 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	   int constValue = boolConst.getB1();
 	   boolConst.obj = new Obj(Obj.Con,"BoolConst", NewSymbolTable.booleanType);
 	   boolConst.setB1(constValue);
+   }
+   
+   //********************************* ERRORS *****************************
+   public void visit(ErrorConstGlobalDeclarationSemi error) {
+	   errorDetection = true;
+   }
+   public void visit(ErrorConstGlobalDeclarationComma error) {
+	   errorDetection = true;
+   }
+   public void visit(ErrorVarGlobalDeclarationSemi error) {
+	   errorDetection = true;
+   }
+   
+   public void visit(ErrorVarGlobalDeclarationComma error) {
+	   errorDetection = true;
+   }
+   public void visit(ErrorFormalParamesComma error) {
+	   errorDetection = true;
+   }
+   public void visit(ErrorAssignExpression error) {
+	   errorDetection = true;
+   }
+   public void visit(ErrorCondition error) {
+	   errorDetection = true;
    }
 }

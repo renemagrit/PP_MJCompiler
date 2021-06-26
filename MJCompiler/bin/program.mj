@@ -1,21 +1,22 @@
-//Test 302
-program test302
-const int i = 1;
-const char y = '1';
-bool b;
-int zna, beta[], a[];
+// Test301
+
+program test301
+
+	const int nula = 0;
+	const int jedan = 1;
+	const int pet = 5;
+
+	int niz[];
+	int nizch[];
+	
 {
+	void main()	
+		int bodovi;
+	{
 	
-	int aa(int a) bool b; char k;{
-	
-		beta[4] = beta[3] /a[1];
-		if(k == '2')
-		{
-			print(b, 2);
-		}
+		niz = nizch;
+		
 	}
-	
-	void main(){}
-	
 }
+
 
