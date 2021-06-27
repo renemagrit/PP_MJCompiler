@@ -1,0 +1,101 @@
+INFO  18:37:27,949 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  18:37:28,015 - #2 program
+INFO  18:37:28,015 - #47 test301
+INFO  18:37:28,015 - #20 const
+INFO  18:37:28,016 - #47 int
+INFO  18:37:28,016 - #47 a
+INFO  18:37:28,017 - #36 =
+INFO  18:37:28,017 - #49 3
+INFO  18:37:28,017 - #37 ;
+INFO  18:37:28,018 - #42 {
+INFO  18:37:28,018 - #5 void
+INFO  18:37:28,019 - #47 main
+INFO  18:37:28,019 - #40 (
+INFO  18:37:28,020 - #41 )
+INFO  18:37:28,020 - #42 {
+INFO  18:37:28,021 - #3 print
+INFO  18:37:28,022 - #40 (
+INFO  18:37:28,022 - #47 a
+INFO  18:37:28,023 - #41 )
+INFO  18:37:28,028 - #37 ;
+INFO  18:37:28,028 - #43 }
+INFO  18:37:28,029 - #43 }
+INFO  18:37:28,040 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    NoDecl(
+    ) [NoDecl]
+    ConstProgramDeclaration(
+      ConstDeclaration(
+        Type(
+         int
+        ) [Type]
+        SingleConstDeclaration(
+          ConstValue(
+           a
+            ConstOptionNumber(
+              NumberConstant(
+               3
+              ) [NumberConstant]
+            ) [ConstOptionNumber]
+          ) [ConstValue]
+        ) [SingleConstDeclaration]
+      ) [ConstDeclaration]
+    ) [ConstProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  RepeatMethodDeclaration(
+    NoRepeatMethodDeclaration(
+    ) [NoRepeatMethodDeclaration]
+    MethodDeclaration(
+      MethodHeader(
+        VoidMethodDeclType(
+        ) [VoidMethodDeclType]
+       main
+      ) [MethodHeader]
+      FormParamsBegin(
+      ) [FormParamsBegin]
+      NoFromParameters(
+      ) [NoFromParameters]
+      FormParamsEnd(
+      ) [FormParamsEnd]
+      NoMethodDelVarList(
+      ) [NoMethodDelVarList]
+      StatementListOpt(
+        NoStatementListOpt(
+        ) [NoStatementListOpt]
+        PrintStatement(
+          PrintStatemtDetail(
+            Expression(
+              NoNegativePrefix(
+              ) [NoNegativePrefix]
+              BasicTerm(
+                FactorDesignator(
+                  Designator(
+                   a
+                    NoDsgnList(
+                    ) [NoDsgnList]
+                  ) [Designator]
+                ) [FactorDesignator]
+                NoMulOptTerm(
+                ) [NoMulOptTerm]
+              ) [BasicTerm]
+              NoExpressionList(
+              ) [NoExpressionList]
+            ) [Expression]
+            NoPrintStatementOption(
+            ) [NoPrintStatementOption]
+          ) [PrintStatemtDetail]
+        ) [PrintStatement]
+      ) [StatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  18:37:28,040 - ===================================
+INFO  18:37:28,044 - Deklarisana CONST promenljiva a tip:int Vredosti: 3 na liniji 4
+INFO  18:37:28,044 - Obradjuje se metoda: main na liniji 9
+INFO  18:37:28,045 - Designator a pronadjen! na liniji 13
+INFO  18:37:28,045 - Pronadjen Print Statement  na liniji 7
+INFO  18:37:28,046 - ===================================
+INFO  18:37:28,053 - Parsiranje uspesno zavrseno!

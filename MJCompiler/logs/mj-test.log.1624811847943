@@ -1,0 +1,115 @@
+INFO  18:10:26,262 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  18:10:26,336 - #2 program
+INFO  18:10:26,336 - #47 test301
+INFO  18:10:26,336 - #47 int
+INFO  18:10:26,337 - #47 a
+INFO  18:10:26,338 - #44 [
+INFO  18:10:26,338 - #45 ]
+INFO  18:10:26,338 - #37 ;
+INFO  18:10:26,340 - #42 {
+INFO  18:10:26,341 - #5 void
+INFO  18:10:26,341 - #47 main
+INFO  18:10:26,342 - #40 (
+INFO  18:10:26,343 - #41 )
+INFO  18:10:26,344 - #42 {
+INFO  18:10:26,345 - #3 print
+INFO  18:10:26,345 - #40 (
+INFO  18:10:26,345 - #47 a
+INFO  18:10:26,347 - #44 [
+INFO  18:10:26,347 - #49 0
+INFO  18:10:26,347 - #45 ]
+INFO  18:10:26,349 - #41 )
+INFO  18:10:26,351 - #37 ;
+INFO  18:10:26,351 - #43 }
+INFO  18:10:26,352 - #43 }
+INFO  18:10:26,367 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    NoDecl(
+    ) [NoDecl]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+        SingleVarDeclaration(
+          VarValue(
+           a
+            BrackArrayLst(
+            ) [BrackArrayLst]
+          ) [VarValue]
+        ) [SingleVarDeclaration]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  RepeatMethodDeclaration(
+    NoRepeatMethodDeclaration(
+    ) [NoRepeatMethodDeclaration]
+    MethodDeclaration(
+      MethodHeader(
+        VoidMethodDeclType(
+        ) [VoidMethodDeclType]
+       main
+      ) [MethodHeader]
+      FormParamsBegin(
+      ) [FormParamsBegin]
+      NoFromParameters(
+      ) [NoFromParameters]
+      FormParamsEnd(
+      ) [FormParamsEnd]
+      NoMethodDelVarList(
+      ) [NoMethodDelVarList]
+      StatementListOpt(
+        NoStatementListOpt(
+        ) [NoStatementListOpt]
+        PrintStatement(
+          PrintStatemtDetail(
+            Expression(
+              NoNegativePrefix(
+              ) [NoNegativePrefix]
+              BasicTerm(
+                FactorDesignator(
+                  Designator(
+                   a
+                    DsgnList(
+                      Expression(
+                        NoNegativePrefix(
+                        ) [NoNegativePrefix]
+                        BasicTerm(
+                          FactorNumConst(
+                            NumberConstant(
+                             0
+                            ) [NumberConstant]
+                          ) [FactorNumConst]
+                          NoMulOptTerm(
+                          ) [NoMulOptTerm]
+                        ) [BasicTerm]
+                        NoExpressionList(
+                        ) [NoExpressionList]
+                      ) [Expression]
+                    ) [DsgnList]
+                  ) [Designator]
+                ) [FactorDesignator]
+                NoMulOptTerm(
+                ) [NoMulOptTerm]
+              ) [BasicTerm]
+              NoExpressionList(
+              ) [NoExpressionList]
+            ) [Expression]
+            NoPrintStatementOption(
+            ) [NoPrintStatementOption]
+          ) [PrintStatemtDetail]
+        ) [PrintStatement]
+      ) [StatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  18:10:26,368 - ===================================
+INFO  18:10:26,374 - Deklarisana promenljiva a tip:3 - GLOBAL VAR na liniji 4
+INFO  18:10:26,374 - Obradjuje se metoda: main na liniji 9
+INFO  18:10:26,375 - Designator a pronadjen! na liniji 13
+INFO  18:10:26,376 - Pronadjen Print Statement  na liniji 7
+INFO  18:10:26,376 - ===================================
+INFO  18:10:26,383 - Parsiranje uspesno zavrseno!

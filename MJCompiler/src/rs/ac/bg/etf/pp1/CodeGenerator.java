@@ -25,8 +25,28 @@ public class CodeGenerator extends VisitorAdaptor {
 		int constValue = ((BoolConstant) boolConst.getBoolConst()).getB1();
 	   	Code.loadConst(constValue); 
 	}
+	public void visit(FactorDesignator desFactor) {
+		Code.load(desFactor.getDesignator().obj);
+	}	   
+	public void visit(FactorNewType newfactor) {
+		Code.put(Code.newarray);
+		
+		//znam da mi je ovo nepotrbno jer ne radim klase
+		if(newfactor.getExprFactorOpt() instanceof ExpressionFactorOption) {
+		   
+			if(((ExpressionFactorOption)newfactor.getExprFactorOpt()).getExpr().struct.getKind() == Struct.Int) {
+			   Code.put(1);	//niz reci
+		   }else {
+			   Code.put(0); //niz bajtova
+		   }
+		  
+	   }
+	}
+	public void visit(Designator designator) {
+		Code.load(designator.obj);
+	}
 	
-	   
+	//********************************** PRINT *************************************
 	public void visit(PrintStatemtDetail print) {
 		Struct exprStruct = print.getExpr().struct;	
 		int currtype = Struct.None;

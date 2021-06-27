@@ -1,16 +1,17 @@
 // Test301
 
 program test301
-int a[];
-
+const int a = 3;
+int v;
 {
 
 	
 	void main()	
+		int b, a; 
 		
 	{
 		
-		print(a[0]);
+		print(a);
 		
 	}
 }

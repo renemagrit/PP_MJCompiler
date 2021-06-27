@@ -76,7 +76,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		//Multiple declaration check in scope
 		Obj temp = NewSymbolTable.find(vardecl.getVarName());
 		if(temp != NewSymbolTable.noObj ) {
-			if(temp.getKind()==Obj.Fld && currentMethod != null) {
+			if(temp.getLevel()!=0 && currentMethod != null) {
 			report_error("Greska! Polje sa zadatim imenom vec postoji! - FUNKCIJA "+ temp.getLevel(), vardecl);
 			return;
 			}
@@ -93,17 +93,24 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 			//type is array
 			varType = new Struct(Struct.Array, currentType);
 		}
-		
+		Obj novi;
 		//Proveri da li je promenljiva metoda
 		if(currentMethod != null) {
 			//polje u metodi
-			NewSymbolTable.insert(Obj.Fld, vardecl.getVarName(), varType);
+			if(isFormalParam) {
+				novi = NewSymbolTable.insert(Obj.Fld, vardecl.getVarName(), varType);
+			}else {
+				novi = NewSymbolTable.insert(Obj.Var, vardecl.getVarName(), varType);
+			}
 			report_info("Deklarisana promenljiva "+ vardecl.getVarName()+" tip:" + varType.getKind() +" - FUNKCIJA", vardecl);
+			novi.setLevel(1);
 		}else {
 			//globalna promenljiva			
-			NewSymbolTable.insert(Obj.Var, vardecl.getVarName(), varType);
+			novi = NewSymbolTable.insert(Obj.Var, vardecl.getVarName(), varType);
 			report_info("Deklarisana promenljiva "+ vardecl.getVarName()+" tip:" +  varType.getKind()+" - GLOBAL VAR", vardecl);
-		}	
+			novi.setLevel(0);
+		}
+		
 		if(isFormalParam) argCount++;
 		
 	}
@@ -605,7 +612,6 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		   factor.struct = new Struct(Struct.Array, currentType);
 	   }
 //	   else {
-//		   factor.obj = new Obj(Obj.Var,"newVar", currentType);
 //	   }
 	   
    }
