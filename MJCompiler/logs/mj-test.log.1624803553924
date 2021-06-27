@@ -1,0 +1,120 @@
+INFO  15:18:06,702 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  15:18:06,772 - #2 program
+INFO  15:18:06,772 - #47 test301
+INFO  15:18:06,773 - #20 const
+INFO  15:18:06,774 - #47 int
+INFO  15:18:06,774 - #47 nula
+INFO  15:18:06,775 - #36 =
+INFO  15:18:06,775 - #49 0
+INFO  15:18:06,776 - #37 ;
+INFO  15:18:06,776 - #42 {
+INFO  15:18:06,777 - #47 int
+INFO  15:18:06,778 - #47 main
+INFO  15:18:06,779 - #40 (
+INFO  15:18:06,779 - #41 )
+INFO  15:18:06,781 - #47 int
+INFO  15:18:06,782 - #47 bodovi
+INFO  15:18:06,782 - #37 ;
+INFO  15:18:06,783 - #42 {
+INFO  15:18:06,783 - #3 print
+INFO  15:18:06,784 - #40 (
+INFO  15:18:06,784 - #49 1
+INFO  15:18:06,785 - #41 )
+INFO  15:18:06,788 - #37 ;
+INFO  15:18:06,788 - #43 }
+INFO  15:18:06,789 - #43 }
+INFO  15:18:06,802 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    NoDecl(
+    ) [NoDecl]
+    ConstProgramDeclaration(
+      ConstDeclaration(
+        Type(
+         int
+        ) [Type]
+        SingleConstDeclaration(
+          ConstValue(
+           nula
+            ConstOptionNumber(
+              NumberConstant(
+               0
+              ) [NumberConstant]
+            ) [ConstOptionNumber]
+          ) [ConstValue]
+        ) [SingleConstDeclaration]
+      ) [ConstDeclaration]
+    ) [ConstProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  RepeatMethodDeclaration(
+    NoRepeatMethodDeclaration(
+    ) [NoRepeatMethodDeclaration]
+    MethodDeclaration(
+      MethodHeader(
+        CustomMethodDeclType(
+          Type(
+           int
+          ) [Type]
+        ) [CustomMethodDeclType]
+       main
+      ) [MethodHeader]
+      FormParamsBegin(
+      ) [FormParamsBegin]
+      NoFromParameters(
+      ) [NoFromParameters]
+      FormParamsEnd(
+      ) [FormParamsEnd]
+      MultiMethodDelVarList(
+        NoMethodDelVarList(
+        ) [NoMethodDelVarList]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          SingleVarDeclaration(
+            VarValue(
+             bodovi
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [VarValue]
+          ) [SingleVarDeclaration]
+        ) [VarDeclaration]
+      ) [MultiMethodDelVarList]
+      StatementListOpt(
+        NoStatementListOpt(
+        ) [NoStatementListOpt]
+        PrintStatement(
+          PrintStatemtDetail(
+            Expression(
+              NoNegativePrefix(
+              ) [NoNegativePrefix]
+              BasicTerm(
+                FactorNumConst(
+                  NumberConstant(
+                   1
+                  ) [NumberConstant]
+                ) [FactorNumConst]
+                NoMulOptTerm(
+                ) [NoMulOptTerm]
+              ) [BasicTerm]
+              NoExpressionList(
+              ) [NoExpressionList]
+            ) [Expression]
+            NoPrintStatementOption(
+            ) [NoPrintStatementOption]
+          ) [PrintStatemtDetail]
+        ) [PrintStatement]
+      ) [StatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  15:18:06,802 - ===================================
+INFO  15:18:06,808 - Deklarisana CONST promenljiva nula tip:int Vredosti: 0 na liniji 5
+ERROR 15:18:06,808 - Greska! Metoda main mora biti tipa void!  na liniji 7
+INFO  15:18:06,808 - Obradjuje se metoda: main na liniji 7
+INFO  15:18:06,809 - Deklarisana promenljiva bodovi tip:1 - FUNKCIJA na liniji 8
+INFO  15:18:06,810 - Pronadjen Print Statement  na liniji 7
+INFO  15:18:06,810 - ===================================
+INFO  15:18:06,823 - Parsiranje uspesno zavrseno!

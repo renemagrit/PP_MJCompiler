@@ -1,0 +1,77 @@
+INFO  17:00:43,580 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  17:00:43,669 - #2 program
+INFO  17:00:43,669 - #47 test301
+INFO  17:00:43,669 - #42 {
+INFO  17:00:43,671 - #5 void
+INFO  17:00:43,671 - #47 main
+INFO  17:00:43,672 - #40 (
+INFO  17:00:43,676 - #41 )
+INFO  17:00:43,679 - #42 {
+INFO  17:00:43,680 - #3 print
+INFO  17:00:43,683 - #40 (
+INFO  17:00:43,684 - #49 6
+INFO  17:00:43,685 - #39 ,
+INFO  17:00:43,693 - #49 2
+INFO  17:00:43,693 - #41 )
+INFO  17:00:43,693 - #37 ;
+INFO  17:00:43,694 - #43 }
+INFO  17:00:43,695 - #43 }
+INFO  17:00:43,713 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoDecl(
+  ) [NoDecl]
+  RepeatMethodDeclaration(
+    NoRepeatMethodDeclaration(
+    ) [NoRepeatMethodDeclaration]
+    MethodDeclaration(
+      MethodHeader(
+        VoidMethodDeclType(
+        ) [VoidMethodDeclType]
+       main
+      ) [MethodHeader]
+      FormParamsBegin(
+      ) [FormParamsBegin]
+      NoFromParameters(
+      ) [NoFromParameters]
+      FormParamsEnd(
+      ) [FormParamsEnd]
+      NoMethodDelVarList(
+      ) [NoMethodDelVarList]
+      StatementListOpt(
+        NoStatementListOpt(
+        ) [NoStatementListOpt]
+        PrintStatement(
+          PrintStatemtDetail(
+            Expression(
+              NoNegativePrefix(
+              ) [NoNegativePrefix]
+              BasicTerm(
+                FactorNumConst(
+                  NumberConstant(
+                   6
+                  ) [NumberConstant]
+                ) [FactorNumConst]
+                NoMulOptTerm(
+                ) [NoMulOptTerm]
+              ) [BasicTerm]
+              NoExpressionList(
+              ) [NoExpressionList]
+            ) [Expression]
+            PrintStatementOption(
+              NumberConstant(
+               2
+              ) [NumberConstant]
+            ) [PrintStatementOption]
+          ) [PrintStatemtDetail]
+        ) [PrintStatement]
+      ) [StatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  17:00:43,714 - ===================================
+INFO  17:00:43,720 - Obradjuje se metoda: main na liniji 5
+INFO  17:00:43,721 - Pronadjen Print Statement  na liniji 7
+INFO  17:00:43,721 - ===================================
+INFO  17:00:43,735 - Parsiranje uspesno zavrseno!

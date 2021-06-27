@@ -1,0 +1,27 @@
+INFO  17:45:55,003 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  17:45:55,078 - #2 program
+INFO  17:45:55,078 - #47 test301
+INFO  17:45:55,078 - #42 {
+INFO  17:45:55,080 - #47 int
+INFO  17:45:55,080 - #47 a
+INFO  17:45:55,081 - #44 [
+ERROR 17:45:55,081 - 
+Sintaksna greska na liniji 6
+INFO  17:45:55,082 - #45 ]
+INFO  17:45:55,082 - #37 ;
+INFO  17:45:55,082 - #5 void
+INFO  17:45:55,083 - #47 main
+INFO  17:45:55,083 - #40 (
+INFO  17:45:55,083 - #41 )
+INFO  17:45:55,083 - #42 {
+INFO  17:45:55,083 - #3 print
+INFO  17:45:55,083 - #40 (
+INFO  17:45:55,083 - #47 a
+INFO  17:45:55,083 - #44 [
+INFO  17:45:55,083 - #49 0
+INFO  17:45:55,083 - #45 ]
+INFO  17:45:55,083 - #41 )
+INFO  17:45:55,084 - #37 ;
+INFO  17:45:55,084 - #43 }
+INFO  17:45:55,084 - #43 }
+ERROR 17:45:55,084 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 17

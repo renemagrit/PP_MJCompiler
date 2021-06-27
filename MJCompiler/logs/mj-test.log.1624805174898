@@ -1,0 +1,76 @@
+INFO  16:45:12,392 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  16:45:12,491 - #2 program
+INFO  16:45:12,492 - #47 test301
+INFO  16:45:12,492 - #42 {
+INFO  16:45:12,495 - #47 int
+INFO  16:45:12,497 - #47 main
+INFO  16:45:12,499 - #40 (
+INFO  16:45:12,500 - #41 )
+INFO  16:45:12,503 - #42 {
+INFO  16:45:12,505 - #3 print
+INFO  16:45:12,506 - #40 (
+INFO  16:45:12,506 - #49 1
+INFO  16:45:12,509 - #41 )
+INFO  16:45:12,513 - #37 ;
+INFO  16:45:12,513 - #43 }
+INFO  16:45:12,514 - #43 }
+INFO  16:45:12,531 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoDecl(
+  ) [NoDecl]
+  RepeatMethodDeclaration(
+    NoRepeatMethodDeclaration(
+    ) [NoRepeatMethodDeclaration]
+    MethodDeclaration(
+      MethodHeader(
+        CustomMethodDeclType(
+          Type(
+           int
+          ) [Type]
+        ) [CustomMethodDeclType]
+       main
+      ) [MethodHeader]
+      FormParamsBegin(
+      ) [FormParamsBegin]
+      NoFromParameters(
+      ) [NoFromParameters]
+      FormParamsEnd(
+      ) [FormParamsEnd]
+      NoMethodDelVarList(
+      ) [NoMethodDelVarList]
+      StatementListOpt(
+        NoStatementListOpt(
+        ) [NoStatementListOpt]
+        PrintStatement(
+          PrintStatemtDetail(
+            Expression(
+              NoNegativePrefix(
+              ) [NoNegativePrefix]
+              BasicTerm(
+                FactorNumConst(
+                  NumberConstant(
+                   1
+                  ) [NumberConstant]
+                ) [FactorNumConst]
+                NoMulOptTerm(
+                ) [NoMulOptTerm]
+              ) [BasicTerm]
+              NoExpressionList(
+              ) [NoExpressionList]
+            ) [Expression]
+            NoPrintStatementOption(
+            ) [NoPrintStatementOption]
+          ) [PrintStatemtDetail]
+        ) [PrintStatement]
+      ) [StatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  16:45:12,531 - ===================================
+ERROR 16:45:12,536 - Greska! Metoda main mora biti tipa void!  na liniji 5
+INFO  16:45:12,536 - Obradjuje se metoda: main na liniji 5
+INFO  16:45:12,537 - Pronadjen Print Statement  na liniji 7
+INFO  16:45:12,537 - ===================================
+INFO  16:45:12,548 - Parsiranje uspesno zavrseno!

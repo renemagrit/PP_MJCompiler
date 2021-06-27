@@ -1,0 +1,72 @@
+INFO  17:12:07,067 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  17:12:07,366 - #2 program
+INFO  17:12:07,366 - #47 test301
+INFO  17:12:07,366 - #42 {
+INFO  17:12:07,368 - #5 void
+INFO  17:12:07,369 - #47 main
+INFO  17:12:07,371 - #40 (
+INFO  17:12:07,373 - #41 )
+INFO  17:12:07,376 - #42 {
+INFO  17:12:07,378 - #3 print
+INFO  17:12:07,380 - #40 (
+INFO  17:12:07,380 - #50 1
+INFO  17:12:07,382 - #41 )
+INFO  17:12:07,388 - #37 ;
+INFO  17:12:07,388 - #43 }
+INFO  17:12:07,389 - #43 }
+INFO  17:12:07,414 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  NoDecl(
+  ) [NoDecl]
+  RepeatMethodDeclaration(
+    NoRepeatMethodDeclaration(
+    ) [NoRepeatMethodDeclaration]
+    MethodDeclaration(
+      MethodHeader(
+        VoidMethodDeclType(
+        ) [VoidMethodDeclType]
+       main
+      ) [MethodHeader]
+      FormParamsBegin(
+      ) [FormParamsBegin]
+      NoFromParameters(
+      ) [NoFromParameters]
+      FormParamsEnd(
+      ) [FormParamsEnd]
+      NoMethodDelVarList(
+      ) [NoMethodDelVarList]
+      StatementListOpt(
+        NoStatementListOpt(
+        ) [NoStatementListOpt]
+        PrintStatement(
+          PrintStatemtDetail(
+            Expression(
+              NoNegativePrefix(
+              ) [NoNegativePrefix]
+              BasicTerm(
+                FactorBoolConst(
+                  BoolConstant(
+                   1
+                  ) [BoolConstant]
+                ) [FactorBoolConst]
+                NoMulOptTerm(
+                ) [NoMulOptTerm]
+              ) [BasicTerm]
+              NoExpressionList(
+              ) [NoExpressionList]
+            ) [Expression]
+            NoPrintStatementOption(
+            ) [NoPrintStatementOption]
+          ) [PrintStatemtDetail]
+        ) [PrintStatement]
+      ) [StatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  17:12:07,415 - ===================================
+INFO  17:12:07,429 - Obradjuje se metoda: main na liniji 5
+INFO  17:12:07,431 - Pronadjen Print Statement  na liniji 7
+INFO  17:12:07,431 - ===================================
+INFO  17:12:07,448 - Parsiranje uspesno zavrseno!
