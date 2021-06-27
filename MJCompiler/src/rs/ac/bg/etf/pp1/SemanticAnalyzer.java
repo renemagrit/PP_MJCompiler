@@ -1,10 +1,12 @@
 package rs.ac.bg.etf.pp1;
 
 import rs.ac.bg.etf.pp1.ast.*;
-
+import rs.ac.bg.etf.pp1.test.CompilerError;
+import rs.ac.bg.etf.pp1.test.CompilerError.CompilerErrorType;
 import rs.etf.pp1.symboltable.*;
 import rs.etf.pp1.symboltable.concepts.Obj;
 import rs.etf.pp1.symboltable.concepts.Struct;
+import sun.security.jca.GetInstance;
 
 import org.apache.log4j.Logger;
 
@@ -59,7 +61,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		int line = (info == null) ? 0: info.getLine();
 		if (line != 0)
 			msg.append (" na liniji ").append(line);
-		log.error(msg.toString());
+		//log.error(msg.toString());
+		MJTestCompile myCompiler = MJTestCompile.getInstance(); 
+		myCompiler.addError(new CompilerError(line, msg.toString(), CompilerErrorType.SEMANTIC_ERROR));
 	}
 
 	public void report_info(String message, SyntaxNode info) {
@@ -522,6 +526,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 	   }
    }
   
+
    
    //********************************** TERM MulOp***********************************************
    

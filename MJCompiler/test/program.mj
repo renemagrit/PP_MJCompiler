@@ -7,11 +7,11 @@ int v;
 
 	
 	void main()	
-		int b, a; 
+		int b, c; 
 		
 	{
-		
-		print(a);
+		v = -c +a;
+		print(c);
 		
 	}
 }

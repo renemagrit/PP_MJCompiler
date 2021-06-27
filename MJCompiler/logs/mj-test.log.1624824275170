@@ -1,0 +1,151 @@
+INFO  22:03:01,930 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  22:03:02,020 - #2 program
+INFO  22:03:02,020 - #47 test301
+INFO  22:03:02,020 - #20 const
+INFO  22:03:02,021 - #47 int
+INFO  22:03:02,021 - #47 a
+INFO  22:03:02,022 - #36 =
+INFO  22:03:02,022 - #49 3
+INFO  22:03:02,023 - #37 ;
+INFO  22:03:02,024 - #47 int
+INFO  22:03:02,025 - #47 v
+INFO  22:03:02,025 - #37 ;
+INFO  22:03:02,026 - #42 {
+INFO  22:03:02,027 - #5 void
+INFO  22:03:02,027 - #47 main
+INFO  22:03:02,028 - #40 (
+INFO  22:03:02,029 - #41 )
+INFO  22:03:02,030 - #47 int
+INFO  22:03:02,032 - #47 b
+INFO  22:03:02,032 - #39 ,
+INFO  22:03:02,032 - #47 a
+INFO  22:03:02,032 - #37 ;
+INFO  22:03:02,033 - #42 {
+INFO  22:03:02,033 - #47 aiiii
+INFO  22:03:02,034 - #36 =
+INFO  22:03:02,035 - #49 2
+INFO  22:03:02,037 - #37 ;
+INFO  22:03:02,038 - #43 }
+INFO  22:03:02,039 - #43 }
+INFO  22:03:02,059 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      NoDecl(
+      ) [NoDecl]
+      ConstProgramDeclaration(
+        ConstDeclaration(
+          Type(
+           int
+          ) [Type]
+          SingleConstDeclaration(
+            ConstValue(
+             a
+              ConstOptionNumber(
+                NumberConstant(
+                 3
+                ) [NumberConstant]
+              ) [ConstOptionNumber]
+            ) [ConstValue]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclaration]
+      ) [ConstProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+        SingleVarDeclaration(
+          VarValue(
+           v
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValue]
+        ) [SingleVarDeclaration]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  RepeatMethodDeclaration(
+    NoRepeatMethodDeclaration(
+    ) [NoRepeatMethodDeclaration]
+    MethodDeclaration(
+      MethodHeader(
+        VoidMethodDeclType(
+        ) [VoidMethodDeclType]
+       main
+      ) [MethodHeader]
+      FormParamsBegin(
+      ) [FormParamsBegin]
+      NoFromParameters(
+      ) [NoFromParameters]
+      FormParamsEnd(
+      ) [FormParamsEnd]
+      MultiMethodDelVarList(
+        NoMethodDelVarList(
+        ) [NoMethodDelVarList]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationList(
+            SingleVarDeclaration(
+              VarValue(
+               b
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+            VarValue(
+             a
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [VarValue]
+          ) [VarDeclarationList]
+        ) [VarDeclaration]
+      ) [MultiMethodDelVarList]
+      StatementListOpt(
+        NoStatementListOpt(
+        ) [NoStatementListOpt]
+        DesStatement(
+          DesignatorStatementAssign(
+            AssignOpeeratorExpresion(
+              Designator(
+               aiiii
+                NoDsgnList(
+                ) [NoDsgnList]
+              ) [Designator]
+              AssignOperator(
+              ) [AssignOperator]
+              Expression(
+                NoNegativePrefix(
+                ) [NoNegativePrefix]
+                BasicTerm(
+                  FactorNumConst(
+                    NumberConstant(
+                     2
+                    ) [NumberConstant]
+                  ) [FactorNumConst]
+                  NoMulOptTerm(
+                  ) [NoMulOptTerm]
+                ) [BasicTerm]
+                NoExpressionList(
+                ) [NoExpressionList]
+              ) [Expression]
+            ) [AssignOpeeratorExpresion]
+          ) [DesignatorStatementAssign]
+        ) [DesStatement]
+      ) [StatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  22:03:02,059 - ===================================
+INFO  22:03:02,066 - Deklarisana CONST promenljiva a tip:int Vredosti: 3 na liniji 4
+INFO  22:03:02,067 - Deklarisana promenljiva v tip:1 - GLOBAL VAR na liniji 5
+INFO  22:03:02,067 - Obradjuje se metoda: main na liniji 9
+INFO  22:03:02,067 - Deklarisana promenljiva b tip:1 - FUNKCIJA na liniji 10
+INFO  22:03:02,067 - Deklarisana promenljiva a tip:1 - FUNKCIJA na liniji 10
+INFO  22:03:02,069 - ===================================
+INFO  22:03:02,175 - Parsiranje uspesno zavrseno!

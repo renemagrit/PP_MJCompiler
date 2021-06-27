@@ -1,41 +1,42 @@
-INFO  23:31:55,438 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
-INFO  23:31:55,508 - #2 program
-INFO  23:31:55,508 - #47 test301
-INFO  23:31:55,509 - #20 const
-INFO  23:31:55,510 - #47 int
-INFO  23:31:55,510 - #47 a
-INFO  23:31:55,511 - #36 =
-INFO  23:31:55,511 - #49 3
-INFO  23:31:55,511 - #37 ;
-INFO  23:31:55,512 - #47 int
-INFO  23:31:55,512 - #47 v
-INFO  23:31:55,512 - #37 ;
-INFO  23:31:55,514 - #42 {
-INFO  23:31:55,514 - #5 void
-INFO  23:31:55,515 - #47 main
-INFO  23:31:55,515 - #40 (
-INFO  23:31:55,516 - #41 )
-INFO  23:31:55,517 - #47 int
-INFO  23:31:55,519 - #47 b
-INFO  23:31:55,519 - #39 ,
-INFO  23:31:55,519 - #47 c
-INFO  23:31:55,521 - #37 ;
-INFO  23:31:55,522 - #42 {
-INFO  23:31:55,522 - #47 v
-INFO  23:31:55,523 - #36 =
-INFO  23:31:55,524 - #26 -
-INFO  23:31:55,525 - #47 c
-INFO  23:31:55,526 - #25 +
-INFO  23:31:55,528 - #47 a
-INFO  23:31:55,529 - #37 ;
-INFO  23:31:55,530 - #3 print
-INFO  23:31:55,531 - #40 (
-INFO  23:31:55,531 - #47 c
-INFO  23:31:55,532 - #41 )
-INFO  23:31:55,532 - #37 ;
-INFO  23:31:55,532 - #43 }
-INFO  23:31:55,533 - #43 }
-INFO  23:31:55,554 - Program(
+INFO  23:26:40,228 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  23:26:40,293 - #2 program
+INFO  23:26:40,293 - #47 test301
+INFO  23:26:40,293 - #20 const
+INFO  23:26:40,294 - #47 int
+INFO  23:26:40,294 - #47 a
+INFO  23:26:40,295 - #36 =
+INFO  23:26:40,295 - #49 3
+INFO  23:26:40,295 - #37 ;
+INFO  23:26:40,295 - #47 int
+INFO  23:26:40,296 - #47 v
+INFO  23:26:40,296 - #37 ;
+INFO  23:26:40,297 - #42 {
+INFO  23:26:40,297 - #5 void
+INFO  23:26:40,298 - #47 main
+INFO  23:26:40,298 - #40 (
+INFO  23:26:40,299 - #41 )
+INFO  23:26:40,300 - #47 int
+INFO  23:26:40,302 - #47 b
+INFO  23:26:40,302 - #39 ,
+INFO  23:26:40,302 - #47 c
+INFO  23:26:40,304 - #37 ;
+INFO  23:26:40,304 - #42 {
+INFO  23:26:40,305 - #47 v
+INFO  23:26:40,305 - #36 =
+INFO  23:26:40,306 - #47 c
+INFO  23:26:40,309 - #26 -
+INFO  23:26:40,311 - #47 b
+INFO  23:26:40,312 - #23 *
+INFO  23:26:40,312 - #47 b
+INFO  23:26:40,313 - #37 ;
+INFO  23:26:40,315 - #3 print
+INFO  23:26:40,315 - #40 (
+INFO  23:26:40,315 - #47 c
+INFO  23:26:40,316 - #41 )
+INFO  23:26:40,317 - #37 ;
+INFO  23:26:40,317 - #43 }
+INFO  23:26:40,318 - #43 }
+INFO  23:26:40,332 - Program(
   ProgName(
    test301
   ) [ProgName]
@@ -129,8 +130,8 @@ INFO  23:31:55,554 - Program(
                 AssignOperator(
                 ) [AssignOperator]
                 Expression(
-                  NegativePrefix(
-                  ) [NegativePrefix]
+                  NoNegativePrefix(
+                  ) [NoNegativePrefix]
                   BasicTerm(
                     FactorDesignator(
                       Designator(
@@ -146,18 +147,27 @@ INFO  23:31:55,554 - Program(
                     NoExpressionList(
                     ) [NoExpressionList]
                     ExpressionListValue(
-                      PlusOp(
-                      ) [PlusOp]
+                      MinusOp(
+                      ) [MinusOp]
                       BasicTerm(
                         FactorDesignator(
                           Designator(
-                           a
+                           b
                             NoDsgnList(
                             ) [NoDsgnList]
                           ) [Designator]
                         ) [FactorDesignator]
-                        NoMulOptTerm(
-                        ) [NoMulOptTerm]
+                        MulOptTerm(
+                          MulOption(
+                          ) [MulOption]
+                          FactorDesignator(
+                            Designator(
+                             b
+                              NoDsgnList(
+                              ) [NoDsgnList]
+                            ) [Designator]
+                          ) [FactorDesignator]
+                        ) [MulOptTerm]
                       ) [BasicTerm]
                     ) [ExpressionListValue]
                   ) [ExpressionList]
@@ -193,16 +203,17 @@ INFO  23:31:55,554 - Program(
     ) [MethodDeclaration]
   ) [RepeatMethodDeclaration]
 ) [Program]
-INFO  23:31:55,555 - ===================================
-INFO  23:31:55,561 - Deklarisana CONST promenljiva a tip:int Vredosti: 3 na liniji 4
-INFO  23:31:55,562 - Deklarisana promenljiva v tip:1 - GLOBAL VAR na liniji 5
-INFO  23:31:55,563 - Obradjuje se metoda: main na liniji 9
-INFO  23:31:55,563 - Deklarisana promenljiva b tip:1 - FUNKCIJA na liniji 10
-INFO  23:31:55,563 - Deklarisana promenljiva c tip:1 - FUNKCIJA na liniji 10
-INFO  23:31:55,563 - Designator v pronadjen! na liniji 13
-INFO  23:31:55,563 - Designator c pronadjen! na liniji 13
-INFO  23:31:55,564 - Designator a pronadjen! na liniji 13
-INFO  23:31:55,564 - Designator c pronadjen! na liniji 14
-INFO  23:31:55,564 - Pronadjen Print Statement  na liniji 7
-INFO  23:31:55,565 - ===================================
-INFO  23:31:55,655 - Parsiranje uspesno zavrseno!
+INFO  23:26:40,333 - ===================================
+INFO  23:26:40,338 - Deklarisana CONST promenljiva a tip:int Vredosti: 3 na liniji 4
+INFO  23:26:40,339 - Deklarisana promenljiva v tip:1 - GLOBAL VAR na liniji 5
+INFO  23:26:40,340 - Obradjuje se metoda: main na liniji 9
+INFO  23:26:40,340 - Deklarisana promenljiva b tip:1 - FUNKCIJA na liniji 10
+INFO  23:26:40,340 - Deklarisana promenljiva c tip:1 - FUNKCIJA na liniji 10
+INFO  23:26:40,340 - Designator v pronadjen! na liniji 13
+INFO  23:26:40,340 - Designator c pronadjen! na liniji 13
+INFO  23:26:40,341 - Designator b pronadjen! na liniji 13
+INFO  23:26:40,341 - Designator b pronadjen! na liniji 13
+INFO  23:26:40,342 - Designator c pronadjen! na liniji 14
+INFO  23:26:40,343 - Pronadjen Print Statement  na liniji 7
+INFO  23:26:40,343 - ===================================
+INFO  23:26:40,443 - Parsiranje uspesno zavrseno!

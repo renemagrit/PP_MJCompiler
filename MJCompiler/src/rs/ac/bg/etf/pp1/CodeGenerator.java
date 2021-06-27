@@ -7,76 +7,130 @@ import rs.etf.pp1.symboltable.concepts.*;
 
 public class CodeGenerator extends VisitorAdaptor {
 	private int mainPc;
-	
+
 	public int getMainPc() {
 		return mainPc;
 	}
-	
+
 	public void visit(FactorNumConst numConst) {
-	   int constValue = ((NumberConstant)numConst.getNumConst()).getN1();
-   	   Code.loadConst(constValue); 
-	}	
-	
-	public void visit(FactorCharConst charConst) {
-	   int constValue = ((CharConstant) charConst.getCharConst()).getC1();
-   	   Code.loadConst(constValue); 
+		int constValue = ((NumberConstant) numConst.getNumConst()).getN1();
+		Code.loadConst(constValue);
 	}
+
+	public void visit(FactorCharConst charConst) {
+		int constValue = ((CharConstant) charConst.getCharConst()).getC1();
+		Code.loadConst(constValue);
+	}
+
 	public void visit(FactorBoolConst boolConst) {
 		int constValue = ((BoolConstant) boolConst.getBoolConst()).getB1();
-	   	Code.loadConst(constValue); 
+		Code.loadConst(constValue);
 	}
+
 	public void visit(FactorDesignator desFactor) {
 		Code.load(desFactor.getDesignator().obj);
-	}	   
+	}
+
 	public void visit(FactorNewType newfactor) {
 		Code.put(Code.newarray);
-		
-		//znam da mi je ovo nepotrbno jer ne radim klase
-		if(newfactor.getExprFactorOpt() instanceof ExpressionFactorOption) {
-		   
-			if(((ExpressionFactorOption)newfactor.getExprFactorOpt()).getExpr().struct.getKind() == Struct.Int) {
-			   Code.put(1);	//niz reci
-		   }else {
-			   Code.put(0); //niz bajtova
-		   }
-		  
-	   }
+
+		// znam da mi je ovo nepotrbno jer ne radim klase
+		if (newfactor.getExprFactorOpt() instanceof ExpressionFactorOption) {
+
+			if (((ExpressionFactorOption) newfactor.getExprFactorOpt()).getExpr().struct.getKind() == Struct.Int) {
+				Code.put(1); // niz reci
+			} else {
+				Code.put(0); // niz bajtova
+			}
+
+		}
 	}
-	public void visit(Designator designator) {
-		Code.load(designator.obj);
+
+	public void visit(AssignOpeeratorExpresion assop) {
+		Code.store(assop.getDesignator().obj);
 	}
 	
-	//********************************** PRINT *************************************
-	public void visit(PrintStatemtDetail print) {
-		Struct exprStruct = print.getExpr().struct;	
-		int currtype = Struct.None;
-    	//Array Check
-		if(exprStruct.getElemType() == null) {
-    		currtype = exprStruct.getKind();
-    	}else{
-    		currtype = exprStruct.getElemType().getKind();
-    	}	
-    	
+	//********************************** NEG *************************************
+	public void visit(NegativePrefix neg) {
+		Code.put(Code.neg);
+	}
+	
+	//********************************** ADD/SUB***********************************
+	public void visit(ExpressionListValue exp) {
+		if(exp.getAddop() instanceof PlusOp) {
+			Code.put(Code.add);
+		}else if(exp.getAddop() instanceof MinusOp){
+			Code.put(Code.sub);
+		}
+	}
+	
+	//************************************* MUL/DIV/MOD ****************************
+	public void visit(MulOptTerm expr) {
+		if(expr.getMulop() instanceof DivOption) {
+			Code.put(Code.div);
+		}else if(expr.getMulop() instanceof ModOption) {
+			Code.put(Code.rem);
+		}else if(expr.getMulop() instanceof MulOption){
+			Code.put(Code.mul);
+		}
+	}
+	// *********************************** INC and DEC ******************************
+	public void visit(DesignatorStatementInc desInc) {
+		Designator desigantor = desInc.getDesignator();
 		
-		if(print.getPrintStmtOpt() instanceof PrintStatementOption) {
-			// Imamo zadat parametar sirine
-			int width = ((NumberConstant)((PrintStatementOption)print.getPrintStmtOpt()).getNumConst()).getN1();
-			Code.loadConst(width);
-			if(currtype == Struct.Int) {
-	    		Code.put(Code.print);
-	    	}else { //Bool, char
-	    		Code.put(Code.bprint);
-	    	}
-			
+		if (desigantor.getDesigantorList() instanceof DsgnList) {
+			// TODO: array
 		}else {
-			if(currtype == Struct.Int) {
-	    		Code.loadConst(5);
-	    		Code.put(Code.print);
-	    	}else { //Bool, char
-	    		Code.loadConst(1);
-	    		Code.put(Code.bprint);
-	    	}
-		}		
+			Code.loadConst(1);
+			Code.put(Code.add);
+			Code.store(desInc.getDesignator().obj);
+		}
+		
+
+	}
+
+	public void visit(DesignatorStatementDec desDec) {
+		Designator desigantor = desDec.getDesignator();
+		
+		if (desigantor.getDesigantorList() instanceof DsgnList) {
+			// TODO: array
+		} else {
+			Code.loadConst(1);
+			Code.put(Code.sub);
+			Code.store(desDec.getDesignator().obj);
+		}
+	}
+
+	// ********************************** PRINT  *************************************
+	public void visit(PrintStatemtDetail print) {
+		Struct exprStruct = print.getExpr().struct;
+		int currtype = Struct.None;
+		// Array Check
+		if (exprStruct.getElemType() == null) {
+			currtype = exprStruct.getKind();
+		} else {
+			currtype = exprStruct.getElemType().getKind();
+		}
+
+		if (print.getPrintStmtOpt() instanceof PrintStatementOption) {
+			// Imamo zadat parametar sirine
+			int width = ((NumberConstant) ((PrintStatementOption) print.getPrintStmtOpt()).getNumConst()).getN1();
+			Code.loadConst(width);
+			if (currtype == Struct.Int) {
+				Code.put(Code.print);
+			} else { // Bool, char
+				Code.put(Code.bprint);
+			}
+
+		} else {
+			if (currtype == Struct.Int) {
+				Code.loadConst(5);
+				Code.put(Code.print);
+			} else { // Bool, char
+				Code.loadConst(1);
+				Code.put(Code.bprint);
+			}
+		}
 		Code.put(Code.return_);
-	 }
+	}
 }
