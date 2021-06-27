@@ -10,7 +10,7 @@ program test301
 	char nizch[];
 	
 {
-	void main()	
+	int main()	
 		int bodovi;
 	{
 		bodovi = 0;

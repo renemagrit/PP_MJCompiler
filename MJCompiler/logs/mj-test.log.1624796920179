@@ -1,0 +1,1680 @@
+INFO  14:28:15,827 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  14:28:15,882 - #2 program
+INFO  14:28:15,882 - #47 test301
+INFO  14:28:15,882 - #20 const
+INFO  14:28:15,883 - #47 int
+INFO  14:28:15,883 - #47 nula
+INFO  14:28:15,884 - #36 =
+INFO  14:28:15,884 - #49 0
+INFO  14:28:15,884 - #37 ;
+INFO  14:28:15,884 - #20 const
+INFO  14:28:15,885 - #47 int
+INFO  14:28:15,885 - #47 jedan
+INFO  14:28:15,885 - #36 =
+INFO  14:28:15,885 - #49 1
+INFO  14:28:15,885 - #37 ;
+INFO  14:28:15,885 - #20 const
+INFO  14:28:15,885 - #47 int
+INFO  14:28:15,885 - #47 pet
+INFO  14:28:15,885 - #36 =
+INFO  14:28:15,886 - #49 5
+INFO  14:28:15,886 - #37 ;
+INFO  14:28:15,886 - #47 int
+INFO  14:28:15,886 - #47 niz
+INFO  14:28:15,886 - #44 [
+INFO  14:28:15,886 - #45 ]
+INFO  14:28:15,886 - #37 ;
+INFO  14:28:15,887 - #47 char
+INFO  14:28:15,888 - #47 nizch
+INFO  14:28:15,888 - #44 [
+INFO  14:28:15,888 - #45 ]
+INFO  14:28:15,888 - #37 ;
+INFO  14:28:15,888 - #42 {
+INFO  14:28:15,888 - #5 void
+INFO  14:28:15,889 - #47 main
+INFO  14:28:15,889 - #40 (
+INFO  14:28:15,890 - #41 )
+INFO  14:28:15,891 - #47 int
+INFO  14:28:15,892 - #47 bodovi
+INFO  14:28:15,892 - #37 ;
+INFO  14:28:15,893 - #42 {
+INFO  14:28:15,893 - #47 bodovi
+INFO  14:28:15,894 - #36 =
+INFO  14:28:15,895 - #49 0
+INFO  14:28:15,897 - #37 ;
+INFO  14:28:15,900 - #47 bodovi
+INFO  14:28:15,900 - #21 ++
+INFO  14:28:15,901 - #37 ;
+INFO  14:28:15,901 - #47 bodovi
+INFO  14:28:15,901 - #36 =
+INFO  14:28:15,901 - #47 bodovi
+INFO  14:28:15,901 - #25 +
+INFO  14:28:15,901 - #47 jedan
+INFO  14:28:15,902 - #37 ;
+INFO  14:28:15,903 - #47 bodovi
+INFO  14:28:15,903 - #36 =
+INFO  14:28:15,903 - #47 bodovi
+INFO  14:28:15,903 - #23 *
+INFO  14:28:15,903 - #47 pet
+INFO  14:28:15,904 - #37 ;
+INFO  14:28:15,904 - #47 bodovi
+INFO  14:28:15,904 - #22 --
+INFO  14:28:15,904 - #37 ;
+INFO  14:28:15,904 - #3 print
+INFO  14:28:15,904 - #40 (
+INFO  14:28:15,905 - #47 bodovi
+INFO  14:28:15,905 - #41 )
+INFO  14:28:15,905 - #37 ;
+INFO  14:28:15,905 - #47 niz
+INFO  14:28:15,906 - #36 =
+INFO  14:28:15,906 - #7 new
+INFO  14:28:15,906 - #47 int
+INFO  14:28:15,906 - #44 [
+INFO  14:28:15,906 - #49 3
+INFO  14:28:15,906 - #45 ]
+INFO  14:28:15,906 - #37 ;
+INFO  14:28:15,906 - #47 niz
+INFO  14:28:15,907 - #44 [
+INFO  14:28:15,907 - #47 nula
+INFO  14:28:15,907 - #45 ]
+INFO  14:28:15,907 - #36 =
+INFO  14:28:15,907 - #47 jedan
+INFO  14:28:15,907 - #37 ;
+INFO  14:28:15,907 - #47 niz
+INFO  14:28:15,907 - #44 [
+INFO  14:28:15,907 - #49 1
+INFO  14:28:15,908 - #45 ]
+INFO  14:28:15,908 - #36 =
+INFO  14:28:15,908 - #49 2
+INFO  14:28:15,908 - #37 ;
+INFO  14:28:15,908 - #47 niz
+INFO  14:28:15,908 - #44 [
+INFO  14:28:15,908 - #47 niz
+INFO  14:28:15,908 - #44 [
+INFO  14:28:15,908 - #47 jedan
+INFO  14:28:15,908 - #45 ]
+INFO  14:28:15,909 - #45 ]
+INFO  14:28:15,909 - #36 =
+INFO  14:28:15,909 - #47 niz
+INFO  14:28:15,909 - #44 [
+INFO  14:28:15,909 - #47 niz
+INFO  14:28:15,909 - #44 [
+INFO  14:28:15,909 - #49 0
+INFO  14:28:15,909 - #45 ]
+INFO  14:28:15,909 - #45 ]
+INFO  14:28:15,909 - #23 *
+INFO  14:28:15,909 - #49 3
+INFO  14:28:15,909 - #37 ;
+INFO  14:28:15,910 - #47 bodovi
+INFO  14:28:15,910 - #36 =
+INFO  14:28:15,910 - #47 niz
+INFO  14:28:15,910 - #44 [
+INFO  14:28:15,910 - #49 2
+INFO  14:28:15,910 - #45 ]
+INFO  14:28:15,910 - #24 /
+INFO  14:28:15,910 - #47 niz
+INFO  14:28:15,911 - #44 [
+INFO  14:28:15,911 - #49 0
+INFO  14:28:15,911 - #45 ]
+INFO  14:28:15,911 - #37 ;
+INFO  14:28:15,911 - #3 print
+INFO  14:28:15,912 - #40 (
+INFO  14:28:15,912 - #47 bodovi
+INFO  14:28:15,912 - #41 )
+INFO  14:28:15,912 - #37 ;
+INFO  14:28:15,912 - #3 print
+INFO  14:28:15,912 - #40 (
+INFO  14:28:15,912 - #47 niz
+INFO  14:28:15,912 - #44 [
+INFO  14:28:15,912 - #49 2
+INFO  14:28:15,912 - #45 ]
+INFO  14:28:15,912 - #41 )
+INFO  14:28:15,913 - #37 ;
+INFO  14:28:15,913 - #47 nizch
+INFO  14:28:15,913 - #36 =
+INFO  14:28:15,913 - #7 new
+INFO  14:28:15,913 - #47 char
+INFO  14:28:15,913 - #44 [
+INFO  14:28:15,913 - #49 3
+INFO  14:28:15,913 - #45 ]
+INFO  14:28:15,913 - #37 ;
+INFO  14:28:15,913 - #47 nizch
+INFO  14:28:15,913 - #44 [
+INFO  14:28:15,913 - #49 0
+INFO  14:28:15,914 - #45 ]
+INFO  14:28:15,915 - #36 =
+INFO  14:28:15,915 - #48 a
+INFO  14:28:15,915 - #37 ;
+INFO  14:28:15,916 - #47 nizch
+INFO  14:28:15,916 - #44 [
+INFO  14:28:15,916 - #47 jedan
+INFO  14:28:15,916 - #45 ]
+INFO  14:28:15,916 - #36 =
+INFO  14:28:15,916 - #48 b
+INFO  14:28:15,916 - #37 ;
+INFO  14:28:15,916 - #47 nizch
+INFO  14:28:15,916 - #44 [
+INFO  14:28:15,916 - #47 pet
+INFO  14:28:15,916 - #26 -
+INFO  14:28:15,916 - #49 3
+INFO  14:28:15,917 - #45 ]
+INFO  14:28:15,917 - #36 =
+INFO  14:28:15,917 - #48 c
+INFO  14:28:15,917 - #37 ;
+INFO  14:28:15,917 - #3 print
+INFO  14:28:15,917 - #40 (
+INFO  14:28:15,917 - #47 nizch
+INFO  14:28:15,918 - #44 [
+INFO  14:28:15,918 - #49 1
+INFO  14:28:15,918 - #45 ]
+INFO  14:28:15,918 - #41 )
+INFO  14:28:15,918 - #37 ;
+INFO  14:28:15,918 - #3 print
+INFO  14:28:15,918 - #40 (
+INFO  14:28:15,918 - #47 nizch
+INFO  14:28:15,918 - #44 [
+INFO  14:28:15,918 - #47 jedan
+INFO  14:28:15,918 - #23 *
+INFO  14:28:15,918 - #49 2
+INFO  14:28:15,918 - #45 ]
+INFO  14:28:15,919 - #41 )
+INFO  14:28:15,919 - #37 ;
+INFO  14:28:15,919 - #47 bodovi
+INFO  14:28:15,919 - #36 =
+INFO  14:28:15,919 - #47 bodovi
+INFO  14:28:15,919 - #25 +
+INFO  14:28:15,919 - #40 (
+INFO  14:28:15,919 - #47 pet
+INFO  14:28:15,919 - #23 *
+INFO  14:28:15,919 - #47 jedan
+INFO  14:28:15,919 - #26 -
+INFO  14:28:15,919 - #49 1
+INFO  14:28:15,919 - #41 )
+INFO  14:28:15,920 - #23 *
+INFO  14:28:15,920 - #47 bodovi
+INFO  14:28:15,920 - #26 -
+INFO  14:28:15,920 - #40 (
+INFO  14:28:15,920 - #49 3
+INFO  14:28:15,921 - #27 %
+INFO  14:28:15,921 - #49 2
+INFO  14:28:15,922 - #25 +
+INFO  14:28:15,922 - #49 3
+INFO  14:28:15,922 - #23 *
+INFO  14:28:15,922 - #49 2
+INFO  14:28:15,922 - #26 -
+INFO  14:28:15,922 - #49 3
+INFO  14:28:15,922 - #41 )
+INFO  14:28:15,922 - #37 ;
+INFO  14:28:15,922 - #3 print
+INFO  14:28:15,922 - #40 (
+INFO  14:28:15,923 - #47 bodovi
+INFO  14:28:15,923 - #41 )
+INFO  14:28:15,923 - #37 ;
+INFO  14:28:15,923 - #6 read
+INFO  14:28:15,923 - #40 (
+INFO  14:28:15,923 - #47 bodovi
+INFO  14:28:15,923 - #41 )
+INFO  14:28:15,923 - #37 ;
+INFO  14:28:15,923 - #8 if
+INFO  14:28:15,924 - #40 (
+INFO  14:28:15,924 - #47 bodovi
+INFO  14:28:15,924 - #27 %
+INFO  14:28:15,924 - #49 2
+INFO  14:28:15,924 - #30 ==
+INFO  14:28:15,924 - #49 0
+INFO  14:28:15,925 - #41 )
+INFO  14:28:15,926 - #47 bodovi
+INFO  14:28:15,926 - #36 =
+INFO  14:28:15,926 - #47 bodovi
+INFO  14:28:15,927 - #25 +
+INFO  14:28:15,927 - #49 10
+INFO  14:28:15,927 - #37 ;
+INFO  14:28:15,927 - #8 if
+INFO  14:28:15,928 - #40 (
+INFO  14:28:15,929 - #50 0
+INFO  14:28:15,929 - #41 )
+INFO  14:28:15,929 - #3 print
+INFO  14:28:15,929 - #40 (
+INFO  14:28:15,929 - #47 bodovi
+INFO  14:28:15,930 - #25 +
+INFO  14:28:15,930 - #49 20
+INFO  14:28:15,930 - #41 )
+INFO  14:28:15,930 - #37 ;
+INFO  14:28:15,930 - #9 else
+INFO  14:28:15,930 - #3 print
+INFO  14:28:15,930 - #40 (
+INFO  14:28:15,930 - #47 bodovi
+INFO  14:28:15,930 - #41 )
+INFO  14:28:15,930 - #37 ;
+INFO  14:28:15,930 - #43 }
+INFO  14:28:15,931 - #43 }
+INFO  14:28:15,950 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      MultiProgramDeclarationList(
+        MultiProgramDeclarationList(
+          MultiProgramDeclarationList(
+            NoDecl(
+            ) [NoDecl]
+            ConstProgramDeclaration(
+              ConstDeclaration(
+                Type(
+                 int
+                ) [Type]
+                SingleConstDeclaration(
+                  ConstValue(
+                   nula
+                    ConstOptionNumber(
+                      NumberConstant(
+                       0
+                      ) [NumberConstant]
+                    ) [ConstOptionNumber]
+                  ) [ConstValue]
+                ) [SingleConstDeclaration]
+              ) [ConstDeclaration]
+            ) [ConstProgramDeclaration]
+          ) [MultiProgramDeclarationList]
+          ConstProgramDeclaration(
+            ConstDeclaration(
+              Type(
+               int
+              ) [Type]
+              SingleConstDeclaration(
+                ConstValue(
+                 jedan
+                  ConstOptionNumber(
+                    NumberConstant(
+                     1
+                    ) [NumberConstant]
+                  ) [ConstOptionNumber]
+                ) [ConstValue]
+              ) [SingleConstDeclaration]
+            ) [ConstDeclaration]
+          ) [ConstProgramDeclaration]
+        ) [MultiProgramDeclarationList]
+        ConstProgramDeclaration(
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleConstDeclaration(
+              ConstValue(
+               pet
+                ConstOptionNumber(
+                  NumberConstant(
+                   5
+                  ) [NumberConstant]
+                ) [ConstOptionNumber]
+              ) [ConstValue]
+            ) [SingleConstDeclaration]
+          ) [ConstDeclaration]
+        ) [ConstProgramDeclaration]
+      ) [MultiProgramDeclarationList]
+      VarProgramDeclaration(
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          SingleVarDeclaration(
+            VarValue(
+             niz
+              BrackArrayLst(
+              ) [BrackArrayLst]
+            ) [VarValue]
+          ) [SingleVarDeclaration]
+        ) [VarDeclaration]
+      ) [VarProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+        SingleVarDeclaration(
+          VarValue(
+           nizch
+            BrackArrayLst(
+            ) [BrackArrayLst]
+          ) [VarValue]
+        ) [SingleVarDeclaration]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  RepeatMethodDeclaration(
+    NoRepeatMethodDeclaration(
+    ) [NoRepeatMethodDeclaration]
+    MethodDeclaration(
+      MethodHeader(
+        VoidMethodDeclType(
+        ) [VoidMethodDeclType]
+       main
+      ) [MethodHeader]
+      FormParamsBegin(
+      ) [FormParamsBegin]
+      NoFromParameters(
+      ) [NoFromParameters]
+      FormParamsEnd(
+      ) [FormParamsEnd]
+      MultiMethodDelVarList(
+        NoMethodDelVarList(
+        ) [NoMethodDelVarList]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          SingleVarDeclaration(
+            VarValue(
+             bodovi
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [VarValue]
+          ) [SingleVarDeclaration]
+        ) [VarDeclaration]
+      ) [MultiMethodDelVarList]
+      StatementListOpt(
+        StatementListOpt(
+          StatementListOpt(
+            StatementListOpt(
+              StatementListOpt(
+                StatementListOpt(
+                  StatementListOpt(
+                    StatementListOpt(
+                      StatementListOpt(
+                        StatementListOpt(
+                          StatementListOpt(
+                            StatementListOpt(
+                              StatementListOpt(
+                                StatementListOpt(
+                                  StatementListOpt(
+                                    StatementListOpt(
+                                      StatementListOpt(
+                                        StatementListOpt(
+                                          StatementListOpt(
+                                            StatementListOpt(
+                                              StatementListOpt(
+                                                StatementListOpt(
+                                                  StatementListOpt(
+                                                    StatementListOpt(
+                                                      NoStatementListOpt(
+                                                      ) [NoStatementListOpt]
+                                                      DesStatement(
+                                                        DesignatorStatementAssign(
+                                                          AssignOpeeratorExpresion(
+                                                            Designator(
+                                                             bodovi
+                                                              NoDsgnList(
+                                                              ) [NoDsgnList]
+                                                            ) [Designator]
+                                                            AssignOperator(
+                                                            ) [AssignOperator]
+                                                            Expression(
+                                                              NoNegativePrefix(
+                                                              ) [NoNegativePrefix]
+                                                              BasicTerm(
+                                                                FactorNumConst(
+                                                                  NumberConstant(
+                                                                   0
+                                                                  ) [NumberConstant]
+                                                                ) [FactorNumConst]
+                                                                NoMulOptTerm(
+                                                                ) [NoMulOptTerm]
+                                                              ) [BasicTerm]
+                                                              NoExpressionList(
+                                                              ) [NoExpressionList]
+                                                            ) [Expression]
+                                                          ) [AssignOpeeratorExpresion]
+                                                        ) [DesignatorStatementAssign]
+                                                      ) [DesStatement]
+                                                    ) [StatementListOpt]
+                                                    DesStatement(
+                                                      DesignatorStatementInc(
+                                                        Designator(
+                                                         bodovi
+                                                          NoDsgnList(
+                                                          ) [NoDsgnList]
+                                                        ) [Designator]
+                                                      ) [DesignatorStatementInc]
+                                                    ) [DesStatement]
+                                                  ) [StatementListOpt]
+                                                  DesStatement(
+                                                    DesignatorStatementAssign(
+                                                      AssignOpeeratorExpresion(
+                                                        Designator(
+                                                         bodovi
+                                                          NoDsgnList(
+                                                          ) [NoDsgnList]
+                                                        ) [Designator]
+                                                        AssignOperator(
+                                                        ) [AssignOperator]
+                                                        Expression(
+                                                          NoNegativePrefix(
+                                                          ) [NoNegativePrefix]
+                                                          BasicTerm(
+                                                            FactorDesignator(
+                                                              Designator(
+                                                               bodovi
+                                                                NoDsgnList(
+                                                                ) [NoDsgnList]
+                                                              ) [Designator]
+                                                            ) [FactorDesignator]
+                                                            NoMulOptTerm(
+                                                            ) [NoMulOptTerm]
+                                                          ) [BasicTerm]
+                                                          ExpressionList(
+                                                            NoExpressionList(
+                                                            ) [NoExpressionList]
+                                                            ExpressionListValue(
+                                                              PlusOp(
+                                                              ) [PlusOp]
+                                                              BasicTerm(
+                                                                FactorDesignator(
+                                                                  Designator(
+                                                                   jedan
+                                                                    NoDsgnList(
+                                                                    ) [NoDsgnList]
+                                                                  ) [Designator]
+                                                                ) [FactorDesignator]
+                                                                NoMulOptTerm(
+                                                                ) [NoMulOptTerm]
+                                                              ) [BasicTerm]
+                                                            ) [ExpressionListValue]
+                                                          ) [ExpressionList]
+                                                        ) [Expression]
+                                                      ) [AssignOpeeratorExpresion]
+                                                    ) [DesignatorStatementAssign]
+                                                  ) [DesStatement]
+                                                ) [StatementListOpt]
+                                                DesStatement(
+                                                  DesignatorStatementAssign(
+                                                    AssignOpeeratorExpresion(
+                                                      Designator(
+                                                       bodovi
+                                                        NoDsgnList(
+                                                        ) [NoDsgnList]
+                                                      ) [Designator]
+                                                      AssignOperator(
+                                                      ) [AssignOperator]
+                                                      Expression(
+                                                        NoNegativePrefix(
+                                                        ) [NoNegativePrefix]
+                                                        BasicTerm(
+                                                          FactorDesignator(
+                                                            Designator(
+                                                             bodovi
+                                                              NoDsgnList(
+                                                              ) [NoDsgnList]
+                                                            ) [Designator]
+                                                          ) [FactorDesignator]
+                                                          MulOptTerm(
+                                                            MulOption(
+                                                            ) [MulOption]
+                                                            FactorDesignator(
+                                                              Designator(
+                                                               pet
+                                                                NoDsgnList(
+                                                                ) [NoDsgnList]
+                                                              ) [Designator]
+                                                            ) [FactorDesignator]
+                                                          ) [MulOptTerm]
+                                                        ) [BasicTerm]
+                                                        NoExpressionList(
+                                                        ) [NoExpressionList]
+                                                      ) [Expression]
+                                                    ) [AssignOpeeratorExpresion]
+                                                  ) [DesignatorStatementAssign]
+                                                ) [DesStatement]
+                                              ) [StatementListOpt]
+                                              DesStatement(
+                                                DesignatorStatementDec(
+                                                  Designator(
+                                                   bodovi
+                                                    NoDsgnList(
+                                                    ) [NoDsgnList]
+                                                  ) [Designator]
+                                                ) [DesignatorStatementDec]
+                                              ) [DesStatement]
+                                            ) [StatementListOpt]
+                                            PrintStatement(
+                                              PrintStatemtDetail(
+                                                Expression(
+                                                  NoNegativePrefix(
+                                                  ) [NoNegativePrefix]
+                                                  BasicTerm(
+                                                    FactorDesignator(
+                                                      Designator(
+                                                       bodovi
+                                                        NoDsgnList(
+                                                        ) [NoDsgnList]
+                                                      ) [Designator]
+                                                    ) [FactorDesignator]
+                                                    NoMulOptTerm(
+                                                    ) [NoMulOptTerm]
+                                                  ) [BasicTerm]
+                                                  NoExpressionList(
+                                                  ) [NoExpressionList]
+                                                ) [Expression]
+                                                NoPrintStatementOption(
+                                                ) [NoPrintStatementOption]
+                                              ) [PrintStatemtDetail]
+                                            ) [PrintStatement]
+                                          ) [StatementListOpt]
+                                          DesStatement(
+                                            DesignatorStatementAssign(
+                                              AssignOpeeratorExpresion(
+                                                Designator(
+                                                 niz
+                                                  NoDsgnList(
+                                                  ) [NoDsgnList]
+                                                ) [Designator]
+                                                AssignOperator(
+                                                ) [AssignOperator]
+                                                Expression(
+                                                  NoNegativePrefix(
+                                                  ) [NoNegativePrefix]
+                                                  BasicTerm(
+                                                    FactorNewType(
+                                                      Type(
+                                                       int
+                                                      ) [Type]
+                                                      ExpressionFactorOption(
+                                                        Expression(
+                                                          NoNegativePrefix(
+                                                          ) [NoNegativePrefix]
+                                                          BasicTerm(
+                                                            FactorNumConst(
+                                                              NumberConstant(
+                                                               3
+                                                              ) [NumberConstant]
+                                                            ) [FactorNumConst]
+                                                            NoMulOptTerm(
+                                                            ) [NoMulOptTerm]
+                                                          ) [BasicTerm]
+                                                          NoExpressionList(
+                                                          ) [NoExpressionList]
+                                                        ) [Expression]
+                                                      ) [ExpressionFactorOption]
+                                                    ) [FactorNewType]
+                                                    NoMulOptTerm(
+                                                    ) [NoMulOptTerm]
+                                                  ) [BasicTerm]
+                                                  NoExpressionList(
+                                                  ) [NoExpressionList]
+                                                ) [Expression]
+                                              ) [AssignOpeeratorExpresion]
+                                            ) [DesignatorStatementAssign]
+                                          ) [DesStatement]
+                                        ) [StatementListOpt]
+                                        DesStatement(
+                                          DesignatorStatementAssign(
+                                            AssignOpeeratorExpresion(
+                                              Designator(
+                                               niz
+                                                DsgnList(
+                                                  Expression(
+                                                    NoNegativePrefix(
+                                                    ) [NoNegativePrefix]
+                                                    BasicTerm(
+                                                      FactorDesignator(
+                                                        Designator(
+                                                         nula
+                                                          NoDsgnList(
+                                                          ) [NoDsgnList]
+                                                        ) [Designator]
+                                                      ) [FactorDesignator]
+                                                      NoMulOptTerm(
+                                                      ) [NoMulOptTerm]
+                                                    ) [BasicTerm]
+                                                    NoExpressionList(
+                                                    ) [NoExpressionList]
+                                                  ) [Expression]
+                                                ) [DsgnList]
+                                              ) [Designator]
+                                              AssignOperator(
+                                              ) [AssignOperator]
+                                              Expression(
+                                                NoNegativePrefix(
+                                                ) [NoNegativePrefix]
+                                                BasicTerm(
+                                                  FactorDesignator(
+                                                    Designator(
+                                                     jedan
+                                                      NoDsgnList(
+                                                      ) [NoDsgnList]
+                                                    ) [Designator]
+                                                  ) [FactorDesignator]
+                                                  NoMulOptTerm(
+                                                  ) [NoMulOptTerm]
+                                                ) [BasicTerm]
+                                                NoExpressionList(
+                                                ) [NoExpressionList]
+                                              ) [Expression]
+                                            ) [AssignOpeeratorExpresion]
+                                          ) [DesignatorStatementAssign]
+                                        ) [DesStatement]
+                                      ) [StatementListOpt]
+                                      DesStatement(
+                                        DesignatorStatementAssign(
+                                          AssignOpeeratorExpresion(
+                                            Designator(
+                                             niz
+                                              DsgnList(
+                                                Expression(
+                                                  NoNegativePrefix(
+                                                  ) [NoNegativePrefix]
+                                                  BasicTerm(
+                                                    FactorNumConst(
+                                                      NumberConstant(
+                                                       1
+                                                      ) [NumberConstant]
+                                                    ) [FactorNumConst]
+                                                    NoMulOptTerm(
+                                                    ) [NoMulOptTerm]
+                                                  ) [BasicTerm]
+                                                  NoExpressionList(
+                                                  ) [NoExpressionList]
+                                                ) [Expression]
+                                              ) [DsgnList]
+                                            ) [Designator]
+                                            AssignOperator(
+                                            ) [AssignOperator]
+                                            Expression(
+                                              NoNegativePrefix(
+                                              ) [NoNegativePrefix]
+                                              BasicTerm(
+                                                FactorNumConst(
+                                                  NumberConstant(
+                                                   2
+                                                  ) [NumberConstant]
+                                                ) [FactorNumConst]
+                                                NoMulOptTerm(
+                                                ) [NoMulOptTerm]
+                                              ) [BasicTerm]
+                                              NoExpressionList(
+                                              ) [NoExpressionList]
+                                            ) [Expression]
+                                          ) [AssignOpeeratorExpresion]
+                                        ) [DesignatorStatementAssign]
+                                      ) [DesStatement]
+                                    ) [StatementListOpt]
+                                    DesStatement(
+                                      DesignatorStatementAssign(
+                                        AssignOpeeratorExpresion(
+                                          Designator(
+                                           niz
+                                            DsgnList(
+                                              Expression(
+                                                NoNegativePrefix(
+                                                ) [NoNegativePrefix]
+                                                BasicTerm(
+                                                  FactorDesignator(
+                                                    Designator(
+                                                     niz
+                                                      DsgnList(
+                                                        Expression(
+                                                          NoNegativePrefix(
+                                                          ) [NoNegativePrefix]
+                                                          BasicTerm(
+                                                            FactorDesignator(
+                                                              Designator(
+                                                               jedan
+                                                                NoDsgnList(
+                                                                ) [NoDsgnList]
+                                                              ) [Designator]
+                                                            ) [FactorDesignator]
+                                                            NoMulOptTerm(
+                                                            ) [NoMulOptTerm]
+                                                          ) [BasicTerm]
+                                                          NoExpressionList(
+                                                          ) [NoExpressionList]
+                                                        ) [Expression]
+                                                      ) [DsgnList]
+                                                    ) [Designator]
+                                                  ) [FactorDesignator]
+                                                  NoMulOptTerm(
+                                                  ) [NoMulOptTerm]
+                                                ) [BasicTerm]
+                                                NoExpressionList(
+                                                ) [NoExpressionList]
+                                              ) [Expression]
+                                            ) [DsgnList]
+                                          ) [Designator]
+                                          AssignOperator(
+                                          ) [AssignOperator]
+                                          Expression(
+                                            NoNegativePrefix(
+                                            ) [NoNegativePrefix]
+                                            BasicTerm(
+                                              FactorDesignator(
+                                                Designator(
+                                                 niz
+                                                  DsgnList(
+                                                    Expression(
+                                                      NoNegativePrefix(
+                                                      ) [NoNegativePrefix]
+                                                      BasicTerm(
+                                                        FactorDesignator(
+                                                          Designator(
+                                                           niz
+                                                            DsgnList(
+                                                              Expression(
+                                                                NoNegativePrefix(
+                                                                ) [NoNegativePrefix]
+                                                                BasicTerm(
+                                                                  FactorNumConst(
+                                                                    NumberConstant(
+                                                                     0
+                                                                    ) [NumberConstant]
+                                                                  ) [FactorNumConst]
+                                                                  NoMulOptTerm(
+                                                                  ) [NoMulOptTerm]
+                                                                ) [BasicTerm]
+                                                                NoExpressionList(
+                                                                ) [NoExpressionList]
+                                                              ) [Expression]
+                                                            ) [DsgnList]
+                                                          ) [Designator]
+                                                        ) [FactorDesignator]
+                                                        NoMulOptTerm(
+                                                        ) [NoMulOptTerm]
+                                                      ) [BasicTerm]
+                                                      NoExpressionList(
+                                                      ) [NoExpressionList]
+                                                    ) [Expression]
+                                                  ) [DsgnList]
+                                                ) [Designator]
+                                              ) [FactorDesignator]
+                                              MulOptTerm(
+                                                MulOption(
+                                                ) [MulOption]
+                                                FactorNumConst(
+                                                  NumberConstant(
+                                                   3
+                                                  ) [NumberConstant]
+                                                ) [FactorNumConst]
+                                              ) [MulOptTerm]
+                                            ) [BasicTerm]
+                                            NoExpressionList(
+                                            ) [NoExpressionList]
+                                          ) [Expression]
+                                        ) [AssignOpeeratorExpresion]
+                                      ) [DesignatorStatementAssign]
+                                    ) [DesStatement]
+                                  ) [StatementListOpt]
+                                  DesStatement(
+                                    DesignatorStatementAssign(
+                                      AssignOpeeratorExpresion(
+                                        Designator(
+                                         bodovi
+                                          NoDsgnList(
+                                          ) [NoDsgnList]
+                                        ) [Designator]
+                                        AssignOperator(
+                                        ) [AssignOperator]
+                                        Expression(
+                                          NoNegativePrefix(
+                                          ) [NoNegativePrefix]
+                                          BasicTerm(
+                                            FactorDesignator(
+                                              Designator(
+                                               niz
+                                                DsgnList(
+                                                  Expression(
+                                                    NoNegativePrefix(
+                                                    ) [NoNegativePrefix]
+                                                    BasicTerm(
+                                                      FactorNumConst(
+                                                        NumberConstant(
+                                                         2
+                                                        ) [NumberConstant]
+                                                      ) [FactorNumConst]
+                                                      NoMulOptTerm(
+                                                      ) [NoMulOptTerm]
+                                                    ) [BasicTerm]
+                                                    NoExpressionList(
+                                                    ) [NoExpressionList]
+                                                  ) [Expression]
+                                                ) [DsgnList]
+                                              ) [Designator]
+                                            ) [FactorDesignator]
+                                            MulOptTerm(
+                                              DivOption(
+                                              ) [DivOption]
+                                              FactorDesignator(
+                                                Designator(
+                                                 niz
+                                                  DsgnList(
+                                                    Expression(
+                                                      NoNegativePrefix(
+                                                      ) [NoNegativePrefix]
+                                                      BasicTerm(
+                                                        FactorNumConst(
+                                                          NumberConstant(
+                                                           0
+                                                          ) [NumberConstant]
+                                                        ) [FactorNumConst]
+                                                        NoMulOptTerm(
+                                                        ) [NoMulOptTerm]
+                                                      ) [BasicTerm]
+                                                      NoExpressionList(
+                                                      ) [NoExpressionList]
+                                                    ) [Expression]
+                                                  ) [DsgnList]
+                                                ) [Designator]
+                                              ) [FactorDesignator]
+                                            ) [MulOptTerm]
+                                          ) [BasicTerm]
+                                          NoExpressionList(
+                                          ) [NoExpressionList]
+                                        ) [Expression]
+                                      ) [AssignOpeeratorExpresion]
+                                    ) [DesignatorStatementAssign]
+                                  ) [DesStatement]
+                                ) [StatementListOpt]
+                                PrintStatement(
+                                  PrintStatemtDetail(
+                                    Expression(
+                                      NoNegativePrefix(
+                                      ) [NoNegativePrefix]
+                                      BasicTerm(
+                                        FactorDesignator(
+                                          Designator(
+                                           bodovi
+                                            NoDsgnList(
+                                            ) [NoDsgnList]
+                                          ) [Designator]
+                                        ) [FactorDesignator]
+                                        NoMulOptTerm(
+                                        ) [NoMulOptTerm]
+                                      ) [BasicTerm]
+                                      NoExpressionList(
+                                      ) [NoExpressionList]
+                                    ) [Expression]
+                                    NoPrintStatementOption(
+                                    ) [NoPrintStatementOption]
+                                  ) [PrintStatemtDetail]
+                                ) [PrintStatement]
+                              ) [StatementListOpt]
+                              PrintStatement(
+                                PrintStatemtDetail(
+                                  Expression(
+                                    NoNegativePrefix(
+                                    ) [NoNegativePrefix]
+                                    BasicTerm(
+                                      FactorDesignator(
+                                        Designator(
+                                         niz
+                                          DsgnList(
+                                            Expression(
+                                              NoNegativePrefix(
+                                              ) [NoNegativePrefix]
+                                              BasicTerm(
+                                                FactorNumConst(
+                                                  NumberConstant(
+                                                   2
+                                                  ) [NumberConstant]
+                                                ) [FactorNumConst]
+                                                NoMulOptTerm(
+                                                ) [NoMulOptTerm]
+                                              ) [BasicTerm]
+                                              NoExpressionList(
+                                              ) [NoExpressionList]
+                                            ) [Expression]
+                                          ) [DsgnList]
+                                        ) [Designator]
+                                      ) [FactorDesignator]
+                                      NoMulOptTerm(
+                                      ) [NoMulOptTerm]
+                                    ) [BasicTerm]
+                                    NoExpressionList(
+                                    ) [NoExpressionList]
+                                  ) [Expression]
+                                  NoPrintStatementOption(
+                                  ) [NoPrintStatementOption]
+                                ) [PrintStatemtDetail]
+                              ) [PrintStatement]
+                            ) [StatementListOpt]
+                            DesStatement(
+                              DesignatorStatementAssign(
+                                AssignOpeeratorExpresion(
+                                  Designator(
+                                   nizch
+                                    NoDsgnList(
+                                    ) [NoDsgnList]
+                                  ) [Designator]
+                                  AssignOperator(
+                                  ) [AssignOperator]
+                                  Expression(
+                                    NoNegativePrefix(
+                                    ) [NoNegativePrefix]
+                                    BasicTerm(
+                                      FactorNewType(
+                                        Type(
+                                         char
+                                        ) [Type]
+                                        ExpressionFactorOption(
+                                          Expression(
+                                            NoNegativePrefix(
+                                            ) [NoNegativePrefix]
+                                            BasicTerm(
+                                              FactorNumConst(
+                                                NumberConstant(
+                                                 3
+                                                ) [NumberConstant]
+                                              ) [FactorNumConst]
+                                              NoMulOptTerm(
+                                              ) [NoMulOptTerm]
+                                            ) [BasicTerm]
+                                            NoExpressionList(
+                                            ) [NoExpressionList]
+                                          ) [Expression]
+                                        ) [ExpressionFactorOption]
+                                      ) [FactorNewType]
+                                      NoMulOptTerm(
+                                      ) [NoMulOptTerm]
+                                    ) [BasicTerm]
+                                    NoExpressionList(
+                                    ) [NoExpressionList]
+                                  ) [Expression]
+                                ) [AssignOpeeratorExpresion]
+                              ) [DesignatorStatementAssign]
+                            ) [DesStatement]
+                          ) [StatementListOpt]
+                          DesStatement(
+                            DesignatorStatementAssign(
+                              AssignOpeeratorExpresion(
+                                Designator(
+                                 nizch
+                                  DsgnList(
+                                    Expression(
+                                      NoNegativePrefix(
+                                      ) [NoNegativePrefix]
+                                      BasicTerm(
+                                        FactorNumConst(
+                                          NumberConstant(
+                                           0
+                                          ) [NumberConstant]
+                                        ) [FactorNumConst]
+                                        NoMulOptTerm(
+                                        ) [NoMulOptTerm]
+                                      ) [BasicTerm]
+                                      NoExpressionList(
+                                      ) [NoExpressionList]
+                                    ) [Expression]
+                                  ) [DsgnList]
+                                ) [Designator]
+                                AssignOperator(
+                                ) [AssignOperator]
+                                Expression(
+                                  NoNegativePrefix(
+                                  ) [NoNegativePrefix]
+                                  BasicTerm(
+                                    FactorCharConst(
+                                      CharConstant(
+                                       a
+                                      ) [CharConstant]
+                                    ) [FactorCharConst]
+                                    NoMulOptTerm(
+                                    ) [NoMulOptTerm]
+                                  ) [BasicTerm]
+                                  NoExpressionList(
+                                  ) [NoExpressionList]
+                                ) [Expression]
+                              ) [AssignOpeeratorExpresion]
+                            ) [DesignatorStatementAssign]
+                          ) [DesStatement]
+                        ) [StatementListOpt]
+                        DesStatement(
+                          DesignatorStatementAssign(
+                            AssignOpeeratorExpresion(
+                              Designator(
+                               nizch
+                                DsgnList(
+                                  Expression(
+                                    NoNegativePrefix(
+                                    ) [NoNegativePrefix]
+                                    BasicTerm(
+                                      FactorDesignator(
+                                        Designator(
+                                         jedan
+                                          NoDsgnList(
+                                          ) [NoDsgnList]
+                                        ) [Designator]
+                                      ) [FactorDesignator]
+                                      NoMulOptTerm(
+                                      ) [NoMulOptTerm]
+                                    ) [BasicTerm]
+                                    NoExpressionList(
+                                    ) [NoExpressionList]
+                                  ) [Expression]
+                                ) [DsgnList]
+                              ) [Designator]
+                              AssignOperator(
+                              ) [AssignOperator]
+                              Expression(
+                                NoNegativePrefix(
+                                ) [NoNegativePrefix]
+                                BasicTerm(
+                                  FactorCharConst(
+                                    CharConstant(
+                                     b
+                                    ) [CharConstant]
+                                  ) [FactorCharConst]
+                                  NoMulOptTerm(
+                                  ) [NoMulOptTerm]
+                                ) [BasicTerm]
+                                NoExpressionList(
+                                ) [NoExpressionList]
+                              ) [Expression]
+                            ) [AssignOpeeratorExpresion]
+                          ) [DesignatorStatementAssign]
+                        ) [DesStatement]
+                      ) [StatementListOpt]
+                      DesStatement(
+                        DesignatorStatementAssign(
+                          AssignOpeeratorExpresion(
+                            Designator(
+                             nizch
+                              DsgnList(
+                                Expression(
+                                  NoNegativePrefix(
+                                  ) [NoNegativePrefix]
+                                  BasicTerm(
+                                    FactorDesignator(
+                                      Designator(
+                                       pet
+                                        NoDsgnList(
+                                        ) [NoDsgnList]
+                                      ) [Designator]
+                                    ) [FactorDesignator]
+                                    NoMulOptTerm(
+                                    ) [NoMulOptTerm]
+                                  ) [BasicTerm]
+                                  ExpressionList(
+                                    NoExpressionList(
+                                    ) [NoExpressionList]
+                                    ExpressionListValue(
+                                      MinusOp(
+                                      ) [MinusOp]
+                                      BasicTerm(
+                                        FactorNumConst(
+                                          NumberConstant(
+                                           3
+                                          ) [NumberConstant]
+                                        ) [FactorNumConst]
+                                        NoMulOptTerm(
+                                        ) [NoMulOptTerm]
+                                      ) [BasicTerm]
+                                    ) [ExpressionListValue]
+                                  ) [ExpressionList]
+                                ) [Expression]
+                              ) [DsgnList]
+                            ) [Designator]
+                            AssignOperator(
+                            ) [AssignOperator]
+                            Expression(
+                              NoNegativePrefix(
+                              ) [NoNegativePrefix]
+                              BasicTerm(
+                                FactorCharConst(
+                                  CharConstant(
+                                   c
+                                  ) [CharConstant]
+                                ) [FactorCharConst]
+                                NoMulOptTerm(
+                                ) [NoMulOptTerm]
+                              ) [BasicTerm]
+                              NoExpressionList(
+                              ) [NoExpressionList]
+                            ) [Expression]
+                          ) [AssignOpeeratorExpresion]
+                        ) [DesignatorStatementAssign]
+                      ) [DesStatement]
+                    ) [StatementListOpt]
+                    PrintStatement(
+                      PrintStatemtDetail(
+                        Expression(
+                          NoNegativePrefix(
+                          ) [NoNegativePrefix]
+                          BasicTerm(
+                            FactorDesignator(
+                              Designator(
+                               nizch
+                                DsgnList(
+                                  Expression(
+                                    NoNegativePrefix(
+                                    ) [NoNegativePrefix]
+                                    BasicTerm(
+                                      FactorNumConst(
+                                        NumberConstant(
+                                         1
+                                        ) [NumberConstant]
+                                      ) [FactorNumConst]
+                                      NoMulOptTerm(
+                                      ) [NoMulOptTerm]
+                                    ) [BasicTerm]
+                                    NoExpressionList(
+                                    ) [NoExpressionList]
+                                  ) [Expression]
+                                ) [DsgnList]
+                              ) [Designator]
+                            ) [FactorDesignator]
+                            NoMulOptTerm(
+                            ) [NoMulOptTerm]
+                          ) [BasicTerm]
+                          NoExpressionList(
+                          ) [NoExpressionList]
+                        ) [Expression]
+                        NoPrintStatementOption(
+                        ) [NoPrintStatementOption]
+                      ) [PrintStatemtDetail]
+                    ) [PrintStatement]
+                  ) [StatementListOpt]
+                  PrintStatement(
+                    PrintStatemtDetail(
+                      Expression(
+                        NoNegativePrefix(
+                        ) [NoNegativePrefix]
+                        BasicTerm(
+                          FactorDesignator(
+                            Designator(
+                             nizch
+                              DsgnList(
+                                Expression(
+                                  NoNegativePrefix(
+                                  ) [NoNegativePrefix]
+                                  BasicTerm(
+                                    FactorDesignator(
+                                      Designator(
+                                       jedan
+                                        NoDsgnList(
+                                        ) [NoDsgnList]
+                                      ) [Designator]
+                                    ) [FactorDesignator]
+                                    MulOptTerm(
+                                      MulOption(
+                                      ) [MulOption]
+                                      FactorNumConst(
+                                        NumberConstant(
+                                         2
+                                        ) [NumberConstant]
+                                      ) [FactorNumConst]
+                                    ) [MulOptTerm]
+                                  ) [BasicTerm]
+                                  NoExpressionList(
+                                  ) [NoExpressionList]
+                                ) [Expression]
+                              ) [DsgnList]
+                            ) [Designator]
+                          ) [FactorDesignator]
+                          NoMulOptTerm(
+                          ) [NoMulOptTerm]
+                        ) [BasicTerm]
+                        NoExpressionList(
+                        ) [NoExpressionList]
+                      ) [Expression]
+                      NoPrintStatementOption(
+                      ) [NoPrintStatementOption]
+                    ) [PrintStatemtDetail]
+                  ) [PrintStatement]
+                ) [StatementListOpt]
+                DesStatement(
+                  DesignatorStatementAssign(
+                    AssignOpeeratorExpresion(
+                      Designator(
+                       bodovi
+                        NoDsgnList(
+                        ) [NoDsgnList]
+                      ) [Designator]
+                      AssignOperator(
+                      ) [AssignOperator]
+                      Expression(
+                        NoNegativePrefix(
+                        ) [NoNegativePrefix]
+                        BasicTerm(
+                          FactorDesignator(
+                            Designator(
+                             bodovi
+                              NoDsgnList(
+                              ) [NoDsgnList]
+                            ) [Designator]
+                          ) [FactorDesignator]
+                          NoMulOptTerm(
+                          ) [NoMulOptTerm]
+                        ) [BasicTerm]
+                        ExpressionList(
+                          ExpressionList(
+                            NoExpressionList(
+                            ) [NoExpressionList]
+                            ExpressionListValue(
+                              PlusOp(
+                              ) [PlusOp]
+                              BasicTerm(
+                                FacorExpression(
+                                  Expression(
+                                    NoNegativePrefix(
+                                    ) [NoNegativePrefix]
+                                    BasicTerm(
+                                      FactorDesignator(
+                                        Designator(
+                                         pet
+                                          NoDsgnList(
+                                          ) [NoDsgnList]
+                                        ) [Designator]
+                                      ) [FactorDesignator]
+                                      MulOptTerm(
+                                        MulOption(
+                                        ) [MulOption]
+                                        FactorDesignator(
+                                          Designator(
+                                           jedan
+                                            NoDsgnList(
+                                            ) [NoDsgnList]
+                                          ) [Designator]
+                                        ) [FactorDesignator]
+                                      ) [MulOptTerm]
+                                    ) [BasicTerm]
+                                    ExpressionList(
+                                      NoExpressionList(
+                                      ) [NoExpressionList]
+                                      ExpressionListValue(
+                                        MinusOp(
+                                        ) [MinusOp]
+                                        BasicTerm(
+                                          FactorNumConst(
+                                            NumberConstant(
+                                             1
+                                            ) [NumberConstant]
+                                          ) [FactorNumConst]
+                                          NoMulOptTerm(
+                                          ) [NoMulOptTerm]
+                                        ) [BasicTerm]
+                                      ) [ExpressionListValue]
+                                    ) [ExpressionList]
+                                  ) [Expression]
+                                ) [FacorExpression]
+                                MulOptTerm(
+                                  MulOption(
+                                  ) [MulOption]
+                                  FactorDesignator(
+                                    Designator(
+                                     bodovi
+                                      NoDsgnList(
+                                      ) [NoDsgnList]
+                                    ) [Designator]
+                                  ) [FactorDesignator]
+                                ) [MulOptTerm]
+                              ) [BasicTerm]
+                            ) [ExpressionListValue]
+                          ) [ExpressionList]
+                          ExpressionListValue(
+                            MinusOp(
+                            ) [MinusOp]
+                            BasicTerm(
+                              FacorExpression(
+                                Expression(
+                                  NoNegativePrefix(
+                                  ) [NoNegativePrefix]
+                                  BasicTerm(
+                                    FactorNumConst(
+                                      NumberConstant(
+                                       3
+                                      ) [NumberConstant]
+                                    ) [FactorNumConst]
+                                    MulOptTerm(
+                                      ModOption(
+                                      ) [ModOption]
+                                      FactorNumConst(
+                                        NumberConstant(
+                                         2
+                                        ) [NumberConstant]
+                                      ) [FactorNumConst]
+                                    ) [MulOptTerm]
+                                  ) [BasicTerm]
+                                  ExpressionList(
+                                    ExpressionList(
+                                      NoExpressionList(
+                                      ) [NoExpressionList]
+                                      ExpressionListValue(
+                                        PlusOp(
+                                        ) [PlusOp]
+                                        BasicTerm(
+                                          FactorNumConst(
+                                            NumberConstant(
+                                             3
+                                            ) [NumberConstant]
+                                          ) [FactorNumConst]
+                                          MulOptTerm(
+                                            MulOption(
+                                            ) [MulOption]
+                                            FactorNumConst(
+                                              NumberConstant(
+                                               2
+                                              ) [NumberConstant]
+                                            ) [FactorNumConst]
+                                          ) [MulOptTerm]
+                                        ) [BasicTerm]
+                                      ) [ExpressionListValue]
+                                    ) [ExpressionList]
+                                    ExpressionListValue(
+                                      MinusOp(
+                                      ) [MinusOp]
+                                      BasicTerm(
+                                        FactorNumConst(
+                                          NumberConstant(
+                                           3
+                                          ) [NumberConstant]
+                                        ) [FactorNumConst]
+                                        NoMulOptTerm(
+                                        ) [NoMulOptTerm]
+                                      ) [BasicTerm]
+                                    ) [ExpressionListValue]
+                                  ) [ExpressionList]
+                                ) [Expression]
+                              ) [FacorExpression]
+                              NoMulOptTerm(
+                              ) [NoMulOptTerm]
+                            ) [BasicTerm]
+                          ) [ExpressionListValue]
+                        ) [ExpressionList]
+                      ) [Expression]
+                    ) [AssignOpeeratorExpresion]
+                  ) [DesignatorStatementAssign]
+                ) [DesStatement]
+              ) [StatementListOpt]
+              PrintStatement(
+                PrintStatemtDetail(
+                  Expression(
+                    NoNegativePrefix(
+                    ) [NoNegativePrefix]
+                    BasicTerm(
+                      FactorDesignator(
+                        Designator(
+                         bodovi
+                          NoDsgnList(
+                          ) [NoDsgnList]
+                        ) [Designator]
+                      ) [FactorDesignator]
+                      NoMulOptTerm(
+                      ) [NoMulOptTerm]
+                    ) [BasicTerm]
+                    NoExpressionList(
+                    ) [NoExpressionList]
+                  ) [Expression]
+                  NoPrintStatementOption(
+                  ) [NoPrintStatementOption]
+                ) [PrintStatemtDetail]
+              ) [PrintStatement]
+            ) [StatementListOpt]
+            ReadStatement(
+              ReadStatementDetail(
+                Designator(
+                 bodovi
+                  NoDsgnList(
+                  ) [NoDsgnList]
+                ) [Designator]
+              ) [ReadStatementDetail]
+            ) [ReadStatement]
+          ) [StatementListOpt]
+          IfDetalStatement(
+            IfStatement(
+              ConditionStatemnt(
+                SingleCondition(
+                  SingleCondTerm(
+                    CondFactorMulti(
+                      Expression(
+                        NoNegativePrefix(
+                        ) [NoNegativePrefix]
+                        BasicTerm(
+                          FactorDesignator(
+                            Designator(
+                             bodovi
+                              NoDsgnList(
+                              ) [NoDsgnList]
+                            ) [Designator]
+                          ) [FactorDesignator]
+                          MulOptTerm(
+                            ModOption(
+                            ) [ModOption]
+                            FactorNumConst(
+                              NumberConstant(
+                               2
+                              ) [NumberConstant]
+                            ) [FactorNumConst]
+                          ) [MulOptTerm]
+                        ) [BasicTerm]
+                        NoExpressionList(
+                        ) [NoExpressionList]
+                      ) [Expression]
+                      IsEqualRelOp(
+                      ) [IsEqualRelOp]
+                      Expression(
+                        NoNegativePrefix(
+                        ) [NoNegativePrefix]
+                        BasicTerm(
+                          FactorNumConst(
+                            NumberConstant(
+                             0
+                            ) [NumberConstant]
+                          ) [FactorNumConst]
+                          NoMulOptTerm(
+                          ) [NoMulOptTerm]
+                        ) [BasicTerm]
+                        NoExpressionList(
+                        ) [NoExpressionList]
+                      ) [Expression]
+                    ) [CondFactorMulti]
+                  ) [SingleCondTerm]
+                ) [SingleCondition]
+              ) [ConditionStatemnt]
+              DesStatement(
+                DesignatorStatementAssign(
+                  AssignOpeeratorExpresion(
+                    Designator(
+                     bodovi
+                      NoDsgnList(
+                      ) [NoDsgnList]
+                    ) [Designator]
+                    AssignOperator(
+                    ) [AssignOperator]
+                    Expression(
+                      NoNegativePrefix(
+                      ) [NoNegativePrefix]
+                      BasicTerm(
+                        FactorDesignator(
+                          Designator(
+                           bodovi
+                            NoDsgnList(
+                            ) [NoDsgnList]
+                          ) [Designator]
+                        ) [FactorDesignator]
+                        NoMulOptTerm(
+                        ) [NoMulOptTerm]
+                      ) [BasicTerm]
+                      ExpressionList(
+                        NoExpressionList(
+                        ) [NoExpressionList]
+                        ExpressionListValue(
+                          PlusOp(
+                          ) [PlusOp]
+                          BasicTerm(
+                            FactorNumConst(
+                              NumberConstant(
+                               10
+                              ) [NumberConstant]
+                            ) [FactorNumConst]
+                            NoMulOptTerm(
+                            ) [NoMulOptTerm]
+                          ) [BasicTerm]
+                        ) [ExpressionListValue]
+                      ) [ExpressionList]
+                    ) [Expression]
+                  ) [AssignOpeeratorExpresion]
+                ) [DesignatorStatementAssign]
+              ) [DesStatement]
+              NoElseStatement(
+              ) [NoElseStatement]
+            ) [IfStatement]
+          ) [IfDetalStatement]
+        ) [StatementListOpt]
+        IfDetalStatement(
+          IfStatement(
+            ConditionStatemnt(
+              SingleCondition(
+                SingleCondTerm(
+                  CondFactorSingle(
+                    Expression(
+                      NoNegativePrefix(
+                      ) [NoNegativePrefix]
+                      BasicTerm(
+                        FactorBoolConst(
+                          BoolConstant(
+                           0
+                          ) [BoolConstant]
+                        ) [FactorBoolConst]
+                        NoMulOptTerm(
+                        ) [NoMulOptTerm]
+                      ) [BasicTerm]
+                      NoExpressionList(
+                      ) [NoExpressionList]
+                    ) [Expression]
+                  ) [CondFactorSingle]
+                ) [SingleCondTerm]
+              ) [SingleCondition]
+            ) [ConditionStatemnt]
+            PrintStatement(
+              PrintStatemtDetail(
+                Expression(
+                  NoNegativePrefix(
+                  ) [NoNegativePrefix]
+                  BasicTerm(
+                    FactorDesignator(
+                      Designator(
+                       bodovi
+                        NoDsgnList(
+                        ) [NoDsgnList]
+                      ) [Designator]
+                    ) [FactorDesignator]
+                    NoMulOptTerm(
+                    ) [NoMulOptTerm]
+                  ) [BasicTerm]
+                  ExpressionList(
+                    NoExpressionList(
+                    ) [NoExpressionList]
+                    ExpressionListValue(
+                      PlusOp(
+                      ) [PlusOp]
+                      BasicTerm(
+                        FactorNumConst(
+                          NumberConstant(
+                           20
+                          ) [NumberConstant]
+                        ) [FactorNumConst]
+                        NoMulOptTerm(
+                        ) [NoMulOptTerm]
+                      ) [BasicTerm]
+                    ) [ExpressionListValue]
+                  ) [ExpressionList]
+                ) [Expression]
+                NoPrintStatementOption(
+                ) [NoPrintStatementOption]
+              ) [PrintStatemtDetail]
+            ) [PrintStatement]
+            ElseStatements(
+              PrintStatement(
+                PrintStatemtDetail(
+                  Expression(
+                    NoNegativePrefix(
+                    ) [NoNegativePrefix]
+                    BasicTerm(
+                      FactorDesignator(
+                        Designator(
+                         bodovi
+                          NoDsgnList(
+                          ) [NoDsgnList]
+                        ) [Designator]
+                      ) [FactorDesignator]
+                      NoMulOptTerm(
+                      ) [NoMulOptTerm]
+                    ) [BasicTerm]
+                    NoExpressionList(
+                    ) [NoExpressionList]
+                  ) [Expression]
+                  NoPrintStatementOption(
+                  ) [NoPrintStatementOption]
+                ) [PrintStatemtDetail]
+              ) [PrintStatement]
+            ) [ElseStatements]
+          ) [IfStatement]
+        ) [IfDetalStatement]
+      ) [StatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  14:28:15,958 - ===================================
+INFO  14:28:15,965 - Deklarisana CONST promenljiva nula tip:int Vredosti: 0 na liniji 5
+INFO  14:28:15,965 - Deklarisana CONST promenljiva jedan tip:int Vredosti: 1 na liniji 6
+INFO  14:28:15,965 - Deklarisana CONST promenljiva pet tip:int Vredosti: 5 na liniji 7
+INFO  14:28:15,965 - Deklarisana promenljiva niz tip:3 - GLOBAL VAR na liniji 9
+INFO  14:28:15,965 - Deklarisana promenljiva nizch tip:3 - GLOBAL VAR na liniji 10
+INFO  14:28:15,966 - Obradjuje se metoda: main na liniji 13
+INFO  14:28:15,966 - Deklarisana promenljiva bodovi tip:1 - FUNKCIJA na liniji 14
+INFO  14:28:15,966 - Designator bodovi pronadjen! na liniji 16
+INFO  14:28:15,967 - Designator bodovi pronadjen! na liniji 17
+INFO  14:28:15,967 - Designator bodovi pronadjen! na liniji 18
+INFO  14:28:15,967 - Designator bodovi pronadjen! na liniji 18
+INFO  14:28:15,967 - Designator jedan pronadjen! na liniji 18
+INFO  14:28:15,967 - Designator bodovi pronadjen! na liniji 19
+INFO  14:28:15,967 - Designator bodovi pronadjen! na liniji 19
+INFO  14:28:15,967 - Designator pet pronadjen! na liniji 19
+INFO  14:28:15,967 - Designator bodovi pronadjen! na liniji 20
+INFO  14:28:15,967 - Designator bodovi pronadjen! na liniji 21
+INFO  14:28:15,967 - Pronadjen Print Statement  na liniji 7
+INFO  14:28:15,967 - Designator niz pronadjen! na liniji 24
+INFO  14:28:15,968 - Designator nula pronadjen! na liniji 25
+INFO  14:28:15,968 - Designator niz pronadjen! na liniji 25
+INFO  14:28:15,968 - Designator jedan pronadjen! na liniji 25
+INFO  14:28:15,968 - Designator niz pronadjen! na liniji 26
+INFO  14:28:15,968 - Designator jedan pronadjen! na liniji 27
+INFO  14:28:15,968 - Designator niz pronadjen! na liniji 27
+INFO  14:28:15,968 - Designator niz pronadjen! na liniji 27
+INFO  14:28:15,968 - Designator niz pronadjen! na liniji 27
+INFO  14:28:15,968 - Designator niz pronadjen! na liniji 27
+INFO  14:28:15,968 - Designator bodovi pronadjen! na liniji 28
+INFO  14:28:15,968 - Designator niz pronadjen! na liniji 28
+INFO  14:28:15,968 - Designator niz pronadjen! na liniji 28
+INFO  14:28:15,968 - Designator bodovi pronadjen! na liniji 29
+INFO  14:28:15,968 - Pronadjen Print Statement  na liniji 7
+INFO  14:28:15,968 - Designator niz pronadjen! na liniji 30
+INFO  14:28:15,968 - Pronadjen Print Statement  na liniji 7
+INFO  14:28:15,969 - Designator nizch pronadjen! na liniji 33
+INFO  14:28:15,969 - Designator nizch pronadjen! na liniji 34
+INFO  14:28:15,969 - Designator jedan pronadjen! na liniji 35
+INFO  14:28:15,969 - Designator nizch pronadjen! na liniji 35
+INFO  14:28:15,969 - Designator pet pronadjen! na liniji 36
+INFO  14:28:15,969 - Designator nizch pronadjen! na liniji 36
+INFO  14:28:15,969 - Designator nizch pronadjen! na liniji 37
+INFO  14:28:15,969 - Pronadjen Print Statement  na liniji 7
+INFO  14:28:15,969 - Designator jedan pronadjen! na liniji 38
+INFO  14:28:15,969 - Designator nizch pronadjen! na liniji 38
+INFO  14:28:15,969 - Pronadjen Print Statement  na liniji 7
+INFO  14:28:15,969 - Designator bodovi pronadjen! na liniji 41
+INFO  14:28:15,969 - Designator bodovi pronadjen! na liniji 41
+INFO  14:28:15,969 - Designator pet pronadjen! na liniji 41
+INFO  14:28:15,970 - Designator jedan pronadjen! na liniji 41
+INFO  14:28:15,970 - Designator bodovi pronadjen! na liniji 41
+INFO  14:28:15,970 - Designator bodovi pronadjen! na liniji 42
+INFO  14:28:15,970 - Pronadjen Print Statement  na liniji 7
+INFO  14:28:15,970 - Designator bodovi pronadjen! na liniji 44
+INFO  14:28:15,970 - Pronadjen Read Statement  na liniji 44
+INFO  14:28:15,970 - Designator bodovi pronadjen! na liniji 45
+INFO  14:28:15,970 - Designator bodovi pronadjen! na liniji 45
+INFO  14:28:15,970 - Designator bodovi pronadjen! na liniji 45
+INFO  14:28:15,970 - Designator bodovi pronadjen! na liniji 46
+INFO  14:28:15,970 - Pronadjen Print Statement  na liniji 17
+INFO  14:28:15,970 - Designator bodovi pronadjen! na liniji 47
+INFO  14:28:15,971 - Pronadjen Print Statement  na liniji 12
+INFO  14:28:15,971 - ===================================
+INFO  14:28:15,977 - Parsiranje uspesno zavrseno!

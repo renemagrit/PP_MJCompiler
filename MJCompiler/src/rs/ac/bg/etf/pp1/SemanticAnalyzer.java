@@ -10,8 +10,8 @@ import org.apache.log4j.Logger;
 
 public class SemanticAnalyzer extends VisitorAdaptor {
 	
-	int printCallCount = 0;
-	int nVars;
+	private int printCallCount = 0;
+	private int nVars;
 	
     private static Struct currentType = NewSymbolTable.noType;
     private static Obj currentMethod = null;
@@ -21,11 +21,16 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     private static int argCount;
 
 	private static boolean errorDetection = false;
+	private static boolean checkMain = false;
 	
 	Logger log = Logger.getLogger(getClass());
 
 	
 	/* UTIL */
+	public int getNumVars() {
+		return nVars;
+	}
+	
 	public static boolean isValueableObj(Obj currObj) {
 		//Class: currObj.getKind() == Obj.Elem
 		if(currObj == null) return false;
@@ -246,6 +251,9 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	NewSymbolTable.openScope();
     }
     public void visit(Program program) {
+    	if(!checkMain) {
+    		report_error("Greska! Nije pronadjena main metoda! ", null);
+    	}
     	nVars = NewSymbolTable.currentScope.getnVars();
     	NewSymbolTable.chainLocalSymbols(program.getProgName().obj);
     	NewSymbolTable.closeScope();
@@ -274,6 +282,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	Obj temp = NewSymbolTable.find(methHeader.getMethName());
 		if(temp != NewSymbolTable.noObj) {
 			report_error("Greska! Postoji funckija sa unetim imenom! ", null);
+			methHeader.obj = NewSymbolTable.lenObj;
 			return;
 		}
 		
@@ -286,9 +295,15 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	}
     	
     	//Check main method
+    	if(methHeader.getMethName().equals("main") ) {
+    		checkMain = true;
+    	}    	
+    	
+    	//Check main method
     	if(methHeader.getMethName().equals("main") && retType!= NewSymbolTable.noType) {
     		report_error("Greska! Metoda main mora biti tipa void! ", methHeader);
-    		return;
+//    		methHeader.obj = NewSymbolTable.lenObj;
+//    		return;
     	}
     		
     	currentMethod = NewSymbolTable.insert(Obj.Meth,methHeader.getMethName(), currentType);
@@ -653,5 +668,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
    }
    public void visit(ErrorCondition error) {
 	   errorDetection = true;
+   }
+   public boolean passed() {
+	   return errorDetection;
    }
 }
