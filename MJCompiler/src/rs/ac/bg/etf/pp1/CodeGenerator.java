@@ -133,4 +133,23 @@ public class CodeGenerator extends VisitorAdaptor {
 		}
 		Code.put(Code.return_);
 	}
+	//*********************************** READ *******************************************
+	public void visit(ReadStatementDetail read) {
+    	//read.obj = read.getDesignator().obj;
+    	Struct desStrcut =  read.getDesignator().obj.getType();
+    	
+    	int currtype = Struct.None;
+    	if(desStrcut.getElemType() == null) {
+    		currtype = desStrcut.getKind();
+    	}else{
+    		currtype = desStrcut.getElemType().getKind();
+    	}
+    	
+    	if(currtype == Struct.Int) {
+    		Code.put(Code.read);	//word
+    	}else {	
+    		Code.put(Code.bread);	//byte
+    	}
+    	Code.store(read.getDesignator().obj);
+	}
 }

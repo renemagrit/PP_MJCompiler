@@ -10,7 +10,7 @@ int v;
 		int b, c; 
 		
 	{
-		v = -c +a;
+		//read(b);
 		print(c);
 		
 	}

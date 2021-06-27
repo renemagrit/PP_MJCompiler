@@ -1,40 +1,41 @@
-INFO  23:26:05,353 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
-INFO  23:26:05,428 - #2 program
-INFO  23:26:05,429 - #47 test301
-INFO  23:26:05,429 - #20 const
-INFO  23:26:05,430 - #47 int
-INFO  23:26:05,430 - #47 a
-INFO  23:26:05,431 - #36 =
-INFO  23:26:05,431 - #49 3
-INFO  23:26:05,431 - #37 ;
-INFO  23:26:05,432 - #47 int
-INFO  23:26:05,433 - #47 v
-INFO  23:26:05,433 - #37 ;
-INFO  23:26:05,435 - #42 {
-INFO  23:26:05,435 - #5 void
-INFO  23:26:05,436 - #47 main
-INFO  23:26:05,437 - #40 (
-INFO  23:26:05,437 - #41 )
-INFO  23:26:05,438 - #47 int
-INFO  23:26:05,439 - #47 b
-INFO  23:26:05,439 - #39 ,
-INFO  23:26:05,440 - #47 c
-INFO  23:26:05,440 - #37 ;
-INFO  23:26:05,440 - #42 {
-INFO  23:26:05,440 - #47 v
-INFO  23:26:05,443 - #36 =
-INFO  23:26:05,444 - #47 c
-INFO  23:26:05,445 - #26 -
-INFO  23:26:05,446 - #47 b
-INFO  23:26:05,447 - #37 ;
-INFO  23:26:05,449 - #3 print
-INFO  23:26:05,449 - #40 (
-INFO  23:26:05,449 - #47 c
-INFO  23:26:05,449 - #41 )
-INFO  23:26:05,450 - #37 ;
-INFO  23:26:05,450 - #43 }
-INFO  23:26:05,451 - #43 }
-INFO  23:26:05,472 - Program(
+INFO  23:31:55,438 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  23:31:55,508 - #2 program
+INFO  23:31:55,508 - #47 test301
+INFO  23:31:55,509 - #20 const
+INFO  23:31:55,510 - #47 int
+INFO  23:31:55,510 - #47 a
+INFO  23:31:55,511 - #36 =
+INFO  23:31:55,511 - #49 3
+INFO  23:31:55,511 - #37 ;
+INFO  23:31:55,512 - #47 int
+INFO  23:31:55,512 - #47 v
+INFO  23:31:55,512 - #37 ;
+INFO  23:31:55,514 - #42 {
+INFO  23:31:55,514 - #5 void
+INFO  23:31:55,515 - #47 main
+INFO  23:31:55,515 - #40 (
+INFO  23:31:55,516 - #41 )
+INFO  23:31:55,517 - #47 int
+INFO  23:31:55,519 - #47 b
+INFO  23:31:55,519 - #39 ,
+INFO  23:31:55,519 - #47 c
+INFO  23:31:55,521 - #37 ;
+INFO  23:31:55,522 - #42 {
+INFO  23:31:55,522 - #47 v
+INFO  23:31:55,523 - #36 =
+INFO  23:31:55,524 - #26 -
+INFO  23:31:55,525 - #47 c
+INFO  23:31:55,526 - #25 +
+INFO  23:31:55,528 - #47 a
+INFO  23:31:55,529 - #37 ;
+INFO  23:31:55,530 - #3 print
+INFO  23:31:55,531 - #40 (
+INFO  23:31:55,531 - #47 c
+INFO  23:31:55,532 - #41 )
+INFO  23:31:55,532 - #37 ;
+INFO  23:31:55,532 - #43 }
+INFO  23:31:55,533 - #43 }
+INFO  23:31:55,554 - Program(
   ProgName(
    test301
   ) [ProgName]
@@ -128,8 +129,8 @@ INFO  23:26:05,472 - Program(
                 AssignOperator(
                 ) [AssignOperator]
                 Expression(
-                  NoNegativePrefix(
-                  ) [NoNegativePrefix]
+                  NegativePrefix(
+                  ) [NegativePrefix]
                   BasicTerm(
                     FactorDesignator(
                       Designator(
@@ -145,12 +146,12 @@ INFO  23:26:05,472 - Program(
                     NoExpressionList(
                     ) [NoExpressionList]
                     ExpressionListValue(
-                      MinusOp(
-                      ) [MinusOp]
+                      PlusOp(
+                      ) [PlusOp]
                       BasicTerm(
                         FactorDesignator(
                           Designator(
-                           b
+                           a
                             NoDsgnList(
                             ) [NoDsgnList]
                           ) [Designator]
@@ -192,16 +193,16 @@ INFO  23:26:05,472 - Program(
     ) [MethodDeclaration]
   ) [RepeatMethodDeclaration]
 ) [Program]
-INFO  23:26:05,473 - ===================================
-INFO  23:26:05,477 - Deklarisana CONST promenljiva a tip:int Vredosti: 3 na liniji 4
-INFO  23:26:05,478 - Deklarisana promenljiva v tip:1 - GLOBAL VAR na liniji 5
-INFO  23:26:05,478 - Obradjuje se metoda: main na liniji 9
-INFO  23:26:05,479 - Deklarisana promenljiva b tip:1 - FUNKCIJA na liniji 10
-INFO  23:26:05,479 - Deklarisana promenljiva c tip:1 - FUNKCIJA na liniji 10
-INFO  23:26:05,479 - Designator v pronadjen! na liniji 13
-INFO  23:26:05,479 - Designator c pronadjen! na liniji 13
-INFO  23:26:05,479 - Designator b pronadjen! na liniji 13
-INFO  23:26:05,480 - Designator c pronadjen! na liniji 14
-INFO  23:26:05,481 - Pronadjen Print Statement  na liniji 7
-INFO  23:26:05,481 - ===================================
-INFO  23:26:05,577 - Parsiranje uspesno zavrseno!
+INFO  23:31:55,555 - ===================================
+INFO  23:31:55,561 - Deklarisana CONST promenljiva a tip:int Vredosti: 3 na liniji 4
+INFO  23:31:55,562 - Deklarisana promenljiva v tip:1 - GLOBAL VAR na liniji 5
+INFO  23:31:55,563 - Obradjuje se metoda: main na liniji 9
+INFO  23:31:55,563 - Deklarisana promenljiva b tip:1 - FUNKCIJA na liniji 10
+INFO  23:31:55,563 - Deklarisana promenljiva c tip:1 - FUNKCIJA na liniji 10
+INFO  23:31:55,563 - Designator v pronadjen! na liniji 13
+INFO  23:31:55,563 - Designator c pronadjen! na liniji 13
+INFO  23:31:55,564 - Designator a pronadjen! na liniji 13
+INFO  23:31:55,564 - Designator c pronadjen! na liniji 14
+INFO  23:31:55,564 - Pronadjen Print Statement  na liniji 7
+INFO  23:31:55,565 - ===================================
+INFO  23:31:55,655 - Parsiranje uspesno zavrseno!
