@@ -100,6 +100,7 @@ nonterminal ListStatementOpt ListStatementOpt;
 
 /* If Statement */
 
+
 /* Do While Statement*/
 nonterminal DoWhileStmt DoWhileStmt;
 
@@ -163,7 +164,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodHeader, MethodDecl;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator, ReadStmt, PrintStmt;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj CondFact, CondTerm, Condition;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj FunctionCall;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj IfStatement, ConditionStmt, ElseStatement;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj IfStatement, ConditionStmt, ElseStatement, ElseDec;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, Factor, Term;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct numConst, charConst, boolConst;
@@ -285,9 +286,10 @@ ListStatementOpt ::= (StatementListOpt) ListStatementOpt:L1 Statement:S2 {: RESU
 
 IfStatement ::= (IfStatementFull) IF LPAREN ConditionStmt:C1 RPAREN Statement:S2 ElseStatement:E3 {: RESULT=new IfStatementFull(C1, S2, E3); RESULT.setLine(C1left); :};
 
-ElseStatement ::= (ElseStatements) ELSE Statement:S1 {: RESULT=new ElseStatements(S1); RESULT.setLine(S1left); :}
+ElseStatement ::= (ElseStatements) ElseDec:E1 Statement:S2 {: RESULT=new ElseStatements(E1, S2); RESULT.setLine(E1left); :}
 			| (NoElseStatement) {: RESULT=new NoElseStatement(); :} /*epsilon*/
 			;
+ElseDec ::= (EleseDetection) ELSE {: RESULT=new EleseDetection(); :};
 
 /* DO WHILE STATEMENTS */
 DoWhileStmt ::= (DoWhileStatementDetail) DO Statement:S1 WHILE LPAREN ConditionStmt:C2 RPAREN SEMI {: RESULT=new DoWhileStatementDetail(S1, C2); RESULT.setLine(S1left); :};

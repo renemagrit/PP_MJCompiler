@@ -11,14 +11,9 @@ int v;
 		int b, c; 
 		bool j;
 	{
-		b = 2;
-		c = 4;
-		j = false;
-		if(b+b == c)
-		{
-			print(3);
-		}
-		b--;
+		b = 3;
+		b++;
+		
 	}
 }
 

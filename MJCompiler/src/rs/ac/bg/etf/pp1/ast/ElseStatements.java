@@ -1,17 +1,28 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/5/2021 14:24:23
+// 28/5/2021 18:6:14
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class ElseStatements extends ElseStatement {
 
+    private ElseDec ElseDec;
     private Statement Statement;
 
-    public ElseStatements (Statement Statement) {
+    public ElseStatements (ElseDec ElseDec, Statement Statement) {
+        this.ElseDec=ElseDec;
+        if(ElseDec!=null) ElseDec.setParent(this);
         this.Statement=Statement;
         if(Statement!=null) Statement.setParent(this);
+    }
+
+    public ElseDec getElseDec() {
+        return ElseDec;
+    }
+
+    public void setElseDec(ElseDec ElseDec) {
+        this.ElseDec=ElseDec;
     }
 
     public Statement getStatement() {
@@ -27,15 +38,18 @@ public class ElseStatements extends ElseStatement {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(ElseDec!=null) ElseDec.accept(visitor);
         if(Statement!=null) Statement.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(ElseDec!=null) ElseDec.traverseTopDown(visitor);
         if(Statement!=null) Statement.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(ElseDec!=null) ElseDec.traverseBottomUp(visitor);
         if(Statement!=null) Statement.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -44,6 +58,12 @@ public class ElseStatements extends ElseStatement {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("ElseStatements(\n");
+
+        if(ElseDec!=null)
+            buffer.append(ElseDec.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
 
         if(Statement!=null)
             buffer.append(Statement.toString("  "+tab));

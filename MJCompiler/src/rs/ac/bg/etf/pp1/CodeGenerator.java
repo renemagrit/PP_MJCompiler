@@ -92,6 +92,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		if (desigantor.getDesigantorList() instanceof DsgnList) {
 			// TODO: array
 		}else {
+			Code.load(desInc.getDesignator().obj);
 			Code.loadConst(1);
 			Code.put(Code.add);
 			Code.store(desInc.getDesignator().obj);
@@ -106,6 +107,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		if (desigantor.getDesigantorList() instanceof DsgnList) {
 			// TODO: array
 		} else {
+			Code.load(desDec.getDesignator().obj);
 			Code.loadConst(1);
 			Code.put(Code.sub);
 			Code.store(desDec.getDesignator().obj);
@@ -157,16 +159,17 @@ public class CodeGenerator extends VisitorAdaptor {
 	public void visit(IfStatementFull stmt) {
 		int start = ((ConditionStatemnt)stmt.getConditionStmt()).obj.getKind();
 		int end = stmt.getElseStatement().obj.getKind();
-		report_info("if starts at:"+ start, null);
-		report_info("if ends at:"+ end, null);
+//		report_info("if starts at:"+ start, null);
+//		report_info("if ends at:"+ end, null);
 		
 		if(stmt.getElseStatement() instanceof ElseStatements) {
-			  Code.put2(end - 2, Code.pc - start + 3);
+			  Code.put2(end - 2, Code.pc - end + 3);
 		}
 		
 		CondTerm trm = ((SingleCondition)((ConditionStatemnt)stmt.getConditionStmt()).getCondition()).getCondTerm();
 		
-		handleCondFact_Mlt(((CondFactorMulti)((SingleCondTerm)trm).getCondFact()),start, end);
+		handleCondFact_Sgl(((CondFactorSingle)((SingleCondTerm)trm).getCondFact()),start, end);
+		//handleCondFact_Mlt(((CondFactorMulti)((SingleCondTerm)trm).getCondFact()),start, end);
 	}
 	public void visit(ConditionStatemnt stmt) {
 		stmt.obj = new Obj(Code.pc, "ifStmt", null);
@@ -175,10 +178,13 @@ public class CodeGenerator extends VisitorAdaptor {
 		stmt.obj = new Obj(Code.pc, "noElseStmt", null);
 	}
 	public void visit(ElseStatements stmt) {
-		Code.putJump(0);
-		stmt.obj = new Obj(Code.pc, "ElseStmt", null);
+		
+		stmt.obj = stmt.getElseDec().obj;
 	}
-	
+	public void visit(EleseDetection stmt) {
+		Code.putJump(0);	//dummy
+		stmt.obj = new Obj(Code.pc, "ElseDec", null);
+	}
 	private int getOpNum(Relop relOp) {
 		
 		if(relOp instanceof IsEqualRelOp)

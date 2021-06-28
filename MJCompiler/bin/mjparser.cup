@@ -85,6 +85,7 @@ nonterminal Statement, ListStatementOpt;
 
 /* If Statement */
 
+
 /* Do While Statement*/
 nonterminal DoWhileStmt;
 
@@ -135,7 +136,7 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodHeader, MethodDecl;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator, ReadStmt, PrintStmt;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj CondFact, CondTerm, Condition;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj FunctionCall;
-nonterminal rs.etf.pp1.symboltable.concepts.Obj IfStatement, ConditionStmt, ElseStatement;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj IfStatement, ConditionStmt, ElseStatement, ElseDec;
 
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, Factor, Term;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct numConst, charConst, boolConst;
@@ -257,9 +258,10 @@ ListStatementOpt ::= (StatementListOpt) ListStatementOpt Statement
 
 IfStatement ::= (IfStatementFull) IF LPAREN ConditionStmt RPAREN Statement ElseStatement;
 
-ElseStatement ::= (ElseStatements) ELSE Statement
+ElseStatement ::= (ElseStatements) ElseDec Statement
 			| (NoElseStatement) /*epsilon*/
 			;
+ElseDec ::= (EleseDetection) ELSE;
 
 /* DO WHILE STATEMENTS */
 DoWhileStmt ::= (DoWhileStatementDetail) DO Statement WHILE LPAREN ConditionStmt RPAREN SEMI;
