@@ -12,8 +12,9 @@ int v;
 		bool j;
 	{
 		b = 2;
-		j = true;
-		if(a < b)
+		c = 4;
+		j = false;
+		if(b+b == c)
 		{
 			print(3);
 		}

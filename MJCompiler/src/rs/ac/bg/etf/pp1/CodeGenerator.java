@@ -166,7 +166,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		
 		CondTerm trm = ((SingleCondition)((ConditionStatemnt)stmt.getConditionStmt()).getCondition()).getCondTerm();
 		
-		handleCondTerm(trm,start, end);
+		handleCondFact_Mlt(((CondFactorMulti)((SingleCondTerm)trm).getCondFact()),start, end);
 	}
 	public void visit(ConditionStatemnt stmt) {
 		stmt.obj = new Obj(Code.pc, "ifStmt", null);
@@ -201,11 +201,19 @@ public class CodeGenerator extends VisitorAdaptor {
 		return Code.inverse[getOpNum(relOp)];
 	}
 	
-	private void handleCondTerm(CondTerm condTerm, int startAddr, int endAddr) {
-		Relop oldRelop =((CondFactorMulti)((SingleCondTerm)condTerm).getCondFact()).getRelop();
+	private void handleCondFact_Sgl(CondFactorSingle condTerm, int startAddr, int endAddr) {
+	
+		int newRelop = Code.eq;
+		int addRelop = condTerm.obj.getKind();
+		Code.put2(addRelop, ((Code.jcc + newRelop)& 0xFF) << 8); // inverse
+        Code.put2(addRelop + 1, endAddr - addRelop);
+	}
+	
+	private void handleCondFact_Mlt(CondFactorMulti condTerm, int startAddr, int endAddr) {
+		Relop oldRelop =condTerm.getRelop();
 		int newRelop = inverseChangOp((oldRelop));
-		int addRelop = ((CondFactorMulti)((SingleCondTerm)condTerm).getCondFact()).obj.getKind();
-		Code.put2(addRelop, (Code.jcc + newRelop) << 8); // inverse
+		int addRelop = condTerm.obj.getKind();
+		Code.put2(addRelop, ((Code.jcc + newRelop)& 0xFF) << 8); // inverse
         Code.put2(addRelop + 1, endAddr - addRelop);
 	}
 			  
