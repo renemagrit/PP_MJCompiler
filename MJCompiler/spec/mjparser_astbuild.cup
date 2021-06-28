@@ -99,7 +99,8 @@ nonterminal Statement Statement;
 nonterminal ListStatementOpt ListStatementOpt;
 
 /* If Statement */
-
+nonterminal CondOr CondOr;
+nonterminal IfDetected IfDetected;
 
 /* Do While Statement*/
 nonterminal DoWhileStmt DoWhileStmt;
@@ -284,7 +285,9 @@ ListStatementOpt ::= (StatementListOpt) ListStatementOpt:L1 Statement:S2 {: RESU
 
 /* IF STATEMENT */
 
-IfStatement ::= (IfStatementFull) IF LPAREN ConditionStmt:C1 RPAREN Statement:S2 ElseStatement:E3 {: RESULT=new IfStatementFull(C1, S2, E3); RESULT.setLine(C1left); :};
+IfStatement ::= (IfStatementFull) IfDetected:I1 LPAREN ConditionStmt:C2 RPAREN Statement:S3 ElseStatement:E4 {: RESULT=new IfStatementFull(I1, C2, S3, E4); RESULT.setLine(I1left); :};
+
+IfDetected ::= (IfStatementDetection)IF {: RESULT=new IfStatementDetection(); :};
 
 ElseStatement ::= (ElseStatements) ElseDec:E1 Statement:S2 {: RESULT=new ElseStatements(E1, S2); RESULT.setLine(E1left); :}
 			| (NoElseStatement) {: RESULT=new NoElseStatement(); :} /*epsilon*/
@@ -373,9 +376,11 @@ ConditionStmt ::= (ConditionStatemnt) Condition:C1 {: RESULT=new ConditionStatem
 				{: parser.report_error("Izvrsen oporavak za Condition do ) u liniji "+ lleft, null ); :} {: RESULT=new ErrorCondition(); :}
 				;
 
-Condition ::= (MultiCondition) Condition:C1 OR CondTerm:C2 {: RESULT=new MultiCondition(C1, C2); RESULT.setLine(C1left); :}
+Condition ::= (MultiCondition) Condition:C1 CondOr:C2 CondTerm:C3 {: RESULT=new MultiCondition(C1, C2, C3); RESULT.setLine(C1left); :}
 			| (SingleCondition) CondTerm:C1 {: RESULT=new SingleCondition(C1); RESULT.setLine(C1left); :}
 			;
+CondOr ::= (ConditionOr) OR {: RESULT=new ConditionOr(); :};
+
 CondTerm ::= (MultiCondTerm) CondTerm:C1 AND CondFact:C2 {: RESULT=new MultiCondTerm(C1, C2); RESULT.setLine(C1left); :}
 			| (SingleCondTerm) CondFact:C1 {: RESULT=new SingleCondTerm(C1); RESULT.setLine(C1left); :}
 			;

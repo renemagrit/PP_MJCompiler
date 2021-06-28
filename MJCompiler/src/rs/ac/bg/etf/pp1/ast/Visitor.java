@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/5/2021 18:6:14
+// 28/5/2021 22:32:22
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -27,6 +27,7 @@ public interface Visitor {
     public void visit(DoWhileStmt DoWhileStmt);
     public void visit(ReturnStmt ReturnStmt);
     public void visit(Expr Expr);
+    public void visit(IfDetected IfDetected);
     public void visit(SwitchStmtVal SwitchStmtVal);
     public void visit(ReturnExpr ReturnExpr);
     public void visit(VarDecl VarDecl);
@@ -62,6 +63,7 @@ public interface Visitor {
     public void visit(ActPars ActPars);
     public void visit(VarDeclList VarDeclList);
     public void visit(CondFact CondFact);
+    public void visit(CondOr CondOr);
     public void visit(YieldStmt YieldStmt);
     public void visit(ConditionStmt ConditionStmt);
     public void visit(Term Term);
@@ -114,6 +116,7 @@ public interface Visitor {
     public void visit(CondFactorSingle CondFactorSingle);
     public void visit(SingleCondTerm SingleCondTerm);
     public void visit(MultiCondTerm MultiCondTerm);
+    public void visit(ConditionOr ConditionOr);
     public void visit(SingleCondition SingleCondition);
     public void visit(MultiCondition MultiCondition);
     public void visit(ErrorCondition ErrorCondition);
@@ -152,6 +155,7 @@ public interface Visitor {
     public void visit(EleseDetection EleseDetection);
     public void visit(NoElseStatement NoElseStatement);
     public void visit(ElseStatements ElseStatements);
+    public void visit(IfStatementDetection IfStatementDetection);
     public void visit(IfStatementFull IfStatementFull);
     public void visit(NoStatementListOpt NoStatementListOpt);
     public void visit(StatementListOpt StatementListOpt);

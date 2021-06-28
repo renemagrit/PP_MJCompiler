@@ -84,7 +84,7 @@ nonterminal FromParams, FromParamsList, FromParamsVal, FormParamsBegin, FormPara
 nonterminal Statement, ListStatementOpt;
 
 /* If Statement */
-
+nonterminal CondOr, IfDetected;
 
 /* Do While Statement*/
 nonterminal DoWhileStmt;
@@ -256,7 +256,9 @@ ListStatementOpt ::= (StatementListOpt) ListStatementOpt Statement
 
 /* IF STATEMENT */
 
-IfStatement ::= (IfStatementFull) IF LPAREN ConditionStmt RPAREN Statement ElseStatement;
+IfStatement ::= (IfStatementFull) IfDetected LPAREN ConditionStmt RPAREN Statement ElseStatement;
+
+IfDetected ::= (IfStatementDetection)IF;
 
 ElseStatement ::= (ElseStatements) ElseDec Statement
 			| (NoElseStatement) /*epsilon*/
@@ -345,9 +347,11 @@ ConditionStmt ::= (ConditionStatemnt) Condition
 				{: parser.report_error("Izvrsen oporavak za Condition do ) u liniji "+ lleft, null ); :}
 				;
 
-Condition ::= (MultiCondition) Condition OR CondTerm
+Condition ::= (MultiCondition) Condition CondOr CondTerm
 			| (SingleCondition) CondTerm
 			;
+CondOr ::= (ConditionOr) OR;
+
 CondTerm ::= (MultiCondTerm) CondTerm AND CondFact
 			| (SingleCondTerm) CondFact
 			;

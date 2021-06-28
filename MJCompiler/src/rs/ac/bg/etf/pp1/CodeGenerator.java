@@ -1,8 +1,12 @@
 package rs.ac.bg.etf.pp1;
 
+import java.util.ArrayList;
+import java.util.Stack;
+
 import com.sun.istack.internal.logging.Logger;
 
 import rs.ac.bg.etf.pp1.ast.*;
+import rs.ac.bg.etf.pp1.test.CompilerError;
 import rs.etf.pp1.mj.runtime.Code;
 import rs.etf.pp1.symboltable.Tab;
 import rs.etf.pp1.symboltable.concepts.*;
@@ -10,6 +14,14 @@ import rs.etf.pp1.symboltable.concepts.*;
 public class CodeGenerator extends VisitorAdaptor {
 	private int mainPc;
 
+	private ArrayList<Integer> listOfFalseJumps = new ArrayList<Integer>();
+	private ArrayList<Integer> listOfOrJumps = new ArrayList<Integer>();
+	private Stack<ArrayList<Integer>> stackOfFalseJumps = new Stack<ArrayList<Integer>>();
+	private Stack<ArrayList<Integer>> stackOforJums = new Stack<ArrayList<Integer>>();
+	private Stack<Integer> stackOfAfterElseAddrs = new Stack<Integer>();
+	
+	private int afterElseAddr;
+	
 	public int getMainPc() {
 		return mainPc;
 	}
@@ -157,34 +169,50 @@ public class CodeGenerator extends VisitorAdaptor {
 	
 	//********************************** IF STMT ************************************
 	public void visit(IfStatementFull stmt) {
-		int start = ((ConditionStatemnt)stmt.getConditionStmt()).obj.getKind();
-		int end = stmt.getElseStatement().obj.getKind();
-//		report_info("if starts at:"+ start, null);
-//		report_info("if ends at:"+ end, null);
-		
-		if(stmt.getElseStatement() instanceof ElseStatements) {
-			  Code.put2(end - 2, Code.pc - end + 3);
-		}
-		
-		CondTerm trm = ((SingleCondition)((ConditionStatemnt)stmt.getConditionStmt()).getCondition()).getCondTerm();
-		
-		handleCondFact_Sgl(((CondFactorSingle)((SingleCondTerm)trm).getCondFact()),start, end);
-		//handleCondFact_Mlt(((CondFactorMulti)((SingleCondTerm)trm).getCondFact()),start, end);
+		//pop
+		afterElseAddr = stackOfAfterElseAddrs.pop();
+		listOfFalseJumps = stackOfFalseJumps.pop();
+		listOfOrJumps = stackOforJums.pop();
 	}
+	public void visit(IfStatementDetection cond) {
+		//push
+		stackOfAfterElseAddrs.push(afterElseAddr);
+		stackOfFalseJumps.push(listOfFalseJumps);
+		stackOforJums.push(listOfOrJumps);
+		
+		listOfFalseJumps = new ArrayList<Integer>();
+		listOfOrJumps = new ArrayList<Integer>();
+	}
+	
 	public void visit(ConditionStatemnt stmt) {
-		stmt.obj = new Obj(Code.pc, "ifStmt", null);
+		
+		//if then grana
+		listOfOrJumps.forEach((elem)->{
+			Code.fixup(elem);
+		});
+		listOfOrJumps.clear();
 	}
 	public void visit(NoElseStatement stmt) {
-		stmt.obj = new Obj(Code.pc, "noElseStmt", null);
+		listOfFalseJumps.forEach(elem->{
+			Code.fixup(elem);
+		});
+		listOfFalseJumps.clear();
 	}
 	public void visit(ElseStatements stmt) {
-		
-		stmt.obj = stmt.getElseDec().obj;
+		Code.fixup(afterElseAddr);
 	}
 	public void visit(EleseDetection stmt) {
-		Code.putJump(0);	//dummy
-		stmt.obj = new Obj(Code.pc, "ElseDec", null);
+		Code.putJump(0);
+		int pc = Code.pc -2;
+		afterElseAddr = pc;
+		
+		listOfFalseJumps.forEach(elem->{
+			Code.fixup(elem);
+		});
+		
+		listOfFalseJumps.clear();
 	}
+	
 	private int getOpNum(Relop relOp) {
 		
 		if(relOp instanceof IsEqualRelOp)
@@ -203,36 +231,29 @@ public class CodeGenerator extends VisitorAdaptor {
 		return 0;
 	}
 	
-	private int inverseChangOp(Relop relOp) {
-		return Code.inverse[getOpNum(relOp)];
-	}
-	
-	private void handleCondFact_Sgl(CondFactorSingle condTerm, int startAddr, int endAddr) {
-	
-		int newRelop = Code.eq;
-		int addRelop = condTerm.obj.getKind();
-		Code.put2(addRelop, ((Code.jcc + newRelop)& 0xFF) << 8); // inverse
-        Code.put2(addRelop + 1, endAddr - addRelop);
-	}
-	
-	private void handleCondFact_Mlt(CondFactorMulti condTerm, int startAddr, int endAddr) {
-		Relop oldRelop =condTerm.getRelop();
-		int newRelop = inverseChangOp((oldRelop));
-		int addRelop = condTerm.obj.getKind();
-		Code.put2(addRelop, ((Code.jcc + newRelop)& 0xFF) << 8); // inverse
-        Code.put2(addRelop + 1, endAddr - addRelop);
-	}
-			  
 	
 	//****************************** CONDITIONS **********************************
 	public void visit(CondFactorSingle condFactor) {
 		Code.loadConst(0);
-		condFactor.obj = new Obj(Code.pc, "", condFactor.obj.getType());
-		Code.putFalseJump(Code.eq, 0); // filler code, to leave space for later
+		Code.putFalseJump(Code.ne, 0); // filler code, to leave space for later
+		int addr = Code.pc - 2;
+		listOfFalseJumps.add(addr);
 	}
 	public void visit(CondFactorMulti condFactor) {
-		condFactor.obj = new Obj(Code.pc, "", condFactor.obj.getType());
-		Code.putFalseJump(Code.eq, 0); // filler code, to leave space for later
+		Code.putFalseJump(getOpNum(condFactor.getRelop()), 0); // filler code, to leave space for later
+		int addr = Code.pc - 2;
+		listOfFalseJumps.add(addr);
+	}
+	public void visit(ConditionOr or) {
+		Code.putJump(0);
+		int addr = Code.pc - 2;
+		listOfOrJumps.add(addr);
+		
+		listOfFalseJumps.forEach(elem->{
+			Code.fixup(elem);
+		});
+		
+		listOfFalseJumps.clear();
 	}
 	
 	

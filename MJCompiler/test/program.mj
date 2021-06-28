@@ -5,14 +5,25 @@ const int a = 3;
 const char maki = 'm';
 int v;
 {
-
-	
 	void main()	
 		int b, c; 
 		bool j;
 	{
-		b = 3;
-		b++;
+		j = false;
+		b = 2;
+		c = 3;
+		
+		if(true && j == true || b <c)
+		{
+			if(a == 3 && true){
+				print('m');
+			}
+			print(3);
+		}else{
+			print(333);
+		}
+		
+	
 		
 	}
 }

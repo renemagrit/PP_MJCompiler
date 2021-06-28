@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/5/2021 18:6:14
+// 28/5/2021 22:32:22
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -27,6 +27,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(DoWhileStmt DoWhileStmt) { }
     public void visit(ReturnStmt ReturnStmt) { }
     public void visit(Expr Expr) { }
+    public void visit(IfDetected IfDetected) { }
     public void visit(SwitchStmtVal SwitchStmtVal) { }
     public void visit(ReturnExpr ReturnExpr) { }
     public void visit(VarDecl VarDecl) { }
@@ -62,6 +63,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ActPars ActPars) { }
     public void visit(VarDeclList VarDeclList) { }
     public void visit(CondFact CondFact) { }
+    public void visit(CondOr CondOr) { }
     public void visit(YieldStmt YieldStmt) { }
     public void visit(ConditionStmt ConditionStmt) { }
     public void visit(Term Term) { }
@@ -114,6 +116,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(CondFactorSingle CondFactorSingle) { visit(); }
     public void visit(SingleCondTerm SingleCondTerm) { visit(); }
     public void visit(MultiCondTerm MultiCondTerm) { visit(); }
+    public void visit(ConditionOr ConditionOr) { visit(); }
     public void visit(SingleCondition SingleCondition) { visit(); }
     public void visit(MultiCondition MultiCondition) { visit(); }
     public void visit(ErrorCondition ErrorCondition) { visit(); }
@@ -152,6 +155,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(EleseDetection EleseDetection) { visit(); }
     public void visit(NoElseStatement NoElseStatement) { visit(); }
     public void visit(ElseStatements ElseStatements) { visit(); }
+    public void visit(IfStatementDetection IfStatementDetection) { visit(); }
     public void visit(IfStatementFull IfStatementFull) { visit(); }
     public void visit(NoStatementListOpt NoStatementListOpt) { visit(); }
     public void visit(StatementListOpt StatementListOpt) { visit(); }
