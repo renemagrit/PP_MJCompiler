@@ -1,5 +1,7 @@
 package rs.ac.bg.etf.pp1;
 
+import com.sun.istack.internal.logging.Logger;
+
 import rs.ac.bg.etf.pp1.ast.*;
 import rs.etf.pp1.mj.runtime.Code;
 import rs.etf.pp1.symboltable.Tab;
@@ -11,6 +13,15 @@ public class CodeGenerator extends VisitorAdaptor {
 	public int getMainPc() {
 		return mainPc;
 	}
+	private static Logger log = Logger.getLogger(CodeGenerator.class);
+
+	public void report_info(String message, SyntaxNode info) {
+        StringBuilder msg = new StringBuilder(message);
+        int line = (info == null) ? 0 : info.getLine();
+        if (line != 0)
+            msg.append(", line ").append(line);
+        log.info(msg.toString());
+    }
 
 	public void visit(FactorNumConst numConst) {
 		int constValue = ((NumberConstant) numConst.getNumConst()).getN1();
@@ -142,15 +153,39 @@ public class CodeGenerator extends VisitorAdaptor {
 //	        Code.put(Code.return_);
 //    }
 	
+	//********************************** IF STMT ************************************
+	public void visit(IfStatementFull stmt) {
+		int start = ((ConditionStatemnt)stmt.getConditionStmt()).obj.getKind();
+		int end = stmt.getElseStatement().obj.getKind();
+		report_info("if starts at:"+ start, null);
+		report_info("if ends at:"+ end, null);
+	}
+	public void visit(ConditionStatemnt stmt) {
+		stmt.obj = new Obj(Code.pc, "ifStmt", null);
+	}
+	public void visit(NoElseStatement stmt) {
+		stmt.obj = new Obj(Code.pc, "noElseStmt", null);
+	}
+	public void visit(ElseStatements stmt) {
+		Code.putJump(0);
+		stmt.obj = new Obj(Code.pc, "ElseStmt", null);
+	}
+	//****************************** CONDITIONS **********************************
+	public void visit(CondFactorSingle cond) {
+		
+	}
+	public void visit(CondFactorMulti cond) {
+		
+	}
+	
+	
 	//********************************* FUN CALL *************************************
 	public void visit(MethodHeader methHeader) {
-		
-		methHeader.obj.setAdr(Code.pc);
-		
+
 		if(methHeader.getMethName().equals("main") ) {
     		mainPc = Code.pc;
     	}    	
-		
+		methHeader.obj.setAdr(Code.pc);
 		Code.put(Code.enter);
 		Code.put(0);											//formalParams
 		Code.put(methHeader.obj.getLocalSymbols().size());		//Number of locals

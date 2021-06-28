@@ -84,7 +84,6 @@ nonterminal FromParams, FromParamsList, FromParamsVal, FormParamsBegin, FormPara
 nonterminal Statement, ListStatementOpt;
 
 /* If Statement */
-nonterminal IfStatement, ElseStatement;
 
 /* Do While Statement*/
 nonterminal DoWhileStmt;
@@ -108,7 +107,7 @@ nonterminal ActParsDetail, ActPars, ActParsExprList;
 nonterminal DesigantorList, DesignatorActPars, DesignatorStatement;
 
 /* Condition */
-nonterminal ConditionStmt;
+
 
 /*Expression*/
 nonterminal ExprList, ExprListVal, ExprFactorOpt;
@@ -136,8 +135,9 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodHeader, MethodDecl;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator, ReadStmt, PrintStmt;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct CondFact, CondTerm, Condition;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj FunctionCall;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj IfStatement, ConditionStmt, ElseStatement;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr,Factor, Term;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, Factor, Term;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct numConst, charConst, boolConst;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 
@@ -255,7 +255,7 @@ ListStatementOpt ::= (StatementListOpt) ListStatementOpt Statement
 
 /* IF STATEMENT */
 
-IfStatement ::= (IfStatement) IF LPAREN ConditionStmt RPAREN Statement ElseStatement;
+IfStatement ::= (IfStatementFull) IF LPAREN ConditionStmt RPAREN Statement ElseStatement;
 
 ElseStatement ::= (ElseStatements) ELSE Statement
 			| (NoElseStatement) /*epsilon*/

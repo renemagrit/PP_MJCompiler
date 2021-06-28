@@ -99,8 +99,6 @@ nonterminal Statement Statement;
 nonterminal ListStatementOpt ListStatementOpt;
 
 /* If Statement */
-nonterminal IfStatement IfStatement;
-nonterminal ElseStatement ElseStatement;
 
 /* Do While Statement*/
 nonterminal DoWhileStmt DoWhileStmt;
@@ -133,7 +131,7 @@ nonterminal DesignatorActPars DesignatorActPars;
 nonterminal DesignatorStatement DesignatorStatement;
 
 /* Condition */
-nonterminal ConditionStmt ConditionStmt;
+
 
 /*Expression*/
 nonterminal ExprList ExprList;
@@ -165,8 +163,9 @@ nonterminal rs.etf.pp1.symboltable.concepts.Obj MethodHeader, MethodDecl;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj Designator, ReadStmt, PrintStmt;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct CondFact, CondTerm, Condition;
 nonterminal rs.etf.pp1.symboltable.concepts.Obj FunctionCall;
+nonterminal rs.etf.pp1.symboltable.concepts.Obj IfStatement, ConditionStmt, ElseStatement;
 
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr,Factor, Term;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, Factor, Term;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct numConst, charConst, boolConst;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
 
@@ -284,7 +283,7 @@ ListStatementOpt ::= (StatementListOpt) ListStatementOpt:L1 Statement:S2 {: RESU
 
 /* IF STATEMENT */
 
-IfStatement ::= (IfStatement) IF LPAREN ConditionStmt:C1 RPAREN Statement:S2 ElseStatement:E3 {: RESULT=new IfStatement(C1, S2, E3); RESULT.setLine(C1left); :};
+IfStatement ::= (IfStatementFull) IF LPAREN ConditionStmt:C1 RPAREN Statement:S2 ElseStatement:E3 {: RESULT=new IfStatementFull(C1, S2, E3); RESULT.setLine(C1left); :};
 
 ElseStatement ::= (ElseStatements) ELSE Statement:S1 {: RESULT=new ElseStatements(S1); RESULT.setLine(S1left); :}
 			| (NoElseStatement) {: RESULT=new NoElseStatement(); :} /*epsilon*/
