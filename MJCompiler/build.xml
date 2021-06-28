@@ -6,8 +6,7 @@
 			<fileset dir="src/rs/ac/bg/etf/pp1">			
 				<exclude name="util/Log4JUtils.java"/>
 				<exclude name="test/Compiler.java"/>
-				<exclude name="test/Compiler.java"/>
-				<exclude name="util/CompilerError.java"/>
+				<exclude name="test/CompilerError.java"/>
 				<exclude name="RuleVisitor.java"/>
 				<exclude name="SemanticAnalyzer.java"/>
 				<exclude name="NewSymbolTable.java"/>

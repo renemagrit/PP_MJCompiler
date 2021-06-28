@@ -75,7 +75,7 @@ nonterminal ConstDeclList, ConstVal;
 nonterminal GlobalVarDecl, VarDeclList, VarVal;
 
 /* Method Declaration Non Terminals*/
-nonterminal RepeatMethodDecl, MethodDeclType, MethodDelVarList;
+nonterminal RepeatMethodDecl, MethodDeclType, MethodDelVarList, MethBodyStart;
 
 /*Formal Parameters Non Terminals*/
 nonterminal FromParams, FromParamsList, FromParamsVal, FormParamsBegin, FormParamsEnd;
@@ -201,7 +201,9 @@ RepeatMethodDecl ::= (RepeatMethodDeclaration) RepeatMethodDecl MethodDecl
 				| (NoRepeatMethodDeclaration) /*epsilon*/
 				;
 
-MethodDecl ::= (MethodDeclaration) MethodHeader FormParamsBegin FromParams FormParamsEnd  MethodDelVarList LBRACE ListStatementOpt RBRACE;
+MethodDecl ::= (MethodDeclaration) MethodHeader FormParamsBegin FromParams FormParamsEnd  MethodDelVarList MethBodyStart ListStatementOpt RBRACE;
+
+MethBodyStart ::= (MethodBodyStart) LBRACE;
 
 MethodHeader ::= (MethodHeader) MethodDeclType IDENT:methName;
 

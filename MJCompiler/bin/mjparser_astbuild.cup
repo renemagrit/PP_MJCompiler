@@ -85,6 +85,7 @@ nonterminal VarVal VarVal;
 nonterminal RepeatMethodDecl RepeatMethodDecl;
 nonterminal MethodDeclType MethodDeclType;
 nonterminal MethodDelVarList MethodDelVarList;
+nonterminal MethBodyStart MethBodyStart;
 
 /*Formal Parameters Non Terminals*/
 nonterminal FromParams FromParams;
@@ -229,7 +230,9 @@ RepeatMethodDecl ::= (RepeatMethodDeclaration) RepeatMethodDecl:R1 MethodDecl:M2
 				| (NoRepeatMethodDeclaration) {: RESULT=new NoRepeatMethodDeclaration(); :} /*epsilon*/
 				;
 
-MethodDecl ::= (MethodDeclaration) MethodHeader:M1 FormParamsBegin:F2 FromParams:F3 FormParamsEnd:F4  MethodDelVarList:M5 LBRACE ListStatementOpt:L6 RBRACE {: RESULT=new MethodDeclaration(M1, F2, F3, F4, M5, L6); RESULT.setLine(M1left); :};
+MethodDecl ::= (MethodDeclaration) MethodHeader:M1 FormParamsBegin:F2 FromParams:F3 FormParamsEnd:F4  MethodDelVarList:M5 MethBodyStart:M6 ListStatementOpt:L7 RBRACE {: RESULT=new MethodDeclaration(M1, F2, F3, F4, M5, M6, L7); RESULT.setLine(M1left); :};
+
+MethBodyStart ::= (MethodBodyStart) LBRACE {: RESULT=new MethodBodyStart(); :};
 
 MethodHeader ::= (MethodHeader) MethodDeclType:M1 IDENT:methName {: RESULT=new MethodHeader(M1, methName); RESULT.setLine(M1left); :};
 

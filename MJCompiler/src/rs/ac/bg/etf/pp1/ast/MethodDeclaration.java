@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 27/5/2021 16:40:29
+// 28/5/2021 10:40:43
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -12,9 +12,10 @@ public class MethodDeclaration extends MethodDecl {
     private FromParams FromParams;
     private FormParamsEnd FormParamsEnd;
     private MethodDelVarList MethodDelVarList;
+    private MethBodyStart MethBodyStart;
     private ListStatementOpt ListStatementOpt;
 
-    public MethodDeclaration (MethodHeader MethodHeader, FormParamsBegin FormParamsBegin, FromParams FromParams, FormParamsEnd FormParamsEnd, MethodDelVarList MethodDelVarList, ListStatementOpt ListStatementOpt) {
+    public MethodDeclaration (MethodHeader MethodHeader, FormParamsBegin FormParamsBegin, FromParams FromParams, FormParamsEnd FormParamsEnd, MethodDelVarList MethodDelVarList, MethBodyStart MethBodyStart, ListStatementOpt ListStatementOpt) {
         this.MethodHeader=MethodHeader;
         if(MethodHeader!=null) MethodHeader.setParent(this);
         this.FormParamsBegin=FormParamsBegin;
@@ -25,6 +26,8 @@ public class MethodDeclaration extends MethodDecl {
         if(FormParamsEnd!=null) FormParamsEnd.setParent(this);
         this.MethodDelVarList=MethodDelVarList;
         if(MethodDelVarList!=null) MethodDelVarList.setParent(this);
+        this.MethBodyStart=MethBodyStart;
+        if(MethBodyStart!=null) MethBodyStart.setParent(this);
         this.ListStatementOpt=ListStatementOpt;
         if(ListStatementOpt!=null) ListStatementOpt.setParent(this);
     }
@@ -69,6 +72,14 @@ public class MethodDeclaration extends MethodDecl {
         this.MethodDelVarList=MethodDelVarList;
     }
 
+    public MethBodyStart getMethBodyStart() {
+        return MethBodyStart;
+    }
+
+    public void setMethBodyStart(MethBodyStart MethBodyStart) {
+        this.MethBodyStart=MethBodyStart;
+    }
+
     public ListStatementOpt getListStatementOpt() {
         return ListStatementOpt;
     }
@@ -87,6 +98,7 @@ public class MethodDeclaration extends MethodDecl {
         if(FromParams!=null) FromParams.accept(visitor);
         if(FormParamsEnd!=null) FormParamsEnd.accept(visitor);
         if(MethodDelVarList!=null) MethodDelVarList.accept(visitor);
+        if(MethBodyStart!=null) MethBodyStart.accept(visitor);
         if(ListStatementOpt!=null) ListStatementOpt.accept(visitor);
     }
 
@@ -97,6 +109,7 @@ public class MethodDeclaration extends MethodDecl {
         if(FromParams!=null) FromParams.traverseTopDown(visitor);
         if(FormParamsEnd!=null) FormParamsEnd.traverseTopDown(visitor);
         if(MethodDelVarList!=null) MethodDelVarList.traverseTopDown(visitor);
+        if(MethBodyStart!=null) MethBodyStart.traverseTopDown(visitor);
         if(ListStatementOpt!=null) ListStatementOpt.traverseTopDown(visitor);
     }
 
@@ -106,6 +119,7 @@ public class MethodDeclaration extends MethodDecl {
         if(FromParams!=null) FromParams.traverseBottomUp(visitor);
         if(FormParamsEnd!=null) FormParamsEnd.traverseBottomUp(visitor);
         if(MethodDelVarList!=null) MethodDelVarList.traverseBottomUp(visitor);
+        if(MethBodyStart!=null) MethBodyStart.traverseBottomUp(visitor);
         if(ListStatementOpt!=null) ListStatementOpt.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -141,6 +155,12 @@ public class MethodDeclaration extends MethodDecl {
 
         if(MethodDelVarList!=null)
             buffer.append(MethodDelVarList.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(MethBodyStart!=null)
+            buffer.append(MethBodyStart.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

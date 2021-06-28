@@ -2,6 +2,7 @@
 
 program test301
 const int a = 3;
+const char maki = 'm';
 int v;
 {
 
@@ -10,9 +11,9 @@ int v;
 		int b, c; 
 		
 	{
-		//read(b);
-		print(c);
-		
+	
+		print(3);
+	
 	}
 }
 

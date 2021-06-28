@@ -100,7 +100,65 @@ public class CodeGenerator extends VisitorAdaptor {
 			Code.store(desDec.getDesignator().obj);
 		}
 	}
-
+	//******************************** PROG **************************************
+//	public void visit(ProgName progName) {
+//		 Obj chrMethObj = NewSymbolTable.find("chr");
+//	        // report_info("[CHR]" + stringifyObjNode(chrMethObj), null);
+//	        chrMethObj.setAdr(Code.pc);
+//	        Code.put(Code.enter);
+//	        Code.put(1);
+//	        Code.put(1);
+//
+//	        Code.put(Code.load_n);
+//
+//	        Code.put(Code.exit);
+//	        Code.put(Code.return_);
+//
+//
+//	        Obj ordMethObj = NewSymbolTable.find("ord");
+//	        // report_info("[ORD]" + stringifyObjNode(ordMethObj), null);
+//	        ordMethObj.setAdr(Code.pc);
+//	        Code.put(Code.enter);
+//	        Code.put(1);
+//	        Code.put(1);
+//
+//	        Code.put(Code.load_n);
+//
+//	        Code.put(Code.exit);
+//	        Code.put(Code.return_);
+//
+//
+//	        Obj lenMethObj = NewSymbolTable.find("len");
+//	        // report_info("[LEN]" + stringifyObjNode(lenMethObj), null);
+//	        lenMethObj.setAdr(Code.pc);
+//	        Code.put(Code.enter);
+//	        Code.put(1);
+//	        Code.put(1);
+//
+//	        Code.put(Code.load_n);
+//	        Code.put(Code.arraylength);
+//
+//	        Code.put(Code.exit);
+//	        Code.put(Code.return_);
+//    }
+	
+	//********************************* FUN CALL *************************************
+	public void visit(MethodHeader methHeader) {
+		
+		methHeader.obj.setAdr(Code.pc);
+		
+		if(methHeader.getMethName().equals("main") ) {
+    		mainPc = Code.pc;
+    	}    	
+		
+		Code.put(Code.enter);
+		Code.put(0);											//formalParams
+		Code.put(methHeader.obj.getLocalSymbols().size());		//Number of locals
+	}
+	 public void visit(MethodDeclaration methDecl) {
+    	Code.put(Code.exit);
+    	Code.put(Code.return_);
+    }
 	// ********************************** PRINT  *************************************
 	public void visit(PrintStatemtDetail print) {
 		Struct exprStruct = print.getExpr().struct;
@@ -131,7 +189,7 @@ public class CodeGenerator extends VisitorAdaptor {
 				Code.put(Code.bprint);
 			}
 		}
-		Code.put(Code.return_);
+		
 	}
 	//*********************************** READ *******************************************
 	public void visit(ReadStatementDetail read) {

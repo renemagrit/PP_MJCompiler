@@ -1,59 +1,79 @@
-INFO  23:56:00,270 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
-INFO  23:56:00,353 - #2 program
-INFO  23:56:00,354 - #47 test301
-INFO  23:56:00,354 - #20 const
-INFO  23:56:00,356 - #47 int
-INFO  23:56:00,357 - #47 a
-INFO  23:56:00,359 - #36 =
-INFO  23:56:00,359 - #49 3
-INFO  23:56:00,359 - #37 ;
-INFO  23:56:00,363 - #47 int
-INFO  23:56:00,364 - #47 v
-INFO  23:56:00,364 - #37 ;
-INFO  23:56:00,366 - #42 {
-INFO  23:56:00,368 - #5 void
-INFO  23:56:00,370 - #47 main
-INFO  23:56:00,378 - #40 (
-INFO  23:56:00,379 - #41 )
-INFO  23:56:00,381 - #47 int
-INFO  23:56:00,384 - #47 b
-INFO  23:56:00,385 - #39 ,
-INFO  23:56:00,385 - #47 c
-INFO  23:56:00,385 - #37 ;
-INFO  23:56:00,386 - #42 {
-INFO  23:56:00,386 - #6 read
-INFO  23:56:00,387 - #40 (
-INFO  23:56:00,388 - #47 b
-INFO  23:56:00,388 - #41 )
-INFO  23:56:00,390 - #37 ;
-INFO  23:56:00,390 - #3 print
-INFO  23:56:00,391 - #40 (
-INFO  23:56:00,391 - #47 c
-INFO  23:56:00,393 - #41 )
-INFO  23:56:00,397 - #37 ;
-INFO  23:56:00,397 - #43 }
-INFO  23:56:00,398 - #43 }
-INFO  23:56:00,416 - Program(
+INFO  10:53:19,044 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  10:53:19,106 - #2 program
+INFO  10:53:19,107 - #47 test301
+INFO  10:53:19,107 - #20 const
+INFO  10:53:19,108 - #47 int
+INFO  10:53:19,109 - #47 a
+INFO  10:53:19,109 - #36 =
+INFO  10:53:19,110 - #49 3
+INFO  10:53:19,110 - #37 ;
+INFO  10:53:19,110 - #20 const
+INFO  10:53:19,111 - #47 char
+INFO  10:53:19,111 - #47 maki
+INFO  10:53:19,111 - #36 =
+INFO  10:53:19,111 - #48 m
+INFO  10:53:19,111 - #37 ;
+INFO  10:53:19,112 - #47 int
+INFO  10:53:19,112 - #47 v
+INFO  10:53:19,112 - #37 ;
+INFO  10:53:19,114 - #42 {
+INFO  10:53:19,115 - #5 void
+INFO  10:53:19,115 - #47 main
+INFO  10:53:19,116 - #40 (
+INFO  10:53:19,117 - #41 )
+INFO  10:53:19,118 - #47 int
+INFO  10:53:19,120 - #47 b
+INFO  10:53:19,120 - #39 ,
+INFO  10:53:19,120 - #47 c
+INFO  10:53:19,120 - #37 ;
+INFO  10:53:19,120 - #42 {
+INFO  10:53:19,121 - #3 print
+INFO  10:53:19,123 - #40 (
+INFO  10:53:19,123 - #49 3
+INFO  10:53:19,124 - #41 )
+INFO  10:53:19,127 - #37 ;
+INFO  10:53:19,127 - #43 }
+INFO  10:53:19,128 - #43 }
+INFO  10:53:19,151 - Program(
   ProgName(
    test301
   ) [ProgName]
   MultiProgramDeclarationList(
     MultiProgramDeclarationList(
-      NoDecl(
-      ) [NoDecl]
+      MultiProgramDeclarationList(
+        NoDecl(
+        ) [NoDecl]
+        ConstProgramDeclaration(
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleConstDeclaration(
+              ConstValue(
+               a
+                ConstOptionNumber(
+                  NumberConstant(
+                   3
+                  ) [NumberConstant]
+                ) [ConstOptionNumber]
+              ) [ConstValue]
+            ) [SingleConstDeclaration]
+          ) [ConstDeclaration]
+        ) [ConstProgramDeclaration]
+      ) [MultiProgramDeclarationList]
       ConstProgramDeclaration(
         ConstDeclaration(
           Type(
-           int
+           char
           ) [Type]
           SingleConstDeclaration(
             ConstValue(
-             a
-              ConstOptionNumber(
-                NumberConstant(
-                 3
-                ) [NumberConstant]
-              ) [ConstOptionNumber]
+             maki
+              ConstOptionChar(
+                CharConstant(
+                 m
+                ) [CharConstant]
+              ) [ConstOptionChar]
             ) [ConstValue]
           ) [SingleConstDeclaration]
         ) [ConstDeclaration]
@@ -112,33 +132,22 @@ INFO  23:56:00,416 - Program(
           ) [VarDeclarationList]
         ) [VarDeclaration]
       ) [MultiMethodDelVarList]
+      MethodBodyStart(
+      ) [MethodBodyStart]
       StatementListOpt(
-        StatementListOpt(
-          NoStatementListOpt(
-          ) [NoStatementListOpt]
-          ReadStatement(
-            ReadStatementDetail(
-              Designator(
-               b
-                NoDsgnList(
-                ) [NoDsgnList]
-              ) [Designator]
-            ) [ReadStatementDetail]
-          ) [ReadStatement]
-        ) [StatementListOpt]
+        NoStatementListOpt(
+        ) [NoStatementListOpt]
         PrintStatement(
           PrintStatemtDetail(
             Expression(
               NoNegativePrefix(
               ) [NoNegativePrefix]
               BasicTerm(
-                FactorDesignator(
-                  Designator(
-                   c
-                    NoDsgnList(
-                    ) [NoDsgnList]
-                  ) [Designator]
-                ) [FactorDesignator]
+                FactorNumConst(
+                  NumberConstant(
+                   3
+                  ) [NumberConstant]
+                ) [FactorNumConst]
                 NoMulOptTerm(
                 ) [NoMulOptTerm]
               ) [BasicTerm]
@@ -153,15 +162,13 @@ INFO  23:56:00,416 - Program(
     ) [MethodDeclaration]
   ) [RepeatMethodDeclaration]
 ) [Program]
-INFO  23:56:00,417 - ===================================
-INFO  23:56:00,422 - Deklarisana CONST promenljiva a tip:int Vredosti: 3 na liniji 4
-INFO  23:56:00,423 - Deklarisana promenljiva v tip:1 - GLOBAL VAR na liniji 5
-INFO  23:56:00,424 - Obradjuje se metoda: main na liniji 9
-INFO  23:56:00,424 - Deklarisana promenljiva b tip:1 - FUNKCIJA na liniji 10
-INFO  23:56:00,424 - Deklarisana promenljiva c tip:1 - FUNKCIJA na liniji 10
-INFO  23:56:00,424 - Designator b pronadjen! na liniji 13
-INFO  23:56:00,424 - Pronadjen Read Statement  na liniji 13
-INFO  23:56:00,425 - Designator c pronadjen! na liniji 14
-INFO  23:56:00,425 - Pronadjen Print Statement  na liniji 7
-INFO  23:56:00,426 - ===================================
-INFO  23:56:00,549 - Parsiranje uspesno zavrseno!
+INFO  10:53:19,152 - ===================================
+INFO  10:53:19,158 - Deklarisana CONST promenljiva a tip:int Vredosti: 3 na liniji 4
+INFO  10:53:19,159 - Deklarisana CONST promenljiva maki tip:char Vredosti: 109 na liniji 5
+INFO  10:53:19,159 - Deklarisana promenljiva v tip:1 - GLOBAL VAR na liniji 6
+INFO  10:53:19,160 - Obradjuje se metoda: main na liniji 10
+INFO  10:53:19,160 - Deklarisana promenljiva b tip:1 - FUNKCIJA na liniji 11
+INFO  10:53:19,160 - Deklarisana promenljiva c tip:1 - FUNKCIJA na liniji 11
+INFO  10:53:19,161 - Pronadjen Print Statement  na liniji 7
+INFO  10:53:19,161 - ===================================
+INFO  10:53:19,268 - Parsiranje uspesno zavrseno!

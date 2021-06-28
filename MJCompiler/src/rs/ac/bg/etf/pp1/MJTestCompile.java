@@ -39,10 +39,7 @@ public class MJTestCompile implements Compiler {
 	public void addError(CompilerError error) {
 		lisOfErrors.add(error);
 	}
-	private void printErrList() {
-		
-		
-	}
+	
 	
 	private static MJTestCompile instance = null;
 	
@@ -92,7 +89,6 @@ public class MJTestCompile implements Compiler {
 				prog.traverseBottomUp(codeGen);
 				Code.dataSize = v.getNumVars();
 				Code.mainPc = codeGen.getMainPc();
-				
 			
 				Code.write(new FileOutputStream(objFile));
 				

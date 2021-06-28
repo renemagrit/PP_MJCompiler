@@ -1,0 +1,145 @@
+INFO  10:49:05,077 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  10:49:05,155 - #2 program
+INFO  10:49:05,155 - #47 test301
+INFO  10:49:05,155 - #20 const
+INFO  10:49:05,156 - #47 int
+INFO  10:49:05,156 - #47 a
+INFO  10:49:05,157 - #36 =
+INFO  10:49:05,157 - #49 3
+INFO  10:49:05,157 - #37 ;
+INFO  10:49:05,158 - #20 const
+INFO  10:49:05,159 - #47 char
+INFO  10:49:05,160 - #47 maki
+INFO  10:49:05,160 - #36 =
+INFO  10:49:05,160 - #48 m
+INFO  10:49:05,160 - #37 ;
+INFO  10:49:05,161 - #47 int
+INFO  10:49:05,161 - #47 v
+INFO  10:49:05,161 - #37 ;
+INFO  10:49:05,163 - #42 {
+INFO  10:49:05,163 - #5 void
+INFO  10:49:05,164 - #47 main
+INFO  10:49:05,165 - #40 (
+INFO  10:49:05,165 - #41 )
+INFO  10:49:05,166 - #47 int
+INFO  10:49:05,168 - #47 b
+INFO  10:49:05,168 - #39 ,
+INFO  10:49:05,168 - #47 c
+INFO  10:49:05,168 - #37 ;
+INFO  10:49:05,169 - #42 {
+INFO  10:49:05,169 - #43 }
+INFO  10:49:05,171 - #43 }
+INFO  10:49:05,185 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      MultiProgramDeclarationList(
+        NoDecl(
+        ) [NoDecl]
+        ConstProgramDeclaration(
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleConstDeclaration(
+              ConstValue(
+               a
+                ConstOptionNumber(
+                  NumberConstant(
+                   3
+                  ) [NumberConstant]
+                ) [ConstOptionNumber]
+              ) [ConstValue]
+            ) [SingleConstDeclaration]
+          ) [ConstDeclaration]
+        ) [ConstProgramDeclaration]
+      ) [MultiProgramDeclarationList]
+      ConstProgramDeclaration(
+        ConstDeclaration(
+          Type(
+           char
+          ) [Type]
+          SingleConstDeclaration(
+            ConstValue(
+             maki
+              ConstOptionChar(
+                CharConstant(
+                 m
+                ) [CharConstant]
+              ) [ConstOptionChar]
+            ) [ConstValue]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclaration]
+      ) [ConstProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+        SingleVarDeclaration(
+          VarValue(
+           v
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValue]
+        ) [SingleVarDeclaration]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  RepeatMethodDeclaration(
+    NoRepeatMethodDeclaration(
+    ) [NoRepeatMethodDeclaration]
+    MethodDeclaration(
+      MethodHeader(
+        VoidMethodDeclType(
+        ) [VoidMethodDeclType]
+       main
+      ) [MethodHeader]
+      FormParamsBegin(
+      ) [FormParamsBegin]
+      NoFromParameters(
+      ) [NoFromParameters]
+      FormParamsEnd(
+      ) [FormParamsEnd]
+      MultiMethodDelVarList(
+        NoMethodDelVarList(
+        ) [NoMethodDelVarList]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationList(
+            SingleVarDeclaration(
+              VarValue(
+               b
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+            VarValue(
+             c
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [VarValue]
+          ) [VarDeclarationList]
+        ) [VarDeclaration]
+      ) [MultiMethodDelVarList]
+      MethodBodyStart(
+      ) [MethodBodyStart]
+      NoStatementListOpt(
+      ) [NoStatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  10:49:05,186 - ===================================
+INFO  10:49:05,191 - Deklarisana CONST promenljiva a tip:int Vredosti: 3 na liniji 4
+INFO  10:49:05,192 - Deklarisana CONST promenljiva maki tip:char Vredosti: 109 na liniji 5
+INFO  10:49:05,192 - Deklarisana promenljiva v tip:1 - GLOBAL VAR na liniji 6
+INFO  10:49:05,193 - Obradjuje se metoda: main na liniji 10
+INFO  10:49:05,193 - Deklarisana promenljiva b tip:1 - FUNKCIJA na liniji 11
+INFO  10:49:05,193 - Deklarisana promenljiva c tip:1 - FUNKCIJA na liniji 11
+INFO  10:49:05,193 - ===================================
+INFO  10:49:05,285 - Parsiranje uspesno zavrseno!

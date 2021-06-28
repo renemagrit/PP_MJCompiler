@@ -322,9 +322,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     	NewSymbolTable.openScope();
     	report_info("Obradjuje se metoda: "+ methHeader.getMethName(), methHeader);
     }
-    
-    public void visit(MethodDecl methDecl) {
+    public void visit(MethodBodyStart body) {
     	NewSymbolTable.chainLocalSymbols(currentMethod);
+    	
+    }
+    public void visit(MethodDecl methDecl) {    	
     	NewSymbolTable.closeScope();
     	currentMethod = null;
     }
