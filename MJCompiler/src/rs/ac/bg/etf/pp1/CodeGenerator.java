@@ -159,6 +159,14 @@ public class CodeGenerator extends VisitorAdaptor {
 		int end = stmt.getElseStatement().obj.getKind();
 		report_info("if starts at:"+ start, null);
 		report_info("if ends at:"+ end, null);
+		
+		if(stmt.getElseStatement() instanceof ElseStatements) {
+			  Code.put2(end - 2, Code.pc - start + 3);
+		}
+		
+		CondTerm trm = ((SingleCondition)((ConditionStatemnt)stmt.getConditionStmt()).getCondition()).getCondTerm();
+		
+		handleCondTerm(trm,start, end);
 	}
 	public void visit(ConditionStatemnt stmt) {
 		stmt.obj = new Obj(Code.pc, "ifStmt", null);
@@ -170,12 +178,47 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.putJump(0);
 		stmt.obj = new Obj(Code.pc, "ElseStmt", null);
 	}
-	//****************************** CONDITIONS **********************************
-	public void visit(CondFactorSingle cond) {
+	
+	private int getOpNum(Relop relOp) {
 		
+		if(relOp instanceof IsEqualRelOp)
+			return Code.eq;
+		else if(relOp instanceof NotEqualRelOp)
+			return Code.ne;
+		else if(relOp instanceof LessRelOp)
+			return Code.lt;
+		else if(relOp instanceof GreaterRelOp)
+			return Code.gt;
+		else if(relOp instanceof LessEqRelOp)
+			return Code.le;
+		else if(relOp instanceof GreaterEqRelOp)
+			return Code.ge;
+		
+		return 0;
 	}
-	public void visit(CondFactorMulti cond) {
-		
+	
+	private int inverseChangOp(Relop relOp) {
+		return Code.inverse[getOpNum(relOp)];
+	}
+	
+	private void handleCondTerm(CondTerm condTerm, int startAddr, int endAddr) {
+		Relop oldRelop =((CondFactorMulti)((SingleCondTerm)condTerm).getCondFact()).getRelop();
+		int newRelop = inverseChangOp((oldRelop));
+		int addRelop = ((CondFactorMulti)((SingleCondTerm)condTerm).getCondFact()).obj.getKind();
+		Code.put2(addRelop, (Code.jcc + newRelop) << 8); // inverse
+        Code.put2(addRelop + 1, endAddr - addRelop);
+	}
+			  
+	
+	//****************************** CONDITIONS **********************************
+	public void visit(CondFactorSingle condFactor) {
+		Code.loadConst(0);
+		condFactor.obj = new Obj(Code.pc, "", condFactor.obj.getType());
+		Code.putFalseJump(Code.eq, 0); // filler code, to leave space for later
+	}
+	public void visit(CondFactorMulti condFactor) {
+		condFactor.obj = new Obj(Code.pc, "", condFactor.obj.getType());
+		Code.putFalseJump(Code.eq, 0); // filler code, to leave space for later
 	}
 	
 	
@@ -189,6 +232,7 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(Code.enter);
 		Code.put(0);											//formalParams
 		Code.put(methHeader.obj.getLocalSymbols().size());		//Number of locals
+		
 	}
 	 public void visit(MethodDeclaration methDecl) {
     	Code.put(Code.exit);

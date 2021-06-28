@@ -1,0 +1,290 @@
+INFO  16:06:10,034 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  16:06:10,173 - #2 program
+INFO  16:06:10,173 - #47 test301
+INFO  16:06:10,174 - #20 const
+INFO  16:06:10,176 - #47 int
+INFO  16:06:10,176 - #47 a
+INFO  16:06:10,177 - #36 =
+INFO  16:06:10,178 - #49 3
+INFO  16:06:10,178 - #37 ;
+INFO  16:06:10,179 - #20 const
+INFO  16:06:10,180 - #47 char
+INFO  16:06:10,180 - #47 maki
+INFO  16:06:10,181 - #36 =
+INFO  16:06:10,182 - #48 m
+INFO  16:06:10,182 - #37 ;
+INFO  16:06:10,183 - #47 int
+INFO  16:06:10,183 - #47 v
+INFO  16:06:10,183 - #37 ;
+INFO  16:06:10,186 - #42 {
+INFO  16:06:10,187 - #5 void
+INFO  16:06:10,188 - #47 main
+INFO  16:06:10,189 - #40 (
+INFO  16:06:10,190 - #41 )
+INFO  16:06:10,193 - #47 int
+INFO  16:06:10,197 - #47 b
+INFO  16:06:10,197 - #39 ,
+INFO  16:06:10,197 - #47 c
+INFO  16:06:10,197 - #37 ;
+INFO  16:06:10,198 - #42 {
+INFO  16:06:10,198 - #47 b
+INFO  16:06:10,208 - #36 =
+INFO  16:06:10,210 - #49 2
+INFO  16:06:10,213 - #37 ;
+INFO  16:06:10,217 - #8 if
+INFO  16:06:10,217 - #40 (
+INFO  16:06:10,218 - #47 a
+INFO  16:06:10,218 - #33 >
+INFO  16:06:10,218 - #47 b
+INFO  16:06:10,221 - #41 )
+INFO  16:06:10,223 - #42 {
+INFO  16:06:10,223 - #3 print
+INFO  16:06:10,223 - #40 (
+INFO  16:06:10,223 - #49 3
+INFO  16:06:10,225 - #41 )
+INFO  16:06:10,228 - #37 ;
+INFO  16:06:10,228 - #43 }
+INFO  16:06:10,229 - #47 b
+INFO  16:06:10,230 - #22 --
+INFO  16:06:10,231 - #37 ;
+INFO  16:06:10,231 - #43 }
+INFO  16:06:10,231 - #43 }
+INFO  16:06:10,260 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      MultiProgramDeclarationList(
+        NoDecl(
+        ) [NoDecl]
+        ConstProgramDeclaration(
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleConstDeclaration(
+              ConstValue(
+               a
+                ConstOptionNumber(
+                  NumberConstant(
+                   3
+                  ) [NumberConstant]
+                ) [ConstOptionNumber]
+              ) [ConstValue]
+            ) [SingleConstDeclaration]
+          ) [ConstDeclaration]
+        ) [ConstProgramDeclaration]
+      ) [MultiProgramDeclarationList]
+      ConstProgramDeclaration(
+        ConstDeclaration(
+          Type(
+           char
+          ) [Type]
+          SingleConstDeclaration(
+            ConstValue(
+             maki
+              ConstOptionChar(
+                CharConstant(
+                 m
+                ) [CharConstant]
+              ) [ConstOptionChar]
+            ) [ConstValue]
+          ) [SingleConstDeclaration]
+        ) [ConstDeclaration]
+      ) [ConstProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         int
+        ) [Type]
+        SingleVarDeclaration(
+          VarValue(
+           v
+            NoBrackArrayList(
+            ) [NoBrackArrayList]
+          ) [VarValue]
+        ) [SingleVarDeclaration]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  RepeatMethodDeclaration(
+    NoRepeatMethodDeclaration(
+    ) [NoRepeatMethodDeclaration]
+    MethodDeclaration(
+      MethodHeader(
+        VoidMethodDeclType(
+        ) [VoidMethodDeclType]
+       main
+      ) [MethodHeader]
+      FormParamsBegin(
+      ) [FormParamsBegin]
+      NoFromParameters(
+      ) [NoFromParameters]
+      FormParamsEnd(
+      ) [FormParamsEnd]
+      MultiMethodDelVarList(
+        NoMethodDelVarList(
+        ) [NoMethodDelVarList]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          VarDeclarationList(
+            SingleVarDeclaration(
+              VarValue(
+               b
+                NoBrackArrayList(
+                ) [NoBrackArrayList]
+              ) [VarValue]
+            ) [SingleVarDeclaration]
+            VarValue(
+             c
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [VarValue]
+          ) [VarDeclarationList]
+        ) [VarDeclaration]
+      ) [MultiMethodDelVarList]
+      MethodBodyStart(
+      ) [MethodBodyStart]
+      StatementListOpt(
+        StatementListOpt(
+          StatementListOpt(
+            NoStatementListOpt(
+            ) [NoStatementListOpt]
+            DesStatement(
+              DesignatorStatementAssign(
+                AssignOpeeratorExpresion(
+                  Designator(
+                   b
+                    NoDsgnList(
+                    ) [NoDsgnList]
+                  ) [Designator]
+                  AssignOperator(
+                  ) [AssignOperator]
+                  Expression(
+                    NoNegativePrefix(
+                    ) [NoNegativePrefix]
+                    BasicTerm(
+                      FactorNumConst(
+                        NumberConstant(
+                         2
+                        ) [NumberConstant]
+                      ) [FactorNumConst]
+                      NoMulOptTerm(
+                      ) [NoMulOptTerm]
+                    ) [BasicTerm]
+                    NoExpressionList(
+                    ) [NoExpressionList]
+                  ) [Expression]
+                ) [AssignOpeeratorExpresion]
+              ) [DesignatorStatementAssign]
+            ) [DesStatement]
+          ) [StatementListOpt]
+          IfDetalStatement(
+            IfStatementFull(
+              ConditionStatemnt(
+                SingleCondition(
+                  SingleCondTerm(
+                    CondFactorMulti(
+                      Expression(
+                        NoNegativePrefix(
+                        ) [NoNegativePrefix]
+                        BasicTerm(
+                          FactorDesignator(
+                            Designator(
+                             a
+                              NoDsgnList(
+                              ) [NoDsgnList]
+                            ) [Designator]
+                          ) [FactorDesignator]
+                          NoMulOptTerm(
+                          ) [NoMulOptTerm]
+                        ) [BasicTerm]
+                        NoExpressionList(
+                        ) [NoExpressionList]
+                      ) [Expression]
+                      GreaterRelOp(
+                      ) [GreaterRelOp]
+                      Expression(
+                        NoNegativePrefix(
+                        ) [NoNegativePrefix]
+                        BasicTerm(
+                          FactorDesignator(
+                            Designator(
+                             b
+                              NoDsgnList(
+                              ) [NoDsgnList]
+                            ) [Designator]
+                          ) [FactorDesignator]
+                          NoMulOptTerm(
+                          ) [NoMulOptTerm]
+                        ) [BasicTerm]
+                        NoExpressionList(
+                        ) [NoExpressionList]
+                      ) [Expression]
+                    ) [CondFactorMulti]
+                  ) [SingleCondTerm]
+                ) [SingleCondition]
+              ) [ConditionStatemnt]
+              DetailStatement(
+                StatementListOpt(
+                  NoStatementListOpt(
+                  ) [NoStatementListOpt]
+                  PrintStatement(
+                    PrintStatemtDetail(
+                      Expression(
+                        NoNegativePrefix(
+                        ) [NoNegativePrefix]
+                        BasicTerm(
+                          FactorNumConst(
+                            NumberConstant(
+                             3
+                            ) [NumberConstant]
+                          ) [FactorNumConst]
+                          NoMulOptTerm(
+                          ) [NoMulOptTerm]
+                        ) [BasicTerm]
+                        NoExpressionList(
+                        ) [NoExpressionList]
+                      ) [Expression]
+                      NoPrintStatementOption(
+                      ) [NoPrintStatementOption]
+                    ) [PrintStatemtDetail]
+                  ) [PrintStatement]
+                ) [StatementListOpt]
+              ) [DetailStatement]
+              NoElseStatement(
+              ) [NoElseStatement]
+            ) [IfStatementFull]
+          ) [IfDetalStatement]
+        ) [StatementListOpt]
+        DesStatement(
+          DesignatorStatementDec(
+            Designator(
+             b
+              NoDsgnList(
+              ) [NoDsgnList]
+            ) [Designator]
+          ) [DesignatorStatementDec]
+        ) [DesStatement]
+      ) [StatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  16:06:10,261 - ===================================
+INFO  16:06:10,274 - Deklarisana CONST promenljiva a tip:int Vredosti: 3 na liniji 4
+INFO  16:06:10,275 - Deklarisana CONST promenljiva maki tip:char Vredosti: 109 na liniji 5
+INFO  16:06:10,277 - Deklarisana promenljiva v tip:1 - GLOBAL VAR na liniji 6
+INFO  16:06:10,277 - Obradjuje se metoda: main na liniji 10
+INFO  16:06:10,277 - Deklarisana promenljiva b tip:1 - FUNKCIJA na liniji 11
+INFO  16:06:10,277 - Deklarisana promenljiva c tip:1 - FUNKCIJA na liniji 11
+INFO  16:06:10,278 - Designator b pronadjen! na liniji 14
+INFO  16:06:10,279 - Designator a pronadjen! na liniji 16
+INFO  16:06:10,279 - Designator b pronadjen! na liniji 16
+INFO  16:06:10,280 - Pronadjen Print Statement  na liniji 8
+INFO  16:06:10,280 - Designator b pronadjen! na liniji 20
+INFO  16:06:10,280 - ===================================
+INFO  16:06:10,590 - Parsiranje uspesno zavrseno!

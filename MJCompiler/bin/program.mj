@@ -9,15 +9,12 @@ int v;
 	
 	void main()	
 		int b, c; 
-		
+		bool j;
 	{
 		b = 2;
-		b--;
-		b--;
-		if(a > b)
+		j = true;
+		if(a < b)
 		{
-			print(3);
-		}else{
 			print(3);
 		}
 		b--;
