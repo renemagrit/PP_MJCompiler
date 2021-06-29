@@ -48,7 +48,10 @@ public class MJTestCompile implements Compiler {
 			instance = new MJTestCompile();
 		return instance;
 	}
-	
+	/*
+	 * D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\lib>java -cp mj-ru
+ntime-1.1.jar rs.etf.pp1.mj.runtime.Run ..\test\program.obj
+	 * */
 
 	@Override
 	public List<CompilerError> compile(String sourceFilePath, String outputFilePath) {

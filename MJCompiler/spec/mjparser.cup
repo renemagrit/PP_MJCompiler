@@ -105,7 +105,7 @@ nonterminal YieldStmt;
 nonterminal ActParsDetail, ActPars, ActParsExprList;
 
 /* Designator */
-nonterminal DesigantorList, DesignatorActPars, DesignatorStatement;
+nonterminal DesigantorList, DesignatorActPars, DesignatorStatement, DesName;
 
 /* Condition */
 
@@ -334,7 +334,9 @@ AssignOpExpr ::= (AssignOpeeratorExpresion) Designator:desName Assignop Expr
 				{: parser.report_error("Izvrsen oporavak za AssignOp do ; u liniji "+ lleft, null ); :}
 				;
 
-Designator ::= (Designator) IDENT:desigantorName DesigantorList;
+Designator ::= (Designator) DesName DesigantorList;
+
+DesName ::= (DesigantorName) IDENT:desigantorName;
 
 DesigantorList ::= (DsgnList) LBRACKET Expr RBRACKET
 				| (NoDsgnList) /*epsilon*/

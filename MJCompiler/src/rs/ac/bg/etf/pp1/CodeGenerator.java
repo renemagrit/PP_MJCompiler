@@ -58,9 +58,9 @@ public class CodeGenerator extends VisitorAdaptor {
 		Code.put(Code.newarray);
 
 		// znam da mi je ovo nepotrbno jer ne radim klase
-		if (newfactor.getExprFactorOpt() instanceof ExpressionFactorOption) {
-
-			if (((ExpressionFactorOption) newfactor.getExprFactorOpt()).getExpr().struct.getKind() == Struct.Int) {
+		if (newfactor.getExprFactorOpt() instanceof ExpressionFactorOption) {			
+			
+			if (newfactor.getType().struct.getKind() == Struct.Int) {
 				Code.put(1); // niz reci
 			} else {
 				Code.put(0); // niz bajtova
@@ -102,7 +102,11 @@ public class CodeGenerator extends VisitorAdaptor {
 		Designator desigantor = desInc.getDesignator();
 		
 		if (desigantor.getDesigantorList() instanceof DsgnList) {
-			// TODO: array
+			Code.put(Code.dup2);
+			Code.load(desInc.getDesignator().obj);
+			Code.loadConst(1);
+			Code.put(Code.add);
+			Code.store(desInc.getDesignator().obj);
 		}else {
 			Code.load(desInc.getDesignator().obj);
 			Code.loadConst(1);
@@ -117,13 +121,29 @@ public class CodeGenerator extends VisitorAdaptor {
 		Designator desigantor = desDec.getDesignator();
 		
 		if (desigantor.getDesigantorList() instanceof DsgnList) {
-			// TODO: array
+			Code.put(Code.dup2);
+			Code.load(desDec.getDesignator().obj);
+			Code.loadConst(1);
+			Code.put(Code.sub);
+			Code.store(desDec.getDesignator().obj);
 		} else {
 			Code.load(desDec.getDesignator().obj);
 			Code.loadConst(1);
 			Code.put(Code.sub);
 			Code.store(desDec.getDesignator().obj);
 		}
+	}
+	
+	
+	public void visit(DesigantorName name) {
+		Designator designator =((Designator)name.getParent());
+		Obj desObj = designator.obj;
+		if (designator.getDesigantorList() instanceof DsgnList) {
+			Code.load(desObj);
+			designator.obj = new Obj(Obj.Elem, designator.obj.getName(), designator.obj.getType().getElemType());
+			
+		}
+		
 	}
 	//******************************** PROG **************************************
 //	public void visit(ProgName progName) {

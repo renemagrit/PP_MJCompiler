@@ -1,0 +1,516 @@
+INFO  13:22:12,016 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  13:22:12,128 - #2 program
+INFO  13:22:12,128 - #47 test301
+INFO  13:22:12,128 - #20 const
+INFO  13:22:12,130 - #47 int
+INFO  13:22:12,130 - #47 nula
+INFO  13:22:12,132 - #36 =
+INFO  13:22:12,132 - #49 0
+INFO  13:22:12,132 - #37 ;
+INFO  13:22:12,134 - #20 const
+INFO  13:22:12,135 - #47 int
+INFO  13:22:12,135 - #47 jedan
+INFO  13:22:12,135 - #36 =
+INFO  13:22:12,135 - #49 1
+INFO  13:22:12,135 - #37 ;
+INFO  13:22:12,136 - #20 const
+INFO  13:22:12,136 - #47 int
+INFO  13:22:12,136 - #47 pet
+INFO  13:22:12,136 - #36 =
+INFO  13:22:12,137 - #49 5
+INFO  13:22:12,138 - #37 ;
+INFO  13:22:12,139 - #47 int
+INFO  13:22:12,139 - #47 niz
+INFO  13:22:12,139 - #44 [
+INFO  13:22:12,139 - #45 ]
+INFO  13:22:12,139 - #37 ;
+INFO  13:22:12,142 - #47 char
+INFO  13:22:12,143 - #47 nizch
+INFO  13:22:12,143 - #44 [
+INFO  13:22:12,143 - #45 ]
+INFO  13:22:12,143 - #37 ;
+INFO  13:22:12,143 - #42 {
+INFO  13:22:12,144 - #5 void
+INFO  13:22:12,145 - #47 main
+INFO  13:22:12,150 - #40 (
+INFO  13:22:12,152 - #41 )
+INFO  13:22:12,154 - #47 int
+INFO  13:22:12,156 - #47 bodovi
+INFO  13:22:12,156 - #37 ;
+INFO  13:22:12,157 - #42 {
+INFO  13:22:12,157 - #47 bodovi
+INFO  13:22:12,172 - #36 =
+ERROR 13:22:12,173 - 
+Sintaksna greska na liniji 16
+INFO  13:22:12,174 - #49 0
+INFO  13:22:12,174 - #37 ;
+INFO  13:22:12,174 - #47 bodovi
+INFO  13:22:12,175 - #21 ++
+INFO  13:22:12,175 - #37 ;
+INFO  13:22:12,175 - #47 bodovi
+INFO  13:22:12,176 - #36 =
+INFO  13:22:12,176 - #47 bodovi
+INFO  13:22:12,176 - #25 +
+INFO  13:22:12,176 - #47 jedan
+INFO  13:22:12,176 - #37 ;
+INFO  13:22:12,176 - #47 bodovi
+INFO  13:22:12,176 - #36 =
+INFO  13:22:12,176 - #47 bodovi
+INFO  13:22:12,177 - #23 *
+INFO  13:22:12,177 - #47 pet
+INFO  13:22:12,177 - #37 ;
+INFO  13:22:12,177 - #47 bodovi
+INFO  13:22:12,177 - #22 --
+INFO  13:22:12,177 - #37 ;
+INFO  13:22:12,177 - #3 print
+INFO  13:22:12,177 - #40 (
+INFO  13:22:12,178 - #47 bodovi
+ERROR 13:22:12,182 - Izvrsen oporavak za AssignOp do ; u liniji 1
+INFO  13:22:12,186 - #41 )
+ERROR 13:22:12,186 - 
+Sintaksna greska na liniji 21
+INFO  13:22:12,188 - #37 ;
+INFO  13:22:12,188 - #47 niz
+INFO  13:22:12,189 - #36 =
+INFO  13:22:12,189 - #7 new
+INFO  13:22:12,189 - #47 int
+INFO  13:22:12,189 - #44 [
+INFO  13:22:12,189 - #49 3
+INFO  13:22:12,189 - #45 ]
+INFO  13:22:12,190 - #37 ;
+INFO  13:22:12,190 - #47 niz
+INFO  13:22:12,190 - #44 [
+INFO  13:22:12,193 - #47 nula
+INFO  13:22:12,194 - #45 ]
+INFO  13:22:12,194 - #36 =
+INFO  13:22:12,195 - #47 jedan
+INFO  13:22:12,195 - #37 ;
+INFO  13:22:12,195 - #47 niz
+INFO  13:22:12,195 - #44 [
+INFO  13:22:12,195 - #49 1
+INFO  13:22:12,195 - #45 ]
+INFO  13:22:12,196 - #36 =
+INFO  13:22:12,196 - #49 2
+INFO  13:22:12,196 - #37 ;
+INFO  13:22:12,196 - #47 niz
+INFO  13:22:12,196 - #44 [
+INFO  13:22:12,196 - #47 niz
+INFO  13:22:12,196 - #44 [
+INFO  13:22:12,197 - #47 jedan
+INFO  13:22:12,197 - #45 ]
+INFO  13:22:12,197 - #45 ]
+INFO  13:22:12,197 - #36 =
+INFO  13:22:12,197 - #47 niz
+INFO  13:22:12,197 - #44 [
+INFO  13:22:12,197 - #47 niz
+INFO  13:22:12,197 - #44 [
+INFO  13:22:12,197 - #49 0
+INFO  13:22:12,197 - #45 ]
+INFO  13:22:12,197 - #45 ]
+INFO  13:22:12,197 - #23 *
+INFO  13:22:12,198 - #49 3
+INFO  13:22:12,198 - #37 ;
+INFO  13:22:12,198 - #47 bodovi
+INFO  13:22:12,198 - #36 =
+INFO  13:22:12,198 - #47 niz
+INFO  13:22:12,198 - #44 [
+INFO  13:22:12,198 - #49 2
+INFO  13:22:12,198 - #45 ]
+INFO  13:22:12,199 - #24 /
+INFO  13:22:12,199 - #47 niz
+INFO  13:22:12,199 - #44 [
+INFO  13:22:12,199 - #49 0
+INFO  13:22:12,199 - #45 ]
+INFO  13:22:12,199 - #37 ;
+INFO  13:22:12,199 - #3 print
+INFO  13:22:12,199 - #40 (
+INFO  13:22:12,199 - #47 bodovi
+ERROR 13:22:12,199 - Izvrsen oporavak za AssignOp do ; u liniji 1
+INFO  13:22:12,202 - #41 )
+ERROR 13:22:12,207 - 
+Sintaksna greska na liniji 29
+INFO  13:22:12,207 - #37 ;
+INFO  13:22:12,208 - #3 print
+INFO  13:22:12,210 - #40 (
+INFO  13:22:12,210 - #47 niz
+ERROR 13:22:12,210 - Izvrsen oporavak za AssignOp do ; u liniji 1
+INFO  13:22:12,211 - #44 [
+ERROR 13:22:12,211 - 
+Sintaksna greska na liniji 30
+INFO  13:22:12,211 - #49 2
+INFO  13:22:12,211 - #45 ]
+INFO  13:22:12,211 - #41 )
+INFO  13:22:12,211 - #37 ;
+INFO  13:22:12,211 - #47 nizch
+INFO  13:22:12,211 - #36 =
+INFO  13:22:12,212 - #7 new
+INFO  13:22:12,212 - #47 char
+INFO  13:22:12,212 - #44 [
+INFO  13:22:12,212 - #49 3
+INFO  13:22:12,212 - #45 ]
+INFO  13:22:12,212 - #37 ;
+INFO  13:22:12,212 - #47 nizch
+INFO  13:22:12,212 - #44 [
+INFO  13:22:12,212 - #49 0
+INFO  13:22:12,213 - #45 ]
+INFO  13:22:12,213 - #36 =
+INFO  13:22:12,215 - #48 a
+INFO  13:22:12,215 - #37 ;
+INFO  13:22:12,215 - #47 nizch
+INFO  13:22:12,215 - #44 [
+INFO  13:22:12,215 - #47 jedan
+INFO  13:22:12,216 - #45 ]
+INFO  13:22:12,216 - #36 =
+INFO  13:22:12,216 - #48 b
+INFO  13:22:12,216 - #37 ;
+INFO  13:22:12,216 - #47 nizch
+INFO  13:22:12,217 - #44 [
+INFO  13:22:12,217 - #47 pet
+INFO  13:22:12,218 - #26 -
+INFO  13:22:12,218 - #49 3
+INFO  13:22:12,218 - #45 ]
+INFO  13:22:12,219 - #36 =
+INFO  13:22:12,220 - #48 c
+INFO  13:22:12,220 - #37 ;
+INFO  13:22:12,220 - #3 print
+INFO  13:22:12,220 - #40 (
+INFO  13:22:12,220 - #47 nizch
+ERROR 13:22:12,220 - Izvrsen oporavak za AssignOp do ; u liniji 1
+INFO  13:22:12,220 - #44 [
+ERROR 13:22:12,220 - 
+Sintaksna greska na liniji 37
+INFO  13:22:12,220 - #49 1
+INFO  13:22:12,220 - #45 ]
+INFO  13:22:12,220 - #41 )
+INFO  13:22:12,220 - #37 ;
+INFO  13:22:12,221 - #3 print
+INFO  13:22:12,221 - #40 (
+INFO  13:22:12,221 - #47 nizch
+ERROR 13:22:12,221 - Izvrsen oporavak za AssignOp do ; u liniji 1
+INFO  13:22:12,221 - #44 [
+ERROR 13:22:12,221 - 
+Sintaksna greska na liniji 38
+INFO  13:22:12,221 - #47 jedan
+INFO  13:22:12,221 - #23 *
+INFO  13:22:12,221 - #49 2
+INFO  13:22:12,221 - #45 ]
+INFO  13:22:12,221 - #41 )
+INFO  13:22:12,222 - #37 ;
+INFO  13:22:12,222 - #47 bodovi
+INFO  13:22:12,222 - #36 =
+INFO  13:22:12,222 - #47 bodovi
+INFO  13:22:12,222 - #25 +
+INFO  13:22:12,222 - #40 (
+INFO  13:22:12,222 - #47 pet
+INFO  13:22:12,223 - #23 *
+INFO  13:22:12,223 - #47 jedan
+INFO  13:22:12,223 - #26 -
+INFO  13:22:12,223 - #49 1
+INFO  13:22:12,223 - #41 )
+INFO  13:22:12,223 - #23 *
+INFO  13:22:12,223 - #47 bodovi
+INFO  13:22:12,223 - #26 -
+INFO  13:22:12,223 - #40 (
+INFO  13:22:12,223 - #49 3
+INFO  13:22:12,223 - #27 %
+INFO  13:22:12,223 - #49 2
+INFO  13:22:12,224 - #25 +
+INFO  13:22:12,224 - #49 3
+INFO  13:22:12,224 - #23 *
+INFO  13:22:12,224 - #49 2
+INFO  13:22:12,224 - #26 -
+INFO  13:22:12,224 - #49 3
+INFO  13:22:12,224 - #41 )
+INFO  13:22:12,225 - #37 ;
+INFO  13:22:12,225 - #3 print
+INFO  13:22:12,225 - #40 (
+INFO  13:22:12,225 - #47 bodovi
+ERROR 13:22:12,225 - Izvrsen oporavak za AssignOp do ; u liniji 1
+INFO  13:22:12,225 - #41 )
+ERROR 13:22:12,225 - 
+Sintaksna greska na liniji 42
+INFO  13:22:12,225 - #37 ;
+INFO  13:22:12,225 - #6 read
+INFO  13:22:12,225 - #40 (
+INFO  13:22:12,225 - #47 bodovi
+ERROR 13:22:12,226 - Izvrsen oporavak za AssignOp do ; u liniji 1
+INFO  13:22:12,226 - #41 )
+ERROR 13:22:12,226 - 
+Sintaksna greska na liniji 44
+INFO  13:22:12,226 - #37 ;
+INFO  13:22:12,226 - #8 if
+INFO  13:22:12,226 - #40 (
+INFO  13:22:12,226 - #47 bodovi
+ERROR 13:22:12,226 - Izvrsen oporavak za AssignOp do ; u liniji 1
+INFO  13:22:12,228 - #27 %
+ERROR 13:22:12,228 - 
+Sintaksna greska na liniji 45
+INFO  13:22:12,228 - #49 2
+INFO  13:22:12,228 - #30 ==
+INFO  13:22:12,229 - #49 0
+INFO  13:22:12,229 - #41 )
+INFO  13:22:12,229 - #47 bodovi
+INFO  13:22:12,229 - #36 =
+INFO  13:22:12,229 - #47 bodovi
+INFO  13:22:12,229 - #25 +
+INFO  13:22:12,229 - #49 10
+INFO  13:22:12,229 - #37 ;
+INFO  13:22:12,229 - #8 if
+INFO  13:22:12,229 - #40 (
+INFO  13:22:12,229 - #50 0
+INFO  13:22:12,230 - #41 )
+INFO  13:22:12,230 - #3 print
+INFO  13:22:12,230 - #40 (
+INFO  13:22:12,230 - #47 bodovi
+ERROR 13:22:12,230 - Izvrsen oporavak za Condition do ) u liniji 45
+INFO  13:22:12,231 - #25 +
+ERROR 13:22:12,231 - 
+Sintaksna greska na liniji 46
+INFO  13:22:12,232 - #49 20
+INFO  13:22:12,232 - #41 )
+INFO  13:22:12,232 - #37 ;
+INFO  13:22:12,232 - #9 else
+INFO  13:22:12,232 - #3 print
+INFO  13:22:12,232 - #40 (
+ERROR 13:22:12,232 - Izvrsen oporavak za AssignOp do ; u liniji 46
+INFO  13:22:12,234 - #47 bodovi
+INFO  13:22:12,235 - #41 )
+ERROR 13:22:12,235 - 
+Sintaksna greska na liniji 47
+INFO  13:22:12,235 - #37 ;
+INFO  13:22:12,235 - #43 }
+INFO  13:22:12,235 - #43 }
+ERROR 13:22:12,236 - Izvrsen oporavak za AssignOp do ; u liniji 47
+INFO  13:22:12,284 - Program(
+  ProgName(
+   test301
+  ) [ProgName]
+  MultiProgramDeclarationList(
+    MultiProgramDeclarationList(
+      MultiProgramDeclarationList(
+        MultiProgramDeclarationList(
+          MultiProgramDeclarationList(
+            NoDecl(
+            ) [NoDecl]
+            ConstProgramDeclaration(
+              ConstDeclaration(
+                Type(
+                 int
+                ) [Type]
+                SingleConstDeclaration(
+                  ConstValue(
+                   nula
+                    ConstOptionNumber(
+                      NumberConstant(
+                       0
+                      ) [NumberConstant]
+                    ) [ConstOptionNumber]
+                  ) [ConstValue]
+                ) [SingleConstDeclaration]
+              ) [ConstDeclaration]
+            ) [ConstProgramDeclaration]
+          ) [MultiProgramDeclarationList]
+          ConstProgramDeclaration(
+            ConstDeclaration(
+              Type(
+               int
+              ) [Type]
+              SingleConstDeclaration(
+                ConstValue(
+                 jedan
+                  ConstOptionNumber(
+                    NumberConstant(
+                     1
+                    ) [NumberConstant]
+                  ) [ConstOptionNumber]
+                ) [ConstValue]
+              ) [SingleConstDeclaration]
+            ) [ConstDeclaration]
+          ) [ConstProgramDeclaration]
+        ) [MultiProgramDeclarationList]
+        ConstProgramDeclaration(
+          ConstDeclaration(
+            Type(
+             int
+            ) [Type]
+            SingleConstDeclaration(
+              ConstValue(
+               pet
+                ConstOptionNumber(
+                  NumberConstant(
+                   5
+                  ) [NumberConstant]
+                ) [ConstOptionNumber]
+              ) [ConstValue]
+            ) [SingleConstDeclaration]
+          ) [ConstDeclaration]
+        ) [ConstProgramDeclaration]
+      ) [MultiProgramDeclarationList]
+      VarProgramDeclaration(
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          SingleVarDeclaration(
+            VarValue(
+             niz
+              BrackArrayLst(
+              ) [BrackArrayLst]
+            ) [VarValue]
+          ) [SingleVarDeclaration]
+        ) [VarDeclaration]
+      ) [VarProgramDeclaration]
+    ) [MultiProgramDeclarationList]
+    VarProgramDeclaration(
+      VarDeclaration(
+        Type(
+         char
+        ) [Type]
+        SingleVarDeclaration(
+          VarValue(
+           nizch
+            BrackArrayLst(
+            ) [BrackArrayLst]
+          ) [VarValue]
+        ) [SingleVarDeclaration]
+      ) [VarDeclaration]
+    ) [VarProgramDeclaration]
+  ) [MultiProgramDeclarationList]
+  RepeatMethodDeclaration(
+    NoRepeatMethodDeclaration(
+    ) [NoRepeatMethodDeclaration]
+    MethodDeclaration(
+      MethodHeader(
+        VoidMethodDeclType(
+        ) [VoidMethodDeclType]
+       main
+      ) [MethodHeader]
+      FormParamsBegin(
+      ) [FormParamsBegin]
+      NoFromParameters(
+      ) [NoFromParameters]
+      FormParamsEnd(
+      ) [FormParamsEnd]
+      MultiMethodDelVarList(
+        NoMethodDelVarList(
+        ) [NoMethodDelVarList]
+        VarDeclaration(
+          Type(
+           int
+          ) [Type]
+          SingleVarDeclaration(
+            VarValue(
+             bodovi
+              NoBrackArrayList(
+              ) [NoBrackArrayList]
+            ) [VarValue]
+          ) [SingleVarDeclaration]
+        ) [VarDeclaration]
+      ) [MultiMethodDelVarList]
+      MethodBodyStart(
+      ) [MethodBodyStart]
+      StatementListOpt(
+        StatementListOpt(
+          StatementListOpt(
+            StatementListOpt(
+              StatementListOpt(
+                StatementListOpt(
+                  StatementListOpt(
+                    StatementListOpt(
+                      StatementListOpt(
+                        NoStatementListOpt(
+                        ) [NoStatementListOpt]
+                        DesStatement(
+                          DesignatorStatementAssign(
+                            ErrorAssignExpression(
+                            ) [ErrorAssignExpression]
+                          ) [DesignatorStatementAssign]
+                        ) [DesStatement]
+                      ) [StatementListOpt]
+                      DesStatement(
+                        DesignatorStatementAssign(
+                          ErrorAssignExpression(
+                          ) [ErrorAssignExpression]
+                        ) [DesignatorStatementAssign]
+                      ) [DesStatement]
+                    ) [StatementListOpt]
+                    DesStatement(
+                      DesignatorStatementAssign(
+                        ErrorAssignExpression(
+                        ) [ErrorAssignExpression]
+                      ) [DesignatorStatementAssign]
+                    ) [DesStatement]
+                  ) [StatementListOpt]
+                  DesStatement(
+                    DesignatorStatementAssign(
+                      ErrorAssignExpression(
+                      ) [ErrorAssignExpression]
+                    ) [DesignatorStatementAssign]
+                  ) [DesStatement]
+                ) [StatementListOpt]
+                DesStatement(
+                  DesignatorStatementAssign(
+                    ErrorAssignExpression(
+                    ) [ErrorAssignExpression]
+                  ) [DesignatorStatementAssign]
+                ) [DesStatement]
+              ) [StatementListOpt]
+              DesStatement(
+                DesignatorStatementAssign(
+                  ErrorAssignExpression(
+                  ) [ErrorAssignExpression]
+                ) [DesignatorStatementAssign]
+              ) [DesStatement]
+            ) [StatementListOpt]
+            DesStatement(
+              DesignatorStatementAssign(
+                ErrorAssignExpression(
+                ) [ErrorAssignExpression]
+              ) [DesignatorStatementAssign]
+            ) [DesStatement]
+          ) [StatementListOpt]
+          DesStatement(
+            DesignatorStatementAssign(
+              ErrorAssignExpression(
+              ) [ErrorAssignExpression]
+            ) [DesignatorStatementAssign]
+          ) [DesStatement]
+        ) [StatementListOpt]
+        IfDetalStatement(
+          IfStatementFull(
+            IfStatementDetection(
+            ) [IfStatementDetection]
+            ErrorCondition(
+            ) [ErrorCondition]
+            DesStatement(
+              DesignatorStatementAssign(
+                ErrorAssignExpression(
+                ) [ErrorAssignExpression]
+              ) [DesignatorStatementAssign]
+            ) [DesStatement]
+            ElseStatements(
+              EleseDetection(
+              ) [EleseDetection]
+              DesStatement(
+                DesignatorStatementAssign(
+                  ErrorAssignExpression(
+                  ) [ErrorAssignExpression]
+                ) [DesignatorStatementAssign]
+              ) [DesStatement]
+            ) [ElseStatements]
+          ) [IfStatementFull]
+        ) [IfDetalStatement]
+      ) [StatementListOpt]
+    ) [MethodDeclaration]
+  ) [RepeatMethodDeclaration]
+) [Program]
+INFO  13:22:12,290 - ===================================
+INFO  13:22:12,296 - Deklarisana CONST promenljiva nula tip:int Vredosti: 0 na liniji 5
+INFO  13:22:12,296 - Deklarisana CONST promenljiva jedan tip:int Vredosti: 1 na liniji 6
+INFO  13:22:12,296 - Deklarisana CONST promenljiva pet tip:int Vredosti: 5 na liniji 7
+INFO  13:22:12,296 - Deklarisana promenljiva niz tip:3 - GLOBAL VAR na liniji 9
+INFO  13:22:12,296 - Deklarisana promenljiva nizch tip:3 - GLOBAL VAR na liniji 10
+INFO  13:22:12,297 - Obradjuje se metoda: main na liniji 13
+INFO  13:22:12,297 - Deklarisana promenljiva bodovi tip:1 - FUNKCIJA na liniji 14
+INFO  13:22:12,297 - ===================================
+ERROR 13:22:12,500 - Parsiranje NIJE uspelo!

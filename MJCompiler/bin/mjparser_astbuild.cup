@@ -131,6 +131,7 @@ nonterminal ActParsExprList ActParsExprList;
 nonterminal DesigantorList DesigantorList;
 nonterminal DesignatorActPars DesignatorActPars;
 nonterminal DesignatorStatement DesignatorStatement;
+nonterminal DesName DesName;
 
 /* Condition */
 
@@ -363,7 +364,9 @@ AssignOpExpr ::= (AssignOpeeratorExpresion) Designator:desName Assignop:A1 Expr:
 				{: parser.report_error("Izvrsen oporavak za AssignOp do ; u liniji "+ lleft, null ); :} {: RESULT=new ErrorAssignExpression(); :}
 				;
 
-Designator ::= (Designator) IDENT:desigantorName DesigantorList:D1 {: RESULT=new Designator(desigantorName, D1); RESULT.setLine(desigantorNameleft); :};
+Designator ::= (Designator) DesName:D1 DesigantorList:D2 {: RESULT=new Designator(D1, D2); RESULT.setLine(D1left); :};
+
+DesName ::= (DesigantorName) IDENT:desigantorName {: RESULT=new DesigantorName(desigantorName); RESULT.setLine(desigantorNameleft); :};
 
 DesigantorList ::= (DsgnList) LBRACKET Expr:E1 RBRACKET {: RESULT=new DsgnList(E1); RESULT.setLine(E1left); :}
 				| (NoDsgnList) {: RESULT=new NoDsgnList(); :} /*epsilon*/

@@ -266,10 +266,12 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     		report_error("Greska! Nije pronadjena main metoda! ", null);
     	}
     	nVars = NewSymbolTable.currentScope.getnVars();
-    	NewSymbolTable.chainLocalSymbols(program.getProgName().obj);
+    	NewSymbolTable.chainLocalSymbols(program.getProgName().obj);    
     	NewSymbolTable.closeScope();
     }
-    
+    public void visit(MethodDeclaration meth) {
+    	NewSymbolTable.closeScope();
+    }
     public void visit(Type type) {
     	Obj typeNode = NewSymbolTable.find(type.getTypeName());
     	if(typeNode == NewSymbolTable.noObj) {
@@ -346,11 +348,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     
    public void visit(Designator designator) {
-	   Obj des = NewSymbolTable.find(designator.getDesigantorName());
+	   Obj des = NewSymbolTable.find(((DesigantorName)designator.getDesName()).getDesigantorName());
 	   designator.obj = des;
 	   
 	   if(des == NewSymbolTable.noObj) {
-		   report_error("Greska! Designator "+ designator.getDesigantorName()+" nije deklarisan!", designator);
+		   report_error("Greska! Designator "+((DesigantorName)designator.getDesName()).getDesigantorName()+" nije deklarisan!", designator);
 		   return;
 	   }
 	   
@@ -368,7 +370,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		   }
 	   }	   
 	  
-	   report_info("Designator "+ designator.getDesigantorName()+" pronadjen!", designator);
+	   report_info("Designator "+ ((DesigantorName)designator.getDesName()).getDesigantorName()+" pronadjen!", designator);
 
    }
     

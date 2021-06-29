@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 29/5/2021 11:52:6
+// 29/5/2021 14:44:46
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -11,21 +11,22 @@ public class Designator implements SyntaxNode {
     private int line;
     public rs.etf.pp1.symboltable.concepts.Obj obj = null;
 
-    private String desigantorName;
+    private DesName DesName;
     private DesigantorList DesigantorList;
 
-    public Designator (String desigantorName, DesigantorList DesigantorList) {
-        this.desigantorName=desigantorName;
+    public Designator (DesName DesName, DesigantorList DesigantorList) {
+        this.DesName=DesName;
+        if(DesName!=null) DesName.setParent(this);
         this.DesigantorList=DesigantorList;
         if(DesigantorList!=null) DesigantorList.setParent(this);
     }
 
-    public String getDesigantorName() {
-        return desigantorName;
+    public DesName getDesName() {
+        return DesName;
     }
 
-    public void setDesigantorName(String desigantorName) {
-        this.desigantorName=desigantorName;
+    public void setDesName(DesName DesName) {
+        this.DesName=DesName;
     }
 
     public DesigantorList getDesigantorList() {
@@ -57,15 +58,18 @@ public class Designator implements SyntaxNode {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(DesName!=null) DesName.accept(visitor);
         if(DesigantorList!=null) DesigantorList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(DesName!=null) DesName.traverseTopDown(visitor);
         if(DesigantorList!=null) DesigantorList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(DesName!=null) DesName.traverseBottomUp(visitor);
         if(DesigantorList!=null) DesigantorList.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -75,7 +79,10 @@ public class Designator implements SyntaxNode {
         buffer.append(tab);
         buffer.append("Designator(\n");
 
-        buffer.append(" "+tab+desigantorName);
+        if(DesName!=null)
+            buffer.append(DesName.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
         buffer.append("\n");
 
         if(DesigantorList!=null)
