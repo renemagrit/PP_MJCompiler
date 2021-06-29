@@ -67,17 +67,17 @@ ntime-1.1.jar rs.etf.pp1.mj.runtime.Run ..\test\program.obj
 			
 			MJParser p = new MJParser(lexer);
 	        Symbol s = p.parse();  //pocetak parsiranja
-	        
+	      
 	        Program prog = (Program)(s.value); 
 	        NewSymbolTable.init();
 			// ispis sintaksnog stabla
-			log.info(prog.toString(""));
-			log.info("===================================");
-
+	      
+			log.info(prog.toString(""));			
+			log.info("======================= SINTAKSNA ANALIZA =======================");
 			// ispis prepoznatih programskih konstrukcija
 			SemanticAnalyzer v = new SemanticAnalyzer();
 			prog.traverseBottomUp(v); 
-			log.info("===================================");
+			
 			NewSymbolTable.dump();		
 			
 			lisOfErrors.forEach((err)-> log.info(err.toString()));

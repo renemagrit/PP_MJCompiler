@@ -1,254 +1,260 @@
-INFO  13:15:27,423 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
-INFO  13:15:27,791 - #2 program
-INFO  13:15:27,791 - #47 test301
-INFO  13:15:27,792 - #20 const
-INFO  13:15:27,796 - #47 int
-INFO  13:15:27,796 - #47 nula
-INFO  13:15:27,798 - #36 =
-INFO  13:15:27,799 - #49 0
-INFO  13:15:27,799 - #37 ;
-INFO  13:15:27,805 - #20 const
-INFO  13:15:27,807 - #47 int
-INFO  13:15:27,808 - #47 jedan
-INFO  13:15:27,808 - #36 =
-INFO  13:15:27,808 - #49 1
-INFO  13:15:27,809 - #37 ;
-INFO  13:15:27,809 - #20 const
-INFO  13:15:27,809 - #47 int
-INFO  13:15:27,810 - #47 pet
-INFO  13:15:27,811 - #36 =
-INFO  13:15:27,812 - #49 5
-INFO  13:15:27,815 - #37 ;
-INFO  13:15:27,815 - #47 int
-INFO  13:15:27,816 - #47 niz
-INFO  13:15:27,816 - #44 [
-INFO  13:15:27,817 - #45 ]
-INFO  13:15:27,817 - #37 ;
-INFO  13:15:27,823 - #47 char
-INFO  13:15:27,825 - #47 nizch
-INFO  13:15:27,826 - #44 [
-INFO  13:15:27,826 - #45 ]
-INFO  13:15:27,826 - #37 ;
-INFO  13:15:27,827 - #42 {
-INFO  13:15:27,827 - #5 void
-INFO  13:15:27,829 - #47 main
-INFO  13:15:27,831 - #40 (
-INFO  13:15:27,835 - #41 )
-INFO  13:15:27,863 - #47 int
-INFO  13:15:27,868 - #47 bodovi
-INFO  13:15:27,868 - #37 ;
-INFO  13:15:27,872 - #42 {
-INFO  13:15:27,875 - #47 bodovi
-INFO  13:15:27,882 - #36 =
-INFO  13:15:27,888 - #49 0
-INFO  13:15:27,916 - #37 ;
-INFO  13:15:27,926 - #47 bodovi
-INFO  13:15:27,927 - #21 ++
-INFO  13:15:27,927 - #37 ;
-INFO  13:15:27,928 - #47 bodovi
-INFO  13:15:27,928 - #36 =
-INFO  13:15:27,929 - #47 bodovi
-INFO  13:15:27,929 - #25 +
-INFO  13:15:27,930 - #47 jedan
-INFO  13:15:27,934 - #37 ;
-INFO  13:15:27,936 - #47 bodovi
-INFO  13:15:27,936 - #36 =
-INFO  13:15:27,942 - #47 bodovi
-INFO  13:15:27,942 - #23 *
-INFO  13:15:27,943 - #47 pet
-INFO  13:15:27,949 - #37 ;
-INFO  13:15:27,951 - #47 bodovi
-INFO  13:15:27,951 - #22 --
-INFO  13:15:27,951 - #37 ;
-INFO  13:15:27,952 - #3 print
-INFO  13:15:27,959 - #40 (
-INFO  13:15:27,960 - #47 bodovi
-INFO  13:15:27,961 - #41 )
-INFO  13:15:27,964 - #37 ;
-INFO  13:15:27,965 - #47 niz
-INFO  13:15:27,968 - #36 =
-INFO  13:15:27,975 - #7 new
-INFO  13:15:27,976 - #47 int
-INFO  13:15:27,977 - #44 [
-INFO  13:15:27,977 - #49 3
-INFO  13:15:27,977 - #45 ]
-INFO  13:15:27,978 - #37 ;
-INFO  13:15:27,980 - #47 niz
-INFO  13:15:27,980 - #44 [
-INFO  13:15:27,981 - #47 nula
-INFO  13:15:27,981 - #45 ]
-INFO  13:15:27,981 - #36 =
-INFO  13:15:27,982 - #47 jedan
-INFO  13:15:27,982 - #37 ;
-INFO  13:15:27,982 - #47 niz
-INFO  13:15:27,983 - #44 [
-INFO  13:15:27,983 - #49 1
-INFO  13:15:27,983 - #45 ]
-INFO  13:15:27,983 - #36 =
-INFO  13:15:27,984 - #49 2
-INFO  13:15:27,984 - #37 ;
-INFO  13:15:27,985 - #47 niz
-INFO  13:15:27,985 - #44 [
-INFO  13:15:27,987 - #47 niz
-INFO  13:15:27,987 - #44 [
-INFO  13:15:27,988 - #47 jedan
-INFO  13:15:27,988 - #45 ]
-INFO  13:15:27,988 - #45 ]
-INFO  13:15:27,988 - #36 =
-INFO  13:15:27,989 - #47 niz
-INFO  13:15:27,989 - #44 [
-INFO  13:15:27,989 - #47 niz
-INFO  13:15:27,989 - #44 [
-INFO  13:15:27,990 - #49 0
-INFO  13:15:27,990 - #45 ]
-INFO  13:15:27,990 - #45 ]
-INFO  13:15:27,990 - #23 *
-INFO  13:15:27,991 - #49 3
-INFO  13:15:27,991 - #37 ;
-INFO  13:15:27,991 - #47 bodovi
-INFO  13:15:27,991 - #36 =
-INFO  13:15:27,992 - #47 niz
-INFO  13:15:27,992 - #44 [
-INFO  13:15:27,992 - #49 2
-INFO  13:15:27,993 - #45 ]
-INFO  13:15:27,993 - #24 /
-INFO  13:15:27,993 - #47 niz
-INFO  13:15:27,995 - #44 [
-INFO  13:15:27,995 - #49 0
-INFO  13:15:27,996 - #45 ]
-INFO  13:15:27,996 - #37 ;
-INFO  13:15:27,997 - #3 print
-INFO  13:15:27,997 - #40 (
-INFO  13:15:27,997 - #47 bodovi
-INFO  13:15:27,997 - #41 )
-INFO  13:15:27,997 - #37 ;
-INFO  13:15:27,998 - #3 print
-INFO  13:15:27,998 - #40 (
-INFO  13:15:27,998 - #47 niz
-INFO  13:15:27,998 - #44 [
-INFO  13:15:27,999 - #49 2
-INFO  13:15:27,999 - #45 ]
-INFO  13:15:27,999 - #41 )
-INFO  13:15:27,999 - #37 ;
-INFO  13:15:28,000 - #47 nizch
-INFO  13:15:28,000 - #36 =
-INFO  13:15:28,000 - #7 new
-INFO  13:15:28,000 - #47 char
-INFO  13:15:28,001 - #44 [
-INFO  13:15:28,001 - #49 3
-INFO  13:15:28,001 - #45 ]
-INFO  13:15:28,001 - #37 ;
-INFO  13:15:28,002 - #47 nizch
-INFO  13:15:28,002 - #44 [
-INFO  13:15:28,002 - #49 0
-INFO  13:15:28,002 - #45 ]
-INFO  13:15:28,018 - #36 =
-INFO  13:15:28,021 - #48 a
-INFO  13:15:28,023 - #37 ;
-INFO  13:15:28,024 - #47 nizch
-INFO  13:15:28,025 - #44 [
-INFO  13:15:28,025 - #47 jedan
-INFO  13:15:28,025 - #45 ]
-INFO  13:15:28,026 - #36 =
-INFO  13:15:28,026 - #48 b
-INFO  13:15:28,026 - #37 ;
-INFO  13:15:28,026 - #47 nizch
-INFO  13:15:28,054 - #44 [
-INFO  13:15:28,054 - #47 pet
-INFO  13:15:28,055 - #26 -
-INFO  13:15:28,055 - #49 3
-INFO  13:15:28,058 - #45 ]
-INFO  13:15:28,060 - #36 =
-INFO  13:15:28,060 - #48 c
-INFO  13:15:28,061 - #37 ;
-INFO  13:15:28,061 - #3 print
-INFO  13:15:28,062 - #40 (
-INFO  13:15:28,062 - #47 nizch
-INFO  13:15:28,062 - #44 [
-INFO  13:15:28,063 - #49 1
-INFO  13:15:28,063 - #45 ]
-INFO  13:15:28,064 - #41 )
-INFO  13:15:28,064 - #37 ;
-INFO  13:15:28,064 - #3 print
-INFO  13:15:28,065 - #40 (
-INFO  13:15:28,065 - #47 nizch
-INFO  13:15:28,066 - #44 [
-INFO  13:15:28,066 - #47 jedan
-INFO  13:15:28,067 - #23 *
-INFO  13:15:28,067 - #49 2
-INFO  13:15:28,068 - #45 ]
-INFO  13:15:28,068 - #41 )
-INFO  13:15:28,068 - #37 ;
-INFO  13:15:28,069 - #47 bodovi
-INFO  13:15:28,069 - #36 =
-INFO  13:15:28,070 - #47 bodovi
-INFO  13:15:28,079 - #25 +
-INFO  13:15:28,080 - #40 (
-INFO  13:15:28,080 - #47 pet
-INFO  13:15:28,081 - #23 *
-INFO  13:15:28,081 - #47 jedan
-INFO  13:15:28,082 - #26 -
-INFO  13:15:28,082 - #49 1
-INFO  13:15:28,083 - #41 )
-INFO  13:15:28,083 - #23 *
-INFO  13:15:28,084 - #47 bodovi
-INFO  13:15:28,085 - #26 -
-INFO  13:15:28,085 - #40 (
-INFO  13:15:28,085 - #49 3
-INFO  13:15:28,086 - #27 %
-INFO  13:15:28,086 - #49 2
-INFO  13:15:28,089 - #25 +
-INFO  13:15:28,089 - #49 3
-INFO  13:15:28,091 - #23 *
-INFO  13:15:28,091 - #49 2
-INFO  13:15:28,092 - #26 -
-INFO  13:15:28,092 - #49 3
-INFO  13:15:28,093 - #41 )
-INFO  13:15:28,093 - #37 ;
-INFO  13:15:28,094 - #3 print
-INFO  13:15:28,094 - #40 (
-INFO  13:15:28,095 - #47 bodovi
-INFO  13:15:28,095 - #41 )
-INFO  13:15:28,096 - #37 ;
-INFO  13:15:28,096 - #6 read
-INFO  13:15:28,097 - #40 (
-INFO  13:15:28,097 - #47 bodovi
-INFO  13:15:28,097 - #41 )
-INFO  13:15:28,098 - #37 ;
-INFO  13:15:28,098 - #8 if
-INFO  13:15:28,100 - #40 (
-INFO  13:15:28,103 - #47 bodovi
-INFO  13:15:28,103 - #27 %
-INFO  13:15:28,103 - #49 2
-INFO  13:15:28,103 - #30 ==
-INFO  13:15:28,104 - #49 0
-INFO  13:15:28,124 - #41 )
-INFO  13:15:28,126 - #47 bodovi
-INFO  13:15:28,126 - #36 =
-INFO  13:15:28,126 - #47 bodovi
-INFO  13:15:28,126 - #25 +
-INFO  13:15:28,127 - #49 10
-INFO  13:15:28,127 - #37 ;
-INFO  13:15:28,129 - #8 if
-INFO  13:15:28,132 - #40 (
-INFO  13:15:28,133 - #50 0
-INFO  13:15:28,133 - #41 )
-INFO  13:15:28,135 - #3 print
-INFO  13:15:28,135 - #40 (
-INFO  13:15:28,135 - #47 bodovi
-INFO  13:15:28,135 - #25 +
-INFO  13:15:28,136 - #49 20
-INFO  13:15:28,136 - #41 )
-INFO  13:15:28,136 - #37 ;
-INFO  13:15:28,136 - #9 else
-INFO  13:15:28,137 - #3 print
-INFO  13:15:28,140 - #40 (
-INFO  13:15:28,140 - #47 bodovi
-INFO  13:15:28,140 - #41 )
-INFO  13:15:28,140 - #37 ;
-INFO  13:15:28,141 - #43 }
-INFO  13:15:28,141 - #43 }
-INFO  13:15:28,379 - Program(
+INFO  18:52:09,083 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  18:52:09,166 - #2 program
+INFO  18:52:09,166 - #47 test301
+INFO  18:52:09,166 - #20 const
+INFO  18:52:09,170 - #47 int
+INFO  18:52:09,170 - #47 nula
+INFO  18:52:09,171 - #36 =
+INFO  18:52:09,172 - #49 0
+INFO  18:52:09,172 - #37 ;
+INFO  18:52:09,173 - #20 const
+INFO  18:52:09,174 - #47 int
+INFO  18:52:09,174 - #47 jedan
+INFO  18:52:09,174 - #36 =
+INFO  18:52:09,174 - #49 1
+INFO  18:52:09,174 - #37 ;
+INFO  18:52:09,175 - #20 const
+INFO  18:52:09,175 - #47 int
+INFO  18:52:09,175 - #47 pet
+INFO  18:52:09,175 - #36 =
+INFO  18:52:09,175 - #49 5
+INFO  18:52:09,175 - #47 a
+ERROR 18:52:09,176 - 
+Sintaksna greska na liniji 7
+INFO  18:52:09,177 - #37 ;
+INFO  18:52:09,177 - #47 int
+INFO  18:52:09,177 - #47 niz
+INFO  18:52:09,178 - #44 [
+ERROR 18:52:09,179 - Izvrsen oporavak za CONST do ; u liniji 7
+INFO  18:52:09,180 - #45 ]
+INFO  18:52:09,180 - #37 ;
+INFO  18:52:09,187 - #47 nizch
+INFO  18:52:09,187 - #44 [
+ERROR 18:52:09,187 - 
+Sintaksna greska na liniji 10
+INFO  18:52:09,187 - #45 ]
+INFO  18:52:09,188 - #37 ;
+INFO  18:52:09,188 - #42 {
+INFO  18:52:09,188 - #5 void
+INFO  18:52:09,188 - #47 main
+ERROR 18:52:09,188 - Izvrsen oporavak za VarDecl do ; u liniji 8
+INFO  18:52:09,191 - #40 (
+INFO  18:52:09,192 - #41 )
+INFO  18:52:09,193 - #47 char
+INFO  18:52:09,195 - #47 bodovi
+INFO  18:52:09,195 - #37 ;
+INFO  18:52:09,196 - #42 {
+INFO  18:52:09,196 - #47 bodovi
+INFO  18:52:09,198 - #36 =
+INFO  18:52:09,200 - #49 0
+INFO  18:52:09,202 - #37 ;
+INFO  18:52:09,205 - #47 bodovi
+INFO  18:52:09,206 - #21 ++
+INFO  18:52:09,206 - #37 ;
+INFO  18:52:09,206 - #47 bodovi
+INFO  18:52:09,206 - #36 =
+INFO  18:52:09,206 - #47 bodovi
+INFO  18:52:09,206 - #25 +
+INFO  18:52:09,207 - #47 jedan
+INFO  18:52:09,208 - #37 ;
+INFO  18:52:09,209 - #47 bodovi
+INFO  18:52:09,209 - #36 =
+INFO  18:52:09,209 - #47 bodovi
+INFO  18:52:09,209 - #23 *
+INFO  18:52:09,209 - #47 pet
+INFO  18:52:09,211 - #37 ;
+INFO  18:52:09,211 - #47 bodovi
+INFO  18:52:09,211 - #22 --
+INFO  18:52:09,211 - #37 ;
+INFO  18:52:09,211 - #3 print
+INFO  18:52:09,212 - #40 (
+INFO  18:52:09,212 - #47 bodovi
+INFO  18:52:09,212 - #41 )
+INFO  18:52:09,214 - #37 ;
+INFO  18:52:09,214 - #47 niz
+INFO  18:52:09,215 - #36 =
+INFO  18:52:09,215 - #7 new
+INFO  18:52:09,215 - #47 int
+INFO  18:52:09,215 - #44 [
+INFO  18:52:09,215 - #49 3
+INFO  18:52:09,215 - #45 ]
+INFO  18:52:09,215 - #37 ;
+INFO  18:52:09,216 - #47 niz
+INFO  18:52:09,216 - #44 [
+INFO  18:52:09,216 - #47 nula
+INFO  18:52:09,216 - #45 ]
+INFO  18:52:09,216 - #36 =
+INFO  18:52:09,217 - #47 jedan
+INFO  18:52:09,217 - #37 ;
+INFO  18:52:09,217 - #47 niz
+INFO  18:52:09,217 - #44 [
+INFO  18:52:09,217 - #49 1
+INFO  18:52:09,217 - #45 ]
+INFO  18:52:09,218 - #36 =
+INFO  18:52:09,218 - #49 2
+INFO  18:52:09,218 - #37 ;
+INFO  18:52:09,218 - #47 niz
+INFO  18:52:09,218 - #44 [
+INFO  18:52:09,218 - #47 niz
+INFO  18:52:09,218 - #44 [
+INFO  18:52:09,219 - #47 jedan
+INFO  18:52:09,219 - #45 ]
+INFO  18:52:09,219 - #45 ]
+INFO  18:52:09,219 - #36 =
+INFO  18:52:09,219 - #47 niz
+INFO  18:52:09,219 - #44 [
+INFO  18:52:09,219 - #47 niz
+INFO  18:52:09,220 - #44 [
+INFO  18:52:09,220 - #49 0
+INFO  18:52:09,220 - #45 ]
+INFO  18:52:09,220 - #45 ]
+INFO  18:52:09,220 - #23 *
+INFO  18:52:09,220 - #49 3
+INFO  18:52:09,220 - #37 ;
+INFO  18:52:09,221 - #47 bodovi
+INFO  18:52:09,221 - #36 =
+INFO  18:52:09,221 - #47 niz
+INFO  18:52:09,221 - #44 [
+INFO  18:52:09,221 - #49 2
+INFO  18:52:09,221 - #45 ]
+INFO  18:52:09,221 - #24 /
+INFO  18:52:09,222 - #47 niz
+INFO  18:52:09,222 - #44 [
+INFO  18:52:09,222 - #49 0
+INFO  18:52:09,223 - #45 ]
+INFO  18:52:09,223 - #37 ;
+INFO  18:52:09,223 - #3 print
+INFO  18:52:09,223 - #40 (
+INFO  18:52:09,223 - #47 bodovi
+INFO  18:52:09,223 - #41 )
+INFO  18:52:09,223 - #37 ;
+INFO  18:52:09,223 - #3 print
+INFO  18:52:09,223 - #40 (
+INFO  18:52:09,224 - #47 niz
+INFO  18:52:09,224 - #44 [
+INFO  18:52:09,224 - #49 2
+INFO  18:52:09,224 - #45 ]
+INFO  18:52:09,224 - #41 )
+INFO  18:52:09,224 - #37 ;
+INFO  18:52:09,224 - #47 nizch
+INFO  18:52:09,224 - #36 =
+INFO  18:52:09,224 - #7 new
+INFO  18:52:09,224 - #47 char
+INFO  18:52:09,225 - #44 [
+INFO  18:52:09,225 - #49 3
+INFO  18:52:09,225 - #45 ]
+INFO  18:52:09,225 - #37 ;
+INFO  18:52:09,225 - #47 nizch
+INFO  18:52:09,225 - #44 [
+INFO  18:52:09,225 - #49 0
+INFO  18:52:09,225 - #45 ]
+INFO  18:52:09,225 - #36 =
+INFO  18:52:09,229 - #48 a
+INFO  18:52:09,230 - #37 ;
+INFO  18:52:09,230 - #47 nizch
+INFO  18:52:09,230 - #44 [
+INFO  18:52:09,231 - #47 jedan
+INFO  18:52:09,231 - #45 ]
+INFO  18:52:09,231 - #36 =
+INFO  18:52:09,231 - #48 b
+INFO  18:52:09,231 - #37 ;
+INFO  18:52:09,231 - #47 nizch
+INFO  18:52:09,231 - #44 [
+INFO  18:52:09,231 - #47 pet
+INFO  18:52:09,231 - #26 -
+INFO  18:52:09,232 - #49 3
+INFO  18:52:09,232 - #45 ]
+INFO  18:52:09,232 - #36 =
+INFO  18:52:09,233 - #48 c
+INFO  18:52:09,233 - #37 ;
+INFO  18:52:09,233 - #3 print
+INFO  18:52:09,233 - #40 (
+INFO  18:52:09,233 - #47 nizch
+INFO  18:52:09,233 - #44 [
+INFO  18:52:09,233 - #49 1
+INFO  18:52:09,233 - #45 ]
+INFO  18:52:09,233 - #41 )
+INFO  18:52:09,233 - #37 ;
+INFO  18:52:09,233 - #3 print
+INFO  18:52:09,236 - #40 (
+INFO  18:52:09,236 - #47 nizch
+INFO  18:52:09,236 - #44 [
+INFO  18:52:09,236 - #47 jedan
+INFO  18:52:09,236 - #23 *
+INFO  18:52:09,236 - #49 2
+INFO  18:52:09,236 - #45 ]
+INFO  18:52:09,236 - #41 )
+INFO  18:52:09,237 - #37 ;
+INFO  18:52:09,237 - #47 bodovi
+INFO  18:52:09,237 - #36 =
+INFO  18:52:09,237 - #47 bodovi
+INFO  18:52:09,237 - #25 +
+INFO  18:52:09,237 - #40 (
+INFO  18:52:09,237 - #47 pet
+INFO  18:52:09,238 - #23 *
+INFO  18:52:09,238 - #47 jedan
+INFO  18:52:09,238 - #26 -
+INFO  18:52:09,238 - #49 1
+INFO  18:52:09,238 - #41 )
+INFO  18:52:09,238 - #23 *
+INFO  18:52:09,240 - #47 bodovi
+INFO  18:52:09,241 - #26 -
+INFO  18:52:09,245 - #40 (
+INFO  18:52:09,245 - #49 3
+INFO  18:52:09,245 - #27 %
+INFO  18:52:09,245 - #49 2
+INFO  18:52:09,247 - #25 +
+INFO  18:52:09,247 - #49 3
+INFO  18:52:09,247 - #23 *
+INFO  18:52:09,247 - #49 2
+INFO  18:52:09,247 - #26 -
+INFO  18:52:09,248 - #49 3
+INFO  18:52:09,248 - #41 )
+INFO  18:52:09,248 - #37 ;
+INFO  18:52:09,248 - #3 print
+INFO  18:52:09,248 - #40 (
+INFO  18:52:09,248 - #47 bodovi
+INFO  18:52:09,248 - #41 )
+INFO  18:52:09,249 - #37 ;
+INFO  18:52:09,249 - #6 read
+INFO  18:52:09,249 - #40 (
+INFO  18:52:09,249 - #47 bodovi
+INFO  18:52:09,249 - #41 )
+INFO  18:52:09,249 - #37 ;
+INFO  18:52:09,249 - #8 if
+INFO  18:52:09,250 - #40 (
+INFO  18:52:09,252 - #47 bodovi
+INFO  18:52:09,252 - #27 %
+INFO  18:52:09,252 - #49 2
+INFO  18:52:09,252 - #30 ==
+INFO  18:52:09,252 - #49 0
+INFO  18:52:09,254 - #41 )
+INFO  18:52:09,255 - #47 bodovi
+INFO  18:52:09,255 - #36 =
+INFO  18:52:09,255 - #47 bodovi
+INFO  18:52:09,255 - #25 +
+INFO  18:52:09,255 - #49 10
+INFO  18:52:09,255 - #37 ;
+INFO  18:52:09,256 - #8 if
+INFO  18:52:09,257 - #40 (
+INFO  18:52:09,257 - #50 0
+INFO  18:52:09,257 - #41 )
+INFO  18:52:09,258 - #3 print
+INFO  18:52:09,258 - #40 (
+INFO  18:52:09,258 - #47 bodovi
+INFO  18:52:09,258 - #25 +
+INFO  18:52:09,259 - #49 20
+INFO  18:52:09,259 - #41 )
+INFO  18:52:09,259 - #37 ;
+INFO  18:52:09,259 - #9 else
+INFO  18:52:09,259 - #3 print
+INFO  18:52:09,262 - #40 (
+INFO  18:52:09,262 - #47 bodovi
+INFO  18:52:09,263 - #41 )
+INFO  18:52:09,263 - #37 ;
+INFO  18:52:09,263 - #43 }
+INFO  18:52:09,263 - #43 }
+INFO  18:52:09,300 - Program(
   ProgName(
    test301
   ) [ProgName]
@@ -296,21 +302,8 @@ INFO  13:15:28,379 - Program(
           ) [ConstProgramDeclaration]
         ) [MultiProgramDeclarationList]
         ConstProgramDeclaration(
-          ConstDeclaration(
-            Type(
-             int
-            ) [Type]
-            SingleConstDeclaration(
-              ConstValue(
-               pet
-                ConstOptionNumber(
-                  NumberConstant(
-                   5
-                  ) [NumberConstant]
-                ) [ConstOptionNumber]
-              ) [ConstValue]
-            ) [SingleConstDeclaration]
-          ) [ConstDeclaration]
+          ErrorConstGlobalDeclarationSemi(
+          ) [ErrorConstGlobalDeclarationSemi]
         ) [ConstProgramDeclaration]
       ) [MultiProgramDeclarationList]
       VarProgramDeclaration(
@@ -329,18 +322,8 @@ INFO  13:15:28,379 - Program(
       ) [VarProgramDeclaration]
     ) [MultiProgramDeclarationList]
     VarProgramDeclaration(
-      VarDeclaration(
-        Type(
-         char
-        ) [Type]
-        SingleVarDeclaration(
-          VarValue(
-           nizch
-            BrackArrayLst(
-            ) [BrackArrayLst]
-          ) [VarValue]
-        ) [SingleVarDeclaration]
-      ) [VarDeclaration]
+      ErrorVarGlobalDeclarationSemi(
+      ) [ErrorVarGlobalDeclarationSemi]
     ) [VarProgramDeclaration]
   ) [MultiProgramDeclarationList]
   RepeatMethodDeclaration(
@@ -363,7 +346,7 @@ INFO  13:15:28,379 - Program(
         ) [NoMethodDelVarList]
         VarDeclaration(
           Type(
-           int
+           char
           ) [Type]
           SingleVarDeclaration(
             VarValue(
@@ -406,7 +389,9 @@ INFO  13:15:28,379 - Program(
                                                         DesignatorStatementAssign(
                                                           AssignOpeeratorExpresion(
                                                             Designator(
-                                                             bodovi
+                                                              DesigantorName(
+                                                               bodovi
+                                                              ) [DesigantorName]
                                                               NoDsgnList(
                                                               ) [NoDsgnList]
                                                             ) [Designator]
@@ -434,7 +419,9 @@ INFO  13:15:28,379 - Program(
                                                     DesStatement(
                                                       DesignatorStatementInc(
                                                         Designator(
-                                                         bodovi
+                                                          DesigantorName(
+                                                           bodovi
+                                                          ) [DesigantorName]
                                                           NoDsgnList(
                                                           ) [NoDsgnList]
                                                         ) [Designator]
@@ -445,7 +432,9 @@ INFO  13:15:28,379 - Program(
                                                     DesignatorStatementAssign(
                                                       AssignOpeeratorExpresion(
                                                         Designator(
-                                                         bodovi
+                                                          DesigantorName(
+                                                           bodovi
+                                                          ) [DesigantorName]
                                                           NoDsgnList(
                                                           ) [NoDsgnList]
                                                         ) [Designator]
@@ -457,7 +446,9 @@ INFO  13:15:28,379 - Program(
                                                           BasicTerm(
                                                             FactorDesignator(
                                                               Designator(
-                                                               bodovi
+                                                                DesigantorName(
+                                                                 bodovi
+                                                                ) [DesigantorName]
                                                                 NoDsgnList(
                                                                 ) [NoDsgnList]
                                                               ) [Designator]
@@ -474,7 +465,9 @@ INFO  13:15:28,379 - Program(
                                                               BasicTerm(
                                                                 FactorDesignator(
                                                                   Designator(
-                                                                   jedan
+                                                                    DesigantorName(
+                                                                     jedan
+                                                                    ) [DesigantorName]
                                                                     NoDsgnList(
                                                                     ) [NoDsgnList]
                                                                   ) [Designator]
@@ -493,7 +486,9 @@ INFO  13:15:28,379 - Program(
                                                   DesignatorStatementAssign(
                                                     AssignOpeeratorExpresion(
                                                       Designator(
-                                                       bodovi
+                                                        DesigantorName(
+                                                         bodovi
+                                                        ) [DesigantorName]
                                                         NoDsgnList(
                                                         ) [NoDsgnList]
                                                       ) [Designator]
@@ -505,7 +500,9 @@ INFO  13:15:28,379 - Program(
                                                         BasicTerm(
                                                           FactorDesignator(
                                                             Designator(
-                                                             bodovi
+                                                              DesigantorName(
+                                                               bodovi
+                                                              ) [DesigantorName]
                                                               NoDsgnList(
                                                               ) [NoDsgnList]
                                                             ) [Designator]
@@ -515,7 +512,9 @@ INFO  13:15:28,379 - Program(
                                                             ) [MulOption]
                                                             FactorDesignator(
                                                               Designator(
-                                                               pet
+                                                                DesigantorName(
+                                                                 pet
+                                                                ) [DesigantorName]
                                                                 NoDsgnList(
                                                                 ) [NoDsgnList]
                                                               ) [Designator]
@@ -532,7 +531,9 @@ INFO  13:15:28,379 - Program(
                                               DesStatement(
                                                 DesignatorStatementDec(
                                                   Designator(
-                                                   bodovi
+                                                    DesigantorName(
+                                                     bodovi
+                                                    ) [DesigantorName]
                                                     NoDsgnList(
                                                     ) [NoDsgnList]
                                                   ) [Designator]
@@ -547,7 +548,9 @@ INFO  13:15:28,379 - Program(
                                                   BasicTerm(
                                                     FactorDesignator(
                                                       Designator(
-                                                       bodovi
+                                                        DesigantorName(
+                                                         bodovi
+                                                        ) [DesigantorName]
                                                         NoDsgnList(
                                                         ) [NoDsgnList]
                                                       ) [Designator]
@@ -567,7 +570,9 @@ INFO  13:15:28,379 - Program(
                                             DesignatorStatementAssign(
                                               AssignOpeeratorExpresion(
                                                 Designator(
-                                                 niz
+                                                  DesigantorName(
+                                                   niz
+                                                  ) [DesigantorName]
                                                   NoDsgnList(
                                                   ) [NoDsgnList]
                                                 ) [Designator]
@@ -613,7 +618,9 @@ INFO  13:15:28,379 - Program(
                                           DesignatorStatementAssign(
                                             AssignOpeeratorExpresion(
                                               Designator(
-                                               niz
+                                                DesigantorName(
+                                                 niz
+                                                ) [DesigantorName]
                                                 DsgnList(
                                                   Expression(
                                                     NoNegativePrefix(
@@ -621,7 +628,9 @@ INFO  13:15:28,379 - Program(
                                                     BasicTerm(
                                                       FactorDesignator(
                                                         Designator(
-                                                         nula
+                                                          DesigantorName(
+                                                           nula
+                                                          ) [DesigantorName]
                                                           NoDsgnList(
                                                           ) [NoDsgnList]
                                                         ) [Designator]
@@ -642,7 +651,9 @@ INFO  13:15:28,379 - Program(
                                                 BasicTerm(
                                                   FactorDesignator(
                                                     Designator(
-                                                     jedan
+                                                      DesigantorName(
+                                                       jedan
+                                                      ) [DesigantorName]
                                                       NoDsgnList(
                                                       ) [NoDsgnList]
                                                     ) [Designator]
@@ -661,7 +672,9 @@ INFO  13:15:28,379 - Program(
                                         DesignatorStatementAssign(
                                           AssignOpeeratorExpresion(
                                             Designator(
-                                             niz
+                                              DesigantorName(
+                                               niz
+                                              ) [DesigantorName]
                                               DsgnList(
                                                 Expression(
                                                   NoNegativePrefix(
@@ -705,7 +718,9 @@ INFO  13:15:28,379 - Program(
                                       DesignatorStatementAssign(
                                         AssignOpeeratorExpresion(
                                           Designator(
-                                           niz
+                                            DesigantorName(
+                                             niz
+                                            ) [DesigantorName]
                                             DsgnList(
                                               Expression(
                                                 NoNegativePrefix(
@@ -713,7 +728,9 @@ INFO  13:15:28,379 - Program(
                                                 BasicTerm(
                                                   FactorDesignator(
                                                     Designator(
-                                                     niz
+                                                      DesigantorName(
+                                                       niz
+                                                      ) [DesigantorName]
                                                       DsgnList(
                                                         Expression(
                                                           NoNegativePrefix(
@@ -721,7 +738,9 @@ INFO  13:15:28,379 - Program(
                                                           BasicTerm(
                                                             FactorDesignator(
                                                               Designator(
-                                                               jedan
+                                                                DesigantorName(
+                                                                 jedan
+                                                                ) [DesigantorName]
                                                                 NoDsgnList(
                                                                 ) [NoDsgnList]
                                                               ) [Designator]
@@ -751,7 +770,9 @@ INFO  13:15:28,379 - Program(
                                             BasicTerm(
                                               FactorDesignator(
                                                 Designator(
-                                                 niz
+                                                  DesigantorName(
+                                                   niz
+                                                  ) [DesigantorName]
                                                   DsgnList(
                                                     Expression(
                                                       NoNegativePrefix(
@@ -759,7 +780,9 @@ INFO  13:15:28,379 - Program(
                                                       BasicTerm(
                                                         FactorDesignator(
                                                           Designator(
-                                                           niz
+                                                            DesigantorName(
+                                                             niz
+                                                            ) [DesigantorName]
                                                             DsgnList(
                                                               Expression(
                                                                 NoNegativePrefix(
@@ -809,7 +832,9 @@ INFO  13:15:28,379 - Program(
                                     DesignatorStatementAssign(
                                       AssignOpeeratorExpresion(
                                         Designator(
-                                         bodovi
+                                          DesigantorName(
+                                           bodovi
+                                          ) [DesigantorName]
                                           NoDsgnList(
                                           ) [NoDsgnList]
                                         ) [Designator]
@@ -821,7 +846,9 @@ INFO  13:15:28,379 - Program(
                                           BasicTerm(
                                             FactorDesignator(
                                               Designator(
-                                               niz
+                                                DesigantorName(
+                                                 niz
+                                                ) [DesigantorName]
                                                 DsgnList(
                                                   Expression(
                                                     NoNegativePrefix(
@@ -846,7 +873,9 @@ INFO  13:15:28,379 - Program(
                                               ) [DivOption]
                                               FactorDesignator(
                                                 Designator(
-                                                 niz
+                                                  DesigantorName(
+                                                   niz
+                                                  ) [DesigantorName]
                                                   DsgnList(
                                                     Expression(
                                                       NoNegativePrefix(
@@ -883,7 +912,9 @@ INFO  13:15:28,379 - Program(
                                       BasicTerm(
                                         FactorDesignator(
                                           Designator(
-                                           bodovi
+                                            DesigantorName(
+                                             bodovi
+                                            ) [DesigantorName]
                                             NoDsgnList(
                                             ) [NoDsgnList]
                                           ) [Designator]
@@ -907,7 +938,9 @@ INFO  13:15:28,379 - Program(
                                     BasicTerm(
                                       FactorDesignator(
                                         Designator(
-                                         niz
+                                          DesigantorName(
+                                           niz
+                                          ) [DesigantorName]
                                           DsgnList(
                                             Expression(
                                               NoNegativePrefix(
@@ -942,7 +975,9 @@ INFO  13:15:28,379 - Program(
                               DesignatorStatementAssign(
                                 AssignOpeeratorExpresion(
                                   Designator(
-                                   nizch
+                                    DesigantorName(
+                                     nizch
+                                    ) [DesigantorName]
                                     NoDsgnList(
                                     ) [NoDsgnList]
                                   ) [Designator]
@@ -988,7 +1023,9 @@ INFO  13:15:28,379 - Program(
                             DesignatorStatementAssign(
                               AssignOpeeratorExpresion(
                                 Designator(
-                                 nizch
+                                  DesigantorName(
+                                   nizch
+                                  ) [DesigantorName]
                                   DsgnList(
                                     Expression(
                                       NoNegativePrefix(
@@ -1032,7 +1069,9 @@ INFO  13:15:28,379 - Program(
                           DesignatorStatementAssign(
                             AssignOpeeratorExpresion(
                               Designator(
-                               nizch
+                                DesigantorName(
+                                 nizch
+                                ) [DesigantorName]
                                 DsgnList(
                                   Expression(
                                     NoNegativePrefix(
@@ -1040,7 +1079,9 @@ INFO  13:15:28,379 - Program(
                                     BasicTerm(
                                       FactorDesignator(
                                         Designator(
-                                         jedan
+                                          DesigantorName(
+                                           jedan
+                                          ) [DesigantorName]
                                           NoDsgnList(
                                           ) [NoDsgnList]
                                         ) [Designator]
@@ -1078,7 +1119,9 @@ INFO  13:15:28,379 - Program(
                         DesignatorStatementAssign(
                           AssignOpeeratorExpresion(
                             Designator(
-                             nizch
+                              DesigantorName(
+                               nizch
+                              ) [DesigantorName]
                               DsgnList(
                                 Expression(
                                   NoNegativePrefix(
@@ -1086,7 +1129,9 @@ INFO  13:15:28,379 - Program(
                                   BasicTerm(
                                     FactorDesignator(
                                       Designator(
-                                       pet
+                                        DesigantorName(
+                                         pet
+                                        ) [DesigantorName]
                                         NoDsgnList(
                                         ) [NoDsgnList]
                                       ) [Designator]
@@ -1143,7 +1188,9 @@ INFO  13:15:28,379 - Program(
                           BasicTerm(
                             FactorDesignator(
                               Designator(
-                               nizch
+                                DesigantorName(
+                                 nizch
+                                ) [DesigantorName]
                                 DsgnList(
                                   Expression(
                                     NoNegativePrefix(
@@ -1182,7 +1229,9 @@ INFO  13:15:28,379 - Program(
                         BasicTerm(
                           FactorDesignator(
                             Designator(
-                             nizch
+                              DesigantorName(
+                               nizch
+                              ) [DesigantorName]
                               DsgnList(
                                 Expression(
                                   NoNegativePrefix(
@@ -1190,7 +1239,9 @@ INFO  13:15:28,379 - Program(
                                   BasicTerm(
                                     FactorDesignator(
                                       Designator(
-                                       jedan
+                                        DesigantorName(
+                                         jedan
+                                        ) [DesigantorName]
                                         NoDsgnList(
                                         ) [NoDsgnList]
                                       ) [Designator]
@@ -1226,7 +1277,9 @@ INFO  13:15:28,379 - Program(
                   DesignatorStatementAssign(
                     AssignOpeeratorExpresion(
                       Designator(
-                       bodovi
+                        DesigantorName(
+                         bodovi
+                        ) [DesigantorName]
                         NoDsgnList(
                         ) [NoDsgnList]
                       ) [Designator]
@@ -1238,7 +1291,9 @@ INFO  13:15:28,379 - Program(
                         BasicTerm(
                           FactorDesignator(
                             Designator(
-                             bodovi
+                              DesigantorName(
+                               bodovi
+                              ) [DesigantorName]
                               NoDsgnList(
                               ) [NoDsgnList]
                             ) [Designator]
@@ -1261,7 +1316,9 @@ INFO  13:15:28,379 - Program(
                                     BasicTerm(
                                       FactorDesignator(
                                         Designator(
-                                         pet
+                                          DesigantorName(
+                                           pet
+                                          ) [DesigantorName]
                                           NoDsgnList(
                                           ) [NoDsgnList]
                                         ) [Designator]
@@ -1271,7 +1328,9 @@ INFO  13:15:28,379 - Program(
                                         ) [MulOption]
                                         FactorDesignator(
                                           Designator(
-                                           jedan
+                                            DesigantorName(
+                                             jedan
+                                            ) [DesigantorName]
                                             NoDsgnList(
                                             ) [NoDsgnList]
                                           ) [Designator]
@@ -1302,7 +1361,9 @@ INFO  13:15:28,379 - Program(
                                   ) [MulOption]
                                   FactorDesignator(
                                     Designator(
-                                     bodovi
+                                      DesigantorName(
+                                       bodovi
+                                      ) [DesigantorName]
                                       NoDsgnList(
                                       ) [NoDsgnList]
                                     ) [Designator]
@@ -1394,7 +1455,9 @@ INFO  13:15:28,379 - Program(
                     BasicTerm(
                       FactorDesignator(
                         Designator(
-                         bodovi
+                          DesigantorName(
+                           bodovi
+                          ) [DesigantorName]
                           NoDsgnList(
                           ) [NoDsgnList]
                         ) [Designator]
@@ -1413,7 +1476,9 @@ INFO  13:15:28,379 - Program(
             ReadStatement(
               ReadStatementDetail(
                 Designator(
-                 bodovi
+                  DesigantorName(
+                   bodovi
+                  ) [DesigantorName]
                   NoDsgnList(
                   ) [NoDsgnList]
                 ) [Designator]
@@ -1434,7 +1499,9 @@ INFO  13:15:28,379 - Program(
                         BasicTerm(
                           FactorDesignator(
                             Designator(
-                             bodovi
+                              DesigantorName(
+                               bodovi
+                              ) [DesigantorName]
                               NoDsgnList(
                               ) [NoDsgnList]
                             ) [Designator]
@@ -1477,7 +1544,9 @@ INFO  13:15:28,379 - Program(
                 DesignatorStatementAssign(
                   AssignOpeeratorExpresion(
                     Designator(
-                     bodovi
+                      DesigantorName(
+                       bodovi
+                      ) [DesigantorName]
                       NoDsgnList(
                       ) [NoDsgnList]
                     ) [Designator]
@@ -1489,7 +1558,9 @@ INFO  13:15:28,379 - Program(
                       BasicTerm(
                         FactorDesignator(
                           Designator(
-                           bodovi
+                            DesigantorName(
+                             bodovi
+                            ) [DesigantorName]
                             NoDsgnList(
                             ) [NoDsgnList]
                           ) [Designator]
@@ -1558,7 +1629,9 @@ INFO  13:15:28,379 - Program(
                   BasicTerm(
                     FactorDesignator(
                       Designator(
-                       bodovi
+                        DesigantorName(
+                         bodovi
+                        ) [DesigantorName]
                         NoDsgnList(
                         ) [NoDsgnList]
                       ) [Designator]
@@ -1599,7 +1672,9 @@ INFO  13:15:28,379 - Program(
                     BasicTerm(
                       FactorDesignator(
                         Designator(
-                         bodovi
+                          DesigantorName(
+                           bodovi
+                          ) [DesigantorName]
                           NoDsgnList(
                           ) [NoDsgnList]
                         ) [Designator]
@@ -1621,68 +1696,97 @@ INFO  13:15:28,379 - Program(
     ) [MethodDeclaration]
   ) [RepeatMethodDeclaration]
 ) [Program]
-INFO  13:15:28,405 - ===================================
-INFO  13:15:28,433 - Deklarisana CONST promenljiva nula tip:int Vredosti: 0 na liniji 5
-INFO  13:15:28,433 - Deklarisana CONST promenljiva jedan tip:int Vredosti: 1 na liniji 6
-INFO  13:15:28,433 - Deklarisana CONST promenljiva pet tip:int Vredosti: 5 na liniji 7
-INFO  13:15:28,434 - Deklarisana promenljiva niz tip:3 - GLOBAL VAR na liniji 9
-INFO  13:15:28,435 - Deklarisana promenljiva nizch tip:3 - GLOBAL VAR na liniji 10
-INFO  13:15:28,436 - Obradjuje se metoda: main na liniji 13
-INFO  13:15:28,436 - Deklarisana promenljiva bodovi tip:1 - FUNKCIJA na liniji 14
-INFO  13:15:28,437 - Designator bodovi pronadjen! na liniji 16
-INFO  13:15:28,439 - Designator bodovi pronadjen! na liniji 17
-INFO  13:15:28,440 - Designator bodovi pronadjen! na liniji 18
-INFO  13:15:28,440 - Designator bodovi pronadjen! na liniji 18
-INFO  13:15:28,441 - Designator jedan pronadjen! na liniji 18
-INFO  13:15:28,441 - Designator bodovi pronadjen! na liniji 19
-INFO  13:15:28,442 - Designator bodovi pronadjen! na liniji 19
-INFO  13:15:28,442 - Designator pet pronadjen! na liniji 19
-INFO  13:15:28,442 - Designator bodovi pronadjen! na liniji 20
-INFO  13:15:28,443 - Designator bodovi pronadjen! na liniji 21
-INFO  13:15:28,443 - Pronadjen Print Statement  na liniji 7
-INFO  13:15:28,443 - Designator niz pronadjen! na liniji 24
-INFO  13:15:28,444 - Designator nula pronadjen! na liniji 25
-INFO  13:15:28,444 - Designator niz pronadjen! na liniji 25
-INFO  13:15:28,444 - Designator jedan pronadjen! na liniji 25
-INFO  13:15:28,445 - Designator niz pronadjen! na liniji 26
-INFO  13:15:28,445 - Designator jedan pronadjen! na liniji 27
-INFO  13:15:28,445 - Designator niz pronadjen! na liniji 27
-INFO  13:15:28,445 - Designator niz pronadjen! na liniji 27
-INFO  13:15:28,445 - Designator niz pronadjen! na liniji 27
-INFO  13:15:28,446 - Designator niz pronadjen! na liniji 27
-INFO  13:15:28,446 - Designator bodovi pronadjen! na liniji 28
-INFO  13:15:28,446 - Designator niz pronadjen! na liniji 28
-INFO  13:15:28,447 - Designator niz pronadjen! na liniji 28
-INFO  13:15:28,447 - Designator bodovi pronadjen! na liniji 29
-INFO  13:15:28,447 - Pronadjen Print Statement  na liniji 7
-INFO  13:15:28,447 - Designator niz pronadjen! na liniji 30
-INFO  13:15:28,447 - Pronadjen Print Statement  na liniji 7
-INFO  13:15:28,448 - Designator nizch pronadjen! na liniji 33
-INFO  13:15:28,448 - Designator nizch pronadjen! na liniji 34
-INFO  13:15:28,448 - Designator jedan pronadjen! na liniji 35
-INFO  13:15:28,448 - Designator nizch pronadjen! na liniji 35
-INFO  13:15:28,449 - Designator pet pronadjen! na liniji 36
-INFO  13:15:28,449 - Designator nizch pronadjen! na liniji 36
-INFO  13:15:28,449 - Designator nizch pronadjen! na liniji 37
-INFO  13:15:28,449 - Pronadjen Print Statement  na liniji 7
-INFO  13:15:28,450 - Designator jedan pronadjen! na liniji 38
-INFO  13:15:28,450 - Designator nizch pronadjen! na liniji 38
-INFO  13:15:28,450 - Pronadjen Print Statement  na liniji 7
-INFO  13:15:28,451 - Designator bodovi pronadjen! na liniji 41
-INFO  13:15:28,451 - Designator bodovi pronadjen! na liniji 41
-INFO  13:15:28,451 - Designator pet pronadjen! na liniji 41
-INFO  13:15:28,451 - Designator jedan pronadjen! na liniji 41
-INFO  13:15:28,452 - Designator bodovi pronadjen! na liniji 41
-INFO  13:15:28,452 - Designator bodovi pronadjen! na liniji 42
-INFO  13:15:28,452 - Pronadjen Print Statement  na liniji 7
-INFO  13:15:28,453 - Designator bodovi pronadjen! na liniji 44
-INFO  13:15:28,453 - Pronadjen Read Statement  na liniji 44
-INFO  13:15:28,453 - Designator bodovi pronadjen! na liniji 45
-INFO  13:15:28,454 - Designator bodovi pronadjen! na liniji 45
-INFO  13:15:28,454 - Designator bodovi pronadjen! na liniji 45
-INFO  13:15:28,455 - Designator bodovi pronadjen! na liniji 46
-INFO  13:15:28,455 - Pronadjen Print Statement  na liniji 17
-INFO  13:15:28,456 - Designator bodovi pronadjen! na liniji 47
-INFO  13:15:28,456 - Pronadjen Print Statement  na liniji 12
-INFO  13:15:28,456 - ===================================
-INFO  13:15:29,048 - Parsiranje uspesno zavrseno!
+INFO  18:52:09,309 - ======================= SINTAKSNA ANALIZA =======================
+INFO  18:52:09,323 - Deklarisana CONST promenljiva nula tip:int Vredosti: 0 na liniji 5
+INFO  18:52:09,324 - Deklarisana CONST promenljiva jedan tip:int Vredosti: 1 na liniji 6
+INFO  18:52:09,324 - Deklarisana promenljiva niz tip:3 - GLOBAL VAR na liniji 9
+INFO  18:52:09,324 - Obradjuje se metoda: main na liniji 13
+INFO  18:52:09,325 - Deklarisana promenljiva bodovi tip:2 - FUNKCIJA na liniji 14
+INFO  18:52:09,325 - Designator bodovi pronadjen! na liniji 16
+INFO  18:52:09,326 - Designator bodovi pronadjen! na liniji 17
+INFO  18:52:09,326 - Designator bodovi pronadjen! na liniji 18
+INFO  18:52:09,326 - Designator bodovi pronadjen! na liniji 18
+INFO  18:52:09,326 - Designator jedan pronadjen! na liniji 18
+INFO  18:52:09,326 - Designator bodovi pronadjen! na liniji 19
+INFO  18:52:09,327 - Designator bodovi pronadjen! na liniji 19
+INFO  18:52:09,327 - Designator bodovi pronadjen! na liniji 20
+INFO  18:52:09,327 - Designator bodovi pronadjen! na liniji 21
+INFO  18:52:09,327 - Pronadjen Print Statement  na liniji 7
+INFO  18:52:09,328 - Designator niz pronadjen! na liniji 24
+INFO  18:52:09,328 - Designator nula pronadjen! na liniji 25
+INFO  18:52:09,328 - Designator niz pronadjen! na liniji 25
+INFO  18:52:09,328 - Designator jedan pronadjen! na liniji 25
+INFO  18:52:09,328 - Designator niz pronadjen! na liniji 26
+INFO  18:52:09,328 - Designator jedan pronadjen! na liniji 27
+INFO  18:52:09,328 - Designator niz pronadjen! na liniji 27
+INFO  18:52:09,328 - Designator niz pronadjen! na liniji 27
+INFO  18:52:09,328 - Designator niz pronadjen! na liniji 27
+INFO  18:52:09,328 - Designator niz pronadjen! na liniji 27
+INFO  18:52:09,329 - Designator bodovi pronadjen! na liniji 28
+INFO  18:52:09,329 - Designator niz pronadjen! na liniji 28
+INFO  18:52:09,329 - Designator niz pronadjen! na liniji 28
+INFO  18:52:09,329 - Designator bodovi pronadjen! na liniji 29
+INFO  18:52:09,329 - Pronadjen Print Statement  na liniji 7
+INFO  18:52:09,329 - Designator niz pronadjen! na liniji 30
+INFO  18:52:09,330 - Pronadjen Print Statement  na liniji 7
+INFO  18:52:09,330 - Designator jedan pronadjen! na liniji 35
+INFO  18:52:09,330 - Designator jedan pronadjen! na liniji 38
+INFO  18:52:09,330 - Designator bodovi pronadjen! na liniji 41
+INFO  18:52:09,330 - Designator bodovi pronadjen! na liniji 41
+INFO  18:52:09,330 - Designator jedan pronadjen! na liniji 41
+INFO  18:52:09,330 - Designator bodovi pronadjen! na liniji 41
+INFO  18:52:09,331 - Designator bodovi pronadjen! na liniji 42
+INFO  18:52:09,331 - Pronadjen Print Statement  na liniji 7
+INFO  18:52:09,331 - Designator bodovi pronadjen! na liniji 44
+INFO  18:52:09,331 - Pronadjen Read Statement  na liniji 44
+INFO  18:52:09,331 - Designator bodovi pronadjen! na liniji 45
+INFO  18:52:09,331 - Designator bodovi pronadjen! na liniji 45
+INFO  18:52:09,331 - Designator bodovi pronadjen! na liniji 45
+INFO  18:52:09,332 - Designator bodovi pronadjen! na liniji 46
+INFO  18:52:09,332 - Pronadjen Print Statement  na liniji 17
+INFO  18:52:09,332 - Designator bodovi pronadjen! na liniji 47
+INFO  18:52:09,332 - Pronadjen Print Statement  na liniji 12
+INFO  18:52:09,615 - [Line #7 ]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 7
+INFO  18:52:09,615 - [Line #0 ]  SYNTAX_ERROR: Izvrsen oporavak za CONST do ; u liniji 7
+INFO  18:52:09,616 - [Line #10]  LEXICAL_ERROR: _
+INFO  18:52:09,616 - [Line #10]  SYNTAX_ERROR: 
+Sintaksna greska na liniji 10
+INFO  18:52:09,616 - [Line #0 ]  SYNTAX_ERROR: Izvrsen oporavak za VarDecl do ; u liniji 8
+INFO  18:52:09,616 - [Line #16]  SEMANTIC_ERROR: Greska! Nekompatabilni tipovi! ---:2 na liniji 16
+INFO  18:52:09,617 - [Line #17]  SEMANTIC_ERROR: Greska! Desigantor za Inkrement mora biti vrtipa INT! na liniji 17
+INFO  18:52:09,618 - [Line #9 ]  SEMANTIC_ERROR: Greska! Expr: Operand1 mora biti tipa INT! na liniji 9
+INFO  18:52:09,619 - [Line #19]  SEMANTIC_ERROR: Greska! Designator pet nije deklarisan! na liniji 19
+INFO  18:52:09,621 - [Line #19]  SEMANTIC_ERROR: Greska! Designator nepostojeci! na liniji 19
+INFO  18:52:09,622 - [Line #19]  SEMANTIC_ERROR: Greska! Expr: Operand1 mora biti tipa INT! na liniji 19
+INFO  18:52:09,622 - [Line #20]  SEMANTIC_ERROR: Greska! Desigantor za Dekrement mora biti vrtipa INT! na liniji 20
+INFO  18:52:09,622 - [Line #28]  SEMANTIC_ERROR: Greska! Nekompatabilni tipovi! ---:2 na liniji 28
+INFO  18:52:09,622 - [Line #33]  SEMANTIC_ERROR: Greska! Designator nizch nije deklarisan! na liniji 33
+INFO  18:52:09,624 - [Line #33]  SEMANTIC_ERROR: Greska! Nepostojeci operand! na liniji 33
+INFO  18:52:09,632 - [Line #34]  SEMANTIC_ERROR: Greska! Designator nizch nije deklarisan! na liniji 34
+INFO  18:52:09,633 - [Line #34]  SEMANTIC_ERROR: Greska! Nepostojeci operandi! na liniji 34
+INFO  18:52:09,633 - [Line #35]  SEMANTIC_ERROR: Greska! Designator nizch nije deklarisan! na liniji 35
+INFO  18:52:09,633 - [Line #35]  SEMANTIC_ERROR: Greska! Nepostojeci operandi! na liniji 35
+INFO  18:52:09,633 - [Line #36]  SEMANTIC_ERROR: Greska! Designator pet nije deklarisan! na liniji 36
+INFO  18:52:09,634 - [Line #36]  SEMANTIC_ERROR: Greska! Designator nepostojeci! na liniji 36
+INFO  18:52:09,634 - [Line #36]  SEMANTIC_ERROR: Greska! Nepostojeci operand! na liniji 36
+INFO  18:52:09,634 - [Line #7 ]  SEMANTIC_ERROR: Greska! Nepostojeci operand! na liniji 7
+INFO  18:52:09,634 - [Line #36]  SEMANTIC_ERROR: Greska! Designator nizch nije deklarisan! na liniji 36
+INFO  18:52:09,634 - [Line #36]  SEMANTIC_ERROR: Greska! Nepostojeci operandi! na liniji 36
+INFO  18:52:09,653 - [Line #37]  SEMANTIC_ERROR: Greska! Designator nizch nije deklarisan! na liniji 37
+INFO  18:52:09,654 - [Line #37]  SEMANTIC_ERROR: Greska! Designator nepostojeci! na liniji 37
+INFO  18:52:09,654 - [Line #7 ]  SEMANTIC_ERROR: Greska! Print operand nije definisan! na liniji 7
+INFO  18:52:09,655 - [Line #38]  SEMANTIC_ERROR: Greska! Designator nizch nije deklarisan! na liniji 38
+INFO  18:52:09,656 - [Line #38]  SEMANTIC_ERROR: Greska! Designator nepostojeci! na liniji 38
+INFO  18:52:09,656 - [Line #7 ]  SEMANTIC_ERROR: Greska! Print operand nije definisan! na liniji 7
+INFO  18:52:09,656 - [Line #41]  SEMANTIC_ERROR: Greska! Designator pet nije deklarisan! na liniji 41
+INFO  18:52:09,657 - [Line #41]  SEMANTIC_ERROR: Greska! Designator nepostojeci! na liniji 41
+INFO  18:52:09,657 - [Line #41]  SEMANTIC_ERROR: Greska! Nepostojeci operand! na liniji 41
+INFO  18:52:09,658 - [Line #20]  SEMANTIC_ERROR: Greska! Nepostojeci operand! na liniji 20
+INFO  18:52:09,658 - [Line #41]  SEMANTIC_ERROR: Greska! Nepostojeci operand! na liniji 41
+INFO  18:52:09,663 - [Line #9 ]  SEMANTIC_ERROR: Greska! Expr: Operand1 mora biti tipa INT! na liniji 9
+INFO  18:52:09,664 - [Line #45]  SEMANTIC_ERROR: Greska! Expr: Operand1 mora biti tipa INT! na liniji 45
+INFO  18:52:09,664 - [Line #4 ]  SEMANTIC_ERROR: Greska! Tipovi uslovnih promenljivih moraju biti kompatabilni! na liniji 4
+INFO  18:52:09,665 - [Line #27]  SEMANTIC_ERROR: Greska! Expr: Operand1 mora biti tipa INT! na liniji 27
+INFO  18:52:09,665 - [Line #17]  SEMANTIC_ERROR: Greska! Expr: Operand1 mora biti tipa INT! na liniji 17
+ERROR 18:52:09,665 - Parsiranje NIJE uspelo!

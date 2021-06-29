@@ -1,0 +1,28 @@
+INFO  18:40:31,185 - Compiling source file: D:\Marta SI\8. semestar\PP\Sintaksna analiza\Izvorni kod\PP_MJCompiler\MJCompiler\test\program.mj
+INFO  18:40:31,296 - #2 program
+INFO  18:40:31,296 - #47 test301
+INFO  18:40:31,296 - #20 const
+INFO  18:40:31,298 - #47 int
+INFO  18:40:31,298 - #47 nula
+INFO  18:40:31,301 - #36 =
+INFO  18:40:31,302 - #49 0
+INFO  18:40:31,302 - #37 ;
+INFO  18:40:31,304 - #20 const
+INFO  18:40:31,307 - #47 int
+INFO  18:40:31,307 - #47 jedan
+INFO  18:40:31,308 - #36 =
+INFO  18:40:31,308 - #49 1
+INFO  18:40:31,308 - #37 ;
+INFO  18:40:31,308 - #20 const
+INFO  18:40:31,309 - #47 int
+INFO  18:40:31,309 - #47 pet
+INFO  18:40:31,309 - #36 =
+INFO  18:40:31,309 - #49 5
+INFO  18:40:31,309 - #47 a
+ERROR 18:40:31,310 - 
+Sintaksna greska na liniji 7
+INFO  18:40:31,311 - #37 ;
+INFO  18:40:31,315 - #47 int
+INFO  18:40:31,316 - #47 niz
+INFO  18:40:31,317 - #44 [
+ERROR 18:40:31,317 - Izvrsen oporavak za CONST do ; u liniji 7

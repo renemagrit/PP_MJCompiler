@@ -5,6 +5,8 @@ package rs.ac.bg.etf.pp1;
 import java_cup.runtime.*;
 import org.apache.log4j.*;
 import rs.ac.bg.etf.pp1.ast.*;
+import rs.ac.bg.etf.pp1.test.CompilerError;
+import rs.ac.bg.etf.pp1.test.CompilerError.CompilerErrorType;
 
 parser code {:
 
@@ -31,6 +33,12 @@ parser code {:
     	if (info instanceof Symbol)
             msg.append (" na liniji ").append(((Symbol)info).left);
         log.error(msg.toString());
+        
+        MJTestCompile myCompiler = MJTestCompile.getInstance(); 
+       	int line = (info == null) ? 0: ((Symbol)info).left;
+       
+		myCompiler.addError(new CompilerError(line, 
+		msg.toString(), CompilerErrorType.SYNTAX_ERROR));
     }
 
 

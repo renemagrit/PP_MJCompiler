@@ -64,6 +64,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		//log.error(msg.toString());
 		MJTestCompile myCompiler = MJTestCompile.getInstance(); 
 		myCompiler.addError(new CompilerError(line, msg.toString(), CompilerErrorType.SEMANTIC_ERROR));
+		errorDetection = true;
 	}
 
 	public void report_info(String message, SyntaxNode info) {
@@ -175,6 +176,11 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		
 		int currtype = Struct.None;
     	
+		if(exprStruct == null) {
+			report_error("Greska! Print operand nije definisan!", print);
+    		return;
+		}
+		
 		if(exprStruct.getElemType() == null) {
     		currtype = exprStruct.getKind();
     	}else{
@@ -398,7 +404,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		   report_error("Greska! Desigantor za Inkrement mora biti vrednostan!", desInc);
 		   return;
 	   }
-
+	   report_info("Pronadjen Inekrement op ", desInc);
    }
    public void visit(DesignatorStatementDec desDec) {
 	   Designator desigantor = desDec.getDesignator();
@@ -416,7 +422,7 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		   report_error("Greska! Desigantor za Dekrement mora biti vrednostan!", desDec);
 		   return;
 	   }	   
-	   
+	   report_info("Pronadjen Inekrement op ", desDec);
    }
    public void visit(AssignOpeeratorExpresion assignOp) {
 	   
@@ -443,7 +449,10 @@ public class SemanticAnalyzer extends VisitorAdaptor {
 		   report_error("Greska! Nepostojeci operand!", assignOp);
 		   return;
 	   }
-	   
+	   if(op1 == null || op2 == null) {
+		   report_error("Greska! Nepostojeci operandi!", assignOp);
+		   return;
+	   }
 	   //Check type compatibility
 	   
 	   //case 1

@@ -2,6 +2,8 @@
 package rs.ac.bg.etf.pp1;
 
 import java_cup.runtime.Symbol;
+import rs.ac.bg.etf.pp1.test.CompilerError;
+import rs.ac.bg.etf.pp1.test.CompilerError.CompilerErrorType;
 
 %%
 
@@ -110,7 +112,11 @@ import java_cup.runtime.Symbol;
 [0-9]+  { return new_symbol(sym.NUMBER, new Integer (yytext())); }
 ([a-z]|[A-Z])[a-z|A-Z|0-9|_]* 	{return new_symbol (sym.IDENT, yytext()); }
 
-. { System.err.println("Leksicka greska ("+yytext()+") u liniji "+(yyline+1)); }
+. { 
+	MJTestCompile myCompiler = MJTestCompile.getInstance(); 
+	myCompiler.addError(new CompilerError((yyline+1), yytext(), CompilerErrorType.LEXICAL_ERROR));
+	System.err.println("Leksicka greska ("+yytext()+") u liniji "+(yyline+1)); 
+}
 
 
 
