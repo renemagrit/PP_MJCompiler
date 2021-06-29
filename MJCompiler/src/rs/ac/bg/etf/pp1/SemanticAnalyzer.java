@@ -219,8 +219,8 @@ public class SemanticAnalyzer extends VisitorAdaptor {
     }
     
     public void visit(CondFactorSingle cond) {
-    	cond.obj = new Obj(Obj.Var, "CondFactorSingle",cond.getExpr().struct);
-    	if(cond.obj.getType().getKind() != Struct.Bool) {
+    	cond.struct = cond.getExpr().struct;
+    	if(cond.struct.getKind() != Struct.Bool) {
     		report_error("Greska! Tip uslovne promenljive mora biti Boolean", cond);
     		return;
     	}
@@ -241,19 +241,19 @@ public class SemanticAnalyzer extends VisitorAdaptor {
         		return;
     		}
     	}
-    	cond.obj = new Obj(Obj.Var, "BoolConst", NewSymbolTable.booleanType);
+    	cond.struct = NewSymbolTable.booleanType;
     }
     public void visit(SingleCondTerm cond) {
-    	cond.obj = cond.getCondFact().obj;
+    	cond.struct = cond.getCondFact().struct;
     }
     public void visit(MultiCondTerm cond) {
-    	cond.obj = cond.getCondFact().obj;
+    	cond.struct = cond.getCondFact().struct;
     }
     public void visit(SingleCondition cond) {
-    	cond.obj = cond.getCondTerm().obj;
+    	cond.struct = cond.getCondTerm().struct;
     }
     public void visit(MultiCondition cond) {
-    	cond.obj = cond.getCondTerm().obj;
+    	cond.struct = cond.getCondTerm().struct;
     }
         
     //****************************************** PROG ************************************
